@@ -1,0 +1,13 @@
+# Generated audio masters — built locally, hosted on Cloudflare R2, NEVER committed (~1 GB)
+_audio_build/
+
+# Build / deploy caches
+.wrangler/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS cruft
+.DS_Store
+Thumbs.db

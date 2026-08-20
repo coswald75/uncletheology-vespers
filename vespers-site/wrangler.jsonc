@@ -1,0 +1,11 @@
+{
+  "name": "vespers",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    { "pattern": "vesperstonight.com", "custom_domain": true },
+    { "pattern": "www.vesperstonight.com", "custom_domain": true }
+  ]
+}

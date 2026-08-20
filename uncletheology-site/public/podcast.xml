@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>UncleTheology Radio</title>
+  <link>https://uncletheology.com</link>
+  <atom:link href="https://uncletheology.com/podcast.xml" rel="self" type="application/rss+xml" />
+  <language>en-us</language>
+  <description>Chris Oswald's sermons, sung and explained. Each episode plays a whole Uncle Theology album straight through — but before every song, a short spoken intro tells you the Scripture and the story underneath it. Music and commentary, one continuous listen.</description>
+  <itunes:summary>Chris Oswald's sermons, sung and explained. Each episode plays a whole Uncle Theology album straight through — but before every song, a short spoken intro tells you the Scripture and the story underneath it. Music and commentary, one continuous listen.</itunes:summary>
+  <itunes:author>Uncle Theology</itunes:author>
+  <itunes:type>episodic</itunes:type>
+  <itunes:owner>
+    <itunes:name>Chris Oswald</itunes:name>
+    <itunes:email>chris@sovgracekc.org</itunes:email>
+  </itunes:owner>
+  <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/utr-radio-cover.jpg" />
+  <itunes:category text="Religion &amp; Spirituality">
+    <itunes:category text="Christianity" />
+  </itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <item>
+    <title>Sovereign Driver — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/sovereign-driver/</link>
+    <guid isPermaLink="false">utr-sovereign-driver-2026-08-10</guid>
+    <pubDate>Mon, 10 Aug 2026 12:00:00 -0500</pubDate>
+    <description>Sovereign Driver played end to end — Tool-heavy prog and baroque hard rock — with an extended spoken introduction before every song, tracing the album's descent and return: from the aseity of God, through providence and the eternal decree, down to the incarnation, and up to the throne of the slain Lamb. Eight tracks, eight intros, one continuous listen — the Sovereign Driver who becomes the Sovereign Diver.
+
+Chapters:
+0:00 Intro — Aseity
+0:59 Aseity
+1:53 Intro — Sovereign Driver
+2:50 Sovereign Driver
+8:18 Intro — Scarred Hands
+9:20 Scarred Hands
+12:35 Intro — All Came to Pass
+13:32 All Came to Pass
+20:52 A word from our sponsor — Providence Community Church
+21:10 Intro — Low Enough
+22:13 Low Enough
+26:32 Intro — Colossians 1
+27:23 Colossians 1
+28:32 Intro — In Him
+29:26 In Him
+34:16 Intro — Worthy
+35:39 Worthy
+</description>
+    <itunes:summary>Sovereign Driver played end to end — Tool-heavy prog and baroque hard rock — with an extended spoken introduction before every song, tracing the album's descent and return: from the aseity of God, through providence and the eternal decree, down to the incarnation, and up to the throne of the slain Lamb. Eight tracks, eight intros, one continuous listen — the Sovereign Driver who becomes the Sovereign Diver.
+
+Chapters:
+0:00 Intro — Aseity
+0:59 Aseity
+1:53 Intro — Sovereign Driver
+2:50 Sovereign Driver
+8:18 Intro — Scarred Hands
+9:20 Scarred Hands
+12:35 Intro — All Came to Pass
+13:32 All Came to Pass
+20:52 A word from our sponsor — Providence Community Church
+21:10 Intro — Low Enough
+22:13 Low Enough
+26:32 Intro — Colossians 1
+27:23 Colossians 1
+28:32 Intro — In Him
+29:26 In Him
+34:16 Intro — Worthy
+35:39 Worthy
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>40:02</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/sovereign-driver-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/sovereign-driver.mp3" length="57703918" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Roots of Reason — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/roots-of-reason/</link>
+    <guid isPermaLink="false">utr-roots-of-reason-2026-07-22</guid>
+    <pubDate>Tue, 21 Jul 2026 12:00:00 -0500</pubDate>
+    <description>Roots of Reason played end to end — Reformed theology set to roots reggae — with a short spoken intro before every song. Cruciform power before Pilate, the two Adams and true dominion, Isaiah's thrice-holy vision, the Euthyphro dilemma, Plato's cave as the new birth, suffering under God's sovereignty, the apostles' hard road, the cage of autonomy, worship as warfare, the bodily resurrection, the empty tomb of Matthew 28, and the nations streaming in.
+
+Chapters:
+0:00 Intro — Don't Fight Like the World
+0:55 Don't Fight Like the World
+4:28 Intro — True Dominion for a Fake Dime
+5:04 True Dominion for a Fake Dime
+10:39 Intro — Thrice Holy
+11:25 Thrice Holy
+15:02 Intro — Euthyphro Rocksteady
+15:42 Euthyphro Rocksteady
+19:19 Intro — Playing with Plato
+19:57 Playing with Plato
+25:38 Intro — What Christ is Doing in Me
+26:19 What Christ is Doing in Me
+31:44 A word from our sponsor — Providence Community Church
+32:02 Intro — Acts of the Apostles
+32:40 Acts of the Apostles
+36:44 Intro — Freebird's Cage
+37:24 Freebird's Cage
+42:28 Intro — Worship is the Warfare
+43:15 Worship is the Warfare
+48:46 Intro — Solid Ground
+49:22 Solid Ground
+54:15 Intro — Matthew 28
+54:55 Matthew 28
+61:31 Intro — Nations Gonna Come
+62:18 Nations Gonna Come
+</description>
+    <itunes:summary>Roots of Reason played end to end — Reformed theology set to roots reggae — with a short spoken intro before every song. Cruciform power before Pilate, the two Adams and true dominion, Isaiah's thrice-holy vision, the Euthyphro dilemma, Plato's cave as the new birth, suffering under God's sovereignty, the apostles' hard road, the cage of autonomy, worship as warfare, the bodily resurrection, the empty tomb of Matthew 28, and the nations streaming in.
+
+Chapters:
+0:00 Intro — Don't Fight Like the World
+0:55 Don't Fight Like the World
+4:28 Intro — True Dominion for a Fake Dime
+5:04 True Dominion for a Fake Dime
+10:39 Intro — Thrice Holy
+11:25 Thrice Holy
+15:02 Intro — Euthyphro Rocksteady
+15:42 Euthyphro Rocksteady
+19:19 Intro — Playing with Plato
+19:57 Playing with Plato
+25:38 Intro — What Christ is Doing in Me
+26:19 What Christ is Doing in Me
+31:44 A word from our sponsor — Providence Community Church
+32:02 Intro — Acts of the Apostles
+32:40 Acts of the Apostles
+36:44 Intro — Freebird's Cage
+37:24 Freebird's Cage
+42:28 Intro — Worship is the Warfare
+43:15 Worship is the Warfare
+48:46 Intro — Solid Ground
+49:22 Solid Ground
+54:15 Intro — Matthew 28
+54:55 Matthew 28
+61:31 Intro — Nations Gonna Come
+62:18 Nations Gonna Come
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>1:06:43</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/roots-of-reason-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/roots-of-reason.mp3" length="96192886" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>John &amp; Them — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/john-and-them/</link>
+    <guid isPermaLink="false">utr-john-and-them-2026-07-22</guid>
+    <pubDate>Mon, 20 Jul 2026 12:00:00 -0500</pubDate>
+    <description>John &amp; Them played end to end — street-gospel hip-hop through the eyes of the apostle John and his neighbors — with a short spoken intro before every song. Abiding in light and love, the finished gospel, Chesterton's fence and chronological snobbery, the assurance of the new birth, the rich young ruler, Jude against the false teachers, the antichrist spirit of 'Christ plus,' the bread handed to Judas, the prodigal's one road home, and the Creator born of the creature.
+
+Chapters:
+0:00 Intro — Abide in the Fire
+0:52 Abide in the Fire
+5:43 Intro — Keep It Simple Stupid
+6:25 Keep It Simple Stupid
+8:56 Intro — Chesterton's Fence
+9:39 Chesterton's Fence
+13:08 Intro — Double John
+13:48 Double John
+18:26 Intro — RYR (Rich Young Ruler)
+19:08 RYR (Rich Young Ruler)
+24:02 Intro — Titus, Tim, &amp;amp; Them
+24:40 Titus, Tim, &amp;amp; Them
+27:13 A word from our sponsor — Providence Community Church
+27:31 Intro — Jude
+28:15 Jude
+32:20 Intro — AntiChrist
+33:04 AntiChrist
+36:14 Intro — Bread of Judas
+36:54 Bread of Judas
+40:49 Intro — One Road Home (The Prodigal)
+41:36 One Road Home (The Prodigal)
+45:17 Intro — Noel
+46:03 Noel
+</description>
+    <itunes:summary>John &amp; Them played end to end — street-gospel hip-hop through the eyes of the apostle John and his neighbors — with a short spoken intro before every song. Abiding in light and love, the finished gospel, Chesterton's fence and chronological snobbery, the assurance of the new birth, the rich young ruler, Jude against the false teachers, the antichrist spirit of 'Christ plus,' the bread handed to Judas, the prodigal's one road home, and the Creator born of the creature.
+
+Chapters:
+0:00 Intro — Abide in the Fire
+0:52 Abide in the Fire
+5:43 Intro — Keep It Simple Stupid
+6:25 Keep It Simple Stupid
+8:56 Intro — Chesterton's Fence
+9:39 Chesterton's Fence
+13:08 Intro — Double John
+13:48 Double John
+18:26 Intro — RYR (Rich Young Ruler)
+19:08 RYR (Rich Young Ruler)
+24:02 Intro — Titus, Tim, &amp;amp; Them
+24:40 Titus, Tim, &amp;amp; Them
+27:13 A word from our sponsor — Providence Community Church
+27:31 Intro — Jude
+28:15 Jude
+32:20 Intro — AntiChrist
+33:04 AntiChrist
+36:14 Intro — Bread of Judas
+36:54 Bread of Judas
+40:49 Intro — One Road Home (The Prodigal)
+41:36 One Road Home (The Prodigal)
+45:17 Intro — Noel
+46:03 Noel
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>51:43</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/john-and-them-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/john-and-them.mp3" length="74718528" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Common Grace — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/common-grace/</link>
+    <guid isPermaLink="false">utr-common-grace-2026-07-22</guid>
+    <pubDate>Sun, 19 Jul 2026 12:00:00 -0500</pubDate>
+    <description>Common Grace played end to end — a warm, genre-hopping ode to the everyday kindness God pours on the whole human race — with a short spoken intro before every song. Sun on the sinner, Kuyper's every-square-inch, Ecclesiastes' vapor and the love that makes an unchanging town new, marriage as gift, the goodness of matter, thanksgiving on an ordinary day, the cure for the curved-in self, Lady Wisdom's clap-back, and the Transfiguration by way of the cross.
+
+Chapters:
+0:00 Intro — Common Grace
+1:01 Common Grace
+4:08 Intro — Stay in Your Lane
+4:57 Stay in Your Lane
+8:16 Intro — If This Vanity
+8:59 If This Vanity
+11:53 Intro — Town That Never Changes
+12:38 Town That Never Changes
+16:19 Intro — Weekend Honeymoons
+16:57 Weekend Honeymoons
+19:58 A word from our sponsor — Providence Community Church
+20:16 Intro — God Made It Good
+21:03 God Made It Good
+24:58 Intro — Gratitude Has Filled My Plate
+25:44 Gratitude Has Filled My Plate
+28:56 Intro — Psalm 147
+29:42 Psalm 147
+31:53 Intro — Your Calamity
+32:38 Your Calamity
+35:41 Intro — Transfiguration
+36:33 Transfiguration
+</description>
+    <itunes:summary>Common Grace played end to end — a warm, genre-hopping ode to the everyday kindness God pours on the whole human race — with a short spoken intro before every song. Sun on the sinner, Kuyper's every-square-inch, Ecclesiastes' vapor and the love that makes an unchanging town new, marriage as gift, the goodness of matter, thanksgiving on an ordinary day, the cure for the curved-in self, Lady Wisdom's clap-back, and the Transfiguration by way of the cross.
+
+Chapters:
+0:00 Intro — Common Grace
+1:01 Common Grace
+4:08 Intro — Stay in Your Lane
+4:57 Stay in Your Lane
+8:16 Intro — If This Vanity
+8:59 If This Vanity
+11:53 Intro — Town That Never Changes
+12:38 Town That Never Changes
+16:19 Intro — Weekend Honeymoons
+16:57 Weekend Honeymoons
+19:58 A word from our sponsor — Providence Community Church
+20:16 Intro — God Made It Good
+21:03 God Made It Good
+24:58 Intro — Gratitude Has Filled My Plate
+25:44 Gratitude Has Filled My Plate
+28:56 Intro — Psalm 147
+29:42 Psalm 147
+31:53 Intro — Your Calamity
+32:38 Your Calamity
+35:41 Intro — Transfiguration
+36:33 Transfiguration
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>40:26</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/common-grace-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/common-grace.mp3" length="58514951" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Proverbs — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/proverbs/</link>
+    <guid isPermaLink="false">utr-proverbs-2026-07-22</guid>
+    <pubDate>Sat, 18 Jul 2026 12:00:00 -0500</pubDate>
+    <description>Proverbs played end to end — the book of Proverbs as a comic-book romp — with a short spoken intro before every song. Wisdom you have to eat daily, the friends you choose, Agur's prayer for neither riches nor poverty, antithetic parallelism as an '80s action movie, the ant and the sluggard, the quiet diligence Proverbs praises, and Lady Folly's counterfeit love.
+
+Chapters:
+0:00 Intro — Ready To Go Pro
+0:56 Ready To Go Pro
+3:36 Intro — Friends You Choose
+4:18 Friends You Choose
+8:53 Intro — Neither Rich Nor Poor
+9:34 Neither Rich Nor Poor
+13:37 Intro — Ultimate Showdown
+14:19 Ultimate Showdown
+17:00 Intro — Solfeggietto
+17:35 Solfeggietto
+20:04 A word from our sponsor — Providence Community Church
+20:22 Intro — Clean or Die
+21:03 Clean or Die
+24:09 Intro — Squeaky Wheel
+24:45 Squeaky Wheel
+29:02 Intro — NancyPlease
+29:26 NancyPlease
+29:54 Intro — Plastic Love
+30:40 Plastic Love
+</description>
+    <itunes:summary>Proverbs played end to end — the book of Proverbs as a comic-book romp — with a short spoken intro before every song. Wisdom you have to eat daily, the friends you choose, Agur's prayer for neither riches nor poverty, antithetic parallelism as an '80s action movie, the ant and the sluggard, the quiet diligence Proverbs praises, and Lady Folly's counterfeit love.
+
+Chapters:
+0:00 Intro — Ready To Go Pro
+0:56 Ready To Go Pro
+3:36 Intro — Friends You Choose
+4:18 Friends You Choose
+8:53 Intro — Neither Rich Nor Poor
+9:34 Neither Rich Nor Poor
+13:37 Intro — Ultimate Showdown
+14:19 Ultimate Showdown
+17:00 Intro — Solfeggietto
+17:35 Solfeggietto
+20:04 A word from our sponsor — Providence Community Church
+20:22 Intro — Clean or Die
+21:03 Clean or Die
+24:09 Intro — Squeaky Wheel
+24:45 Squeaky Wheel
+29:02 Intro — NancyPlease
+29:26 NancyPlease
+29:54 Intro — Plastic Love
+30:40 Plastic Love
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>34:58</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/proverbs-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/proverbs.mp3" length="50570287" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Shady's Bach — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/shadys-bach/</link>
+    <guid isPermaLink="false">utr-shadys-bach-2026-07-22</guid>
+    <pubDate>Fri, 17 Jul 2026 12:00:00 -0500</pubDate>
+    <description>Shady's Bach played end to end — Bach fused with hip-hop, classical apologetics in an Eminem cadence — with a short spoken intro before every song. The two books of revelation, the sun's circuit to the unreached nations, the new earth renewed rather than annihilated, C.P.E. Bach's étude as a theology of formation, Aquinas's arguments for God, and the meaning of 'foreknown.'
+
+Chapters:
+0:00 Intro — 2 Books
+0:54 2 Books
+3:37 Intro — The Nations
+4:23 The Nations
+7:12 Intro — How Much Is The Earf?
+8:00 How Much Is The Earf?
+10:03 Intro — Solfeggietto
+10:44 Solfeggietto
+13:34 A word from our sponsor — Providence Community Church
+13:52 Intro — Shady's Bach
+14:33 Shady's Bach
+17:51 Intro — Prognostiko
+18:37 Prognostiko
+21:36 Intro — Divergent Mix // 2 Books
+22:13 Divergent Mix // 2 Books
+</description>
+    <itunes:summary>Shady's Bach played end to end — Bach fused with hip-hop, classical apologetics in an Eminem cadence — with a short spoken intro before every song. The two books of revelation, the sun's circuit to the unreached nations, the new earth renewed rather than annihilated, C.P.E. Bach's étude as a theology of formation, Aquinas's arguments for God, and the meaning of 'foreknown.'
+
+Chapters:
+0:00 Intro — 2 Books
+0:54 2 Books
+3:37 Intro — The Nations
+4:23 The Nations
+7:12 Intro — How Much Is The Earf?
+8:00 How Much Is The Earf?
+10:03 Intro — Solfeggietto
+10:44 Solfeggietto
+13:34 A word from our sponsor — Providence Community Church
+13:52 Intro — Shady's Bach
+14:33 Shady's Bach
+17:51 Intro — Prognostiko
+18:37 Prognostiko
+21:36 Intro — Divergent Mix // 2 Books
+22:13 Divergent Mix // 2 Books
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>26:01</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/shadys-bach-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/shadys-bach.mp3" length="37598275" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Barn Dance — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/barn-dance/</link>
+    <guid isPermaLink="false">utr-barn-dance-2026-07-22</guid>
+    <pubDate>Thu, 16 Jul 2026 12:00:00 -0500</pubDate>
+    <description>Barn Dance played end to end — Scripture and old hymns kicked up into a warm, string-lit hoedown — with a short spoken intro before every song telling you the Scripture and the story underneath it. Isaiah's courtroom grace, the peace that tore down the dividing wall, a metrical Psalm 23, Reginald Heber's martyr-hymn, Horatius Bonar's threefold invitation, and Psalm 1's tree by the water.
+
+Chapters:
+0:00 Intro — Grace Has Come
+0:57 Grace Has Come
+4:27 Intro — We're So Glad
+5:13 We're So Glad
+8:58 Intro — Counting Sheep
+9:45 Counting Sheep
+13:41 A word from our sponsor — Providence Community Church
+13:59 Intro — The Son of God Goes Forth to War
+14:44 The Son of God Goes Forth to War
+18:56 Intro — Come to Me
+19:37 Come to Me
+23:15 Intro — Psalm 1
+24:06 Psalm 1
+</description>
+    <itunes:summary>Barn Dance played end to end — Scripture and old hymns kicked up into a warm, string-lit hoedown — with a short spoken intro before every song telling you the Scripture and the story underneath it. Isaiah's courtroom grace, the peace that tore down the dividing wall, a metrical Psalm 23, Reginald Heber's martyr-hymn, Horatius Bonar's threefold invitation, and Psalm 1's tree by the water.
+
+Chapters:
+0:00 Intro — Grace Has Come
+0:57 Grace Has Come
+4:27 Intro — We're So Glad
+5:13 We're So Glad
+8:58 Intro — Counting Sheep
+9:45 Counting Sheep
+13:41 A word from our sponsor — Providence Community Church
+13:59 Intro — The Son of God Goes Forth to War
+14:44 The Son of God Goes Forth to War
+18:56 Intro — Come to Me
+19:37 Come to Me
+23:15 Intro — Psalm 1
+24:06 Psalm 1
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>27:33</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/barn-dance-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/barn-dance.mp3" length="39791250" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>That Nazarene — the whole album, sung and explained</title>
+    <link>https://uncletheology.com/that-nazarene/</link>
+    <guid isPermaLink="false">utr-that-nazarene-2026-07-22</guid>
+    <pubDate>Wed, 15 Jul 2026 12:00:00 -0500</pubDate>
+    <description>That Nazarene played end to end — shoegaze meets the Laurel Canyon — with a short spoken introduction before every song telling you the Scripture and the story underneath it. Six songs, six intros, one continuous listen: the risen Carpenter King, worship in the middle of doubt, two Isaac Watts hymns made new, and the faithfulness that holds through the drifting and the fall.
+
+Chapters:
+0:00 Intro — Shovel, Sword, Headphones
+1:00 Shovel, Sword, Headphones
+3:49 Intro — That Nazarene
+4:47 That Nazarene
+9:05 Intro — God Knows
+9:52 God Knows
+14:28 Intro — I'll Praise My Maker
+15:07 I'll Praise My Maker
+20:05 Intro — Faithful
+20:49 Faithful
+24:45 Intro — Blessed Are
+25:35 Blessed Are
+</description>
+    <itunes:summary>That Nazarene played end to end — shoegaze meets the Laurel Canyon — with a short spoken introduction before every song telling you the Scripture and the story underneath it. Six songs, six intros, one continuous listen: the risen Carpenter King, worship in the middle of doubt, two Isaac Watts hymns made new, and the faithfulness that holds through the drifting and the fall.
+
+Chapters:
+0:00 Intro — Shovel, Sword, Headphones
+1:00 Shovel, Sword, Headphones
+3:49 Intro — That Nazarene
+4:47 That Nazarene
+9:05 Intro — God Knows
+9:52 God Knows
+14:28 Intro — I'll Praise My Maker
+15:07 I'll Praise My Maker
+20:05 Intro — Faithful
+20:49 Faithful
+24:45 Intro — Blessed Are
+25:35 Blessed Are
+</itunes:summary>
+    <itunes:author>Uncle Theology</itunes:author>
+    <itunes:duration>32:08</itunes:duration>
+    <itunes:image href="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/that-nazarene-art.jpg" />
+    <itunes:explicit>false</itunes:explicit>
+    <enclosure url="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/that-nazarene.mp3" length="46445299" type="audio/mpeg" />
+  </item>
+</channel>
+</rss>

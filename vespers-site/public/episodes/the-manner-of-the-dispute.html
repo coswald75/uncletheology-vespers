@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Manner of the Dispute — Vespers</title>
+<meta name="description" content="Not whether a Christian should speak of public things, but how — the temper of the tongue when the subject is political and the room is divided. Scripture&#x27;s rule for the contest, John Newton&#x27;s letter on controversy, and a New England pastor preaching to the magistrates&#x27; faces on election day.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/the-manner-of-the-dispute">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Manner of the Dispute — Vespers">
+<meta property="og:description" content="Not whether a Christian should speak of public things, but how — the temper of the tongue when the subject is political and the room is divided. Scripture&#x27;s rule for the contest, John Newton&#x27;s letter on controversy, and a New England pastor preaching to the magistrates&#x27; faces on election day.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/the-manner-of-the-dispute">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Pastor Politics · Wednesday · July 29, 2026</div>
+      <h1 class="ep-title">The Manner of the Dispute</h1>
+      <div class="ep-sub ui">Pastor Politics · how a Christian carries himself in political controversy<span class="dot">·</span>36 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/the-manner-of-the-dispute.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Not whether a Christian should speak of public things, but how — the temper of the tongue when the subject is political and the room is divided. Scripture&#x27;s rule for the contest, John Newton&#x27;s letter on controversy, and a New England pastor preaching to the magistrates&#x27; faces on election day.</p>
+    <div class="ep-body">
+    <p>Pastor Politics asks the nearer question: the manner of the dispute. We begin where the church begins — James on the wisdom that is first pure then peaceable, the Proverbs&#x27; soft answer, the apostles&#x27; speech alway with grace and seasoned with salt — and then hear most of John Newton&#x27;s letter “On Controversy,” his three warnings on the opponent, the public, and the self: pray for the man before you set pen against him.</p>
+    <p>Then a shelf of old voices on how a dispute is lost by winning it — Herbert, Montaigne, Locke, Hooker — the Epistle to Diognetus on a God who came “seeking to persuade, not to compel,” and John Davenport&#x27;s sixteen sixty-nine Boston election sermon, frankness and tenderness in the same breath, spoken to power in love. Under it all the Lord&#x27;s own hard saying — love your enemies — and Paul&#x27;s “overcome evil with good.” Closing with Whittier&#x27;s “Dear Lord and Father of Mankind.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">James 3 · Proverbs 15, 25, 18<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“The wisdom that is from above is first pure, then peaceable” — and the soft answer that turneth away wrath; the temper Scripture prescribes for the contest.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Colossians 4 · 2 Timothy 2 · 1 Peter 3<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Let your speech be alway with grace, seasoned with salt”; the servant of the Lord must not strive, but give his answer with meekness and fear.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">John Newton · “On Controversy”<span class="walk-cite ui">letter, c. 1770s · public domain</span></div>
+        <div class="walk-note">The converted slave-trader writes to a friend before the pamphlet goes to press — the opponent, the public, and the self; pray for the man before you set pen against him.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">The commonplaces on argument<span class="walk-cite ui">Anacharsis · Herbert · Montaigne · Locke · Hooker</span></div>
+        <div class="walk-note">“Be calm in arguing; for fierceness makes error a fault, and truth discourtesy” — a shelf of old voices on how a dispute is lost by winning it.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">The Epistle to Diognetus<span class="walk-cite ui">2nd century · trans. Roberts–Donaldson</span></div>
+        <div class="walk-note">What the soul is in the body, Christians are in the world — and God himself came “seeking to persuade, not to compel; for violence has no place in the character of God.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">John Davenport · Boston election sermon<span class="walk-cite ui">May 19, 1669</span></div>
+        <div class="walk-note">A pastor preaching to the magistrates&#x27; faces on election day: “he that ruleth over men must be just” — frankness and tenderness together, spoken to power in love.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Matthew 5 · Romans 12<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Love your enemies… bless them that curse you”; “be not overcome of evil, but overcome evil with good.” The political opponent is inside that commandment.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Buck &amp; Bates · on candor<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“A temper of mind unsoured by envy, unruffled by malice, and unseduced by prejudice” — and, in four words, “be candid, but not rude.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Whittier · “Dear Lord and Father of Mankind”<span class="walk-cite ui">1872 · read whole</span></div>
+        <div class="walk-note">The prayer against feverishness of every kind — “drop thy still dews of quietness, till all our strivings cease.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the manner of the dispute — how a Christian carries himself in political controversy.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Last week we listened to the prophets speaking to kings. Tonight we ask a nearer question: not whether to speak, but how — the temper of the tongue when the subject is public and the room is divided.</p>
+      <p>We begin where the church has always begun, with the epistle of James:</p>
+      <p>Who is a wise man and endued with knowledge among you? let him shew out of a good conversation his works with meekness of wisdom. But if ye have bitter envying and strife in your hearts, glory not, and lie not against the truth. This wisdom descendeth not from above, but is earthly, sensual, devilish. For where envying and strife is, there is confusion and every evil work. But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated, full of mercy and good fruits, without partiality, and without hypocrisy. And the fruit of righteousness is sown in peace of them that make peace.</p>
+      <p>The Proverbs speak the same way, in smaller coins:</p>
+      <p>A soft answer turneth away wrath: but grievous words stir up anger. The tongue of the wise useth knowledge aright: but the mouth of fools poureth out foolishness. A wholesome tongue is a tree of life: but perverseness therein is a breach in the spirit.</p>
+      <p>And again:</p>
+      <p>A word fitly spoken is like apples of gold in pictures of silver. As an earring of gold, and an ornament of fine gold, so is a wise reprover upon an obedient ear. As the cold of snow in the time of harvest, so is a faithful messenger to them that send him: for he refresheth the soul of his masters. Whoso boasteth himself of a false gift is like clouds and wind without rain. By long forbearing is a prince persuaded, and a soft tongue breaketh the bone.</p>
+      <p>And once more, a single verse:</p>
+      <p>He that answereth a matter before he heareth it, it is folly and shame unto him.</p>
+      <p>The apostles carry the proverb into the young churches. From Paul, to the Colossians:</p>
+      <p>Walk in wisdom toward them that are without, redeeming the time. Let your speech be alway with grace, seasoned with salt, that ye may know how ye ought to answer every man.</p>
+      <p>To Timothy:</p>
+      <p>But foolish and unlearned questions avoid, knowing that they do gender strifes. And the servant of the Lord must not strive; but be gentle unto all men, apt to teach, patient, in meekness instructing those that oppose themselves; if God peradventure will give them repentance to the acknowledging of the truth; and that they may recover themselves out of the snare of the devil, who are taken captive by him at his will.</p>
+      <p>And from Peter:</p>
+      <p>But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear: having a good conscience; that, whereas they speak evil of you, as of evildoers, they may be ashamed that falsely accuse your good conversation in Christ.</p>
+      <p>Meekness and fear. Gentleness, patience, salt. Scripture does not forbid the contest; it prescribes the temper in which the contest is to be carried.</p>
+      <p>The fullest working-out of that temper that I know is a letter. In the seventeen-seventies, John Newton — the converted slave-trader, by then a pastor — heard that a friend was about to publish against an opponent. Newton wrote to him before the pamphlet went to press. The letter is usually titled &quot;On Controversy.&quot; We will hear most of it. From Newton:</p>
+      <p>As you are likely to be engaged in controversy, and your love of truth is joined with natural warmth of temper, my friendship makes me solicitous on your behalf. You are of the strongest side; for truth is great, and must prevail; so that a person of abilities inferior to yours might take the field with a confidence of victory. I am not therefore anxious for the outcome of the battle; but I would have you more than a conqueror, and to triumph, not only over your adversary, but also over yourself. If you cannot be vanquished, you may be wounded. To preserve you from such wounds as might give you cause of weeping over your conquests, I would present you with some considerations.</p>
+      <p>His advice comes under three heads: the opponent, the public, and the self. First, the opponent. He goes on:</p>
+      <p>I wish that before you set pen to paper against him, and during the whole time you are preparing your answer, you may commend him by earnest prayer to the Lord&#x27;s teaching and blessing. This practice will have a direct tendency to conciliate your heart to love and pity him; and such a disposition will have a good influence upon every page you write.</p>
+      <p>If the opponent is a believer, Newton says:</p>
+      <p>The Lord loves him and bears with him; therefore you must not despise him, or treat him harshly. The Lord bears with you likewise, and expects that you should show tenderness to others, from a sense of the much forgiveness you need yourself. In a little while you will meet in heaven; he will then be dearer to you than the nearest friend you have upon earth is to you now. Anticipate that period in your thoughts, and though you may find it necessary to oppose his errors, view him personally as a kindred soul, with whom you are to be happy in Christ forever.</p>
+      <p>And if the opponent is not a believer:</p>
+      <p>He is a more proper object of your compassion than of your anger. He knows not what he does. But you know who has made you to differ from him. If God, in his sovereign pleasure, had so appointed, you might have been as he is now; and he, instead of you, might have been set for the defense of the gospel. You were both equally blind by nature. If you attend to this, you will not reproach or hate him, because the Lord has been pleased to open your eyes — and not his.</p>
+      <p>Newton presses the point against his own theological party:</p>
+      <p>Of all people who engage in controversy, we, who are called Calvinists, are most expressly bound by our own principles to the exercise of gentleness and compassion. If, indeed, those who differ from us have a power of changing themselves, if they can open their own eyes, and soften their own hearts, then we might with less inconsistency be offended at their obstinacy. But if we believe the very contrary to this, our part is not to argue, but in meekness to gently teach those who oppose the truth — if perhaps God will grant them repentance leading them to a knowledge of the truth.</p>
+      <p>Newton turns to the second head: the public — everyone listening to the quarrel who is not a party to it. He goes on:</p>
+      <p>There will be many who pay too little regard to true religion, who have no settled system of their own. These are very incompetent judges of doctrine; but they can form a tolerable judgment of a writer&#x27;s spirit. They know that meekness, humility and love are the characteristics of a Christian temper. They are quick-sighted to discern when we deviate from such a spirit, and avail themselves of it to justify their contempt of our arguments.</p>
+      <p>And then this:</p>
+      <p>If our zeal is embittered by expressions of anger, invective, or scorn, we may think we are doing service to the cause of truth, when in reality we shall only bring it into discredit. The weapons of our warfare, which alone are powerful to break down the strongholds of error, are not carnal, but spiritual: arguments fairly drawn from Scripture and experience, and enforced by such a mild address as may persuade our readers that, whether we can convince them or not, we wish well to their souls, and contend only for the truth&#x27;s sake. If we can satisfy them that we act upon these motives, our point is half gained.</p>
+      <p>And of the readers who already agree, he says:</p>
+      <p>You may be instrumental to their edification, if the law of kindness as well as of truth regulates your pen; otherwise you may do them harm.</p>
+      <p>The third head is the writer himself. Newton again:</p>
+      <p>There is a principle of self, which disposes us to despise those who differ from us; and we are often under its influence, when we think we are only showing a fitting zeal in the cause of God. Whatever it is that makes us trust in ourselves, that we are comparatively wise or good, so as to treat those with contempt who do not subscribe to our doctrines, or follow our party, is a proof and fruit of a self-righteous spirit. Self-righteousness can feed upon doctrines, as well as upon works. A man may have the heart of a Pharisee, while his head is stored with orthodox notions.</p>
+      <p>He goes on:</p>
+      <p>The best of men are not wholly free from this leaven; and therefore are too apt to be pleased with such caricatures as hold up our adversaries to ridicule, and by consequence flatter our own superior judgments. Controversies, for the most part, are so managed as to indulge rather than to repress this sinful disposition; and therefore, generally speaking, they are productive of little good. They provoke those whom they should convince, and puff up those whom they should edify.</p>
+      <p>And near the end, the sentence the whole letter was written for:</p>
+      <p>We find but very few writers of controversy who have not been manifestly hurt by it. Either they grow in a sense of their own importance; or imbibe an angry, contentious spirit; or they insensibly withdraw their attention from those spiritual truths which are the food and immediate support of the life of faith. If the service is honorable, it is also dangerous. What will it profit a man if he gains his cause and silences his adversary, if at the same time he loses that humble, tender frame of spirit in which the Lord delights, and to which the promise of his presence is made?</p>
+      <p>He goes on:</p>
+      <p>Your aim, I doubt not, is good, but you have need to watch and pray, for you will find Satan at your right hand to entice you. Though you set out in defense of the cause of God, if you are not continually looking to the Lord to keep you, it may become your own cause. Be upon your guard against admitting anything personal into the debate. If you think you have been ill treated, this will give you an opportunity of showing that you are a disciple of Jesus, who when reviled did not revile in return; when suffering, did not threaten, but committed himself to the one who judges justly.</p>
+      <p>And again:</p>
+      <p>The wisdom that is from above is not only pure, but also peaceable and gentle; and the lack of these qualifications, like the dead fly in the jar of ointment, will spoil the fragrance and efficacy of our labors. If you can be content with showing your wit, and gaining the laugh on your side, you have an easy task. But I hope you have a far nobler aim; and that you would rather be a means of removing prejudices in a single instance, than obtain the empty applause of thousands.</p>
+      <p>Newton closes with a blessing rather than a warning:</p>
+      <p>Go forth, therefore, in the name and strength of the Lord Almighty, speaking the truth in love; and may he give you a witness in many hearts that you are taught of God, and favored with the unction of his Holy Spirit.</p>
+      <p>From Anacharsis the Scythian:</p>
+      <p>Wise men argue causes, and fools decide them.</p>
+      <p>From George Washington, in his rules of civility:</p>
+      <p>Strive not with your superiors in argument, but always submit your judgment to others with modesty.</p>
+      <p>From Macaulay:</p>
+      <p>Men are never so likely to settle a question rightly as when they discuss it freely; a government can interfere in discussion only by making it less free than it would otherwise be; thus, instead of a contest between argument and argument, we have a contest between argument and force.</p>
+      <p>From George Herbert:</p>
+      <p>Be calm in arguing; for fierceness makes error a fault, and truth discourtesy.</p>
+      <p>From Montaigne:</p>
+      <p>He who establishes his argument by noise and command, shows that reason is weak.</p>
+      <p>From Cyrano de Bergerac:</p>
+      <p>An argument proposed with noise and blustering may break the head, but it never makes impression on the understanding. Truth, like a gentle shower, soaks through the ears, and moistens the intellect.</p>
+      <p>From William Chillingworth:</p>
+      <p>Passionate expressions and vehement assertions are no arguments, unless it be of the weakness of the cause that is defended by them, or of the man that defends it.</p>
+      <p>From John Locke:</p>
+      <p>Hunting after arguments to make good one side of the question, and wholly to refuse those which favor the other, is so far from giving truth its due value that it wholly debases it.</p>
+      <p>From Isaac Watts:</p>
+      <p>Affect not little shifts and subterfuges to avoid the force of an argument.</p>
+      <p>And on controversy itself. From Richard Hooker:</p>
+      <p>Suspense of judgment and exercise of charity were safer and seemlier for Christian men than the hot pursuit of controversies.</p>
+      <p>From Archibald Alison:</p>
+      <p>In any controversy, the instant we feel angry, we have already ceased striving for truth, and begun striving for ourselves.</p>
+      <p>From Frederick Robertson:</p>
+      <p>Religious controversy does only harm; it destroys the humble inquiry after truth; it throws all the energies into an attempt to prove ourselves right.</p>
+      <p>From Tryon Edwards:</p>
+      <p>Most controversies would soon be ended, if those engaged in them would first accurately define their terms, and then rigidly adhere to their definitions.</p>
+      <p>From Sir Thomas Browne:</p>
+      <p>Controversies, disputes, and argumentations, in both philosophy and divinity, if they meet with discreet and peaceable natures, do not infringe the laws of charity.</p>
+      <p>And lest the whole hour tilt toward silence, from Robert Hall:</p>
+      <p>However some may affect to dislike controversy, it can never be of ultimate disadvantage to the interests of truth or happiness of mankind.</p>
+      <p>On persuasion, three small ones. From Bias, one of the seven sages:</p>
+      <p>Persuasion is better than force.</p>
+      <p>From Goethe:</p>
+      <p>Few are open to conviction, but the majority of men are open to persuasion.</p>
+      <p>From Samuel Croxall:</p>
+      <p>Bitter words and hard usage freeze the heart into a kind of obduracy, which mild persuasion and gentle language can only dissolve and soften.</p>
+      <p>And on moderation — which in the old writers is not lukewarmness but a discipline. From Francis Atterbury:</p>
+      <p>A zeal in things pertaining to God, according to knowledge, and yet duly tempered with candor and prudence, is the true notion of that much talked of, most misunderstood virtue, moderation.</p>
+      <p>From George Mason:</p>
+      <p>Moderation is a great and important Christian virtue, very different from that bad quality of the mind under which it is often misrepresented and disguised, namely, lukewarmness and indifference about the truth.</p>
+      <p>From the Earl of Chatham:</p>
+      <p>Moderation, which consists in an indifference about little things, and in a prudent and well-proportioned zeal about things of importance, can proceed from nothing but true knowledge, which has its foundation in self-acquaintance.</p>
+      <p>And from Edmund Burke:</p>
+      <p>Virtue with moderation, which times and situations will clearly distinguish from the counterfeits of pusillanimity and indecision, is the virtue only of superior minds.</p>
+      <p>Persuasion better than force. The oldest Christian voices said the same thing, and said it about God himself. The Epistle to Diognetus is an anonymous defense of the Christians, written to a pagan inquirer in the second century. Its author describes a people who live inside the political order without being owned by it. From the Epistle to Diognetus:</p>
+      <p>The Christians are distinguished from other men neither by country, nor language, nor the customs which they observe. For they neither inhabit cities of their own, nor employ a peculiar form of speech, nor lead a life which is marked out by any singularity. They dwell in their own countries, but simply as sojourners. As citizens, they share in all things with others, and yet endure all things as if foreigners. Every foreign land is to them as their native country, and every land of their birth as a land of strangers.</p>
+      <p>He goes on:</p>
+      <p>They marry, as do all others; they beget children; but they do not destroy their offspring. They have a common table, but not a common bed. They are in the flesh, but they do not live after the flesh. They pass their days on earth, but they are citizens of heaven. They obey the prescribed laws, and at the same time surpass the laws by their lives. They love all men, and are persecuted by all. They are poor, yet make many rich; they are in lack of all things, and yet abound in all. They are evil spoken of, and yet are justified; they are reviled, and bless; they are insulted, and repay the insult with honour; they do good, yet are punished as evil-doers.</p>
+      <p>And then the summary:</p>
+      <p>To sum up all in one word — what the soul is in the body, Christians are in the world. The soul is dispersed through all the members of the body, and Christians are scattered through all the cities of the world. The soul dwells in the body, yet is not of the body; and Christians dwell in the world, yet are not of the world. The soul loves the flesh that hates it; Christians likewise love those that hate them. The soul is imprisoned in the body, yet keeps together that very body; and Christians are confined in the world as in a prison, and yet they keep together the world. God has assigned them this illustrious position, which it were unlawful for them to forsake.</p>
+      <p>Unlawful to forsake. The writer will not let the Christian either seize the world or abandon it. And when he explains why, he reaches for the character of God. He goes on:</p>
+      <p>God himself, who is almighty, the Creator of all things, and invisible, has sent from heaven, and placed among men, him who is the truth, and the holy and incomprehensible Word. Was it then, as one might conceive, for the purpose of exercising tyranny, or of inspiring fear and terror? By no means, but under the influence of clemency and meekness. As a king sends his son, who is also a king, so sent he him; as God he sent him; as to men he sent him; as a Saviour he sent him, and as seeking to persuade, not to compel us; for violence has no place in the character of God. As calling us he sent him, not as vengefully pursuing us; as loving us he sent him, not as judging us.</p>
+      <p>Seeking to persuade, not to compel. If violence has no place in the character of God, it has no place in the discourse of his people.</p>
+      <p>One more voice tonight, from a tradition worth remembering. For two and a half centuries in New England, beginning in the sixteen-thirties, a minister preached to the assembled government every year on election day — to the magistrates&#x27; faces, with the ballots about to be cast. The sermons were printed and read through the colony. What follows is from one of them: John Davenport, preaching at the election of the governor at Boston, in sixteen sixty-nine. His text was the last words of David:</p>
+      <p>The God of Israel said, the Rock of Israel spake to me, He that ruleth over men must be just, ruling in the fear of God. And he shall be as the light of the morning, when the sun riseth, even a morning without clouds; as the tender grass springing out of the earth by clear shining after rain.</p>
+      <p>From Davenport:</p>
+      <p>It is the ordinance of God, in reference to civil government in commonwealths, that some men orderly chosen should rule over other men: and in reference to the qualification of rulers, that they be just, ruling in the fear of God.</p>
+      <p>On where the power of rulers comes from, he says this:</p>
+      <p>The power of government is originally in the people. Men united in societies, being reasonable creatures, must have that power in a reasonable and honourable way, to put this power into the hands of civil rulers. None can give that which they have not, either formally or virtually, in themselves.</p>
+      <p>To the freemen — the voters — he gives Jethro&#x27;s counsel to Moses:</p>
+      <p>Provide thou among all the people men of courage, men fearing God, hating covetousness. The choice of good rulers will be a sign and pledge of God&#x27;s intendment to bless their government and his people thereby. If this be neglected, the government will not be blessed, and the welfare of the people will be ruined.</p>
+      <p>He adds a sober motive:</p>
+      <p>If men unjust, and that fear not God, be chosen rulers of the commonwealth, all the people are in danger of being punished by the wrath of God for the sins of their rulers. Bad men being in public place will give bad counsel; the end will be ruin.</p>
+      <p>And then Davenport turns and addresses the rulers themselves — the men who held office as he spoke. Listen to a pastor conducting political speech in public, to power, in love:</p>
+      <p>Be wise therefore ye rulers, and consider that your life, and all our good, your prosperity and protection lies, not in this or that politic design, or whatsoever else under the sun, but alone in God&#x27;s gracious presence with you. Oh, provoke him not to depart from us, but seek the continuance of his presence with us.</p>
+      <p>He charges them first concerning persons:</p>
+      <p>Provide for the protection, encouragement, and liberty of all those whom God owneth to be his people, that fear him; take care that they be not trodden under foot, nor swallowed up, nor exposed to the rage and contempt of men — though they differ from others in their apprehensions and persuasions, though misguided, yet are willing to receive light in God&#x27;s way and time. These are to God as the apple of his eye, and let their safety be also to you. Be not ready to receive ill reports against them.</p>
+      <p>And concerning the things of God, a caveat:</p>
+      <p>Take heed of a various management of matters of religion, to the advantage of the present postures and condition of your civil affairs. The things of Christ should be as Joseph&#x27;s sheaf, to which all other should bow. When they are made to cringe and bend to men&#x27;s policies, they are no longer the things of Christ. All God&#x27;s truths are eternal and unchangeable by men. Have not the least thought of making them bend to serve your worldly ends.</p>
+      <p>Notice what Davenport is doing, and the manner of it. He speaks plainly to the most powerful men in the colony, and no one in the room mistakes it for flattery or for sedition. He names the danger — religion managed for political advantage — without naming a villain. He asks protection even for the misguided, and calls them the apple of God&#x27;s eye. Frankness and tenderness in the same breath; it is Newton&#x27;s letter, practiced in public, a hundred years early. My desire, he says, is to speak in love to the truth and peace. That sentence would serve any pastor as a rule for every political word he ever utters.</p>
+      <p>Underneath all of it — Newton&#x27;s letter, the old commonplaces, Davenport&#x27;s charge — lies a harder saying, and it is the Lord&#x27;s. From the Sermon on the Mount:</p>
+      <p>Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy. But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you; that ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust. For if ye love them which love you, what reward have ye? do not even the publicans the same? And if ye salute your brethren only, what do ye more than others?</p>
+      <p>And Paul, writing to the church at the heart of the empire, turns the commandment into a manner of life:</p>
+      <p>Bless them which persecute you: bless, and curse not. Rejoice with them that do rejoice, and weep with them that weep. Be of the same mind one toward another. Mind not high things, but condescend to men of low estate. Be not wise in your own conceits. Recompense to no man evil for evil. Provide things honest in the sight of all men. If it be possible, as much as lieth in you, live peaceably with all men. Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord. Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head. Be not overcome of evil, but overcome evil with good.</p>
+      <p>The political opponent is inside that commandment. There is no exemption written for election years.</p>
+      <p>Two last stones, on candor — the temper that makes all the rest possible. From Charles Buck:</p>
+      <p>Candor is a disposition to form a fair and impartial judgment on the opinions and actions of others; a temper of mind unsoured by envy, unruffled by malice, and unseduced by prejudice; sweet without weakness, and impartial without rigor.</p>
+      <p>And from Edward Bates, in four words:</p>
+      <p>Be candid, but not rude.</p>
+      <p>So the readings agree, across seventeen centuries. The wisdom from above is first pure, then peaceable. The servant of the Lord must not strive, but be gentle unto all men. God himself came seeking to persuade, not to compel. The controversialist&#x27;s first prayer is for his opponent; his first danger is himself. Moderation is not lukewarmness but well-proportioned zeal. And a pastor may say hard things to power if he speaks, as Davenport did, in love to the truth and peace. The question tonight is not whether you will speak of public things — silence has its own account to give — but whether, having spoken, you will still possess that humble, tender frame of spirit in which the Lord delights.</p>
+      <p>Our closing hymn is John Greenleaf Whittier&#x27;s, from eighteen seventy-two — a prayer written against feverishness of every kind, and fitted to this hour of the day.</p>
+      <p>Dear Lord and Father of mankind,
+forgive our foolish ways!
+Reclothe us in our rightful mind;
+in purer lives thy service find,
+in deeper reverence, praise.</p>
+      <p>In simple trust like theirs who heard,
+beside the Syrian sea,
+the gracious calling of the Lord,
+let us, like them, without a word
+rise up and follow thee.</p>
+      <p>O Sabbath rest by Galilee!
+O calm of hills above,
+where Jesus knelt to share with thee
+the silence of eternity,
+interpreted by love!</p>
+      <p>With that deep hush subduing all
+our words and works that drown
+the tender whisper of thy call,
+as noiseless let thy blessing fall
+as fell thy manna down.</p>
+      <p>Drop thy still dews of quietness,
+till all our strivings cease;
+take from our souls the strain and stress,
+and let our ordered lives confess
+the beauty of thy peace.</p>
+      <p>Breathe through the heats of our desire
+thy coolness and thy balm;
+let sense be dumb, let flesh retire;
+speak through the earthquake, wind, and fire,
+O still, small voice of calm!</p>
+      <p>Sleep now. The argument will keep until morning, and so will the Lord.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

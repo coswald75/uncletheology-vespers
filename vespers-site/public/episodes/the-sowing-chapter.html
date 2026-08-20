@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sowing Chapter — Vespers</title>
+<meta name="description" content="The sowing chapter — Ecclesiastes eleven — read whole and walked through the old expositors: cast your bread on the waters though you cannot know; sow though you cannot read the weather; and “rejoice, O young man, in thy youth,” remembering the judgment that makes the feast honest.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/the-sowing-chapter">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Sowing Chapter — Vespers">
+<meta property="og:description" content="The sowing chapter — Ecclesiastes eleven — read whole and walked through the old expositors: cast your bread on the waters though you cannot know; sow though you cannot read the weather; and “rejoice, O young man, in thy youth,” remembering the judgment that makes the feast honest.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/the-sowing-chapter">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Monday · July 27, 2026</div>
+      <h1 class="ep-title">The Sowing Chapter</h1>
+      <div class="ep-sub ui">The Scriptures · Ecclesiastes 11 — the text behind the sermon<span class="dot">·</span>43 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/the-sowing-chapter.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The sowing chapter — Ecclesiastes eleven — read whole and walked through the old expositors: cast your bread on the waters though you cannot know; sow though you cannot read the weather; and “rejoice, O young man, in thy youth,” remembering the judgment that makes the feast honest.</p>
+    <div class="ep-body">
+    <p>The text behind this week&#x27;s sermon, read straight and then opened by the whole shelf of the old commentators — Poole, Benson, Gill, Delitzsch, Matthew Henry, and the Cambridge, Pulpit and Jamieson-Fausset-Brown commentaries — on the Preacher&#x27;s four-fold “thou knowest not” and his four-fold command to act anyway: cast, give, sow, withhold not thine hand.</p>
+    <p>Then the old collections&#x27; long shelves on the “waiting sickness” and on opportunity; Marcus Aurelius on the shortness of the days; and the turn to youth and judgment — “rejoice, O young man… but know thou that God will bring thee into judgment” — carried at length by Alexander MacLaren&#x27;s New Year sermon (rejoice, reflect, remember) and J. C. Ryle&#x27;s Thoughts for Young Men, with the witnesses of Proverbs, James and Isaiah. Closing with Longfellow&#x27;s “A Psalm of Life.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 11<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Cast thy bread upon the waters… In the morning sow thy seed” — four times “thou knowest not,” four times a command to act anyway.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">The commentators on “cast thy bread”<span class="walk-cite ui">Poole · Benson · Cambridge · Pulpit · Delitzsch</span></div>
+        <div class="walk-note">Chardin on rice sown in flood-water; Theognis&#x27; “sowing the sea”; Goethe; Rabbi Akiba&#x27;s loaf — “if the fish know it not, yet the Creator knows.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">“He that observeth the wind shall not sow”<span class="walk-cite ui">Benson · Gill · Delitzsch · Pulpit</span></div>
+        <div class="walk-note">The farmer who never plants — “probability is the guide of life”; Gregory the Great on the wind and clouds as the fearful soul.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Matthew Henry<span class="walk-cite ui">on the sowing chapter</span></div>
+        <div class="walk-note">“Wherever we are, we may find good work to do… Be not weary in well-doing, for in due season you shall reap.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">The old collections — delay &amp; opportunity<span class="walk-cite ui">Hall · Butler · Channing · Foster · Bacon · Seneca</span></div>
+        <div class="walk-note">The “waiting sickness” and its cure — with Thomas Brooks on the delays that are God&#x27;s, not ours.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Marcus Aurelius · Meditations (Casaubon)<span class="walk-cite ui">c. 175</span></div>
+        <div class="walk-note">“…as one who, for aught thou knowest, may at this very present depart out of this life.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 11:7 – 12:1<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Rejoice, O young man, in thy youth… but know thou, that for all these things God will bring thee into judgment.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">The commentators on “Rejoice, O young man”<span class="walk-cite ui">Henry · Poole · Barnes · Gill · Ellicott · JFB · Cambridge</span></div>
+        <div class="walk-note">Sincere counsel or irony? — the feast made honest; Herodotus&#x27; coffin-image carried round the Egyptian table.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Alexander MacLaren<span class="walk-cite ui">the New Year sermon</span></div>
+        <div class="walk-note">Rejoice · Reflect · Remember — “all your life a seed-time, all your life a harvest-time too”; deeds hardening into a house for the soul.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">J. C. Ryle · Thoughts for Young Men<span class="walk-cite ui">1886, lightly modernized</span></div>
+        <div class="walk-note">“What youth sows, old age must reap”; habits like trees strengthened by age; footprints hardened in the rock.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">11</div>
+      <div class="walk-body">
+        <div class="walk-src">Proverbs 27 · James 4 · John 9 · Psalm 90 · Isaiah 40<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Boast not thyself of tomorrow”; life “a vapour”; “the night cometh, when no man can work”; “they that wait upon the LORD shall renew their strength.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">12</div>
+      <div class="walk-body">
+        <div class="walk-src">Longfellow · “A Psalm of Life”<span class="walk-cite ui">1838</span></div>
+        <div class="walk-note">The close — the footprints turned to the other use: “Let us, then, be up and doing… learn to labor and to wait.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p class="transcript-note ui">Scripture is the King James Version. The commentators (Poole, Benson, Gill, Delitzsch, Matthew Henry, Barnes, Ellicott, and the Cambridge, Pulpit and Jamieson-Fausset-Brown commentaries), Alexander MacLaren, and J. C. Ryle&#x27;s Thoughts for Young Men are read from public-domain texts (Ryle lightly modernized). Marcus Aurelius is the Casaubon translation. Closes with Longfellow&#x27;s &quot;A Psalm of Life&quot; (1838).</p><p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the sowing chapter — Ecclesiastes eleven, the text behind the sermon, time to get after it.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>From Ecclesiastes:</p>
+      <p>Cast thy bread upon the waters: for thou shalt find it after many days. Give a portion to seven, and also to eight; for thou knowest not what evil shall be upon the earth. If the clouds be full of rain, they empty themselves upon the earth: and if the tree fall toward the south, or toward the north, in the place where the tree falleth, there it shall be. He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap.</p>
+      <p>He goes on:</p>
+      <p>As thou knowest not what is the way of the spirit, nor how the bones do grow in the womb of her that is with child: even so thou knowest not the works of God who maketh all. In the morning sow thy seed, and in the evening withhold not thine hand: for thou knowest not whether shall prosper, either this or that, or whether they both shall be alike good.</p>
+      <p>Six verses, and the word knowest not runs through them four times. Thou knowest not what evil shall be. Thou knowest not the way of the spirit. Thou knowest not the works of God. Thou knowest not whether shall prosper. And every time the Preacher says you cannot know, he follows it with a command to act anyway. Cast. Give. Sow. Withhold not thine hand.</p>
+      <p>From Matthew Poole, on casting bread upon the waters:</p>
+      <p>Cast, that is, freely and liberally bestow, thy bread upon those poor creatures upon whom, by reason of their unthankfulness or inability to make any returns to thee, it may seem to be as utterly lost as the seed which a man casts into the sea or river. Thou shalt find it; it shall not be lost, as covetous men, or thine own corrupt heart, may suggest, but it shall certainly be restored unto thee, either by God or by men. After many days; not immediately, but in due time, and when you least expect it. So you must be content to wait for it with patience, as the husbandman doth for the fruits of the earth.</p>
+      <p>Benson preserves a traveler&#x27;s detail behind the picture. Sir John Chardin, who journeyed through the East, described how rice was planted there: they sow it upon the water; and before sowing, while the earth is covered with water, they cause the ground to be trodden by oxen, horses, and asses, which go mid-leg deep; and as they sow the rice in the water, they transplant it in the water. Seed thrown onto flooded ground, apparently drowned — and it comes up a harvest. Benson concludes: the return may be slow, but it is sure, and will be so much the more plentiful the longer it is delayed.</p>
+      <p>The old Greeks had a proverb that ran the other way. To sow the sea meant to waste your labor. The Cambridge commentators quote the poet Theognis, who put it in verse, and their rendering runs:</p>
+      <p>Vain is thy bounty, giving to the base, like scattering seed upon the salt sea&#x27;s plain; sowing the sea, thou shalt no harvest reap, nor, giving to the vile, reward shalt gain.</p>
+      <p>That is the world&#x27;s arithmetic: do not give where you cannot collect. And the Preacher takes the very same picture — seed on water — and reverses the moral. Cast it anyway. Thou shalt find it after many days. The commentators note a Turkish proverb that caught the same spirit: do good, cast thy bread upon the water; if the fish know it not, yet the Creator knows.</p>
+      <p>The Pulpit Commentary quotes Goethe to the same effect, in a little quatrain, rendered:</p>
+      <p>Wouldst thou too narrowly inquire whither thy kindness goes? Thy cake upon the water cast; whom it may feed, who knows?</p>
+      <p>From Delitzsch comes an old rabbinic story. Rabbi Akiba saw a ship wrecked at sea, and grieved for a scholar of the law who had been on board. Later he found the man alive and at work in Cappadocia, and asked him how he had been saved. The scholar answered that when he boarded the ship, he had given a loaf of bread to a poor man, who thanked him, saying, as thou hast saved my life, may thy life be saved. And Akiba thought of the proverb: cast thy bread upon the waters, for thou shalt find it after many days.</p>
+      <p>Delitzsch himself, it should be said, reads the verse differently — not as charity but as commerce. In his reading it is a figure taken from the corn trade of a seaport, and the counsel is: seek thy support in the way of bold, confident adventure. Send your grain across the water, and wait long for the return. Either way — generosity or venture — the shape of the command is the same. Commit what you have to what you cannot control, and trust the finding to God.</p>
+      <p>Now the farmer who never plants. He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap.</p>
+      <p>From Benson:</p>
+      <p>He who neglects the necessary works of sowing and reaping, because the weather is not exactly suitable to his desires, will lose his harvest. Whereby he intimates, that men will never do good here, which is expressed by sowing, and consequently not receive good hereafter, which is called reaping, if they be discouraged from it by every doubt and difficulty.</p>
+      <p>From Gill:</p>
+      <p>If a man will raise difficulties, and make objections, and attend unto them; if he puts off giving till such an affliction is removed from him, or such an estate is obtained, or till more proper and deserving objects present, with twenty things more of the like kind — he may never give nor get, yea, never do any good work; for, if nothing is done till all difficulties are removed, no good thing will ever be done.</p>
+      <p>From Delitzsch:</p>
+      <p>The proverb is not directed against the provident observation of the weather, but against that useless, because impossible, calculation of the coming state of the weather, which waits on from day to day, from week to week, till the right time for sowing and reaping has passed away. He who would accomplish and gain anything, must have confidence and courage to venture something; the conditions of success cannot be wholly reckoned upon; the future is in the hand of God, the All-Conditioning.</p>
+      <p>The Cambridge commentators add one sharp sentence on the watcher: the very watching for opportunities may end in missing them. And the Pulpit Commentary sets a homely proverb beside the farmer — a watched pot never boils — before drawing the sober conclusion: some risks must always be run if we are to do our work in the world; we cannot make a certainty of anything; probability is the guide of life. We cannot secure ourselves from failure; we can but do our best, and uncertainty of result must not paralyze exertion.</p>
+      <p>The Pulpit Commentary adds that Gregory the Great read the wind and the clouds as a picture of the soul:</p>
+      <p>He who observes the wind does not sow, since he who dreads coming temptations does not direct his heart to doing good. And he who regards the clouds does not reap, since he who trembles from the dread of human fickleness deprives himself of the recompense of an eternal reward.</p>
+      <p>Matthew Henry sums up the whole first movement of the chapter:</p>
+      <p>Give freely, though it may seem thrown away and lost. Give to many. Excuse not thyself with the good thou hast done, from the good thou hast further to do. It is not lost, but well laid out. Every man must labour to be a blessing to that place where the providence of God casts him. Wherever we are, we may find good work to do, if we have but hearts to do it. If we magnify every little difficulty, start objections, and fancy hardships, we shall never go on, much less go through with our work. Winds and clouds of tribulation are, in God&#x27;s hands, designed to try us. Be not weary in well-doing, for in due season, in God&#x27;s time, you shall reap.</p>
+      <p>The old books of quotations kept whole shelves on this waiting sickness. Hear a handful of voices on delay, as the collections give them.</p>
+      <p>Joseph Hall: Delays, whether in the business of God or our own, are hateful and prejudicial; many a one loses the land of promise by lingering.</p>
+      <p>Bishop Butler: He who delays his repentance, with his eyes open, abridges the time allotted for the longest and most important work he has to perform.</p>
+      <p>Lavater: He who delays the honesty of today till tomorrow, will prorogue his tomorrows to eternity.</p>
+      <p>L&#x27;Estrange: By one delay after another, we spin out our whole lives, till there is no more future left for us.</p>
+      <p>William Ellery Channing: Never delay till tomorrow what reason and conscience tell you ought to be performed today. Tomorrow is not yours; and though you should live to enjoy it, you must not overload it with a burden not its own.</p>
+      <p>And John Foster, at greater length: How dangerous to delay those momentous reformations which conscience is solemnly preaching to the heart! If they are neglected, the difficulty and indisposition are increasing every month; the mind is receding, degree after degree, from the warm and hopeful zone; till at last it will enter the arctic circle, and become fixed in relentless and eternal ice.</p>
+      <p>On the other side of the ledger, the collections keep a matching shelf on opportunity.</p>
+      <p>Lord Bacon: A wise man will make more opportunities than he finds.</p>
+      <p>Publius Syrus: A good opportunity is seldom presented, and is easily lost.</p>
+      <p>Seneca, as the collection gives him: If we do not watch, we lose our opportunities; if we do not make haste, we are left behind.</p>
+      <p>Archbishop Whately: It is in vain to think of what might have been done at such and such a time, when the opportunity is lost forever.</p>
+      <p>And a line ascribed to Pythagoras, aimed at the young man in the text: So tutor youth, that the sins of age be not imputed to thee.</p>
+      <p>Then one from a preacher named Bowes: Opportunities are importunities; they are like flowers that fade at night; seize them, therefore, while they last. And another, from a writer named Jones: Many do with opportunities as children do at the seashore; they fill their little hands with sand, and then let the grains fall through, one by one, till all are gone.</p>
+      <p>And one caution, so the survey is honest — the Puritan Thomas Brooks, on the delays that are not ours but God&#x27;s: God oftentimes delays that His people may come to Him with greater strength and importunity; He puts them off, that they may put on with more life and vigor; He seems to be slack, that He may make us the more earnest in pressing upon Him. The Preacher&#x27;s target is our procrastination, not God&#x27;s patience.</p>
+      <p>A pagan emperor arrived at the same urgency from the far side. From Marcus Aurelius, in the old Casaubon translation:</p>
+      <p>Whatsoever thou dost affect, whatsoever thou dost project, so do, and so project all, as one who, for aught thou knowest, may at this very present depart out of this life.</p>
+      <p>He had no promise of finding after many days. He only knew the days were few. The Preacher knows both — the shortness, and the God who makes all.</p>
+      <p>Now the turn to light, and to the young. From Ecclesiastes:</p>
+      <p>Truly the light is sweet, and a pleasant thing it is for the eyes to behold the sun: but if a man live many years, and rejoice in them all; yet let him remember the days of darkness; for they shall be many. All that cometh is vanity.</p>
+      <p>He goes on:</p>
+      <p>Rejoice, O young man, in thy youth; and let thy heart cheer thee in the days of thy youth, and walk in the ways of thine heart, and in the sight of thine eyes: but know thou, that for all these things God will bring thee into judgment. Therefore remove sorrow from thy heart, and put away evil from thy flesh: for childhood and youth are vanity.</p>
+      <p>Rejoice, O young man. The commentators have argued for centuries over the tone of that verse. Is it sincere counsel, or is it irony — the Preacher daring the young man to try it and see?</p>
+      <p>Matthew Henry sets the frame for the whole passage:</p>
+      <p>Life is sweet to bad men, because they have their portion in this life; it is sweet to good men, because it is the time of preparation for a better; it is sweet to all. Here is a caution to think of death, even when life is most sweet. This is not the language of one grudging youthful pleasures, because he can no longer partake of them; but of one who has, by a miracle of mercy, been brought back in safety. He would persuade the young from trying a course whence so few return. If the young would live a life of true happiness, let them remember their Creator in the days of their youth.</p>
+      <p>Matthew Poole heard irony:</p>
+      <p>I foresee what evil use some men will make of what I have now said. And so the sense is: indulge thy frolic and jolly humour, and take thy fill of delights; whatsoever thine eye or heart lusteth after, deny it not to them. But in the midst of thy feastings and jollity it will become thee, if thou art a reasonable creature, to consider thy reckoning, and whether thou dost not purchase thy gold too dear. And if thou likest thy sensuality upon these terms, much good may it do thee; I do not envy thee.</p>
+      <p>But Barnes read it straight:</p>
+      <p>The imperative mood is used to encourage one who possesses certain gifts from God to remember that they come from God and are to be used in accordance with His will.</p>
+      <p>And the Pulpit Commentary agrees, and answers the irony reading directly:</p>
+      <p>The counsel is seriously intended, and is quite consistent with many other passages which teach the duty of enjoying life as man&#x27;s lot and part. For moderate and lawful pleasure Koheleth has always uttered his sanction, but the pleasure is to be such as God allows. And then, to temper unmixed joy, to prove that he is not recommending mere sensuality, the writer adds a somber reflection: but know thou, that for all these things God will bring thee into judgment. Nothing satisfies the expected conclusion but a reference to the eternal judgment in the world beyond the grave.</p>
+      <p>And Gill finds a third reading, beyond the irony and the innocent enjoyment — the verse taken spiritually:</p>
+      <p>As young men should remember their Creator in the days of their youth, so they should rejoice in God their Maker. They should rejoice, not in the ways of sin, but in the ways of wisdom; not in any outward attainment of beauty, wit, strength, or riches, but in the grace of God; not in themselves, but in Christ, his person, righteousness, and salvation; not in the things of time and sense, but in hope of the glory of God.</p>
+      <p>Ellicott adds one dry observation on the judgment clause: it is hard to interpret the judgment spoken of in this verse as anything but future judgment, when we bear in mind how much of the book is taken up with the complaint that retribution does not take place in this life.</p>
+      <p>Jamieson, Fausset and Brown compress the danger of youth into one image: they see the roses, but do not discover the thorns, until pierced by them. Religion will cost self-denial, but the want of it infinitely more.</p>
+      <p>Gill preserves a strange custom reported by the old historian Herodotus. At Egyptian feasts, just at the close, a servant carried around a small carved figure of a dead man, a coffin-image, showing it to every guest with the words: look upon it, drink, and take pleasure, for such shalt thou be when dead. The Preacher does the same office at the young man&#x27;s feast — but not to spoil the wine. To make the drinking honest.</p>
+      <p>The Cambridge commentators press the question of what this judgment is. Perhaps disease, poverty, shame — the natural wages. Perhaps the pangs of self-reproach. But they conclude:</p>
+      <p>The judgment which the young man is to remember is exceeding broad, stretching far into the unseen future of the eternal years. Faith at last comes in where reason fails, and the man is bidden to remember, in all the flush of life and joy, that judgment comes at last, if not in man&#x27;s present stage of being, yet in the great hereafter.</p>
+      <p>The longest reading of the night comes from Alexander MacLaren, the Manchester preacher, who took this verse and the first verse of the next chapter together and preached them to the young people of his congregation at the new year. He found three words in the text: rejoice, reflect, remember. Hear him at length.</p>
+      <p>From MacLaren:</p>
+      <p>I take these words to be said in good faith, as a frank recognition of the fact that, after all we have been hearing about vanity and vexation of spirit, life is worth living, and that God means young people to be glad, and to make the best of the fleeting years that will never come back with the same buoyancy and elasticity all their lives long. The words added are not meant to destroy the concession, but only to purify and ennoble a gladness which, without them, would be apt to be stained by many a corruption.</p>
+      <p>He goes on:</p>
+      <p>All young things are joyful, from the lamb in the pastures upwards, and are meant to be so. Christianity looks with complacency on your gladness, and does not mean to clip the wing of one white-winged pleasure. You are meant to be glad. God delights in the prosperity and light-hearted buoyancy of His children, especially of His young children.</p>
+      <p>And to those whose youth has not been bright, he adds:</p>
+      <p>If I am speaking to any young man or young woman who by reason of painful outward circumstances has had but a chilling spring and youth, I would say to them, don&#x27;t lose heart; a cloudy morning often breaks into a perfect day. It is good for a man to have to bear the yoke in his youth, and if you miss joy, you may get grace and strength and patience, which will be a blessing to you all your days.</p>
+      <p>Then his second word, reflect. On the judgment clause:</p>
+      <p>That is not the thought that kills, but that purifies and ennobles. All our days are knit together as one whole. Yesterday is the parent of today, and today is the parent of all the tomorrows. No feeling, no thought that flits across the mirror of a man&#x27;s life and heart dies utterly, leaving nothing behind it. All your life a seed-time, all your life a harvest-time too, for the seed which I sow today is the seed which I have reaped from all my former sowings.</p>
+      <p>He goes on, with a builder&#x27;s illustration:</p>
+      <p>Did you ever see them build one of those houses they make in some parts of the country, with concrete instead of stones? Take a spadeful of the mud, and put it into a frame on the wall. When it is dry, take away the frame and the supports, and it hardens into rock. You take your single deeds — the mud sometimes, young men — put them on the wall, and think no more about it. Ay, but they stop there and harden there, and lo, a character — a house for your soul to live in.</p>
+      <p>And his third word, remember:</p>
+      <p>There is something better in this world than self-indulgence, and that is work; something higher, and that is duty; something nobler, and that is self-sacrifice. Remember thy Creator; shift the centre of your life. Do not let the earth be the centre of your system, but the sun. Do not offer Him the fag end of a life — the last inch of the candle that is burning down into the socket. Do it now, for the moments are flying. Go to the ant and consider her ways, who in the summer layeth up for the winter; and do ye likewise in the days of your youth: store up for yourselves that which knows no change, and laughs at the decay of flesh and sense.</p>
+      <p>MacLaren names the ledgers in which the judgment of a young man&#x27;s pleasures is already being written:</p>
+      <p>Let me name some of the ways in which your joys or pleasures will bring you to judgment. Health, that is one; position, that is two; reputation, that is three; character, that is four. If your pleasures are unworthy, you are unworthy; if they are gross and coarse and low, they are dragging you down; if they are frivolous and foolish, they are making you a poor butterfly of a creature that will be of no good to anybody; if they are pure and chaste and lofty, they will make your souls good and gracious and tender with the tenderness and beauty of God.</p>
+      <p>He goes on, with an image from the night streets:</p>
+      <p>You turn that thought upon your heart, my friends. Is it like a policeman&#x27;s bull&#x27;s-eye turned upon a lot of bad characters hiding under a railway arch? If so, the sooner you get rid of the pleasures and inclinations that slink away when that beam of light strikes their ugly faces, the better for yourselves and for your lives. It will kill nothing that deserves to live; it will take no real joy out of a man&#x27;s life. It will only strain out the poison that would kill you.</p>
+      <p>And he sets the end of the unremembering life against the end of the remembering one:</p>
+      <p>Look at the description which follows my text, of that wretched old man who has got no hope in God and no joy, feeble in body, going down to the grave. That is what rejoicing in the days of thy youth, and walking in the ways of thine own heart, come to when you do not remember God. There is nothing more miserable on the face of this earth than an ill-conditioned old man who has lost his early joys and early strength, and has got nothing to make up for them. How many of your joys will last when old age comes to you? How many of them will survive when your eye is no longer bright, and your hand no longer strong, and your foot no longer fleet?</p>
+      <p>From the same century comes a small book by an English rector, John Charles Ryle, called Thoughts for Young Men, and it has never gone out of print. The readings that follow are from a lightly modernized edition. He gives his reasons for exhorting the young, and the second reason is the Preacher&#x27;s own.</p>
+      <p>From Ryle:</p>
+      <p>Young men, your time is short. Your days are but a brief shadow, a mist that appears for a little while and then vanishes, a story that is soon told. Your bodies are not made of brass. Even the young men, says Isaiah, stumble and fall. Your health may be taken from you in a moment. There is but a step between any one of you and death. Your life is all uncertainty; your death and judgment are perfectly sure.</p>
+      <p>He goes on, and quotes this very chapter:</p>
+      <p>Oh that you would all take to heart the words of the Preacher: Rejoice, O young man, in thy youth, and let thy heart cheer thee in the days of thy youth; but know thou, that for all these things God will bring thee into judgment. Amazing, that with such a prospect of coming judgment, any man can be careless and unconcerned! Surely none are so crazy as those who are content to live unprepared to die.</p>
+      <p>He goes on, on the favorite word of the procrastinator:</p>
+      <p>Tomorrow is the devil&#x27;s day, but today is God&#x27;s. Satan does not care how spiritual your intentions are, or how holy your resolutions, if only they are determined to be done tomorrow. Oh, give no place to the devil in this matter! Do you think that you will have a more convenient time to think about these things? So thought Felix, and the Athenians to whom Paul preached; but it never came. The road to hell is paved with such ideas. Better make sure to work while you can. Leave nothing unsettled that is eternal. Run no risk when your soul is at stake.</p>
+      <p>On the presumption of a late repentance:</p>
+      <p>Don&#x27;t think that you can live with Esau, and then die with Jacob. It is an awful mockery to suppose you can give the flower of your strength to the world and the devil, and then put off the King of kings with the scraps and remains of your hearts. I grant you, true repentance is never too late; but I warn you at the same time, late repentance is seldom true. I grant you, one penitent thief was converted in his last hours, that no man might despair; but I warn you, only one was converted, that no man might presume.</p>
+      <p>He goes on:</p>
+      <p>It is a true saying of the godly Leighton: the way of sin is downhill; a man cannot stop when he wants to. It was said of the famous general Hannibal of old, when he could have taken the city he warred against, he would not; and in time, when he would, he could not. Beware lest the same kind of thing happen to you in the matter of eternal life.</p>
+      <p>And on habit, the strongest passage in the book:</p>
+      <p>Habits are like stones rolling downhill — the further they roll, the faster and more ungovernable is their course. Habits, like trees, are strengthened by age. A boy may bend an oak when it is a sapling — a hundred men cannot root it up when it is a full grown tree. A child can wade over the Thames River at its fountain-head — the largest ship in the world can float in it when it gets near the sea. So it is with habits: the older, the stronger; the longer they have held possession, the harder they will be to cast out.</p>
+      <p>He goes on:</p>
+      <p>Believe me, you cannot stand still in your souls. Habits of good or evil are daily strengthening in your hearts. Every day you are either getting nearer to God, or further off. Youth is the planting time of full age, the molding season in the little space of human life. By the shoot that springs up we can judge the type of tree that is growing; by the morning we judge the coming day; and by the character of the young man, we may generally judge what he will be when he grows up.</p>
+      <p>And one detail from history: Beza, the great Swiss Reformer, felt this so strongly that he named it in his will as a special mercy that he had been called out from the world, by the grace of God, at the age of sixteen.</p>
+      <p>Ryle also counts the cost of the wasted season, sorrow by sorrow:</p>
+      <p>Some men could tell you of the untimely loss of health, brought on by youthful sins. The sun of their health has gone down while it is yet day. Believe me, this is a bitter cup to drink. Others could give you sad accounts of the consequences of idleness. They threw away the golden opportunity for learning. They would not get wisdom at the time when their minds were most able to receive it, and their memory most ready to retain it. And now it is too late. Lost time can never be redeemed. This too is a bitter cup to drink.</p>
+      <p>He goes on:</p>
+      <p>Others could tell you of grievous mistakes in judgment, from which they suffer all their lives. They had to have it their own way. They would not take advice. And they see it all now — but their eyes are only open when the mistake cannot be retrieved. Young men, I wish you did but know the comfort of a conscience not burdened with a long list of youthful sins. These are the wounds that pierce the deepest. Be merciful to yourselves. Seek the Lord early, and so you will be spared many a bitter tear. Hell itself is truth known too late. Be wise in time. What youth sows, old age must reap.</p>
+      <p>Ryle closes his argument with an image from the rocks:</p>
+      <p>The footprints of animals have been found on the surface of rocks that were once wet sand, thousands of years after the animal that made them has passed away. So it is with the sins of youth. Sin may be easy for you to do with your hands, or run smoothly off your tongue now, but depend on it, the effects of your sin and you will meet again in time. What youth sows, old age must reap. Do not give the most precious season of your life to that which will not comfort you in the latter days of your life.</p>
+      <p>Hold that picture of footprints hardened into stone. It will come back before the night is over, turned inside out.</p>
+      <p>Now the witnesses of Scripture on the morrow no man owns. From Proverbs:</p>
+      <p>Boast not thyself of tomorrow; for thou knowest not what a day may bring forth.</p>
+      <p>From James:</p>
+      <p>Go to now, ye that say, Today or tomorrow we will go into such a city, and continue there a year, and buy and sell, and get gain: whereas ye know not what shall be on the morrow. For what is your life? It is even a vapour, that appeareth for a little time, and then vanisheth away. For that ye ought to say, If the Lord will, we shall live, and do this, or that.</p>
+      <p>A vapour — that is the Preacher&#x27;s own word, hevel, breathed out into Greek. James is the New Testament&#x27;s shortest commentary on Ecclesiastes.</p>
+      <p>From the Gospel of John, the Lord himself under the same clock:</p>
+      <p>I must work the works of him that sent me, while it is day: the night cometh, when no man can work.</p>
+      <p>From the Psalms:</p>
+      <p>So teach us to number our days, that we may apply our hearts unto wisdom.</p>
+      <p>And from Isaiah, the promise that keeps urgency from curdling into panic:</p>
+      <p>Even the youths shall faint and be weary, and the young men shall utterly fall: but they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.</p>
+      <p>Notice what waiting means there. Not the farmer watching the wind — waiting upon the LORD is how the runner keeps running. The Preacher forbids the waiting that never sows; Isaiah commends the waiting that never quits.</p>
+      <p>One last note from the commentators, half in a smile. The Pulpit Commentary observes that this very verse of Ecclesiastes — rejoice, O young man, in thy youth — is the ancestor of the old student song still sung at universities: Gaudeamus igitur, juvenes dum sumus. Let us rejoice, therefore, while we are young. The students kept the rejoicing and dropped the judgment. The Preacher would have recognized the tune, and asked for the second verse back.</p>
+      <p>And the Cambridge commentators catch even the pagan poet Lucretius, who believed in no judgment seat, confessing the mechanism in spite of himself. Their rendering:</p>
+      <p>For violence and wrong take him who works them, as in a net, and to their source return; nor is it easy found for him who breaks by deeds the common covenants of peace to lead a placid and a peaceful life. For grant he cheat the gods and all mankind, he cannot hope the evil done will be for ever secret.</p>
+      <p>Even the man with no altar knew the account was somehow kept. The Preacher tells the young man who keeps it: God will bring thee into judgment — and the young man who knows it may rejoice more freely, not less, for the feast is honest now.</p>
+      <p>The last word of counsel belongs to MacLaren, finishing his new year&#x27;s sermon, because he would not let the young leave with the clock and no Christ:</p>
+      <p>You and I know a good deal more about God than the writer of the Book of Ecclesiastes did — both about what He is, and how to remember Him. Look at God in Jesus Christ, and trust Him and love Him; go to Him as your Saviour, and take all the burden of your past sin and lay it upon His merciful shoulders. Follow in the footsteps of Him who has shown us that the highest joy is to give oneself utterly away. Love Jesus Christ and trust Him and serve Him, and that will make all your gladness permanent.</p>
+      <p>He goes on:</p>
+      <p>Take Christ for your Saviour; serve Him as your Captain and your King in the days of your youth. Do not offer Him the fag end of a life. Do it now, for the moments are flying, and if there is any softening, any touch of conscience in your heart, yield to the impulse and do not stifle it. Now is the accepted time; now is the day of salvation.</p>
+      <p>We close with a poem written by a young widower who was preaching to himself — Henry Wadsworth Longfellow, subtitled: what the heart of the young man said to the psalmist. Ryle&#x27;s footprints were sins set in stone. Here they are turned to the other use.</p>
+      <p>A Psalm of Life.</p>
+      <p>Tell me not, in mournful numbers, life is but an empty dream! For the soul is dead that slumbers, and things are not what they seem.</p>
+      <p>Life is real! Life is earnest! And the grave is not its goal; dust thou art, to dust returnest, was not spoken of the soul.</p>
+      <p>Not enjoyment, and not sorrow, is our destined end or way; but to act, that each tomorrow find us farther than today.</p>
+      <p>Art is long, and Time is fleeting, and our hearts, though stout and brave, still, like muffled drums, are beating funeral marches to the grave.</p>
+      <p>In the world&#x27;s broad field of battle, in the bivouac of Life, be not like dumb, driven cattle! Be a hero in the strife!</p>
+      <p>Trust no Future, howe&#x27;er pleasant! Let the dead Past bury its dead! Act — act in the living Present! Heart within, and God o&#x27;erhead!</p>
+      <p>Lives of great men all remind us we can make our lives sublime, and, departing, leave behind us footprints on the sands of time;</p>
+      <p>Footprints, that perhaps another, sailing o&#x27;er life&#x27;s solemn main, a forlorn and shipwrecked brother, seeing, shall take heart again.</p>
+      <p>Let us, then, be up and doing, with a heart for any fate; still achieving, still pursuing, learn to labor and to wait.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

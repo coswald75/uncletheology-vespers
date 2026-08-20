@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UncleTheology Radio — the albums, sung and explained</title>
+<meta name="description" content="Every Uncle Theology album played straight through with spoken intros before each song. Listen on the site or subscribe on Apple Podcasts, Spotify, or by RSS.">
+<link rel="canonical" href="https://uncletheology.com/radio.html">
+<link rel="alternate" type="application/rss+xml" title="UncleTheology Radio" href="https://uncletheology.com/podcast.xml">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="UncleTheology Radio — the albums, sung and explained">
+<meta property="og:description" content="Every Uncle Theology album played straight through with spoken intros before each song. Listen on the site or subscribe on Apple Podcasts, Spotify, or by RSS.">
+<meta property="og:url" content="https://uncletheology.com/radio.html">
+<meta property="og:site_name" content="Uncle Theology">
+<meta property="og:image" content="https://uncletheology.com/assets/john-and-them/cover.png">
+<meta property="og:image:secure_url" content="https://uncletheology.com/assets/john-and-them/cover.png">
+<meta property="og:image:alt" content="UncleTheology Radio — the albums, sung and explained">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="1440">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UncleTheology Radio — the albums, sung and explained">
+<meta name="twitter:description" content="Every Uncle Theology album played straight through with spoken intros before each song. Listen on the site or subscribe on Apple Podcasts, Spotify, or by RSS.">
+<meta name="twitter:image" content="https://uncletheology.com/assets/john-and-them/cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:         #0d0f0c;
+    --bg-2:       #14170f;
+    --surface:    #1a1e15;
+    --surface-2:  #222719;
+    --rule:       #333a28;
+    --ink:        #f3efe2;
+    --ink-soft:   #cfcab4;
+    --ink-faint:  #8f9079;
+    --green:      #3bb24a;
+    --green-deep: #1f7a33;
+    --gold:       #f4c430;
+    --gold-deep:  #c9962a;
+    --link:       #f4c430;
+    --glow-a:     rgba(59,178,74,0.10);
+    --glow-b:     rgba(244,196,48,0.06);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+    font-size: 18px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background:
+      radial-gradient(1200px 600px at 50% -8%, var(--glow-a), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, var(--glow-b), transparent 55%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  .ui { font-family: "Inter", system-ui, -apple-system, sans-serif; }
+  a { color: var(--link); text-underline-offset: 2px; }
+
+  .flag-rule { height: 4px; border: 0; margin: 0;
+    background: linear-gradient(90deg, var(--green) 0 50%, var(--gold) 50% 100%); }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(13,15,12,0.7);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 10; }
+  .site-header-inner { max-width: 1040px; margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+  .site-brand { font-weight: 700; font-size: 19px; letter-spacing: -0.01em;
+    color: var(--ink); text-decoration: none; }
+  .site-brand .dot { color: var(--gold); }
+  .site-nav { display: flex; gap: 22px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    color: var(--ink-soft); text-decoration: none; letter-spacing: 0.02em; }
+  .site-nav a:hover { color: var(--gold); }
+
+  main { max-width: 820px; margin: 0 auto; padding: 44px 24px 120px; }
+
+  /* ───── discography landing ───── */
+  .disco-intro { margin-bottom: 40px; }
+  .disco-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 12px; }
+  .disco-title { font-size: 52px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 14px; }
+  .disco-blurb { font-size: 19px; color: var(--ink-soft); margin: 0; max-width: 56ch; }
+  /* Radio page */
+  .sub-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .sub-btn { display: inline-flex; align-items: center; gap: 8px; font-family: "Inter", sans-serif;
+    font-size: 14px; font-weight: 600; letter-spacing: 0.01em; padding: 12px 20px;
+    border-radius: 999px; border: 1px solid transparent; cursor: pointer; text-decoration: none;
+    color: #fff; }
+  .sub-btn .sub-ico { font-size: 15px; }
+  .sub-btn.apple { background: #9933cc; }
+  .sub-btn.apple:hover { background: #8a1fc4; }
+  .sub-btn.spotify { background: #1db954; color: #06210f; }
+  .sub-btn.spotify:hover { background: #1ed760; }
+  .sub-btn.spotify.soon { background: transparent; color: var(--ink-faint);
+    border-color: var(--rule); cursor: default; }
+  .sub-btn.rss { background: transparent; color: var(--ink-soft); border-color: var(--rule); }
+  .sub-btn.rss:hover { border-color: var(--gold); color: var(--gold); }
+  .sub-note { min-height: 20px; margin-top: 12px; font-size: 13px; color: var(--ink-faint);
+    word-break: break-all; }
+
+  .ep-list { display: flex; flex-direction: column; gap: 26px; margin-top: 8px; }
+  .ep-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px;
+    padding: 22px 24px; }
+  .ep-head { display: flex; gap: 20px; align-items: flex-start; }
+  .ep-art { width: 130px; height: 130px; border-radius: 10px; object-fit: cover; flex: 0 0 auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
+  .ep-meta { flex: 1 1 auto; min-width: 0; }
+  .ep-eyebrow { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; }
+  .ep-title { font-size: 27px; line-height: 1.08; font-weight: 700; margin: 6px 0 10px; }
+  .ep-summary { font-size: 15px; color: var(--ink-soft); margin: 0 0 10px; }
+  .ep-studylink { font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; }
+  .ep-studylink:hover { text-decoration: underline; }
+  .ep-audio { width: 100%; margin-top: 18px; }
+  .ch-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--ink-faint); margin: 18px 0 8px; }
+  .ep-chapters { list-style: none; margin: 0; padding: 0; display: grid;
+    grid-template-columns: repeat(2, 1fr); gap: 2px 18px; }
+  .ep-chapters .ch { display: flex; align-items: baseline; gap: 12px; width: 100%; text-align: left;
+    background: none; border: 0; cursor: pointer; padding: 7px 8px; border-radius: 7px;
+    color: var(--ink); font-family: inherit; }
+  .ep-chapters .ch:hover { background: var(--surface-2); }
+  .ep-chapters .ch.playing { background: var(--surface-2); }
+  .ep-chapters .ch.playing .ch-title { color: var(--gold); }
+  .ch-t { font-size: 12px; color: var(--ink-faint); flex: 0 0 46px; }
+  .ch-title { font-size: 14px; }
+  .ch-intro .ch-title { color: var(--ink-faint); font-style: italic; }
+  @media (max-width: 620px) {
+    .ep-head { flex-direction: column; }
+    .ep-art { width: 96px; height: 96px; }
+    .ep-chapters { grid-template-columns: 1fr; }
+  }
+  .disco { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .album-card { display: block; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; background: var(--surface);
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
+  .album-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.45); }
+  .album-card .card-art { aspect-ratio: 1 / 1; overflow: hidden; }
+  .album-card .card-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .album-card .card-body { padding: 16px 18px 18px; }
+  .album-card .card-meta { font-family: "Inter", sans-serif; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 6px; }
+  .album-card .card-title { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 8px; }
+  .album-card .card-blurb { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+
+  /* ───── album hero ───── */
+  .hero { display: grid; grid-template-columns: 280px 1fr; gap: 34px; align-items: center;
+    margin-bottom: 48px; }
+  .hero-art { width: 100%; aspect-ratio: 1 / 1; border-radius: 14px; overflow: hidden;
+    border: 1px solid var(--rule); box-shadow: 0 18px 50px rgba(0,0,0,0.5); }
+  .hero-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 12px; }
+  .album-title { font-size: 52px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 14px; }
+  .album-tagline { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    letter-spacing: 0.02em; margin-bottom: 18px; }
+  .album-blurb { font-size: 19px; color: var(--ink-soft); margin: 0; }
+
+  /* ───── liner notes ───── */
+  .liner { max-width: 68ch; margin: 40px auto 8px; padding: 30px 0 0; border-top: 1px solid var(--rule); }
+  .liner-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 18px; }
+  .liner p { font-size: 18px; line-height: 1.72; color: var(--ink-soft); margin: 0 0 18px; }
+  .liner p:first-of-type { color: var(--ink); }
+  .liner em { color: var(--ink); font-style: italic; }
+  .liner strong { color: var(--gold); font-weight: 600; }
+
+  /* ───── tracklist ───── */
+  .tracklist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .track { border-bottom: 1px solid var(--rule); }
+  .track a { display: flex; align-items: center; gap: 16px; padding: 15px 12px;
+    text-decoration: none; color: var(--ink); transition: background 0.15s; }
+  .track a:hover { background: var(--surface); }
+  .track-num { font-family: "Inter", sans-serif; font-size: 13px; color: var(--ink-faint);
+    width: 26px; flex-shrink: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  .track-play { width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+    background: var(--surface-2); border: 1px solid var(--rule); color: var(--gold);
+    display: flex; align-items: center; justify-content: center; }
+  .track a:hover .track-play { background: var(--green-deep); color: #fff; border-color: var(--green); }
+  .track-title { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; flex: 1; }
+  .track-arrow { color: var(--ink-faint); font-family: "Inter", sans-serif; }
+
+  /* ───── song page ───── */
+  .breadcrumb { font-family: "Inter", sans-serif; font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 16px; }
+  .breadcrumb a { color: var(--ink-faint); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--gold); }
+  h1.song-title { font-size: 46px; line-height: 1.06; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 10px; }
+  .song-cite { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    margin-bottom: 26px; }
+  .song-cite span + span::before { content: "·"; margin: 0 8px; color: var(--rule); }
+
+  .audio-player { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 16px 18px; display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
+  .play-button { width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0; cursor: pointer;
+    background: var(--gold); border: 0; color: #11140d; display: flex; align-items: center;
+    justify-content: center; transition: transform 0.1s, background 0.15s; }
+  .play-button:hover { background: var(--green); color: #fff; transform: scale(1.05); }
+  .player-body { flex: 1; min-width: 0; }
+  .player-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 8px; }
+  .player-body audio { width: 100%; height: 38px; }
+
+  .about { border-left: 3px solid var(--green); background: var(--bg-2);
+    padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 34px;
+    color: var(--ink-soft); font-size: 18px; }
+  .about .about-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); display: block;
+    margin-bottom: 6px; }
+
+  .attribution { border: 1px solid var(--rule); background: var(--surface);
+    padding: 16px 20px; border-radius: 10px; margin-bottom: 34px;
+    color: var(--ink-soft); font-size: 16px; line-height: 1.55; }
+  .attribution .attr-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); display: block;
+    margin-bottom: 6px; }
+  .attribution .attr-links { font-family: "Inter", sans-serif; font-size: 13px; margin-top: 10px;
+    display: flex; flex-wrap: wrap; gap: 18px; }
+  .attribution .attr-links a { color: var(--gold); text-decoration: none; }
+  .attribution .attr-links a:hover { text-decoration: underline; }
+
+  /* lyrics */
+  .lyrics { margin: 0 0 44px; }
+  .stanza { margin: 0 0 26px; }
+  .stanza p { margin: 0; line-height: 1.5; }
+  .stanza-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 8px; }
+  .lyrics.prose .stanza p { line-height: 1.62; color: var(--ink-soft); }
+  .lyrics-pending { color: var(--ink-faint); font-style: italic; margin: 0 0 44px; }
+
+  /* scripture refs */
+  .refs { border-top: 1px solid var(--rule); padding-top: 22px; }
+  .refs h2 { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); margin: 0 0 16px; }
+  .refs ol { font-family: "Inter", sans-serif; font-size: 13.5px; color: var(--ink-soft);
+    columns: 2; column-gap: 40px; margin: 0; padding: 0; list-style: none; }
+  .refs li { margin-bottom: 7px; break-inside: avoid; }
+  .refs .rn { color: var(--ink-faint); margin-right: 6px; }
+  .refs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px dotted var(--gold-deep); }
+  .refs a:hover { color: var(--gold); }
+
+  .page-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 44px;
+    font-family: "Inter", sans-serif; font-size: 14px; }
+  .page-nav a { color: var(--gold); text-decoration: none; }
+  .page-nav a:hover { text-decoration: underline; }
+  .page-nav .spacer { flex: 1; }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 40px;
+    padding: 28px 24px; text-align: center; font-family: "Inter", sans-serif;
+    font-size: 12px; color: var(--ink-faint); }
+
+  /* ───── whole-album player ───── */
+  .album-player { background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 30px; }
+  .album-player-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 14px; }
+  .ap-row { display: flex; align-items: center; gap: 16px; }
+  .ap-btn { width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0; cursor: pointer;
+    background: var(--gold); border: 0; color: #11140d; display: flex; align-items: center;
+    justify-content: center; transition: transform 0.1s, background 0.15s; }
+  .ap-btn:hover { background: var(--green); color: #fff; transform: scale(1.05); }
+  .ap-skip { background: none; border: 0; color: var(--ink-soft); cursor: pointer; padding: 6px;
+    display: flex; align-items: center; }
+  .ap-skip:hover { color: var(--gold); }
+  .ap-main { flex: 1; min-width: 0; }
+  .ap-now { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-faint); margin-bottom: 2px; }
+  .ap-track { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; }
+  .ap-seekwrap { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .ap-time { font-family: "Inter", sans-serif; font-size: 11px; color: var(--ink-faint);
+    font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .ap-seek { flex: 1; accent-color: var(--gold); height: 4px; cursor: pointer; }
+
+  /* ───── section heading (Study the songs) ───── */
+  .section-head { margin: 4px 0 6px; }
+  .section-head h2 { font-size: 30px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+  .section-sub { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    margin: 0 0 16px; }
+
+  /* ───── teaching aids (study layer) ───── */
+  blockquote.thesis-hero { font-family: "Fraunces", Georgia, serif; font-size: 23px;
+    line-height: 1.4; color: var(--ink); border: 0; border-left: 3px solid var(--gold);
+    background: var(--bg-2); margin: 0 0 26px; padding: 18px 24px; border-radius: 0 10px 10px 0; }
+  blockquote.thesis-hero .thesis-label { display: block; font-family: "Inter", sans-serif;
+    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--gold); margin-bottom: 8px; }
+  .facts-strip { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule);
+    border-radius: 10px; overflow: hidden; margin: 0 0 34px; }
+  .fact { flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid var(--rule); }
+  .fact:last-child { border-right: 0; }
+  .fact-label { font-family: "Inter", sans-serif; font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 3px; }
+  .fact-value { font-size: 15px; color: var(--ink); }
+  .study { border-top: 1px solid var(--rule); padding-top: 26px; margin-top: 8px; }
+  .study > h2 { font-size: 26px; font-weight: 700; margin: 0 0 4px; }
+  .study-sub { font-family: "Inter", sans-serif; font-size: 13px; color: var(--ink-faint);
+    margin: 0 0 26px; }
+  .aid { margin: 0 0 30px; }
+  .aid > h3 { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.13em; color: var(--gold); margin: 0 0 14px; }
+  .move { display: flex; gap: 14px; margin-bottom: 16px; }
+  .move-n { font-family: "Inter", sans-serif; font-weight: 600; color: var(--green);
+    flex-shrink: 0; width: 22px; font-variant-numeric: tabular-nums; }
+  .move-body .move-label { font-weight: 600; color: var(--ink); }
+  .move-body .move-text { color: var(--ink-soft); font-size: 16.5px; line-height: 1.5; }
+  .terms { list-style: none; margin: 0; padding: 0; }
+  .terms li { margin-bottom: 14px; color: var(--ink-soft); font-size: 16.5px; line-height: 1.5; }
+  .terms .term { font-weight: 600; color: var(--gold); font-style: italic; }
+  .questions { margin: 0; padding-left: 22px; }
+  .questions li { color: var(--ink-soft); margin-bottom: 12px; line-height: 1.5; }
+  .further { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  .further li { margin-bottom: 10px; }
+  .further a { color: var(--gold); text-decoration: none; }
+  .further a:hover { text-decoration: underline; }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; gap: 22px; }
+    .album-title, .disco-title { font-size: 38px; }
+    h1.song-title { font-size: 34px; }
+    .refs ol { columns: 1; }
+    .facts-strip { flex-direction: column; }
+    .fact { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .fact:last-child { border-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-brand">Uncle Theology<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/">Albums</a>
+      <a href="/radio.html">Radio</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="flag-rule">
+<main>
+  <section class="disco-intro">
+    <div class="disco-eyebrow ui" style="color:var(--gold);">🎙 UncleTheology Radio</div>
+    <h1 class="disco-title">Radio</h1>
+    <p class="disco-blurb">Every Uncle Theology album, played straight through — with a short spoken
+    intro before each song telling you the Scripture and the story underneath it. Listen right here,
+    or subscribe and take it with you.</p>
+    <div class="sub-row"><a class="sub-btn apple" href="podcast://uncletheology.com/podcast.xml"><span class="sub-ico"></span> Apple Podcasts</a><button class="sub-btn spotify soon" type="button" data-soon="1">Spotify · coming soon</button><button class="sub-btn rss" type="button" data-feed="https://uncletheology.com/podcast.xml">Copy RSS feed</button></div>
+    <div class="sub-note ui" id="subNote"></div>
+  </section>
+
+  <div class="ep-list">
+  <article class="ep-card" style="border-top:3px solid #eba64f;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/sovereign-driver-art.jpg" alt="Sovereign Driver cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#eba64f;">Episode · 40:02</div>
+        <h2 class="ep-title">Sovereign Driver — the whole album, sung and explained</h2>
+        <p class="ep-summary">Sovereign Driver played end to end — Tool-heavy prog and baroque hard rock — with an extended spoken introduction before every song, tracing the album&#x27;s descent and return: from the aseity of God, through providence and the eternal decree, down to the incarnation, and up to the throne of the slain Lamb. Eight tracks, eight intros, one continuous listen — the Sovereign Driver who becomes the Sovereign Diver.</p>
+        <a class="ep-studylink ui" href="/sovereign-driver/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/sovereign-driver.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Aseity</span></button></li><li><button class="ch" data-t="59"><span class="ch-t ui">0:59</span><span class="ch-title">Aseity</span></button></li><li><button class="ch ch-intro" data-t="113"><span class="ch-t ui">1:53</span><span class="ch-title">Intro — Sovereign Driver</span></button></li><li><button class="ch" data-t="170"><span class="ch-t ui">2:50</span><span class="ch-title">Sovereign Driver</span></button></li><li><button class="ch ch-intro" data-t="498"><span class="ch-t ui">8:18</span><span class="ch-title">Intro — Scarred Hands</span></button></li><li><button class="ch" data-t="560"><span class="ch-t ui">9:20</span><span class="ch-title">Scarred Hands</span></button></li><li><button class="ch ch-intro" data-t="755"><span class="ch-t ui">12:35</span><span class="ch-title">Intro — All Came to Pass</span></button></li><li><button class="ch" data-t="812"><span class="ch-t ui">13:32</span><span class="ch-title">All Came to Pass</span></button></li><li><button class="ch" data-t="1252"><span class="ch-t ui">20:52</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="1270"><span class="ch-t ui">21:10</span><span class="ch-title">Intro — Low Enough</span></button></li><li><button class="ch" data-t="1333"><span class="ch-t ui">22:13</span><span class="ch-title">Low Enough</span></button></li><li><button class="ch ch-intro" data-t="1592"><span class="ch-t ui">26:32</span><span class="ch-title">Intro — Colossians 1</span></button></li><li><button class="ch" data-t="1643"><span class="ch-t ui">27:23</span><span class="ch-title">Colossians 1</span></button></li><li><button class="ch ch-intro" data-t="1712"><span class="ch-t ui">28:32</span><span class="ch-title">Intro — In Him</span></button></li><li><button class="ch" data-t="1766"><span class="ch-t ui">29:26</span><span class="ch-title">In Him</span></button></li><li><button class="ch ch-intro" data-t="2056"><span class="ch-t ui">34:16</span><span class="ch-title">Intro — Worthy</span></button></li><li><button class="ch" data-t="2139"><span class="ch-t ui">35:39</span><span class="ch-title">Worthy</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #f4c430;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/roots-of-reason-art.jpg" alt="Roots of Reason cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#f4c430;">Episode · 1:06:43</div>
+        <h2 class="ep-title">Roots of Reason — the whole album, sung and explained</h2>
+        <p class="ep-summary">Roots of Reason played end to end — Reformed theology set to roots reggae — with a short spoken intro before every song. Cruciform power before Pilate, the two Adams and true dominion, Isaiah&#x27;s thrice-holy vision, the Euthyphro dilemma, Plato&#x27;s cave as the new birth, suffering under God&#x27;s sovereignty, the apostles&#x27; hard road, the cage of autonomy, worship as warfare, the bodily resurrection, the empty tomb of Matthew 28, and the nations streaming in.</p>
+        <a class="ep-studylink ui" href="/roots-of-reason/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/roots-of-reason.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Don&#x27;t Fight Like the World</span></button></li><li><button class="ch" data-t="55"><span class="ch-t ui">0:55</span><span class="ch-title">Don&#x27;t Fight Like the World</span></button></li><li><button class="ch ch-intro" data-t="268"><span class="ch-t ui">4:28</span><span class="ch-title">Intro — True Dominion for a Fake Dime</span></button></li><li><button class="ch" data-t="304"><span class="ch-t ui">5:04</span><span class="ch-title">True Dominion for a Fake Dime</span></button></li><li><button class="ch ch-intro" data-t="639"><span class="ch-t ui">10:39</span><span class="ch-title">Intro — Thrice Holy</span></button></li><li><button class="ch" data-t="685"><span class="ch-t ui">11:25</span><span class="ch-title">Thrice Holy</span></button></li><li><button class="ch ch-intro" data-t="902"><span class="ch-t ui">15:02</span><span class="ch-title">Intro — Euthyphro Rocksteady</span></button></li><li><button class="ch" data-t="942"><span class="ch-t ui">15:42</span><span class="ch-title">Euthyphro Rocksteady</span></button></li><li><button class="ch ch-intro" data-t="1159"><span class="ch-t ui">19:19</span><span class="ch-title">Intro — Playing with Plato</span></button></li><li><button class="ch" data-t="1197"><span class="ch-t ui">19:57</span><span class="ch-title">Playing with Plato</span></button></li><li><button class="ch ch-intro" data-t="1538"><span class="ch-t ui">25:38</span><span class="ch-title">Intro — What Christ is Doing in Me</span></button></li><li><button class="ch" data-t="1579"><span class="ch-t ui">26:19</span><span class="ch-title">What Christ is Doing in Me</span></button></li><li><button class="ch" data-t="1904"><span class="ch-t ui">31:44</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="1922"><span class="ch-t ui">32:02</span><span class="ch-title">Intro — Acts of the Apostles</span></button></li><li><button class="ch" data-t="1960"><span class="ch-t ui">32:40</span><span class="ch-title">Acts of the Apostles</span></button></li><li><button class="ch ch-intro" data-t="2204"><span class="ch-t ui">36:44</span><span class="ch-title">Intro — Freebird&#x27;s Cage</span></button></li><li><button class="ch" data-t="2244"><span class="ch-t ui">37:24</span><span class="ch-title">Freebird&#x27;s Cage</span></button></li><li><button class="ch ch-intro" data-t="2548"><span class="ch-t ui">42:28</span><span class="ch-title">Intro — Worship is the Warfare</span></button></li><li><button class="ch" data-t="2595"><span class="ch-t ui">43:15</span><span class="ch-title">Worship is the Warfare</span></button></li><li><button class="ch ch-intro" data-t="2926"><span class="ch-t ui">48:46</span><span class="ch-title">Intro — Solid Ground</span></button></li><li><button class="ch" data-t="2962"><span class="ch-t ui">49:22</span><span class="ch-title">Solid Ground</span></button></li><li><button class="ch ch-intro" data-t="3255"><span class="ch-t ui">54:15</span><span class="ch-title">Intro — Matthew 28</span></button></li><li><button class="ch" data-t="3295"><span class="ch-t ui">54:55</span><span class="ch-title">Matthew 28</span></button></li><li><button class="ch ch-intro" data-t="3691"><span class="ch-t ui">61:31</span><span class="ch-title">Intro — Nations Gonna Come</span></button></li><li><button class="ch" data-t="3738"><span class="ch-t ui">62:18</span><span class="ch-title">Nations Gonna Come</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #36d6ec;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/john-and-them-art.jpg" alt="John &amp; Them cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#36d6ec;">Episode · 51:43</div>
+        <h2 class="ep-title">John &amp; Them — the whole album, sung and explained</h2>
+        <p class="ep-summary">John &amp; Them played end to end — street-gospel hip-hop through the eyes of the apostle John and his neighbors — with a short spoken intro before every song. Abiding in light and love, the finished gospel, Chesterton&#x27;s fence and chronological snobbery, the assurance of the new birth, the rich young ruler, Jude against the false teachers, the antichrist spirit of &#x27;Christ plus,&#x27; the bread handed to Judas, the prodigal&#x27;s one road home, and the Creator born of the creature.</p>
+        <a class="ep-studylink ui" href="/john-and-them/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/john-and-them.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Abide in the Fire</span></button></li><li><button class="ch" data-t="52"><span class="ch-t ui">0:52</span><span class="ch-title">Abide in the Fire</span></button></li><li><button class="ch ch-intro" data-t="343"><span class="ch-t ui">5:43</span><span class="ch-title">Intro — Keep It Simple Stupid</span></button></li><li><button class="ch" data-t="385"><span class="ch-t ui">6:25</span><span class="ch-title">Keep It Simple Stupid</span></button></li><li><button class="ch ch-intro" data-t="536"><span class="ch-t ui">8:56</span><span class="ch-title">Intro — Chesterton&#x27;s Fence</span></button></li><li><button class="ch" data-t="579"><span class="ch-t ui">9:39</span><span class="ch-title">Chesterton&#x27;s Fence</span></button></li><li><button class="ch ch-intro" data-t="788"><span class="ch-t ui">13:08</span><span class="ch-title">Intro — Double John</span></button></li><li><button class="ch" data-t="828"><span class="ch-t ui">13:48</span><span class="ch-title">Double John</span></button></li><li><button class="ch ch-intro" data-t="1106"><span class="ch-t ui">18:26</span><span class="ch-title">Intro — RYR (Rich Young Ruler)</span></button></li><li><button class="ch" data-t="1148"><span class="ch-t ui">19:08</span><span class="ch-title">RYR (Rich Young Ruler)</span></button></li><li><button class="ch ch-intro" data-t="1442"><span class="ch-t ui">24:02</span><span class="ch-title">Intro — Titus, Tim, &amp; Them</span></button></li><li><button class="ch" data-t="1480"><span class="ch-t ui">24:40</span><span class="ch-title">Titus, Tim, &amp; Them</span></button></li><li><button class="ch" data-t="1633"><span class="ch-t ui">27:13</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="1651"><span class="ch-t ui">27:31</span><span class="ch-title">Intro — Jude</span></button></li><li><button class="ch" data-t="1695"><span class="ch-t ui">28:15</span><span class="ch-title">Jude</span></button></li><li><button class="ch ch-intro" data-t="1940"><span class="ch-t ui">32:20</span><span class="ch-title">Intro — AntiChrist</span></button></li><li><button class="ch" data-t="1984"><span class="ch-t ui">33:04</span><span class="ch-title">AntiChrist</span></button></li><li><button class="ch ch-intro" data-t="2174"><span class="ch-t ui">36:14</span><span class="ch-title">Intro — Bread of Judas</span></button></li><li><button class="ch" data-t="2214"><span class="ch-t ui">36:54</span><span class="ch-title">Bread of Judas</span></button></li><li><button class="ch ch-intro" data-t="2449"><span class="ch-t ui">40:49</span><span class="ch-title">Intro — One Road Home (The Prodigal)</span></button></li><li><button class="ch" data-t="2496"><span class="ch-t ui">41:36</span><span class="ch-title">One Road Home (The Prodigal)</span></button></li><li><button class="ch ch-intro" data-t="2717"><span class="ch-t ui">45:17</span><span class="ch-title">Intro — Noel</span></button></li><li><button class="ch" data-t="2763"><span class="ch-t ui">46:03</span><span class="ch-title">Noel</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #d9b168;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/common-grace-art.jpg" alt="Common Grace cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#d9b168;">Episode · 40:26</div>
+        <h2 class="ep-title">Common Grace — the whole album, sung and explained</h2>
+        <p class="ep-summary">Common Grace played end to end — a warm, genre-hopping ode to the everyday kindness God pours on the whole human race — with a short spoken intro before every song. Sun on the sinner, Kuyper&#x27;s every-square-inch, Ecclesiastes&#x27; vapor and the love that makes an unchanging town new, marriage as gift, the goodness of matter, thanksgiving on an ordinary day, the cure for the curved-in self, Lady Wisdom&#x27;s clap-back, and the Transfiguration by way of the cross.</p>
+        <a class="ep-studylink ui" href="/common-grace/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/common-grace.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Common Grace</span></button></li><li><button class="ch" data-t="61"><span class="ch-t ui">1:01</span><span class="ch-title">Common Grace</span></button></li><li><button class="ch ch-intro" data-t="248"><span class="ch-t ui">4:08</span><span class="ch-title">Intro — Stay in Your Lane</span></button></li><li><button class="ch" data-t="297"><span class="ch-t ui">4:57</span><span class="ch-title">Stay in Your Lane</span></button></li><li><button class="ch ch-intro" data-t="496"><span class="ch-t ui">8:16</span><span class="ch-title">Intro — If This Vanity</span></button></li><li><button class="ch" data-t="539"><span class="ch-t ui">8:59</span><span class="ch-title">If This Vanity</span></button></li><li><button class="ch ch-intro" data-t="713"><span class="ch-t ui">11:53</span><span class="ch-title">Intro — Town That Never Changes</span></button></li><li><button class="ch" data-t="758"><span class="ch-t ui">12:38</span><span class="ch-title">Town That Never Changes</span></button></li><li><button class="ch ch-intro" data-t="979"><span class="ch-t ui">16:19</span><span class="ch-title">Intro — Weekend Honeymoons</span></button></li><li><button class="ch" data-t="1017"><span class="ch-t ui">16:57</span><span class="ch-title">Weekend Honeymoons</span></button></li><li><button class="ch" data-t="1198"><span class="ch-t ui">19:58</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="1216"><span class="ch-t ui">20:16</span><span class="ch-title">Intro — God Made It Good</span></button></li><li><button class="ch" data-t="1263"><span class="ch-t ui">21:03</span><span class="ch-title">God Made It Good</span></button></li><li><button class="ch ch-intro" data-t="1498"><span class="ch-t ui">24:58</span><span class="ch-title">Intro — Gratitude Has Filled My Plate</span></button></li><li><button class="ch" data-t="1544"><span class="ch-t ui">25:44</span><span class="ch-title">Gratitude Has Filled My Plate</span></button></li><li><button class="ch ch-intro" data-t="1736"><span class="ch-t ui">28:56</span><span class="ch-title">Intro — Psalm 147</span></button></li><li><button class="ch" data-t="1782"><span class="ch-t ui">29:42</span><span class="ch-title">Psalm 147</span></button></li><li><button class="ch ch-intro" data-t="1913"><span class="ch-t ui">31:53</span><span class="ch-title">Intro — Your Calamity</span></button></li><li><button class="ch" data-t="1958"><span class="ch-t ui">32:38</span><span class="ch-title">Your Calamity</span></button></li><li><button class="ch ch-intro" data-t="2141"><span class="ch-t ui">35:41</span><span class="ch-title">Intro — Transfiguration</span></button></li><li><button class="ch" data-t="2193"><span class="ch-t ui">36:33</span><span class="ch-title">Transfiguration</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #e8a93a;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/proverbs-art.jpg" alt="Proverbs cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#e8a93a;">Episode · 34:58</div>
+        <h2 class="ep-title">Proverbs — the whole album, sung and explained</h2>
+        <p class="ep-summary">Proverbs played end to end — the book of Proverbs as a comic-book romp — with a short spoken intro before every song. Wisdom you have to eat daily, the friends you choose, Agur&#x27;s prayer for neither riches nor poverty, antithetic parallelism as an &#x27;80s action movie, the ant and the sluggard, the quiet diligence Proverbs praises, and Lady Folly&#x27;s counterfeit love.</p>
+        <a class="ep-studylink ui" href="/proverbs/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/proverbs.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Ready To Go Pro</span></button></li><li><button class="ch" data-t="56"><span class="ch-t ui">0:56</span><span class="ch-title">Ready To Go Pro</span></button></li><li><button class="ch ch-intro" data-t="216"><span class="ch-t ui">3:36</span><span class="ch-title">Intro — Friends You Choose</span></button></li><li><button class="ch" data-t="258"><span class="ch-t ui">4:18</span><span class="ch-title">Friends You Choose</span></button></li><li><button class="ch ch-intro" data-t="533"><span class="ch-t ui">8:53</span><span class="ch-title">Intro — Neither Rich Nor Poor</span></button></li><li><button class="ch" data-t="574"><span class="ch-t ui">9:34</span><span class="ch-title">Neither Rich Nor Poor</span></button></li><li><button class="ch ch-intro" data-t="817"><span class="ch-t ui">13:37</span><span class="ch-title">Intro — Ultimate Showdown</span></button></li><li><button class="ch" data-t="859"><span class="ch-t ui">14:19</span><span class="ch-title">Ultimate Showdown</span></button></li><li><button class="ch ch-intro" data-t="1020"><span class="ch-t ui">17:00</span><span class="ch-title">Intro — Solfeggietto</span></button></li><li><button class="ch" data-t="1055"><span class="ch-t ui">17:35</span><span class="ch-title">Solfeggietto</span></button></li><li><button class="ch" data-t="1204"><span class="ch-t ui">20:04</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="1222"><span class="ch-t ui">20:22</span><span class="ch-title">Intro — Clean or Die</span></button></li><li><button class="ch" data-t="1263"><span class="ch-t ui">21:03</span><span class="ch-title">Clean or Die</span></button></li><li><button class="ch ch-intro" data-t="1449"><span class="ch-t ui">24:09</span><span class="ch-title">Intro — Squeaky Wheel</span></button></li><li><button class="ch" data-t="1485"><span class="ch-t ui">24:45</span><span class="ch-title">Squeaky Wheel</span></button></li><li><button class="ch ch-intro" data-t="1742"><span class="ch-t ui">29:02</span><span class="ch-title">Intro — NancyPlease</span></button></li><li><button class="ch" data-t="1766"><span class="ch-t ui">29:26</span><span class="ch-title">NancyPlease</span></button></li><li><button class="ch ch-intro" data-t="1794"><span class="ch-t ui">29:54</span><span class="ch-title">Intro — Plastic Love</span></button></li><li><button class="ch" data-t="1840"><span class="ch-t ui">30:40</span><span class="ch-title">Plastic Love</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #b8c6d6;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/shadys-bach-art.jpg" alt="Shady’s Bach cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#b8c6d6;">Episode · 26:01</div>
+        <h2 class="ep-title">Shady&#x27;s Bach — the whole album, sung and explained</h2>
+        <p class="ep-summary">Shady&#x27;s Bach played end to end — Bach fused with hip-hop, classical apologetics in an Eminem cadence — with a short spoken intro before every song. The two books of revelation, the sun&#x27;s circuit to the unreached nations, the new earth renewed rather than annihilated, C.P.E. Bach&#x27;s étude as a theology of formation, Aquinas&#x27;s arguments for God, and the meaning of &#x27;foreknown.&#x27;</p>
+        <a class="ep-studylink ui" href="/shadys-bach/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/shadys-bach.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — 2 Books</span></button></li><li><button class="ch" data-t="54"><span class="ch-t ui">0:54</span><span class="ch-title">2 Books</span></button></li><li><button class="ch ch-intro" data-t="217"><span class="ch-t ui">3:37</span><span class="ch-title">Intro — The Nations</span></button></li><li><button class="ch" data-t="263"><span class="ch-t ui">4:23</span><span class="ch-title">The Nations</span></button></li><li><button class="ch ch-intro" data-t="432"><span class="ch-t ui">7:12</span><span class="ch-title">Intro — How Much Is The Earf?</span></button></li><li><button class="ch" data-t="480"><span class="ch-t ui">8:00</span><span class="ch-title">How Much Is The Earf?</span></button></li><li><button class="ch ch-intro" data-t="603"><span class="ch-t ui">10:03</span><span class="ch-title">Intro — Solfeggietto</span></button></li><li><button class="ch" data-t="644"><span class="ch-t ui">10:44</span><span class="ch-title">Solfeggietto</span></button></li><li><button class="ch" data-t="814"><span class="ch-t ui">13:34</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="832"><span class="ch-t ui">13:52</span><span class="ch-title">Intro — Shady&#x27;s Bach</span></button></li><li><button class="ch" data-t="873"><span class="ch-t ui">14:33</span><span class="ch-title">Shady&#x27;s Bach</span></button></li><li><button class="ch ch-intro" data-t="1071"><span class="ch-t ui">17:51</span><span class="ch-title">Intro — Prognostiko</span></button></li><li><button class="ch" data-t="1117"><span class="ch-t ui">18:37</span><span class="ch-title">Prognostiko</span></button></li><li><button class="ch ch-intro" data-t="1296"><span class="ch-t ui">21:36</span><span class="ch-title">Intro — Divergent Mix // 2 Books</span></button></li><li><button class="ch" data-t="1333"><span class="ch-t ui">22:13</span><span class="ch-title">Divergent Mix // 2 Books</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #f0a93c;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/barn-dance-art.jpg" alt="Barn Dance cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#f0a93c;">Episode · 27:33</div>
+        <h2 class="ep-title">Barn Dance — the whole album, sung and explained</h2>
+        <p class="ep-summary">Barn Dance played end to end — Scripture and old hymns kicked up into a warm, string-lit hoedown — with a short spoken intro before every song telling you the Scripture and the story underneath it. Isaiah&#x27;s courtroom grace, the peace that tore down the dividing wall, a metrical Psalm 23, Reginald Heber&#x27;s martyr-hymn, Horatius Bonar&#x27;s threefold invitation, and Psalm 1&#x27;s tree by the water.</p>
+        <a class="ep-studylink ui" href="/barn-dance/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/barn-dance.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Grace Has Come</span></button></li><li><button class="ch" data-t="57"><span class="ch-t ui">0:57</span><span class="ch-title">Grace Has Come</span></button></li><li><button class="ch ch-intro" data-t="267"><span class="ch-t ui">4:27</span><span class="ch-title">Intro — We&#x27;re So Glad</span></button></li><li><button class="ch" data-t="313"><span class="ch-t ui">5:13</span><span class="ch-title">We&#x27;re So Glad</span></button></li><li><button class="ch ch-intro" data-t="538"><span class="ch-t ui">8:58</span><span class="ch-title">Intro — Counting Sheep</span></button></li><li><button class="ch" data-t="585"><span class="ch-t ui">9:45</span><span class="ch-title">Counting Sheep</span></button></li><li><button class="ch" data-t="821"><span class="ch-t ui">13:41</span><span class="ch-title">A word from our sponsor — Providence Community Church</span></button></li><li><button class="ch ch-intro" data-t="839"><span class="ch-t ui">13:59</span><span class="ch-title">Intro — The Son of God Goes Forth to War</span></button></li><li><button class="ch" data-t="884"><span class="ch-t ui">14:44</span><span class="ch-title">The Son of God Goes Forth to War</span></button></li><li><button class="ch ch-intro" data-t="1136"><span class="ch-t ui">18:56</span><span class="ch-title">Intro — Come to Me</span></button></li><li><button class="ch" data-t="1177"><span class="ch-t ui">19:37</span><span class="ch-title">Come to Me</span></button></li><li><button class="ch ch-intro" data-t="1395"><span class="ch-t ui">23:15</span><span class="ch-title">Intro — Psalm 1</span></button></li><li><button class="ch" data-t="1446"><span class="ch-t ui">24:06</span><span class="ch-title">Psalm 1</span></button></li></ol>
+  </article>
+  <article class="ep-card" style="border-top:3px solid #e8ad5e;">
+    <div class="ep-head">
+      <img class="ep-art" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/that-nazarene-art.jpg" alt="That Nazarene cover">
+      <div class="ep-meta">
+        <div class="ep-eyebrow ui" style="color:#e8ad5e;">Episode · 32:08</div>
+        <h2 class="ep-title">That Nazarene — the whole album, sung and explained</h2>
+        <p class="ep-summary">That Nazarene played end to end — shoegaze meets the Laurel Canyon — with a short spoken introduction before every song telling you the Scripture and the story underneath it. Six songs, six intros, one continuous listen: the risen Carpenter King, worship in the middle of doubt, two Isaac Watts hymns made new, and the faithfulness that holds through the drifting and the fall.</p>
+        <a class="ep-studylink ui" href="/that-nazarene/">Lyrics &amp; study for this album →</a>
+      </div>
+    </div>
+    <audio class="ep-audio" controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/podcast/that-nazarene.mp3"></audio>
+    <div class="ch-label ui">Chapters — tap to jump</div>
+    <ol class="ep-chapters"><li><button class="ch ch-intro" data-t="0"><span class="ch-t ui">0:00</span><span class="ch-title">Intro — Shovel, Sword, Headphones</span></button></li><li><button class="ch" data-t="60"><span class="ch-t ui">1:00</span><span class="ch-title">Shovel, Sword, Headphones</span></button></li><li><button class="ch ch-intro" data-t="229"><span class="ch-t ui">3:49</span><span class="ch-title">Intro — That Nazarene</span></button></li><li><button class="ch" data-t="287"><span class="ch-t ui">4:47</span><span class="ch-title">That Nazarene</span></button></li><li><button class="ch ch-intro" data-t="545"><span class="ch-t ui">9:05</span><span class="ch-title">Intro — God Knows</span></button></li><li><button class="ch" data-t="592"><span class="ch-t ui">9:52</span><span class="ch-title">God Knows</span></button></li><li><button class="ch ch-intro" data-t="868"><span class="ch-t ui">14:28</span><span class="ch-title">Intro — I&#x27;ll Praise My Maker</span></button></li><li><button class="ch" data-t="907"><span class="ch-t ui">15:07</span><span class="ch-title">I&#x27;ll Praise My Maker</span></button></li><li><button class="ch ch-intro" data-t="1205"><span class="ch-t ui">20:05</span><span class="ch-title">Intro — Faithful</span></button></li><li><button class="ch" data-t="1249"><span class="ch-t ui">20:49</span><span class="ch-title">Faithful</span></button></li><li><button class="ch ch-intro" data-t="1485"><span class="ch-t ui">24:45</span><span class="ch-title">Intro — Blessed Are</span></button></li><li><button class="ch" data-t="1535"><span class="ch-t ui">25:35</span><span class="ch-title">Blessed Are</span></button></li></ol>
+  </article>
+  </div>
+
+  <script>
+  (function() {
+    // Tap a chapter → seek that card's audio and play.
+    document.querySelectorAll('.ch').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var card = btn.closest('.ep-card');
+        var audio = card.querySelector('.ep-audio');
+        if (!audio) return;
+        audio.currentTime = parseFloat(btn.getAttribute('data-t')) || 0;
+        audio.play().catch(function() {});
+        card.querySelectorAll('.ch').forEach(function(b) { b.classList.remove('playing'); });
+        btn.classList.add('playing');
+      });
+    });
+    // Copy RSS feed to clipboard.
+    var note = document.getElementById('subNote');
+    document.querySelectorAll('.sub-btn.rss').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var feed = btn.getAttribute('data-feed');
+        navigator.clipboard.writeText(feed).then(function() {
+          note.textContent = 'Feed copied — paste it into any podcast app: ' + feed;
+        }, function() {
+          note.textContent = 'Copy this feed into any podcast app: ' + feed;
+        });
+      });
+    });
+    // Spotify not yet submitted.
+    document.querySelectorAll('.sub-btn.soon').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        note.textContent = 'Spotify listing is on the way. For now, use Apple Podcasts or the RSS feed.';
+      });
+    });
+  })();
+  </script>
+</main>
+<footer class="site-footer ui">
+  <p>Uncle Theology — sermon-rooted theology in song.<br>
+  Lyrics &amp; Scripture © Chris Oswald. Hover a reference to read the ESV text.</p>
+</footer>
+<script>
+var refTagger = { settings: {
+  bibleVersion: "ESV",
+  useTooltip: true,
+  tagChapters: false,
+  caseInsensitive: false,
+  linksOpenNewWindow: true,
+  noSearchClassNames: ["lyrics", "site-brand", "breadcrumb", "song-title", "album-title", "disco-title", "site-nav", "track-title", "card-title", "ep-title", "ep-summary", "ch-title"]
+} };
+(function(d, t) {
+  var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  g.src = "https://api.reftagger.com/v2/RefTagger.js";
+  s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+</body>
+</html>

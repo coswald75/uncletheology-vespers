@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Earthy Piety of Providence — Vespers</title>
+<meta name="description" content="The earthy piety of providence — Ecclesiastes read as a laboratory notebook. The four things fitting for a man under the sun — work, wine, wife, and worship — the maze that is “not without a plan,” and the one verdict the Preacher hands over without its ground: “for God now accepteth thy works.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/the-earthy-piety-of-providence">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Earthy Piety of Providence — Vespers">
+<meta property="og:description" content="The earthy piety of providence — Ecclesiastes read as a laboratory notebook. The four things fitting for a man under the sun — work, wine, wife, and worship — the maze that is “not without a plan,” and the one verdict the Preacher hands over without its ground: “for God now accepteth thy works.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/the-earthy-piety-of-providence">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Friday · August 7, 2026</div>
+      <h1 class="ep-title">The Earthy Piety of Providence</h1>
+      <div class="ep-sub ui">The Scriptures · Ecclesiastes 9 — work, wine, wife, and worship<span class="dot">·</span>39 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/the-earthy-piety-of-providence.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The earthy piety of providence — Ecclesiastes read as a laboratory notebook. The four things fitting for a man under the sun — work, wine, wife, and worship — the maze that is “not without a plan,” and the one verdict the Preacher hands over without its ground: “for God now accepteth thy works.”</p>
+    <div class="ep-body">
+    <p>Ecclesiastes taken as the record of an experiment — “time and chance happeneth to them all,” a film of vanity lying over the whole world like dust. The Preacher&#x27;s answer to the uncertainty is not to solve it but to tend what is yours: the four categories that run through the book — work, wine, wife, and worship — lived out in front of God&#x27;s face. Alexander Pope&#x27;s “mighty maze, but not without a plan” concedes the maze; Augustine&#x27;s ordered love answers it — “pay special regard to those who, by the accidents of time, or place, or circumstance, are brought into closer connection with you.”</p>
+    <p>Against that stands the busybody — the self-appointed bishop of other men&#x27;s business Peter files beside felons, and the metaphysical version who tries to run heaven&#x27;s books from a folding chair. The cure is Eden&#x27;s own programming, which the fall made harder but did not revoke: dress it and keep it, do your work, love your companion, eat your bread with joy. Earthy, not earthly — a faith you can get under your fingernails — and providence as the Westminster divines define it, governing all creatures and all their actions. The ground the Preacher lacked, Ephesians supplies: “he hath made us accepted in the beloved.” Closing with John Keble&#x27;s “Morning.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 9<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“The race is not to the swift… but time and chance happeneth to them all” — the Preacher&#x27;s notebook, and his four categories: work, wine, wife, and worship.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 9:7–10<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Go thy way, eat thy bread with joy… for God now accepteth thy works” — the verdict handed over without its ground.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Alexander Pope · An Essay on Man<span class="walk-cite ui">1733</span></div>
+        <div class="walk-note">“A mighty maze! but not without a plan” — the Christian position in six words; it concedes the maze.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine on ordered love<span class="walk-cite ui">On Christian Doctrine · Confessions</span></div>
+        <div class="walk-note">The shape of our concern — “pay special regard to those who, by the accidents of time, or place, or circumstance, are brought into closer connection with you.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">The busybody · 1 &amp; 2 Thessalonians · 1 Peter · Proverbs 26<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Study to be quiet, and to do your own business” — and the overseer of what belongs to another, filed in a lineup with felons.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Thomas Fuller · Marcus Aurelius<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“Curiosity is a kernel of the forbidden fruit”; and the cure — “work at that which is before thee… without allowing anything else to distract thee.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Genesis 2–3 · the garden and the curse<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Dress it and keep it — the programming the fall made harder but did not revoke. Do Eden anyway.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Earthy, not earthly · James 3 · Colossians 3<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Not the world set up as a rival to God, but Adam from the adamah — a dirt creature God called very good; a faith you can get under your fingernails.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Providence · Westminster · Proverbs 16 · South · Flavel<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“The lot is cast into the lap; but the whole disposing thereof is of the LORD” — “he that will watch providence shall never want a providence to watch.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">Ephesians 2 · John Keble · “Morning”<span class="walk-cite ui">Scripture · KJV · 1827</span></div>
+        <div class="walk-note">“By grace are ye saved… we are his workmanship” — “the trivial round, the common task, would furnish all we ought to ask.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the earthy piety of providence.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>The book of Ecclesiastes is the record of an experiment. The Preacher says so himself, near the beginning, and it is worth hearing him say it, because everything that follows is the laboratory notebook.</p>
+      <p>From Ecclesiastes:</p>
+      <p>I sought in mine heart to give myself unto wine, yet acquainting mine heart with wisdom; and to lay hold on folly, till I might see what was that good for the sons of men, which they should do under the heaven all the days of their life.</p>
+      <p>That is the question. Not what is true in the abstract. Not what a man ought to believe. What is good for the sons of men to do — under heaven, all the days of their life. It is a question about Tuesday.</p>
+      <p>And after a thorough investigation, he finds a layer over everything. A film of futility and uncertainty and unfairness, lying on top of the whole world like dust.</p>
+      <p>He says it twice in the chapter this series is built on. First, at the opening:</p>
+      <p>For all this I considered in my heart even to declare all this, that the righteous, and the wise, and their works, are in the hand of God: no man knoweth either love or hatred by all that is before them. All things come alike to all: there is one event to the righteous, and to the wicked; to the good and to the clean, and to the unclean; to him that sacrificeth, and to him that sacrificeth not: as is the good, so is the sinner; and he that sweareth, as he that feareth an oath. This is an evil among all things that are done under the sun, that there is one event unto all.</p>
+      <p>And again, further down the same chapter:</p>
+      <p>I returned, and saw under the sun, that the race is not to the swift, nor the battle to the strong, neither yet bread to the wise, nor yet riches to men of understanding, nor yet favour to men of skill; but time and chance happeneth to them all. For man also knoweth not his time: as the fishes that are taken in an evil net, and as the birds that are caught in the snare; so are the sons of men snared in an evil time, when it falleth suddenly upon them.</p>
+      <p>Notice that he laments it. He calls it an evil. He is not a man making peace with the way things are; he seems to understand that this is not how things are supposed to be. But he still has to answer the question he started with. What is fitting for a man to do under the sun?</p>
+      <p>And he arrives at four categories. They run through the whole book, sometimes together, more often in pieces.</p>
+      <p>Work. Labor, toil, the thing your hands find to do.</p>
+      <p>Wine. Lawful pleasure. Celebration in small, regular doses.</p>
+      <p>Wife. The spouse, and the companions God has given.</p>
+      <p>Worship. The fear of God, and the seeking of wisdom, which in this book are never two different activities.</p>
+      <p>Sometimes he gives a partial list. Behold that which I have seen: it is good and comely for one to eat and to drink, and to enjoy the good of all his labour that he taketh under the sun all the days of his life, which God giveth him: for it is his portion. That is work and wine, and no more.</p>
+      <p>Sometimes he gives only the last of the four, and gives it as the summary of everything. Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man. For God shall bring every work into judgment, with every secret thing, whether it be good, or whether it be evil.</p>
+      <p>But in one place he lays out the whole list at once.</p>
+      <p>From Ecclesiastes:</p>
+      <p>Go thy way, eat thy bread with joy, and drink thy wine with a merry heart; for God now accepteth thy works. Let thy garments be always white; and let thy head lack no ointment. Live joyfully with the wife whom thou lovest all the days of the life of thy vanity, which he hath given thee under the sun, all the days of thy vanity: for that is thy portion in this life, and in thy labour which thou takest under the sun. Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.</p>
+      <p>There it all is. Bread and wine. Clean clothes and oil on the head. The wife. The work. And under all of it, the sentence that will take the rest of this hour to pay out: for God now accepteth thy works.</p>
+      <p>A word about the fourth category, because it is easy to misplace. Joel Beeke defines the fear of God this way: to fear the Lord is to be deeply aware that everything I do, say, and think is open to the all-seeing eyes of God, my creator, father, and judge, and therefore to be genuinely concerned to live in such a way as to please him and to keep my conscience clear before him.</p>
+      <p>Notice that this is not primarily a feeling. It is about living the whole of an ordinary life in front of somebody. Which means the fear of God is not a fourth item standing beside the other three. It is the air the other three are lived in. You work before his face. You eat and drink before his face. You love your wife before his face.</p>
+      <p>Now to the uncertainty itself, because that is the wall the whole book keeps running into.</p>
+      <p>There is a large body of research on how human beings respond to not knowing. It has an abbreviation — I. U., intolerance of uncertainty — and it names four common responses.</p>
+      <p>The first is to freeze. Uncertainty paralyzes; nothing gets decided, so nothing gets done.</p>
+      <p>The second is to seize. Uncertainty is intolerable, so the person grabs whatever data is at hand and forms an opinion far too quickly, because a wrong answer is more comfortable than an open question.</p>
+      <p>The third is to fret. Rumination. Worry. Turning it over and over without ever setting it down.</p>
+      <p>The fourth is to explore. The person moves toward the ambiguity and tries to work it out.</p>
+      <p>The Preacher&#x27;s verdict is that none of these fundamentally work. Not one of them is what is good for man to do. And that includes the last one, which is the one that flatters us most.</p>
+      <p>His first move is to tell you where the problem actually is. It is not in the world. It is in us. The world is not running loose. It only looks that way from where we are standing — and where we are standing is the whole issue. We are creatures. We see a small piece of a very large thing, and a small piece of a pattern looks like no pattern at all.</p>
+      <p>Alexander Pope put the whole difficulty in half a line: a mighty maze, but not without a plan.</p>
+      <p>That is the Christian position in six words, and note what it concedes. It concedes the maze. It does not tell you the walls are an illusion, or that you would see the way out if you were only more spiritual. It says the maze is real, and it was laid out on purpose.</p>
+      <p>Hear this carefully, because there is a way of saying it that says more than the Bible says. This is not the claim that nothing is really wrong. The Preacher himself calls it an evil, and he is right to. Things are genuinely broken. The claim is that nothing is unattended. There is no corner of this world where God has taken his hand off the wheel, no event that got past him, no loose thread. Not random. Not unsupervised. Just, from here, unreadable.</p>
+      <p>It is worth naming the systems that take the other view, because they are not obscure and they are not all irreligious.</p>
+      <p>Atheistic naturalism. Chance and necessity, and nothing standing behind either one.</p>
+      <p>Paganism, which is not a machine but a crowd. Many wills, competing, capricious, and themselves subject to fate. Hence divination, omens, luck — technologies for managing gods who might be in a mood.</p>
+      <p>Epicureanism. Atoms and the swerve, which is a literal built-in indeterminacy, and gods who exist but are not engaged with any of it.</p>
+      <p>And existentialism, in which the universe is silent and meaning is imposed by the will rather than discovered.</p>
+      <p>Christianity does not hold that reality is truly random. It holds that it often appears that way to us. Chance is the name we give to God&#x27;s handwriting when he has not signed it.</p>
+      <p>The Preacher gets there himself, and he gets there by exhausting the alternative.</p>
+      <p>From Ecclesiastes:</p>
+      <p>When I applied mine heart to know wisdom, and to see the business that is done upon the earth: for also there is that neither day nor night seeth sleep with his eyes: then I beheld all the work of God, that a man cannot find out the work that is done under the sun: because though a man labour to seek it out, yet he shall not find it; yea further; though a wise man think to know it, yet shall he not be able to find it.</p>
+      <p>And then, immediately after: that the righteous, and the wise, and their works, are in the hand of God.</p>
+      <p>So he stipulates it. God is actually in control. The work is God&#x27;s work. It simply cannot be found out from here.</p>
+      <p>And from the Puritan Stephen Charnock, the same unreadable world seen from the other end: all God&#x27;s providences are but his touch of the strings of the great instrument of the world.</p>
+      <p>Unreadable from here. And a hand on the strings. Both at once is the doctrine.</p>
+      <p>So God is in control, and we cannot read it. What are we supposed to do with that information?</p>
+      <p>One way to answer that is with what might be called an Augustinian heat map.</p>
+      <p>In two thousand nineteen, a team of psychologists led by Adam Waytz, with Jonathan Haidt and Jesse Graham among the co-authors, published a paper in Nature Communications called Ideological differences in the expanse of the moral circle. In one of its studies, participants were given a diagram of sixteen concentric rings, running outward from immediate family at the center, through friends and acquaintances and countrymen to all human beings, and then past the human boundary altogether — to mammals, to all animals, to every living thing, and finally to all things in existence.</p>
+      <p>Each person was handed a hundred moral units, described as a currency for their capacity to help, to give, to show empathy, to behave morally, and asked to distribute them across the rings however their concern actually fell.</p>
+      <p>The resulting picture is the image you have probably seen. Two heat maps side by side. One glows hot at the center and cools as it moves outward. The other is faint at the center and warms toward the edges. Conservatives concentrated their units in the innermost rings. Liberals spread theirs outward, peaking in the outer ones.</p>
+      <p>Two things about the instrument are worth saying plainly. It is small. And it is zero-sum by design — a hundred units across sixteen rings means you cannot give your family a ten without taking it from somewhere else. So what the picture measures is the shape of a person&#x27;s concern, not the amount of it. Nobody in that study cared less. They cared differently.</p>
+      <p>Now, the shape is the interesting part, and it is not a modern discovery.</p>
+      <p>From Augustine, on the ordering of love:</p>
+      <p>Now he is a man of just and holy life who forms an unprejudiced estimate of things, and keeps his affections also under strict control, so that he neither loves what he ought not to love, nor fails to love what he ought to love, nor loves that more which ought to be loved less, nor loves that equally which ought to be loved either less or more, nor loves that less or more which ought to be loved equally.</p>
+      <p>He goes on:</p>
+      <p>Further, all men are to be loved equally. But since you cannot do good to all, you are to pay special regard to those who, by the accidents of time, or place, or circumstance, are brought into closer connection with you.</p>
+      <p>Sit with the middle clause, because it is doing the work. All men are to be loved equally — he does not soften that, and he says it first. And then: but since you cannot do good to all. That is not a moral claim. That is an inventory. Love spread evenly across all things in existence is not love enlarged. It is love thinned until it does nothing.</p>
+      <p>And the criterion he gives for who gets the concentrated portion is remarkable — the accidents of time, or place, or circumstance. Accidents. Which is exactly the word for what Ecclesiastes has been calling time and chance. Augustine&#x27;s answer to the randomness is not to solve it. It is to obey it.</p>
+      <p>This is worth naming as a temptation in Christian teaching, because a certain kind of ministry runs hot on the outer rings by default. The architect of Vespers writes: most college ministries, no matter how strong they are, tend to be run by people who sit on the outer rings in this sense — maybe not theologically, but missiologically. Books like Radical, and a good deal of teaching from men worth respecting, tended toward the glamorization of serving God out there, over against a more localized faithfulness that treats your proximate world as God&#x27;s providence to you. He caused you to be born to these people. He caused you to be born in this place. And so forth.</p>
+      <p>And so one of the Preacher&#x27;s answers to the perceived uncertainty and unfairness of the world is to tend to your immediate world and your immediate people. Your work. Your wine. Your wife. Your worship.</p>
+      <p>And there is a failure mode on the other side of that, and it has a name in the New Testament.</p>
+      <p>There is a word there for the man or woman who will not keep the heat map centered where God put it. And it is a harder word than you would expect.</p>
+      <p>The positive command first, and it is almost comically ordinary.</p>
+      <p>From Paul, to the Thessalonians:</p>
+      <p>And that ye study to be quiet, and to do your own business, and to work with your own hands, as we commanded you; that ye may walk honestly toward them that are without, and that ye may have lack of nothing.</p>
+      <p>Study to be quiet. The verb underneath it is the one you would ordinarily use of ambition — to make something your point of honor, to strive after it. Make it your ambition to be unremarkable. Mind your own business. Work with your hands.</p>
+      <p>And then the negative, and here is where the company gets strange.</p>
+      <p>From Peter:</p>
+      <p>But let none of you suffer as a murderer, or as a thief, or as an evildoer, or as a busybody in other men&#x27;s matters.</p>
+      <p>Read that list again and notice who he is standing next to. Murderer. Thief. Evildoer. Busybody. The Greek word in the last slot is allotriepiskopos — literally an overseer of what belongs to another. A self-appointed bishop of other people&#x27;s business. Peter puts him in a lineup with felons and does not appear to think he has overreached.</p>
+      <p>Paul knows the man too, and in the Greek he makes a pun of him.</p>
+      <p>From Paul, again to the Thessalonians:</p>
+      <p>For we hear that there are some which walk among you disorderly, working not at all, but are busybodies. Now them that are such we command and exhort by our Lord Jesus Christ, that with quietness they work, and eat their own bread.</p>
+      <p>Working not at all, but working around. That is the pun — ergazomenous, periergazomenous. Busy about everything except the thing that is actually theirs.</p>
+      <p>And Hebrew wisdom has his portrait, one line, and it is the funniest sentence in Proverbs. He that passeth by, and meddleth with strife belonging not to him, is like one that taketh a dog by the ears.</p>
+      <p>Here is the thing to see. The busybody has a heat map too. It is simply inverted. It runs hot on every ring except the one he was actually assigned.</p>
+      <p>And it is worth asking why, because it is almost never zeal. What do we know about busybodies? Usually this: they are people whose own house has fallen into some disorder. The situation at home, or in the heart, is so unattended, so sad, so hard, that the only relief available is to look out the window and find another household to critique. Managing somebody else&#x27;s ring is easier than tending your own, and it feels holier.</p>
+      <p>And there is a metaphysical version of the same man, and he is the one this text is actually confronting. The metaphysical busybody spends his life trying to get into God&#x27;s business. Auditing accounts he was never given access to. Demanding to know why that man prospers and that woman suffers. Running heaven&#x27;s books from a folding chair.</p>
+      <p>Thomas Fuller had the diagnosis: curiosity is a kernel of the forbidden fruit, which still sticketh in the throat of a natural man, sometimes to the danger of his choking. Not an appetite for knowledge — God made that one. An appetite for knowledge that was not given to you, which is a different thing entirely, and it has been lodged in the human throat since the garden.</p>
+      <p>And that is precisely what the opening of this chapter forbids. The righteous and the wise and their works are in the hand of God; no man knoweth either love or hatred by all that is before them. You will not get to the bottom of it. You were not issued the ledger.</p>
+      <p>So put it down. Tend what is yours.</p>
+      <p>Here is what is most interesting about where the Preacher lands.</p>
+      <p>He set out asking what is good for a man to do. And in the course of his survey he catalogues what can only be described as fallout from the fall. The world he observes is not fundamentally the way things are supposed to be, and he knows it. So pay careful attention to the conclusions he actually reaches. Because all he winds up doing is rediscovering the original programming that mankind received in the garden.</p>
+      <p>From Genesis: and the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.</p>
+      <p>And: the LORD God took the man, and put him into the garden of Eden to dress it and to keep it.</p>
+      <p>Walk with God. Do the work of tending your place. Do it with the companion God gives you. And crown the day with a little celebration of a job well done.</p>
+      <p>That is fundamental human programming. And whatever prescription the world hands you about what you should be about, what you should care about, what you should pursue — those prescribing it do not know you the way your maker knows you. Your maker is telling you in his word what you were made to do.</p>
+      <p>Now, the fall changed the environment. It did not change the programming.</p>
+      <p>From Genesis, the curse: cursed is the ground for thy sake; in sorrow shalt thou eat of it all the days of thy life; thorns also and thistles shall it bring forth to thee; and thou shalt eat the herb of the field; in the sweat of thy face shalt thou eat bread, till thou return unto the ground; for out of it wast thou taken: for dust thou art, and unto dust shalt thou return.</p>
+      <p>Look at what the curse actually does. It does not revoke the work, or the ground, or the bread, or the marriage. It makes every one of them harder. Thorns and sweat and sorrow are added to the assignment. The assignment stands.</p>
+      <p>The architect of Vespers writes:</p>
+      <p>I was in New York City in the autumn of two thousand one, within weeks of the attacks of the eleventh of September. The rubble was still smoking. People were still walking around with a sort of disoriented look in their eyes. And there was a layer of dust over everything.</p>
+      <p>That is the prevailing image I have of what Ecclesiastes is.</p>
+      <p>The fall of man was like a giant bomb going off in the world. It created so many of the conditions of vanity the Preacher observes. What is a man to do? And his conclusion is this: do Eden anyway.</p>
+      <p>Yes, death and despair and uncertainty have come into the world. There is a layer of vanity on everything, the way there was dust on everything. But none of that changes what a human being is, or what a human being was made to do. And we see that in Eden. However different our environment is from the original, we are hard-wired to tend to life in the way Ecclesiastes describes.</p>
+      <p>Walk with God. Do your work. Drink your wine. Love your wife.</p>
+      <p>From Marcus Aurelius, on the discipline of the thing in front of you: if thou workest at that which is before thee vigorously, calmly, without allowing anything else to distract thee, thou wilt live happy; and there is no man who is able to prevent it.</p>
+      <p>Without allowing anything else to distract thee. That is the busybody&#x27;s cure, stated by an emperor.</p>
+      <p>Now to the title, because all three words in it are load-bearing.</p>
+      <p>The earthy piety of providence.</p>
+      <p>By earthy we mean earthy — and not earthly. Those are two different words and the Bible treats them very differently.</p>
+      <p>Earthly is a word the New Testament almost always uses as an accusation. James says there is a wisdom which descendeth not from above, but is earthly, sensual, devilish. Paul describes the enemies of the cross as those whose glory is in their shame, who mind earthly things. And to the Colossians: set your affection on things above, not on things on the earth. Earthly means the world set up as a rival to God. It means loving the gift instead of the giver.</p>
+      <p>Earthy means something else entirely. Earthy means made out of dirt and not embarrassed about it. The man&#x27;s name in Genesis is Adam, and the ground he is taken from is adamah. He is a dirt creature, and God looked at the dirt creature and said that it was very good. Earthy means bread and wine and oil on the head and clean clothes and a wife and a job and a Tuesday. It means a faith you can get under your fingernails.</p>
+      <p>So there is an error on each side, and this text steers between them. On one side is the earthly man, who has the dirt and no God. On the other side is a kind of over-spiritualized Christian who is too heavenly to enjoy his dinner — who suspects that anything he can taste must be a distraction from anything that matters.</p>
+      <p>The novelist Henry Cockton drew that second man from life: there is a large class of people who deem the business of life far too weighty and momentous to be made light of, who would leave merriment to children, and laughter to idiots. Surely it cannot be requisite to a man&#x27;s being in earnest that he should wear a perpetual frown.</p>
+      <p>Ecclesiastes will not let you be either man. It hands you bread and it tells you God has already approved you, and it will not let you separate the two.</p>
+      <p>By piety we mean godliness that shows up in your ordinary obligations. The old word is pietas, and it never meant a mood. It meant the faithful discharge of what you actually owe — to God first, and then to the people God has bound you to. Piety is not intensity. It is reliability in front of God&#x27;s face. It is what the fear of God looks like on a Wednesday.</p>
+      <p>And by providence we mean the doctrine. The Westminster divines put it about as plainly as it can be put: God&#x27;s works of providence are his most holy, wise, and powerful preserving and governing all his creatures, and all their actions.</p>
+      <p>Not a God who wound the world up and walked away — that is deism, and it is not what we believe. Not fate, which is a machine with nobody home. Providence means a person, governing everything, all the time, on purpose, and toward good ends.</p>
+      <p>The word itself is pro-videre. To see beforehand — and therefore to provide. Which is exactly the hinge of this passage. Ecclesiastes says man cannot see ahead; he cannot find it out. Providence says someone can, and does, and has already made provision.</p>
+      <p>From Proverbs: the lot is cast into the lap; but the whole disposing thereof is of the LORD.</p>
+      <p>That is the sentence that ends the argument. The lot is genuinely cast; nobody is pretending the dice do not roll. But the disposing of it — every decision of it — is the LORD&#x27;s. Your address, your era, your family, your assignment: not accidents of biography in the sense of being unowned. That is providence. Which is why tending your own ring is not smallness. It is obedience to an assignment.</p>
+      <p>Two of the old divines on how to live in it. From Robert South, the working posture: we should, in every great enterprise we take in hand, prepare all things with that care, diligence, and activity, as if there were no such thing as providence for us to depend upon; and again, when we have done all this, we should as wholly and humbly rely upon it, as if we had made no preparations at all.</p>
+      <p>And from John Flavel, who wrote the book on the subject, the shortest version of the whole doctrine: he that will watch providence shall never want a providence to watch.</p>
+      <p>Which leaves the sentence we set aside at the beginning. For God now accepteth thy works.</p>
+      <p>The Preacher saw through a glass, darkly. He could tell you that God had approved. He could not tell you how. He hands you the bread and the verdict in the same breath and never explains the ground of it. He simply asserts it, and moves on to the clean clothes and the oil.</p>
+      <p>Here is the ground of it.</p>
+      <p>From Paul, to the Ephesians:</p>
+      <p>And you hath he quickened, who were dead in trespasses and sins; wherein in time past ye walked according to the course of this world, according to the prince of the power of the air, the spirit that now worketh in the children of disobedience: among whom also we all had our conversation in times past in the lusts of our flesh, fulfilling the desires of the flesh and of the mind; and were by nature the children of wrath, even as others.</p>
+      <p>He goes on:</p>
+      <p>But God, who is rich in mercy, for his great love wherewith he loved us, even when we were dead in sins, hath quickened us together with Christ, by grace ye are saved; and hath raised us up together, and made us sit together in heavenly places in Christ Jesus: that in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through Christ Jesus.</p>
+      <p>And the conclusion:</p>
+      <p>For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: not of works, lest any man should boast. For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.</p>
+      <p>Dead men made alive. Not of works, lest any man should boast. Earlier in the same letter Paul uses a word for it that lands exactly where Ecclesiastes lands — he hath made us accepted in the beloved. Accepted. God has already approved what you do, because he has already approved the one in whom you stand. The Preacher had the verdict without the ground. We have both.</p>
+      <p>And notice the last thing Paul says. The good works were before ordained — which is the word providence again, wearing different clothes. They were assigned before you ever got to them.</p>
+      <p>So what turned out to be in the assignment? Paul itemizes it in the back half of the same letter, and the answer is startlingly domestic. Household codes. Wives and husbands. Fathers and children. Servants and masters. Doing your work heartily, as to the Lord and not to men. The good works God prepared beforehand look like living well together in close proximity and doing your work well.</p>
+      <p>Which is to say: your work, your wine, your wife, your worship.</p>
+      <p>We close tonight with John Keble, from The Christian Year, published in eighteen twenty-seven. The poem is called Morning, which is a strange thing to read at the end of a day, except that it is the best statement in English of everything we have said tonight.</p>
+      <p>From Keble:</p>
+      <p>New every morning is the love
+Our wakening and uprising prove;
+Through sleep and darkness safely brought,
+Restored to life, and power, and thought.</p>
+      <p>New mercies, each returning day,
+Hover around us while we pray;
+New perils past, new sins forgiven,
+New thoughts of God, new hopes of Heaven.</p>
+      <p>If on our daily course our mind
+Be set to hallow all we find,
+New treasures still, of countless price,
+God will provide for sacrifice.</p>
+      <p>Old friends, old scenes will lovelier be,
+As more of Heaven in each we see:
+Some softening gleam of love and prayer
+Shall dawn on every cross and care.</p>
+      <p>He goes on:</p>
+      <p>We need not bid, for cloistered cell,
+Our neighbour and our work farewell,
+Nor strive to wind ourselves too high
+For sinful man beneath the sky:</p>
+      <p>The trivial round, the common task,
+Would furnish all we ought to ask;
+Room to deny ourselves; a road
+To bring us daily nearer God.</p>
+      <p>Only, O Lord, in Thy dear love
+Fit us for perfect Rest above;
+And help us, this and every day,
+To live more nearly as we pray.</p>
+      <p>Go to bed. Get up in the morning. Do your work. Love the people God put within arm&#x27;s reach of you. Eat your bread with joy and drink your wine with a merry heart, and do all of it in front of his face.</p>
+      <p>The world will remain unreadable. It was never yours to read. It is his, and he is not asleep, and he has already approved you in the Beloved.</p>
+      <p>Do Eden anyway.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

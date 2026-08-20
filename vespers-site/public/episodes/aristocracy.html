@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aristocracy — Vespers</title>
+<meta name="description" content="The word is Greek, and it means the rule of the best — and the whole evening turns on that one word “best”: who they are, how you would know them, whether their sons are anything like them, and what becomes of the idea in a kingdom where the last are made first.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/aristocracy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aristocracy — Vespers">
+<meta property="og:description" content="The word is Greek, and it means the rule of the best — and the whole evening turns on that one word “best”: who they are, how you would know them, whether their sons are anything like them, and what becomes of the idea in a kingdom where the last are made first.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/aristocracy">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Great Ideas · Tuesday · July 28, 2026</div>
+      <h1 class="ep-title">Aristocracy</h1>
+      <div class="ep-sub ui">Great Idea №3 · the rule of the best<span class="dot">·</span>34 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/aristocracy.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The word is Greek, and it means the rule of the best — and the whole evening turns on that one word “best”: who they are, how you would know them, whether their sons are anything like them, and what becomes of the idea in a kingdom where the last are made first.</p>
+    <div class="ep-body">
+    <p>Great Idea number three, following the map onward from Angel and Animal. If someone must rule, who ought it to be? We open where Scripture opens it — the Lord who raiseth up the poor out of the dust to set them among princes — and then hand the question to the philosophers: Plato&#x27;s city of the trained and the just, Aristotle&#x27;s rule of the most worthy and its corruptions, and the ancients worrying the old gap between noble blood and noble men.</p>
+    <p>Aquinas sets it inside the story of Israel and its seventy elders “in virtue, not in acreage”; Bacon, Pascal, and the wits weigh birth against worth. Then across the ocean, Jefferson and Adams spend their retirement arguing the natural aristocracy of virtue and talent against the artificial one of wealth and birth; Tocqueville sings the elegy of the aristocratic world as the democratic age comes in; and Spurgeon takes up the psalm we began with, before Burns closes it in his own Scots — a man&#x27;s a man for a&#x27; that.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Proverbs, Ecclesiastes, Hannah&#x27;s Prayer &amp; Psalm 113<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“By me kings reign” — and the Lord who raiseth up the poor out of the dust and the beggar from the dunghill, to set them among princes.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Plato · The Republic IV &amp; VIII<span class="walk-cite ui">c. 375 BC · trans. Jowett</span></div>
+        <div class="walk-note">Aristocracy not as a class of families but as the city ruled by the trained and the just — and how it first begins to die.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Aristotle · Politics III<span class="walk-cite ui">c. 350 BC · trans. Ellis</span></div>
+        <div class="walk-note">The rule of the most worthy, its corruption into oligarchy, and the doubt that has haunted the idea ever since: every party thinks its own claim to rule the just one.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">The ancients on blood vs. worth<span class="walk-cite ui">Euripides · Seneca · Juvenal · Homer</span></div>
+        <div class="walk-note">“Few sons attain the praise of their great sires” — the long complaint that noble birth and noble men are not the same thing.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Aquinas · Summa Theologica I-II, Q105 a1<span class="walk-cite ui">c. 1270 · English Dominican trans.</span></div>
+        <div class="walk-note">Israel&#x27;s mixed constitution — kingdom, aristocracy, and democracy together — and the seventy elders chosen “in virtue,” not in acreage.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Bacon · Of Nobility<span class="walk-cite ui">1612 · Essays</span></div>
+        <div class="walk-note">The ancient noble house as “a fair timber tree, sound and perfect” — and the warning that nobility of birth commonly abateth industry.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Jefferson &amp; Adams · the 1813 letters<span class="walk-cite ui">October–November 1813</span></div>
+        <div class="walk-note">Two old rivals arguing the natural aristocracy of virtue and talent against the artificial one of wealth and birth — the wheat from the chaff.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Tocqueville · Democracy in America<span class="walk-cite ui">1840 · trans. Reeve</span></div>
+        <div class="walk-note">The elegy at the book&#x27;s close: the aristocratic world giving way to the democratic, judged at last by the eye of God, to whom “the greater well-being of all” is most pleasing.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Corinthians 1 &amp; James 2<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">God hath chosen the base things of the world to confound the mighty — and the church warned against the gold ring and the goodly apparel.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">Spurgeon · Treasury of David, Psalm 113<span class="walk-cite ui">1834–1892 · public domain</span></div>
+        <div class="walk-note">“It is worth while to be cast down, to be so divinely raised from the dust” — all his people made princes.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">11</div>
+      <div class="walk-body">
+        <div class="walk-src">Robert Burns · “A Man&#x27;s a Man for A&#x27; That”<span class="walk-cite ui">1795 · read whole</span></div>
+        <div class="walk-note">The ploughman&#x27;s answer, sung in Scots: the rank is but the guinea&#x27;s stamp; the man&#x27;s the gowd for a&#x27; that.</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the third of the great ideas — Aristocracy.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>We are walking the hundred and two great ideas in the order Mortimer Adler mapped them, and tonight we come to the third: aristocracy. The word is Greek, and it means the rule of the best. Everything in tonight&#x27;s readings hangs on that word &quot;best&quot; — who the best are, how you would know them, whether their sons are anything like them, and what a kingdom looks like where the last are made first. We begin with Scripture.</p>
+      <p>From the Proverbs:</p>
+      <p>By me kings reign, and princes decree justice. By me princes rule, and nobles, even all the judges of the earth.</p>
+      <p>From Ecclesiastes:</p>
+      <p>Blessed art thou, O land, when thy king is the son of nobles, and thy princes eat in due season, for strength, and not for drunkenness.</p>
+      <p>From the prayer of Hannah:</p>
+      <p>The Lord maketh poor, and maketh rich: he bringeth low, and lifteth up. He raiseth up the poor out of the dust, and lifteth up the beggar from the dunghill, to set them among princes, and to make them inherit the throne of glory: for the pillars of the earth are the Lord&#x27;s, and he hath set the world upon them.</p>
+      <p>And the Psalmist takes up the same song:</p>
+      <p>Who is like unto the Lord our God, who dwelleth on high, who humbleth himself to behold the things that are in heaven, and in the earth! He raiseth up the poor out of the dust, and lifteth the needy out of the dunghill; that he may set him with princes, even with the princes of his people.</p>
+      <p>Hold those verses. They will come back at the end of the evening, when Spurgeon takes them up. But first, the philosophers, who asked the question in their own way: if someone must rule, who ought it to be?</p>
+      <p>From Plato, The Republic, in Benjamin Jowett&#x27;s translation. Socrates is naming the forms of the state:</p>
+      <p>The first, I said, is that which we have been describing, and which may be said to have two names, monarchy and aristocracy, accordingly as rule is exercised by one distinguished man or by many. But I regard the two names as describing one form only; for whether the government is in the hands of one or many, if the governors have been trained in the manner which we have supposed, the fundamental laws of the State will be maintained.</p>
+      <p>For Plato, then, aristocracy is not a class of families. It is the city ruled by the trained and the just — and he knew how fragile it was. Later in the same work he asks how such a city begins to die:</p>
+      <p>First, then, I said, let us enquire how timocracy, the government of honour, arises out of aristocracy, the government of the best. Clearly, all political changes originate in divisions of the actual governing power; a government which is united, however small, cannot be moved.</p>
+      <p>From Aristotle, the Politics, in William Ellis&#x27;s translation:</p>
+      <p>When the supreme power is in the hands of more than one, but by a few only, it is an aristocracy; either because the government is in the hands of the most worthy citizens, or because it is the best form for the city and its inhabitants.</p>
+      <p>He goes on to name the corruptions:</p>
+      <p>Now the corruptions attending each of these governments are these; a kingdom may degenerate into a tyranny, an aristocracy into an oligarchy, and a state into a democracy. Now a tyranny is a monarchy where the good of one man only is the object of government, an oligarchy considers only the rich, and a democracy only the poor; but neither of them have a common good in view.</p>
+      <p>And Aristotle saw the difficulty that has haunted the idea ever since — that every party thinks its own claim to rule is the just one. He goes on:</p>
+      <p>There is also a doubt concerning the pretensions of all those who claim the honours of government: for those who found them either on fortune or family have nothing which they can justly say in their defence; since it is evident upon their principle, that if any one person can be found richer than all the rest, the right of governing all these will be justly vested in this one person. In the same manner, one man who is of the best family will claim it from those who dispute the point upon family merit.</p>
+      <p>The ancients kept returning to that gap between noble blood and noble men. From Euripides:</p>
+      <p>There is no outward mark to note the noble, for the inward qualities of the man are never clearly to be distinguished. I have often seen a man of no worth spring from a noble sire, and worthy children arise from vile parents, meanness grovelling in the rich man&#x27;s mind and generous feelings in the poor.</p>
+      <p>From Aeschylus, a portrait of the noble man himself:</p>
+      <p>Nobly born, and honoring the throne of modesty, hating vaunting language, such a one is wont to be slow at base deeds, and no coward.</p>
+      <p>From Homer&#x27;s Odyssey, in Pope&#x27;s rendering, one line:</p>
+      <p>Few sons attain the praise of their great sires, and most their sires disgrace.</p>
+      <p>From Seneca, in his letters:</p>
+      <p>Philosophy does not pay attention to pedigree. All, if their first origin be in question, are from the gods.</p>
+      <p>And again from Seneca:</p>
+      <p>He who boasts of his descent, praises the deeds of another.</p>
+      <p>From Juvenal:</p>
+      <p>Of what use are pedigrees, or to be thought of noble blood, or the display of family portraits?</p>
+      <p>From Sallust:</p>
+      <p>The glory of ancestors sheds a light around posterity; it allows neither their good nor bad qualities to remain in obscurity.</p>
+      <p>From Anacharsis the Scythian, as the old collections preserve him:</p>
+      <p>Nobility does not consist in dignity and ancient lineage, nor great revenues, lands, or possessions; but in wisdom, knowledge, and virtue, which in man is true nobility, and this nobility bringeth man to dignity.</p>
+      <p>The medieval church took up the philosophers&#x27; question and set it inside the story of Israel. From Aquinas, in the Dominican Fathers&#x27; translation. He is asking whether the Law of Moses ordered its rulers well:</p>
+      <p>Two points are to be observed concerning the right ordering of rulers in a state or nation. One is that all should take some share in the government: for this form of constitution ensures peace among the people, commends itself to all, and is most enduring. The other point is to be observed in respect of the kinds of government. The first place is held by the kingdom, where the power of government is vested in one; and aristocracy, which signifies government by the best, where the power of government is vested in a few.</p>
+      <p>He goes on:</p>
+      <p>Accordingly, the best form of government is in a state or kingdom, where one is given the power to preside over all; while under him are others having governing powers: and yet a government of this kind is shared by all, both because all are eligible to govern, and because the rulers are chosen by all. For this is the best form of polity, being partly kingdom, since there is one at the head of all; partly aristocracy, in so far as a number of persons are set in authority; partly democracy, that is, government by the people, in so far as the rulers can be chosen from the people, and the people have the right to choose their rulers. Such was the form of government established by the Divine Law.</p>
+      <p>He points to Moses:</p>
+      <p>For Moses and his successors governed the people in such a way that each of them was ruler over all; so that there was a kind of kingdom. Moreover, seventy-two men were chosen, who were elders in virtue: for it is written, I took out of your tribes wise and honorable, and appointed them rulers: so that there was an element of aristocracy. But it was a democratical government in so far as the rulers were chosen from all the people.</p>
+      <p>And Aquinas remembers how Israel got its king. He goes on:</p>
+      <p>A kingdom is the best form of government of the people, so long as it is not corrupt. But since the power granted to a king is so great, it easily degenerates into tyranny, unless he to whom this power is given be a very virtuous man: for it is only the virtuous man that conducts himself well in the midst of prosperity. Now perfect virtue is to be found in few. Hence from the very first the Lord did not set up the kingly authority with full power, but gave them judges and governors to rule them. But afterwards, when the people asked Him to do so, being indignant with them, so to speak, He granted them a king, as is clear from His words to Samuel: They have not rejected thee, but Me, that I should not reign over them.</p>
+      <p>Notice the phrase: elders in virtue. Not elders in acreage. That is the thread the early moderns will pull on. From Bacon, his essay Of Nobility:</p>
+      <p>We will speak of nobility, first as a portion of an estate, then as a condition of particular persons. A monarchy, where there is no nobility at all, is ever a pure and absolute tyranny; as that of the Turks. For nobility attempers sovereignty, and draws the eyes of the people, somewhat aside from the line royal. But for democracies, they need it not; and they are commonly more quiet, and less subject to sedition, than where there are stirps of nobles. For men&#x27;s eyes are upon the business, and not upon the persons; or if upon the persons, it is for the business&#x27; sake, as fittest, and not for flags and pedigree.</p>
+      <p>He goes on:</p>
+      <p>A great and potent nobility addeth majesty to a monarch, but diminisheth power; and putteth life and spirit into the people, but presseth their fortune. It is well, when nobles are not too great for sovereignty nor for justice; and yet maintained in that height, as the insolency of inferiors may be broken upon them, before it come on too fast upon the majesty of kings.</p>
+      <p>And on noble persons themselves, Bacon continues:</p>
+      <p>As for nobility in particular persons; it is a reverend thing, to see an ancient castle or building, not in decay; or to see a fair timber tree, sound and perfect. How much more, to behold an ancient noble family, which has stood against the waves and weathers of time! For new nobility is but the act of power, but ancient nobility is the act of time. Those that are first raised to nobility, are commonly more virtuous, but less innocent, than their descendants; for there is rarely any rising, but by a commixture of good and evil arts. But it is reason, the memory of their virtues remain to their posterity, and their faults die with themselves. Nobility of birth commonly abateth industry; and he that is not industrious, envieth him that is.</p>
+      <p>And Bacon adds a warning to statesmen:</p>
+      <p>Let states that aim at greatness take heed how their nobility and gentry do multiply too fast; for that maketh the common subject grow to be a peasant and base swain, driven out of heart, and in effect but a gentleman&#x27;s laborer.</p>
+      <p>From Pascal, as the old collections render him:</p>
+      <p>The advantage of noble birth is this, that it enables a man at the age of eighteen or twenty to claim the honors of the state with as much confidence as another might do at fifty, after a lifetime of meritorious labor; here then are thirty years gained without exertion.</p>
+      <p>The wits of that age were less patient. From Samuel Butler:</p>
+      <p>A degenerate nobleman, or one that is proud of his birth, is like a turnip. There is nothing good of him but that which is underground.</p>
+      <p>From Defoe, on his own countrymen:</p>
+      <p>Great families of yesterday we show, and lords whose parents were the Lord knows who.</p>
+      <p>From Pope, the Essay on Man:</p>
+      <p>What can ennoble sots, or slaves, or cowards? Alas! not all the blood of all the Howards.</p>
+      <p>And from Young:</p>
+      <p>They that on glorious ancestors enlarge, produce their debt, instead of their discharge.</p>
+      <p>Yet the idea had its great defender. From Burke, as the collections preserve him:</p>
+      <p>Aristocracy, if they are what they ought to be, are in my eye the great oaks that shade a country, and perpetuate their benefits from generation to generation.</p>
+      <p>From Burke again, in the Reflections on the Revolution in France:</p>
+      <p>People will not look forward to posterity, who never look backward to their ancestors.</p>
+      <p>And once more from the Reflections:</p>
+      <p>Some decent regulated pre-eminence, some preference, not exclusive appropriation, given to birth, is neither unnatural, nor unjust, nor impolitic.</p>
+      <p>From Montesquieu, on how such an order keeps itself alive:</p>
+      <p>If the pomp and splendor which surround kings form a part of their power, modesty and simplicity of manners form the strength of aristocratic nobles; when they affect no distinction, mingle with the people, are clothed like them, take part in all their pleasures, their weakness is forgotten.</p>
+      <p>Across the ocean, two old friends and old rivals spent their retirement arguing this very idea by letter. From Jefferson, writing to John Adams:</p>
+      <p>I agree with you that there is a natural aristocracy among men. The grounds of this are virtue and talents. There is also an artificial aristocracy founded on wealth and birth, without either virtue or talents; for with these it would belong to the first class. The natural aristocracy I consider as the most precious gift of nature for the instruction, the trusts, and government of society. And indeed it would have been inconsistent in creation to have formed man for the social state, and not to have provided virtue and wisdom enough to manage the concerns of the society. May we not even say that that form of government is the best which provides the most effectually for a pure selection of these natural aristoi into the offices of government? The artificial aristocracy is a mischievous ingredient in government, and provision should be made to prevent its ascendancy.</p>
+      <p>Jefferson goes on, telling Adams where he places his hope:</p>
+      <p>I think the best remedy is exactly that provided by all our constitutions, to leave to the citizens the free election and separation of the aristoi from the pseudo-aristoi, of the wheat from the chaff. In general they will elect the real good and wise. In some instances, wealth may corrupt, and birth blind them; but not in sufficient degree to endanger the society.</p>
+      <p>And Jefferson tells Adams what he had done about it in Virginia, and what he still hoped to do:</p>
+      <p>At the first session of our legislature after the Declaration of Independence, we passed a law abolishing entails. And this was followed by one abolishing the privilege of primogeniture, and dividing the lands of intestates equally among all their children. These laws, drawn by myself, laid the axe to the root of pseudo-aristocracy. And had another which I prepared been adopted by the legislature, our work would have been complete. It was a bill for the more general diffusion of learning. This proposed to establish in each ward a free school for reading, writing and common arithmetic; to provide for the annual selection of the best subjects from these schools, who might receive at the public expense a higher degree of education; and from these to select a certain number of the most promising subjects to be completed at an university, where all the useful sciences should be taught. Worth and genius would thus have been sought out from every condition of life, and completely prepared by education for defeating the competition of wealth and birth for public trusts.</p>
+      <p>Adams wrote back, unpersuaded that nature and artifice could be so neatly parted:</p>
+      <p>Your distinction between natural and artificial aristocracy does not appear to me well founded. Birth and wealth are conferred on some men, as imperiously by nature, as genius, strength or beauty. The heir to honours and riches, and power, has often no more merit in procuring these advantages, than he has in obtaining an handsome face or an elegant figure.</p>
+      <p>And Adams offers his own definition, with a thought experiment:</p>
+      <p>Pick up the first hundred men you meet, and make a republic. Every man will have an equal vote. But when deliberations and discussions are opened, it will be found that twenty-five, by their talents, virtues being equal, will be able to carry fifty votes. Every one of these twenty-five is an aristocrat, in my sense of the word; whether he obtains his one vote in addition to his own, by his birth, fortune, figure, eloquence, science, learning, craft, cunning, or even his character for good fellowship.</p>
+      <p>And Adams traces the whole genealogy of the thing in a few lines:</p>
+      <p>When aristocracies are established by human laws, and honour, wealth and power are made hereditary by municipal laws and political institutions, then I acknowledge artificial aristocracy to commence. But this artificial aristocracy can never last. The everlasting envies, jealousies, rivalries and quarrels among them, their cruel rapacities upon the poor ignorant people their followers, compel these to set up Caesar, a demagogue, to be a monarch and master. Here you have the origin of all artificial aristocracy, which is the origin of all monarchy. And both artificial aristocracy, and monarchy, and civil, military, political and hierarchical despotism, have all grown out of the natural aristocracy of virtues and talents.</p>
+      <p>Two founders, agreed that the best exist, and unable to agree on how to find them — or contain them.</p>
+      <p>The century that followed watched the old orders fall, and asked whether anything of them survived. From Chateaubriand:</p>
+      <p>Aristocracy has three successive ages — the age of superiorities, the age of privileges, and the age of vanities; having passed out of the first, it degenerates in the second, and dies out in the third.</p>
+      <p>From Guizot:</p>
+      <p>Among the masses, even in revolutions, aristocracy must ever exist; destroy it in the nobility, and it becomes centred in the rich and powerful House of the Commons; pull them down, and it still survives in the master and foreman of the workshop.</p>
+      <p>From Macaulay, watching the three estates contend:</p>
+      <p>Every schoolboy can mention instances in which sovereigns have allied themselves with the people against the aristocracy, and in which the nobles have allied themselves with the people against the sovereign; in general, when there are three parties, every one of which has much to fear from the others, it is not found that two of them combine to plunder the third.</p>
+      <p>A generation later a young Frenchman crossed the same ocean to watch the old aristocratic world give way to the democratic one, and wrote its elegy. From Tocqueville, Democracy in America, in Henry Reeve&#x27;s translation. This is from the closing pages of the whole work:</p>
+      <p>When I survey this countless multitude of beings, shaped in each other&#x27;s likeness, amidst whom nothing rises and nothing falls, the sight of such universal uniformity saddens and chills me, and I am tempted to regret that state of society which has ceased to be. When the world was full of men of great importance and extreme insignificance, of great wealth and extreme poverty, of great learning and extreme ignorance, I turned aside from the latter to fix my observation on the former alone, who gratified my sympathies. But I admit that this gratification arose from my own weakness.</p>
+      <p>He goes on:</p>
+      <p>It is because I am unable to see at once all that is around me, that I am allowed thus to select and separate the objects of my predilection from among so many others. Such is not the case with that almighty and eternal Being whose gaze necessarily includes the whole of created things, and who surveys distinctly, though at once, mankind and man. We may naturally believe that it is not the singular prosperity of the few, but the greater well-being of all, which is most pleasing in the sight of the Creator and Preserver of men. What appears to me to be man&#x27;s decline, is to His eye advancement; what afflicts me is acceptable to Him. A state of equality is perhaps less elevated, but it is more just; and its justice constitutes its greatness and its beauty.</p>
+      <p>He goes on, weighing the two worlds against each other:</p>
+      <p>Some vices and some virtues were so inherent in the constitution of an aristocratic nation, and are so opposite to the character of a modern people, that they can never be infused into it; some good tendencies and some bad propensities which were unknown to the former, are natural to the latter. They are like two distinct orders of human beings, each of which has its own merits and defects, its own advantages and its own evils. Care must therefore be taken not to judge the state of society which is now coming into existence by notions derived from a state of society which no longer exists.</p>
+      <p>And in his last lines Tocqueville turns from regret to resolve:</p>
+      <p>For myself, who now look back from this extreme limit of my task, and discover from afar, but at once, the various objects which have attracted my more attentive investigation upon my way, I am full of apprehensions and of hopes. I perceive mighty dangers which it is possible to ward off — mighty evils which may be avoided or alleviated; and I cling with a firmer hold to the belief, that for democratic nations to be virtuous and prosperous, they require but to will it.</p>
+      <p>Tocqueville reaches for the eye of God to judge between the aristocratic age and the democratic one. Scripture has been holding that gaze all evening. Hear again the apostle Paul:</p>
+      <p>For ye see your calling, brethren, how that not many wise men after the flesh, not many mighty, not many noble, are called: but God hath chosen the foolish things of the world to confound the wise; and God hath chosen the weak things of the world to confound the things which are mighty; and base things of the world, and things which are despised, hath God chosen, yea, and things which are not, to bring to nought things that are: that no flesh should glory in his presence.</p>
+      <p>And from the epistle of James:</p>
+      <p>My brethren, have not the faith of our Lord Jesus Christ, the Lord of glory, with respect of persons. For if there come unto your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile raiment; and ye have respect to him that weareth the gay clothing, and say unto him, Sit thou here in a good place; and say to the poor, Stand thou there, or sit here under my footstool: are ye not then partial in yourselves, and are become judges of evil thoughts? Hearken, my beloved brethren, Hath not God chosen the poor of this world rich in faith, and heirs of the kingdom which he hath promised to them that love him?</p>
+      <p>From Spurgeon, in the Treasury of David, on the psalm we opened with — he raiseth up the poor out of the dust:</p>
+      <p>This is an instance of his gracious stoop of love: he frequently lifts the lowest of mankind out of their poverty and degradation and places them in positions of power and honour. His good Spirit is continually visiting the downtrodden, giving beauty for ashes to those who are cast down, and elevating the hearts of his mourners till they shout for joy. These upliftings of grace are here ascribed directly to the divine hand. When no hand but his can help, he interposes, and the work is done. It is worth while to be cast down, to be so divinely raised from the dust.</p>
+      <p>He goes on:</p>
+      <p>And lifteth the needy out of the dunghill, whereon they lay like worthless refuse, cast off and cast out. How great a stoop from the height of his throne to a dunghill! How wonderful that power which occupies itself in lifting up beggars! For he lifts them out of the dunghill, not disdaining to search them out from amidst the base things of the earth, that he may by their means bring to nought the great ones, and pour contempt upon all human glorying.</p>
+      <p>And on the next verse — that he may set him with princes:</p>
+      <p>The Lord does nothing by halves: when he raises men from the dust he is not content till he places them among the peers of his kingdom. Instead of poverty, he gives us the wealth of princes; and instead of dishonour, he gives us a more exalted rank than that of the great ones of the earth. All his people are princes. He often enables those who have been most despairing to rise to the greatest heights of spirituality and gracious attainment, for those who once were last shall be first. Paul, though less than the least of all saints, was nevertheless made to be not a whit behind the very chief of the apostles; and in our own times, Bunyan, the blaspheming tinker, was raised into another John, whose dream almost rivals the visions of the Apocalypse.</p>
+      <p>So the idea comes full circle: the rule of the best, and the discovery that the best are not who the world supposed. The poets say it briefest. From Tennyson:</p>
+      <p>From yon blue heavens above us bent, the gardener Adam and his wife smile at the claims of long descent. Howe&#x27;er it be, it seems to me, &#x27;tis only noble to be good. Kind hearts are more than coronets, and simple faith than Norman blood.</p>
+      <p>We close tonight with Robert Burns — a ploughman&#x27;s answer to the whole question, sung in his own Scots. A Man&#x27;s a Man for A&#x27; That:</p>
+      <p>Is there for honest poverty That hings his head, an&#x27; a&#x27; that; The coward slave — we pass him by, We dare be poor for a&#x27; that! For a&#x27; that, an&#x27; a&#x27; that, Our toils obscure an&#x27; a&#x27; that, The rank is but the guinea&#x27;s stamp, The man&#x27;s the gowd for a&#x27; that.</p>
+      <p>What though on hamely fare we dine, Wear hoddin grey, an&#x27; a&#x27; that; Gie fools their silks, and knaves their wine; A man&#x27;s a man for a&#x27; that: For a&#x27; that, and a&#x27; that, Their tinsel show, an&#x27; a&#x27; that; The honest man, tho&#x27; e&#x27;er sae poor, Is king o&#x27; men for a&#x27; that.</p>
+      <p>Ye see yon birkie, ca&#x27;d a lord, Wha struts, an&#x27; stares, an&#x27; a&#x27; that; Tho&#x27; hundreds worship at his word, He&#x27;s but a coof for a&#x27; that: For a&#x27; that, an&#x27; a&#x27; that, His ribband, star, an&#x27; a&#x27; that: The man o&#x27; independent mind He looks an&#x27; laughs at a&#x27; that.</p>
+      <p>A prince can mak a belted knight, A marquis, duke, an&#x27; a&#x27; that; But an honest man&#x27;s abon his might, Gude faith, he maunna fa&#x27; that! For a&#x27; that, an&#x27; a&#x27; that, Their dignities an&#x27; a&#x27; that; The pith o&#x27; sense, an&#x27; pride o&#x27; worth, Are higher rank than a&#x27; that.</p>
+      <p>Then let us pray that come it may, As come it will for a&#x27; that, That sense and worth, o&#x27;er a&#x27; the earth, Shall bear the gree, an&#x27; a&#x27; that. For a&#x27; that, an&#x27; a&#x27; that, It&#x27;s coming yet for a&#x27; that, That man to man, the world o&#x27;er, Shall brothers be for a&#x27; that.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

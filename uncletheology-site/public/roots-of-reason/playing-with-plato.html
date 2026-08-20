@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playing with Plato — Roots of Reason · Uncle Theology</title>
+<meta name="description" content="Plato&#x27;s cave read through the gospel: the prisoners chained to shadows, the one man freed by a covenant light, and the call to walk out of the sin-bound dark.">
+<link rel="canonical" href="https://uncletheology.com/roots-of-reason/playing-with-plato.html">
+<link rel="alternate" type="application/rss+xml" title="UncleTheology Radio" href="https://uncletheology.com/podcast.xml">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Playing with Plato — Roots of Reason · Uncle Theology">
+<meta property="og:description" content="Plato&#x27;s cave read through the gospel: the prisoners chained to shadows, the one man freed by a covenant light, and the call to walk out of the sin-bound dark.">
+<meta property="og:url" content="https://uncletheology.com/roots-of-reason/playing-with-plato.html">
+<meta property="og:site_name" content="Uncle Theology">
+<meta property="og:image" content="https://uncletheology.com/assets/roots-of-reason/cover.jpg">
+<meta property="og:image:secure_url" content="https://uncletheology.com/assets/roots-of-reason/cover.jpg">
+<meta property="og:image:alt" content="Playing with Plato — Roots of Reason · Uncle Theology">
+<meta property="og:image:width" content="2304">
+<meta property="og:image:height" content="1728">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Playing with Plato — Roots of Reason · Uncle Theology">
+<meta name="twitter:description" content="Plato&#x27;s cave read through the gospel: the prisoners chained to shadows, the one man freed by a covenant light, and the call to walk out of the sin-bound dark.">
+<meta name="twitter:image" content="https://uncletheology.com/assets/roots-of-reason/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:         #0d0f0c;
+    --bg-2:       #14170f;
+    --surface:    #1a1e15;
+    --surface-2:  #222719;
+    --rule:       #333a28;
+    --ink:        #f3efe2;
+    --ink-soft:   #cfcab4;
+    --ink-faint:  #8f9079;
+    --green:      #3bb24a;
+    --green-deep: #1f7a33;
+    --gold:       #f4c430;
+    --gold-deep:  #c9962a;
+    --link:       #f4c430;
+    --glow-a:     rgba(59,178,74,0.10);
+    --glow-b:     rgba(244,196,48,0.06);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+    font-size: 18px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background:
+      radial-gradient(1200px 600px at 50% -8%, var(--glow-a), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, var(--glow-b), transparent 55%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  .ui { font-family: "Inter", system-ui, -apple-system, sans-serif; }
+  a { color: var(--link); text-underline-offset: 2px; }
+
+  .flag-rule { height: 4px; border: 0; margin: 0;
+    background: linear-gradient(90deg, var(--green) 0 50%, var(--gold) 50% 100%); }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(13,15,12,0.7);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 10; }
+  .site-header-inner { max-width: 1040px; margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+  .site-brand { font-weight: 700; font-size: 19px; letter-spacing: -0.01em;
+    color: var(--ink); text-decoration: none; }
+  .site-brand .dot { color: var(--gold); }
+  .site-nav { display: flex; gap: 22px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    color: var(--ink-soft); text-decoration: none; letter-spacing: 0.02em; }
+  .site-nav a:hover { color: var(--gold); }
+
+  main { max-width: 820px; margin: 0 auto; padding: 44px 24px 120px; }
+
+  /* ───── discography landing ───── */
+  .disco-intro { margin-bottom: 40px; }
+  .disco-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 12px; }
+  .disco-title { font-size: 52px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 14px; }
+  .disco-blurb { font-size: 19px; color: var(--ink-soft); margin: 0; max-width: 56ch; }
+  /* Radio page */
+  .sub-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .sub-btn { display: inline-flex; align-items: center; gap: 8px; font-family: "Inter", sans-serif;
+    font-size: 14px; font-weight: 600; letter-spacing: 0.01em; padding: 12px 20px;
+    border-radius: 999px; border: 1px solid transparent; cursor: pointer; text-decoration: none;
+    color: #fff; }
+  .sub-btn .sub-ico { font-size: 15px; }
+  .sub-btn.apple { background: #9933cc; }
+  .sub-btn.apple:hover { background: #8a1fc4; }
+  .sub-btn.spotify { background: #1db954; color: #06210f; }
+  .sub-btn.spotify:hover { background: #1ed760; }
+  .sub-btn.spotify.soon { background: transparent; color: var(--ink-faint);
+    border-color: var(--rule); cursor: default; }
+  .sub-btn.rss { background: transparent; color: var(--ink-soft); border-color: var(--rule); }
+  .sub-btn.rss:hover { border-color: var(--gold); color: var(--gold); }
+  .sub-note { min-height: 20px; margin-top: 12px; font-size: 13px; color: var(--ink-faint);
+    word-break: break-all; }
+
+  .ep-list { display: flex; flex-direction: column; gap: 26px; margin-top: 8px; }
+  .ep-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px;
+    padding: 22px 24px; }
+  .ep-head { display: flex; gap: 20px; align-items: flex-start; }
+  .ep-art { width: 130px; height: 130px; border-radius: 10px; object-fit: cover; flex: 0 0 auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
+  .ep-meta { flex: 1 1 auto; min-width: 0; }
+  .ep-eyebrow { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; }
+  .ep-title { font-size: 27px; line-height: 1.08; font-weight: 700; margin: 6px 0 10px; }
+  .ep-summary { font-size: 15px; color: var(--ink-soft); margin: 0 0 10px; }
+  .ep-studylink { font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; }
+  .ep-studylink:hover { text-decoration: underline; }
+  .ep-audio { width: 100%; margin-top: 18px; }
+  .ch-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--ink-faint); margin: 18px 0 8px; }
+  .ep-chapters { list-style: none; margin: 0; padding: 0; display: grid;
+    grid-template-columns: repeat(2, 1fr); gap: 2px 18px; }
+  .ep-chapters .ch { display: flex; align-items: baseline; gap: 12px; width: 100%; text-align: left;
+    background: none; border: 0; cursor: pointer; padding: 7px 8px; border-radius: 7px;
+    color: var(--ink); font-family: inherit; }
+  .ep-chapters .ch:hover { background: var(--surface-2); }
+  .ep-chapters .ch.playing { background: var(--surface-2); }
+  .ep-chapters .ch.playing .ch-title { color: var(--gold); }
+  .ch-t { font-size: 12px; color: var(--ink-faint); flex: 0 0 46px; }
+  .ch-title { font-size: 14px; }
+  .ch-intro .ch-title { color: var(--ink-faint); font-style: italic; }
+  @media (max-width: 620px) {
+    .ep-head { flex-direction: column; }
+    .ep-art { width: 96px; height: 96px; }
+    .ep-chapters { grid-template-columns: 1fr; }
+  }
+  .disco { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .album-card { display: block; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; background: var(--surface);
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
+  .album-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.45); }
+  .album-card .card-art { aspect-ratio: 1 / 1; overflow: hidden; }
+  .album-card .card-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .album-card .card-body { padding: 16px 18px 18px; }
+  .album-card .card-meta { font-family: "Inter", sans-serif; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 6px; }
+  .album-card .card-title { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 8px; }
+  .album-card .card-blurb { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+
+  /* ───── album hero ───── */
+  .hero { display: grid; grid-template-columns: 280px 1fr; gap: 34px; align-items: center;
+    margin-bottom: 48px; }
+  .hero-art { width: 100%; aspect-ratio: 1 / 1; border-radius: 14px; overflow: hidden;
+    border: 1px solid var(--rule); box-shadow: 0 18px 50px rgba(0,0,0,0.5); }
+  .hero-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 12px; }
+  .album-title { font-size: 52px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 14px; }
+  .album-tagline { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    letter-spacing: 0.02em; margin-bottom: 18px; }
+  .album-blurb { font-size: 19px; color: var(--ink-soft); margin: 0; }
+
+  /* ───── liner notes ───── */
+  .liner { max-width: 68ch; margin: 40px auto 8px; padding: 30px 0 0; border-top: 1px solid var(--rule); }
+  .liner-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 18px; }
+  .liner p { font-size: 18px; line-height: 1.72; color: var(--ink-soft); margin: 0 0 18px; }
+  .liner p:first-of-type { color: var(--ink); }
+  .liner em { color: var(--ink); font-style: italic; }
+  .liner strong { color: var(--gold); font-weight: 600; }
+
+  /* ───── tracklist ───── */
+  .tracklist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .track { border-bottom: 1px solid var(--rule); }
+  .track a { display: flex; align-items: center; gap: 16px; padding: 15px 12px;
+    text-decoration: none; color: var(--ink); transition: background 0.15s; }
+  .track a:hover { background: var(--surface); }
+  .track-num { font-family: "Inter", sans-serif; font-size: 13px; color: var(--ink-faint);
+    width: 26px; flex-shrink: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  .track-play { width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+    background: var(--surface-2); border: 1px solid var(--rule); color: var(--gold);
+    display: flex; align-items: center; justify-content: center; }
+  .track a:hover .track-play { background: var(--green-deep); color: #fff; border-color: var(--green); }
+  .track-title { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; flex: 1; }
+  .track-arrow { color: var(--ink-faint); font-family: "Inter", sans-serif; }
+
+  /* ───── song page ───── */
+  .breadcrumb { font-family: "Inter", sans-serif; font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 16px; }
+  .breadcrumb a { color: var(--ink-faint); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--gold); }
+  h1.song-title { font-size: 46px; line-height: 1.06; font-weight: 700; letter-spacing: -0.02em;
+    margin: 0 0 10px; }
+  .song-cite { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    margin-bottom: 26px; }
+  .song-cite span + span::before { content: "·"; margin: 0 8px; color: var(--rule); }
+
+  .audio-player { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 16px 18px; display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
+  .play-button { width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0; cursor: pointer;
+    background: var(--gold); border: 0; color: #11140d; display: flex; align-items: center;
+    justify-content: center; transition: transform 0.1s, background 0.15s; }
+  .play-button:hover { background: var(--green); color: #fff; transform: scale(1.05); }
+  .player-body { flex: 1; min-width: 0; }
+  .player-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 8px; }
+  .player-body audio { width: 100%; height: 38px; }
+
+  .about { border-left: 3px solid var(--green); background: var(--bg-2);
+    padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 34px;
+    color: var(--ink-soft); font-size: 18px; }
+  .about .about-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); display: block;
+    margin-bottom: 6px; }
+
+  .attribution { border: 1px solid var(--rule); background: var(--surface);
+    padding: 16px 20px; border-radius: 10px; margin-bottom: 34px;
+    color: var(--ink-soft); font-size: 16px; line-height: 1.55; }
+  .attribution .attr-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); display: block;
+    margin-bottom: 6px; }
+  .attribution .attr-links { font-family: "Inter", sans-serif; font-size: 13px; margin-top: 10px;
+    display: flex; flex-wrap: wrap; gap: 18px; }
+  .attribution .attr-links a { color: var(--gold); text-decoration: none; }
+  .attribution .attr-links a:hover { text-decoration: underline; }
+
+  /* lyrics */
+  .lyrics { margin: 0 0 44px; }
+  .stanza { margin: 0 0 26px; }
+  .stanza p { margin: 0; line-height: 1.5; }
+  .stanza-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 8px; }
+  .lyrics.prose .stanza p { line-height: 1.62; color: var(--ink-soft); }
+  .lyrics-pending { color: var(--ink-faint); font-style: italic; margin: 0 0 44px; }
+
+  /* scripture refs */
+  .refs { border-top: 1px solid var(--rule); padding-top: 22px; }
+  .refs h2 { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); margin: 0 0 16px; }
+  .refs ol { font-family: "Inter", sans-serif; font-size: 13.5px; color: var(--ink-soft);
+    columns: 2; column-gap: 40px; margin: 0; padding: 0; list-style: none; }
+  .refs li { margin-bottom: 7px; break-inside: avoid; }
+  .refs .rn { color: var(--ink-faint); margin-right: 6px; }
+  .refs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px dotted var(--gold-deep); }
+  .refs a:hover { color: var(--gold); }
+
+  .page-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 44px;
+    font-family: "Inter", sans-serif; font-size: 14px; }
+  .page-nav a { color: var(--gold); text-decoration: none; }
+  .page-nav a:hover { text-decoration: underline; }
+  .page-nav .spacer { flex: 1; }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 40px;
+    padding: 28px 24px; text-align: center; font-family: "Inter", sans-serif;
+    font-size: 12px; color: var(--ink-faint); }
+
+  /* ───── whole-album player ───── */
+  .album-player { background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 30px; }
+  .album-player-label { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 14px; }
+  .ap-row { display: flex; align-items: center; gap: 16px; }
+  .ap-btn { width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0; cursor: pointer;
+    background: var(--gold); border: 0; color: #11140d; display: flex; align-items: center;
+    justify-content: center; transition: transform 0.1s, background 0.15s; }
+  .ap-btn:hover { background: var(--green); color: #fff; transform: scale(1.05); }
+  .ap-skip { background: none; border: 0; color: var(--ink-soft); cursor: pointer; padding: 6px;
+    display: flex; align-items: center; }
+  .ap-skip:hover { color: var(--gold); }
+  .ap-main { flex: 1; min-width: 0; }
+  .ap-now { font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-faint); margin-bottom: 2px; }
+  .ap-track { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; }
+  .ap-seekwrap { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .ap-time { font-family: "Inter", sans-serif; font-size: 11px; color: var(--ink-faint);
+    font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .ap-seek { flex: 1; accent-color: var(--gold); height: 4px; cursor: pointer; }
+
+  /* ───── section heading (Study the songs) ───── */
+  .section-head { margin: 4px 0 6px; }
+  .section-head h2 { font-size: 30px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+  .section-sub { font-family: "Inter", sans-serif; font-size: 14px; color: var(--ink-faint);
+    margin: 0 0 16px; }
+
+  /* ───── teaching aids (study layer) ───── */
+  blockquote.thesis-hero { font-family: "Fraunces", Georgia, serif; font-size: 23px;
+    line-height: 1.4; color: var(--ink); border: 0; border-left: 3px solid var(--gold);
+    background: var(--bg-2); margin: 0 0 26px; padding: 18px 24px; border-radius: 0 10px 10px 0; }
+  blockquote.thesis-hero .thesis-label { display: block; font-family: "Inter", sans-serif;
+    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--gold); margin-bottom: 8px; }
+  .facts-strip { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule);
+    border-radius: 10px; overflow: hidden; margin: 0 0 34px; }
+  .fact { flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid var(--rule); }
+  .fact:last-child { border-right: 0; }
+  .fact-label { font-family: "Inter", sans-serif; font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 3px; }
+  .fact-value { font-size: 15px; color: var(--ink); }
+  .study { border-top: 1px solid var(--rule); padding-top: 26px; margin-top: 8px; }
+  .study > h2 { font-size: 26px; font-weight: 700; margin: 0 0 4px; }
+  .study-sub { font-family: "Inter", sans-serif; font-size: 13px; color: var(--ink-faint);
+    margin: 0 0 26px; }
+  .aid { margin: 0 0 30px; }
+  .aid > h3 { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.13em; color: var(--gold); margin: 0 0 14px; }
+  .move { display: flex; gap: 14px; margin-bottom: 16px; }
+  .move-n { font-family: "Inter", sans-serif; font-weight: 600; color: var(--green);
+    flex-shrink: 0; width: 22px; font-variant-numeric: tabular-nums; }
+  .move-body .move-label { font-weight: 600; color: var(--ink); }
+  .move-body .move-text { color: var(--ink-soft); font-size: 16.5px; line-height: 1.5; }
+  .terms { list-style: none; margin: 0; padding: 0; }
+  .terms li { margin-bottom: 14px; color: var(--ink-soft); font-size: 16.5px; line-height: 1.5; }
+  .terms .term { font-weight: 600; color: var(--gold); font-style: italic; }
+  .questions { margin: 0; padding-left: 22px; }
+  .questions li { color: var(--ink-soft); margin-bottom: 12px; line-height: 1.5; }
+  .further { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  .further li { margin-bottom: 10px; }
+  .further a { color: var(--gold); text-decoration: none; }
+  .further a:hover { text-decoration: underline; }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; gap: 22px; }
+    .album-title, .disco-title { font-size: 38px; }
+    h1.song-title { font-size: 34px; }
+    .refs ol { columns: 1; }
+    .facts-strip { flex-direction: column; }
+    .fact { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .fact:last-child { border-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-brand">Uncle Theology<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/">Albums</a>
+      <a href="/radio.html">Radio</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="flag-rule">
+<main>
+  <article class="song">
+    <div class="breadcrumb ui"><a href="/">Uncle Theology</a> · <a href="/roots-of-reason/">Roots of Reason</a> · Track 5</div>
+    <h1 class="song-title">Playing with Plato</h1>
+    <div class="song-cite ui"><span>Roots of Reason</span><span>Track 5 of 12</span></div>
+
+    <div class="audio-player">
+      <button class="play-button" aria-label="Play Playing with Plato" onclick="togglePlay(this)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="player-body">
+        <div class="player-label ui">Listen</div>
+        <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/uncle-theology/roots-of-reason/playing-with-plato.mp3">
+          Your browser does not support the audio element.
+          <a href="https://sermons-cdn.sermonsteward.com/uncle-theology/roots-of-reason/playing-with-plato.mp3">Download the MP3.</a>
+        </audio>
+      </div>
+    </div>
+
+    <div class="about"><span class="about-label ui">About this song</span>Plato&#x27;s cave read through the gospel: the prisoners chained to shadows, the one man freed by a covenant light, and the call to walk out of the sin-bound dark.</div>
+
+
+
+    <blockquote class="thesis-hero"><span class="thesis-label ui">Big idea</span>Plato’s cave is a picture of sin: humanity chained to shadows, mistaking lies for reality — until the Lord, the true Sun, frees a prisoner by sovereign covenant light and sends him back to call others out.</blockquote>
+    <div class="facts-strip"><div class="fact"><div class="fact-label ui">Doctrine</div><div class="fact-value">Depravity · Regeneration · Calling</div></div><div class="fact"><div class="fact-label ui">Anchor text</div><div class="fact-value">2 Corinthians 4 · Isaiah 42</div></div><div class="fact"><div class="fact-label ui">Form</div><div class="fact-value">Roots reggae</div></div><div class="fact"><div class="fact-label ui">Voices</div><div class="fact-value">Plato · Charles Wesley</div></div></div>
+
+  <div class="lyrics">
+    <div class="stanza"><p>Let&#x27;s talk about the Cave where the prisoners are bound,<br>
+      Deep in the dark where no truth can be found.<br>
+      Chained at the neck and the legs from their youth,<br>
+      Staring at a wall, kept far from the truth.<br>
+      Puppets cast shadows by a flickering fire<br>
+      A world of illusion, all fueled by desire.<br>
+      It&#x27;s a counterfeit world of deceptive design,<br>
+      Where sin is the shadow that&#x27;s clouding the mind.</p></div>
+    <div class="stanza"><p>It&#x27;s the Light vs. the Dark, the cave vs. the Sun,<br>
+      The battle for vision has already begun.<br>
+      The cave is the sin where humanity dwells,<br>
+      The shadows are lies that the world tries to tell.<br>
+      But the Sun is the Lord, the source of the day,<br>
+      Calling the prisoners to come out and play.<br>
+      From lies to the truth, from the night to the dawn,<br>
+      The chains of the dungeon are finally gone.</p></div>
+    <div class="stanza"><p>Now one man is freed, unchained from his seat,<br>
+      By the hand of the Lord he finds his own feet.<br>
+      Led to the opening, light floods his eyes<br>
+      Blinded by glory, he lifts to the skies.<br>
+      He sees real trees, not the shadows they cast;<br>
+      The darkness is broken, the light&#x27;s come at last.<br>
+      Just like Isaiah said it would be:<br>
+      The prisoners brought from the dark, set free.<br>
+      The LORD takes your hand as a covenant light,<br>
+      Opening blind eyes, restoring the sight.</p></div>
+    <div class="stanza"><p>He runs back to the shadows, full of joy, full of grace,<br>
+      To tell all his brothers about this new place.<br>
+      But they laugh and they mock, they say he&#x27;s insane<br>
+      They&#x27;d rather keep darkness than break from the chain.<br>
+      The dark feels safe and the light is too strange;<br>
+      They&#x27;re scared of the truth, they&#x27;re scared of the change.<br>
+      Same as in John, where the signs were all shown,<br>
+      But their hearts stayed as cold and as hard as a stone.<br>
+      They craved human praise more than glory above.</p></div>
+    <div class="stanza"><p>So they stay in the cave, in the dark that they love.</p></div>
+    <div class="stanza"><p>But if our Gospel is veiled, kept down in the shade,<br>
+      It&#x27;s veiled to the perishing, lost and afraid.<br>
+      The god of this world has blinded their mind,<br>
+      Keeping unbelievers in the dark, walking blind.<br>
+      They can&#x27;t see the light of the Gospel&#x27;s true grace,<br>
+      Or the glory of Christ in His radiant face.<br>
+      For Christ is the Image of God, the true Sun,<br>
+      Lifting the veil when the victory&#x27;s won.</p></div>
+    <div class="stanza"><p>Paul says to Timothy: I know that dark<br>
+      I lived in the Cave, I was missing the mark.<br>
+      The chief of sinners, bound up in a chain,<br>
+      I chased after shadows, I dealt out the pain.<br>
+      I thought I had vision, I thought I was wise,<br>
+      But the god of this world had blinded my eyes.<br>
+      Then God showed me mercy, His grace was so vast<br>
+      He pulled me from shackles and darkness at last.<br>
+      A covenant light for the nations to see:<br>
+      If He rescued a prisoner like me, He&#x27;ll set you free.</p></div>
+    <div class="stanza"><p>So don&#x27;t be the prisoner who clings to the wall,<br>
+      Believing the shadows and waiting to fall.<br>
+      The Good that you&#x27;re chasing has always been Him<br>
+      The Author of reason, the Light that won&#x27;t dim.<br>
+      It&#x27;s time to walk out of the sin-bound domain,<br>
+      Trust in the Wisdom that breaks every chain.<br>
+      Move into the light, let the Son clear the view<br>
+      The Cave is the old world; He&#x27;s making things new.</p></div>
+    <div class="stanza"><p>Long my imprisoned spirit lay<br>
+      Fast bound in sin and nature&#x27;s night;<br>
+      Thine eye diffused a quick&#x27;ning ray,<br>
+      I woke, the dungeon flamed with light;<br>
+      My chains fell off, my heart was free;<br>
+      I rose, went forth and followed Thee.</p></div>
+  </div>
+
+    <section class="refs">
+      <h2>Scripture References</h2>
+      <ol>
+<li><span class="rn">1.</span>John 3:19-20</li>
+<li><span class="rn">2.</span>John 8:12; Malachi 4:2</li>
+<li><span class="rn">3.</span>Isaiah 61:1; 42:7</li>
+<li><span class="rn">4.</span>Isaiah 42:6-7</li>
+<li><span class="rn">5.</span>Isaiah 42:6-7</li>
+<li><span class="rn">6.</span>John 12:37</li>
+<li><span class="rn">7.</span>John 12:43</li>
+<li><span class="rn">8.</span>2 Corinthians 4:3</li>
+<li><span class="rn">9.</span>2 Corinthians 4:4</li>
+<li><span class="rn">10.</span>2 Corinthians 4:4, 6; Colossians 1:15</li>
+<li><span class="rn">11.</span>1 Timothy 1:13</li>
+<li><span class="rn">12.</span>1 Timothy 1:15</li>
+<li><span class="rn">13.</span>1 Timothy 1:13, 16</li>
+<li><span class="rn">14.</span>Isaiah 42:6; Acts 26:18</li>
+<li><span class="rn">15.</span>John 1:9</li>
+<li><span class="rn">16.</span>Acts 12:6-7 (Wesley, “And Can It Be”)</li>
+      </ol>
+    </section>
+
+    <section class="study">
+      <h2>Study this song</h2>
+      <p class="study-sub ui">Teaching aids drawn from the song — for personal study or group discussion.</p>
+      <div class="aid"><h3>How the song moves</h3><div class="move"><div class="move-n ui">1</div><div class="move-body"><div class="move-label">The cave</div><div class="move-text">Prisoners chained from youth stare at shadows cast by a flickering fire — a counterfeit world where sin clouds the mind (John 3:19–20).</div></div></div><div class="move"><div class="move-n ui">2</div><div class="move-body"><div class="move-label">One man freed</div><div class="move-text">Not self-freed: the Lord takes his hand as a covenant light, opening blind eyes, exactly as Isaiah promised (Isaiah 42:6–7).</div></div></div><div class="move"><div class="move-n ui">3</div><div class="move-body"><div class="move-label">They love the dark</div><div class="move-text">He runs back to tell his brothers, but they mock him; craving human praise, they stay in the dark they love (John 12:37, 43).</div></div></div><div class="move"><div class="move-n ui">4</div><div class="move-body"><div class="move-label">The blinded mind</div><div class="move-text">The god of this world veils the gospel; but Paul, chief of sinners, was rescued — and so can you be (2 Corinthians 4:4; 1 Timothy 1:13–16).</div></div></div></div>
+      <div class="aid"><h3>Key terms &amp; allusions</h3><ul class="terms"><li><span class="term">the Allegory of the Cave</span> — Plato’s Republic Bk VII: prisoners mistake shadows for reality. The song reads it as sin and the new birth.</li><li><span class="term">the Sun</span> — In Plato, the Form of the Good; in the song, the Lord/Christ as the true light (John 8:12; Malachi 4:2).</li><li><span class="term">covenant light</span> — Isaiah’s “light to the nations,” given to open blind eyes (Isaiah 42:6–7; Acts 26:18).</li><li><span class="term">the god of this world</span> — Satan, who blinds unbelievers so they cannot see the gospel’s glory (2 Corinthians 4:4).</li><li><span class="term">“And Can It Be”</span> — Charles Wesley’s hymn; its stanza “Long my imprisoned spirit lay…” closes the song word-for-word.</li></ul></div>
+      <div class="aid"><h3>Discussion questions</h3><ol class="questions"><li>The freed prisoner doesn’t free himself — the Lord takes his hand. How does that picture of regeneration challenge a “decide for yourself” gospel?</li><li>Why do the prisoners prefer the dark? Where does our culture choose comfortable “shadows” over uncomfortable truth?</li><li>Paul, chief of sinners, was rescued. How should that fuel a church’s hope for the people it’s tempted to write off?</li></ol></div>
+      <div class="aid"><h3>For contemplation</h3><ol class="questions"><li>Where do you see “the Lord took my hand” in your own coming to faith?</li><li>Which “shadows” are you tempted to keep believing because the light feels too strange?</li><li>Is there someone you’ve written off whom a rescued “prisoner like me” should be praying for?</li></ol></div>
+    </section>
+
+    <nav class="page-nav ui">
+      <a href="/roots-of-reason/euthyphro-rocksteady.html">← Euthyphro Rocksteady</a><span class="spacer"></span><a href="/roots-of-reason/what-christ-is-doing-in-me.html">What Christ is Doing in Me →</a>
+    </nav>
+  </article>
+</main>
+<script>
+function togglePlay(btn){
+  var audio = btn.parentElement.querySelector('audio');
+  if(audio.paused){ audio.play(); } else { audio.pause(); }
+}
+</script>
+<footer class="site-footer ui">
+  <p>Uncle Theology — sermon-rooted theology in song.<br>
+  Lyrics &amp; Scripture © Chris Oswald. Hover a reference to read the ESV text.</p>
+</footer>
+<script>
+var refTagger = { settings: {
+  bibleVersion: "ESV",
+  useTooltip: true,
+  tagChapters: false,
+  caseInsensitive: false,
+  linksOpenNewWindow: true,
+  noSearchClassNames: ["lyrics", "site-brand", "breadcrumb", "song-title", "album-title", "disco-title", "site-nav", "track-title", "card-title", "ep-title", "ep-summary", "ch-title"]
+} };
+(function(d, t) {
+  var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  g.src = "https://api.reftagger.com/v2/RefTagger.js";
+  s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+</body>
+</html>

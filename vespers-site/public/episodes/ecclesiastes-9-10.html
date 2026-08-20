@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Sinner &amp;amp; a Dead Fly — Vespers</title>
+<meta name="description" content="A little folly, like a dead fly in the perfumer&#x27;s ointment, can spoil the whole — and one sinner destroys much good.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/ecclesiastes-9-10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="One Sinner &amp;amp; a Dead Fly — Vespers">
+<meta property="og:description" content="A little folly, like a dead fly in the perfumer&#x27;s ointment, can spoil the whole — and one sinner destroys much good.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/ecclesiastes-9-10">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Monday · July 20, 2026</div>
+      <h1 class="ep-title">One Sinner &amp; a Dead Fly</h1>
+      <div class="ep-sub ui">The Scriptures · Ecclesiastes 9–10<span class="dot">·</span>43 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/ecclesiastes-9-10.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">A little folly, like a dead fly in the perfumer&#x27;s ointment, can spoil the whole — and one sinner destroys much good.</p>
+    <div class="ep-body">
+    <p>Tonight the Scriptures bring us to the close of Ecclesiastes 9 and the opening of chapter 10, and to one of the Preacher&#x27;s sharpest images: dead flies that turn a whole jar of sweet ointment rancid. So, he says, does a little folly outweigh wisdom and honour — and one sinner destroys much good.</p>
+    <p>We follow the thought down through Achan, who hid a single Babylonish garment and troubled all Israel; through Charles Spurgeon on the deadliness of the “little” sin — the lone Scottish thistle that overran a whole continent; and out to the last, quiet warning: that every fence we trust — conscience, grace, eternal hopes and fears — can be blown quite away by one cunning bosom sin.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 10:1<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 9:18<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“One sinner destroyeth much good.” — the hinge of the whole meditation.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">The flies of death<span class="walk-cite ui">Hebrew note</span></div>
+        <div class="walk-note">The phrase behind the verse: small, poisonous things — deadly out of all proportion to their size.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Achan<span class="walk-cite ui">Joshua 7 · KJV</span></div>
+        <div class="walk-note">“I have sinned against the LORD.” — the hidden Babylonish garment and the wedge of gold that troubled all Israel.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">C. H. Spurgeon<span class="walk-cite ui">1834–1892</span></div>
+        <div class="walk-note">On the deadliness of little sins — the single Scottish thistle that overran Australia; “Satan always begins with us as he did with Achan.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 10:12<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“The fool&#x27;s lips swallow up himself.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">The close<span class="walk-cite ui">public domain verse</span></div>
+        <div class="walk-note">One cunning bosom sin blows every fence away — conscience, angels, grace, and all.</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p class="transcript-note ui">Transcribed from the broadcast audio and lightly cleaned; the readings are public domain.</p><p>Welcome to Vespers, where we take up the last hour of your day. Tonight: one sinner and a dead fly — the end of Ecclesiastes 9 and the opening of chapter 10; the text behind the question, &quot;part of the problem or part of the solution.&quot;</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>From Ecclesiastes chapter 9: Go thy way, eat thy bread with joy, and drink thy wine with a merry heart; for God now accepteth thy works. Let thy garments be always white; and let thy head lack no ointment. Live joyfully with the wife whom thou lovest all the days of the life of thy vanity: for that is thy portion in this life. Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.</p>
+      <p>He goes on: I returned, and saw under the sun, that the race is not to the swift, nor the battle to the strong, neither yet bread to the wise, nor yet riches to men of understanding, nor yet favour to men of skill; but time and chance happeneth to them all. For man also knoweth not his time: as the fishes that are taken in an evil net, and as the birds that are caught in the snare; so are the sons of men snared in an evil time, when it falleth suddenly upon them.</p>
+      <p>Notice the head that lacks no ointment in verse 8. The Preacher will hand us that same jar of ointment again at the start of chapter 10 — with a fly in it. But first, a story. This wisdom have I seen also under the sun, and it seemed great unto me: there was a little city, and few men within it; and there came a great king against it, and besieged it, and built great bulwarks against it: now there was found in it a poor wise man, and he by his wisdom delivered the city; yet no man remembered that same poor man. Then said I, Wisdom is better than strength: nevertheless the poor man&#x27;s wisdom is despised, and his words are not heard. The words of wise men are heard in quiet more than the cry of him that ruleth among fools. Wisdom is better than weapons of war: but one sinner destroyeth much good.</p>
+      <p>From Matthew Henry, on that passage: A man may by his wisdom bring to pass that which he could never do by his strength. If God be for us, who can be against us, or stand before us? Solomon observes the power of wisdom, though it may labour under outward disadvantages. How forcible are right words! But wise and good men must often content themselves with the satisfaction of having done good, or at least endeavoured to do it, when they cannot do the good they would, nor have the praise they should. How many of the good gifts, both of nature and providence, does one sinner destroy and make waste! One sinner may draw many into his destroying ways.</p>
+      <p>From the Cambridge Bible for Schools and Colleges: The maxim presents another illustration of the irony of history. The excellence of wisdom is acknowledged. Counsel is more than the material of war, the statesman more than the general, and yet one man, by his guilt or folly — by the perversity which includes both — may mar what it has taken years to bring to a good issue. The defeat of an army, the most terrible catastrophe, may often be traced to the fact that someone has blundered in carelessness or passion. The history of Achan presents a sufficient illustration.</p>
+      <p>From Matthew Poole: A sinner, a wicked fool; by which opposition of a sinner to a wise man, he gives us a key to understand his meaning: that by wisdom he means true piety, and by folly wickedness; and withal showeth that sin, as it is the greatest folly, so it is more pernicious to men than mere folly properly so called. Destroyeth much good — by his wicked counsels and courses brings much damage and mischief, both to himself and others.</p>
+      <p>From John Gill: One sinner destroyeth much good — his own soul by his sins, and the souls of others by his counsels, example, and conversation, which corrupt good manners. As one poor wise man does much good, one sinner mars much: one Achan in a camp or army, one bad counsellor in a cabinet, one false teacher in the church, will do a great deal of mischief, as well as one debaucher in a town or city.</p>
+      <p>From Keil and Delitzsch: The much good which a wise man is accomplishing or has accomplished, one sinner, by treachery or calumny, may render vain, or may even destroy through mere malicious pleasure in evil. As wisdom accomplishes something great, so a single villain may have a far-reaching influence, such as destroys much good. Barnes adds one word of precision: the Hebrew for &quot;sinner&quot; indicates intellectual as well as moral error. The blunderer and the traitor stand under the same verse.</p>
+      <p>From the Pulpit Commentary, with a roll of examples: The happy consequences which the wise man&#x27;s counsel might accomplish, or has already accomplished, may be overthrown or rendered useless by the villainy or perversity of a bad man. Rehoboam&#x27;s folly occasioned the great schism; Achan&#x27;s transgression caused Israel&#x27;s defeat. Hold on to that last name. The wide-reaching effects of one little error, the Pulpit says, are illustrated by the proverb everyone knows: a single nail loses the horseshoe; the shoe, the horse; the horse, the rider; the rider, the camp; the camp, the commonwealth.</p>
+      <p>The English of that proverb belongs to Benjamin Franklin, in the last Poor Richard&#x27;s Almanack, 1758, commending care even in the smallest matters — because, as he says, a little neglect may breed great mischief. From Franklin: For want of a nail the shoe was lost; for want of a shoe the horse was lost; and for want of a horse the rider was lost, being overtaken and slain by the enemy, all for want of care about a horseshoe nail. The proverb is older than Franklin: George Herbert had printed a version of it a century before — and we will hear from Herbert again before the evening is out.</p>
+      <p>Now the dead fly. From Ecclesiastes chapter 10: Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour. A wise man&#x27;s heart is at his right hand; but a fool&#x27;s heart at his left. Yea also, when he that is a fool walketh by the way, his wisdom faileth him, and he saith to every one that he is a fool.</p>
+      <p>From John Gill on the dead flies — or flies of death, deadly ones which have something in their nature poisonous and pernicious, which when they light upon the most sweet and savoury ointment give it an ill smell. A good name is like precious ointment, valuable and fragrant; sin, which is folly, is like a dead fly — not only light and mean and base and worthless, but hurtful and pernicious, deadly and the cause of death. One single act of sin may injure the character of a wise and honourable man, and greatly expose him to shame and contempt. Thus the affair of Bathsheba and Uriah — what a slur did it bring on the character of David, so famous for wisdom and honour, for religion and piety; and the idolatry of Solomon, the wisest of men; Jehoshaphat entering into affinity with Ahab; and pious Josiah going to war with the king of Egypt, contrary to the word of the Lord. And Gill records the old Aramaic paraphrase, the Targum, on this verse: Evil concupiscence, which dwells at the gates of the heart, is as a fly, and is the cause of death in the world, and corrupts a good name, which was before like to anointing oil perfumed with spices. One of the names of Satan is Beelzebub, the lord of a fly, who by his temptations solicits to sin and folly, and therefore is to be shunned as a deadly fly in the ointment.</p>
+      <p>From Bishop Patrick, as given in the Benson Commentary: The wiser or better any man is, so much the more cautious ought he to be in all his words and actions, if he mean to preserve that credit, esteem, and authority in the world which give him great advantages for doing good. For as dead flies, though very small creatures, falling into a pot of ointment, corrupt that precious composition, and turn the perfume into a stink; so doth a small error or miscarriage blemish him who was highly valued for his discretion and virtue. Benson explains why: partly because all the actions, and consequently the follies, of such men are most diligently observed, whereas the follies of persons known to be ignorant and weak are generally disregarded; and partly because of that envious and malicious disposition which is in the minds of too many, and makes them quick-sighted to discover, and glad to hear, and forward to declare, the faults of such as by their greater eminence outshone and obscured them.</p>
+      <p>From Jamieson, Fausset, and Brown: The more delicate the perfume, the more easily spoiled is the ointment. Common oil is not so liable to injury. So the higher a man&#x27;s religious character is, the more hurt is caused by a sinful folly in him. The verbs are singular, the noun plural — implying that each of the flies causes the stinking savour. One fly is enough: that is the grammar&#x27;s own sermon.</p>
+      <p>From the Cambridge Bible again: The dead flies are, in the Hebrew, &quot;flies of death&quot; — probably poisonous, or stinging flies of the carrion-fly type. Such insects, finding their way into a vase of precious ointment, would turn its fragrance into a fetid odour. Few similitudes could describe more vividly the tainting influence of folly, moral or intellectual. It is to the full as expressive as &quot;a little leaven leaveneth the whole lump.&quot; The experience of every day shows us how little sins mar the nobleness of a great character: procrastination, talkativeness, indecision, over-sensitiveness to praise or blame, undue levity or undue despondency, want of self-control over appetites or passions — these turn the fragrance of a good name into the ill-savour which stinks in the nostrils of mankind. And it recalls a saying attributed to the Swedish Chancellor Oxenstierna: with how little wisdom the world is governed. One foolish prince, or favourite, or orator, prevails against many wise.</p>
+      <p>From the Pulpit Commentary: It is a painful fact that a little folly — one foolish act, one silly peculiarity of manner or disposition — will suffice to impair the real value of a man&#x27;s wisdom and the estimation in which he was held. The little element of foolishness, like the little insect in the ointment, obscures the real excellence of the man. And in religion, we know that one fault unchecked, one secret sin cherished, poisons the whole character. Jerome sees in the dead flies wicked thoughts put into the Christian&#x27;s mind by Beelzebub, the lord of flies. And Keil and Delitzsch, weighing the scale one last time: the proportionally small portion of folly which has become an ingredient in a man&#x27;s personality gives him the character of a fool, and operates to his dishonour. Wisdom and honour are swept away by a little quantum of folly.</p>
+      <p>The commentators keep pointing to one man. Nearly every voice tonight has already named him — Achan. Here is the record itself, from the book of Joshua: But the children of Israel committed a trespass in the accursed thing: for Achan, the son of Carmi, the son of Zabdi, the son of Zerah, of the tribe of Judah, took of the accursed thing: and the anger of the LORD was kindled against the children of Israel. One man took. The next thing the story shows is an entire army in retreat before the little town of Ai, and Joshua on his face before the ark. Then the LORD speaks — and mark the grammar. One man sinned; the verdict reads, &quot;Israel hath sinned.&quot; The camp is one body, and a fly in any corner of the ointment sends the whole jar.</p>
+      <p>When the lot finds him out, Achan confesses, and his confession is an anatomy of every sin ever committed. And Achan answered Joshua, and said, Indeed I have sinned against the LORD God of Israel, and thus and thus have I done: when I saw among the spoils a goodly Babylonish garment, and two hundred shekels of silver, and a wedge of gold of fifty shekels weight, then I coveted them, and took them; and, behold, they are hid in the earth in the midst of my tent. I saw, I coveted, I took, I hid — four verbs, and the fourth is the one that cost thirty-six men their lives at Ai. The chapter ends with Achan&#x27;s judgment in the valley named Achor, &quot;trouble,&quot; from that day forward; and the LORD turned from the fierceness of his anger.</p>
+      <p>Now hear the tradition of the church on the littleness of sin. From Charles Spurgeon, a sermon of 1859 called &quot;Little Sins,&quot; on the words of Lot at Zoar — &quot;Is it not a little one?&quot; The great father of lies hath multitudes of devices by which he seeks to ruin the souls of men. He uses false weights and false balances. Sometimes he uses false times, declaring at one hour that it is too early to seek the Lord, and at another that it is now too late. And he uses false quantities, for he will declare that great sins are but little; and as for what he confesses to be little sins, he makes them afterwards to be nothing at all — mere peccadillos, almost worthy of forgiveness in themselves. They have ventured into sin where they thought the stream was shallow, and been fatally deceived by its depth; they have been swept away by the strength of the current to that cataract which is the ruin of vast multitudes of the souls of men.</p>
+      <p>Spurgeon&#x27;s first answer to the tempter is that the best of men have always been afraid of little sins. Daniel would not shut his window for thirty days; the three young men in Babylon would not perform one bend of the knee. Men, with their eyes well opened by divine grace, have seen a whole hell slumbering in the most minute sin.</p>
+      <p>His second answer: little sins lead to great ones. If it be desired to bridge a gulf, it is often the custom to shoot an arrow and cross it with a line almost as thin as film; that line passes over, and a string is drawn after it, and after that some small rope, and after that a cable, and after that the swinging suspension bridge that makes a way for thousands. So is it oft-times with Satan: it is but a thought that he would shoot across the mind; that thought shall carry a desire, that desire a look, that look a touch, that touch a deed, that deed a habit, and that habit something worse, until the man, from little beginnings, shall be swamped and drowned in iniquity. A spark is dropped by some unwary traveller amidst the dry grass of the prairie. It is but a spark — is it not a little one? A child&#x27;s foot may tread it out. But what sets the prairie in a blaze? It is the solitary spark, the one spark, the breeder of the flames. So is it with little sins.</p>
+      <p>And Spurgeon comes to our man from Joshua 7. Satan always begins with us as he did with Achan. He showed Achan, first of all, a goodly Babylonish garment and a wedge of gold. Achan looked at it — was it not a little thing, to look? Achan touched it — was not that a little thing? He takes it and carries it away to his tent, and, here is worse, he hides it; and at length he must die for the awful crime. Beginnings of sin are like the letting out of water: first there is an ooze, then a drip, then a slender stream, then a vein of water, and then at last a flood, and a rampart is swept before it. Little sins often act as burglars do: burglars sometimes take with them a little child, put him into a window too small for them to enter, and then he goes and opens the door to let in the thieves. So do little sins act: they creep in, and they open the door for great ones.</p>
+      <p>Spurgeon then borrows a story from Augustine — the fittest possible story for a night about flies. There was a man who, in argument, declared that the devil made flies. &quot;Well,&quot; said the man with whom he was arguing, &quot;if the devil made flies, then it is but little more to say the devil made worms.&quot; &quot;Well,&quot; said the other, &quot;I believe it.&quot; &quot;If the devil made worms, how do you know but that he made small birds? And if he made small birds, why may he not have made big ones? And if he made big birds, why may he not have made man? And if he made man, why not the world?&quot; You see, says Augustine, by one admission — by once permitting the devil to be thought the creator of a fly — the man came to believe that the devil was the creator. Just get one small error into your minds, Spurgeon draws the lesson; they are small in their infancy, they will be giants when they come to their full growth.</p>
+      <p>His third answer: little sins multiply very fast. The elephant hath but a small progeny, and multiplieth slowly; but the aphis hath thousands springing from it within an hour. One becomes the mother of multitudes. He tells of the locusts, before them everything green like the Garden of Eden, behind them everything dry and desert. The locust is but a little thing — aye, but in their number how mighty they become.</p>
+      <p>And of the thistle. Years ago there was not a single thistle in the whole of Australia. Some Scotchman who very much admired thistles thought it a pity that a great island like Australia should be without that marvellous and glorious symbol of his great nation. He collected a packet of thistle-seeds and sent it over to a friend in Australia. When it was landed, the officers might have said, &quot;Oh, let it in — is it not a little one? Here is but a handful of thistle-down.&quot; Ah yes, it was but a little one — but now whole districts of country are covered with it, and it has become the farmer&#x27;s pest and plague. Take heed of the thistle-seed: little sins are like it.</p>
+      <p>His fourth answer is the deepest. A little sin involves a great principle. It is not necessary to send a hundred thousand troops into a country to break a treaty; the breach may appear small, but if the slightest breach be allowed, the principle is gone. In a sin against God, it is not so much the thing itself as the principle of the thing at which God looks; and the principle of obedience is as much broken, as much dishonoured, by a little sin as by a great sin. To sin without temptation is to sin like the devil, for the devil was not tempted when he sinned; and to sin with but little temptation is to sin like the devil. That is the dead fly weighed on the Preacher&#x27;s scale: more weighty than wisdom, than honour, is a little folly.</p>
+      <p>Spurgeon ends with a word to the believer in particular. A little stone in the shoe will make a traveller limp; a little thorn may breed a fester; a little cloud may hide the sun. A great sin cannot destroy a Christian, but a little sin can make him miserable. Jesus will not walk with his people unless they drive out every known sin; he hides his face behind the wall of your sins, and that wall may be built up of little pebbles as easily as of great stones. Take heed of the little foxes that spoil the vines, for our vines have tender grapes.</p>
+      <p>And one story more, from the same sermon, borrowed from Rowland Hill. Rowland Hill tells of one of his hearers, a member of the church, who sometimes visited the theatre. &quot;I understand you are very fond of frequenting the theatre.&quot; &quot;No, sir,&quot; he said, &quot;that&#x27;s false; I go now and then just for a great treat; it is not a habit of mine.&quot; &quot;Well,&quot; said Rowland Hill, &quot;suppose someone should say to me, &#x27;Mr. Hill, I understand you eat carrion,&#x27; and I should say, &#x27;No, no, I don&#x27;t eat carrion; it is true I now and then have a piece of stinking carrion for a great treat&#x27; — why, he would say, you have convicted yourself; it shows that you like it better than most people, because you save it up for a special treat.&quot; Little sins, Spurgeon presses, do but give indications of a man&#x27;s own character; they show which way the stream runs. A straw may let you know which way the wind blows, or even a floating feather.</p>
+      <p>A century before Spurgeon, the Puritans had the same quarrel with the same whisper. From Thomas Brooks, Precious Remedies Against Satan&#x27;s Devices: &quot;Ah,&quot; says Satan, &quot;it is but a little sin — a little pride, a little worldliness, a little lust; you may commit it without any danger to your soul; it is but a little one.&quot; But there is great danger — yea, many times most danger — in the smallest sins. Greater sins sooner startle the soul, and rouse it up to repentance, than lesser sins do. Little sins often slide into the soul, and breed, and work secretly, until they come to be so strong as to trample upon the soul. Little sins multiplied become great sins: there is nothing less than a grain of sand, yet nothing heavier than the sand of the sea when multiplied. A little hole in the ship sinks it; a small breach in a dike carries away all before it. If the serpent sneaks in his head, he will draw in his whole body after.</p>
+      <p>And from John Flavell, in the same vein: Perhaps the smallness of the sin is urged as a reason why you may commit it — it is but a little sin, but a small matter, but a trifle. But if you commit this little sin, you will offend a great God. The less the sin, the less the inducement you should have to commit it. Will you provoke God for a trifle? Will you destroy your peace, wound your conscience, and grieve the Spirit, all for nothing? What madness is this!</p>
+      <p>The Preacher does not leave the thought at the first verse of chapter 10. The rest of the chapter walks the dead fly out into public life — into courts and fields and dinner tables. From Ecclesiastes 10: There is an evil which I have seen under the sun, as an error which proceedeth from the ruler: folly is set in great dignity, and the rich sit in low place. He that diggeth a pit shall fall into it; and whoso breaketh an hedge, a serpent shall bite him. Whoso removeth stones shall be hurt therewith; and he that cleaveth wood shall be endangered thereby. The words of a wise man&#x27;s mouth are gracious; but the lips of a fool will swallow up himself. A fool also is full of words. By much slothfulness the building decayeth; and through idleness of the hands the house droppeth through. A feast is made for laughter, and wine maketh merry: but money answereth all things. Curse not the king, no not in thy thought; and curse not the rich in thy bedchamber: for a bird of the air shall carry the voice, and that which hath wings shall tell the matter.</p>
+      <p>The fool&#x27;s lips swallow up himself; the sluggard&#x27;s roof falls in on his own head; the whisper in the bedchamber takes wing. Chapter 10 is one long inventory of small causes with large bills. The sermon&#x27;s question — &quot;part of the problem or part of the solution&quot; — is simply this chapter turned toward a congregation. The one sinner and the one saint are both leaven, and neither of them stays private. If you would be helpful, be holy.</p>
+      <p>Two more voices before the poem. Jamieson, Fausset, and Brown read the little city of chapter 9 as a figure: the little city, they suggest, may be applied to the church — the &quot;fear not, little flock&quot; of Luke 12; the great king who besieges it, to the adversary; and the despised poor wise man, to Jesus Christ, who by his wisdom delivered the city, and whom no man remembered. Read that way, the verse tonight has an answer built into its own chapter: one sinner destroys much good, and one Saviour — poor and forgotten by the world — delivers the whole city. And Matthew Henry, briefly, on the opening of chapter 10: those especially who make profession of religion should keep from all appearances of evil; sin is the reproach of sinners wherever they go, and shows their folly.</p>
+      <p>And to close, George Herbert — the same Herbert who first printed the proverb of the horseshoe nail. From The Temple, 1633, a sonnet titled &quot;Sin.&quot; It counts up every fence God has built around a soul, and then watches one small sin come over the wall.</p>
+      <p>Lord, with what care hast thou begirt us round! Parents first season us; then schoolmasters deliver us to laws; they send us bound to rules of reason, holy messengers, pulpits and Sundays, sorrow dogging sin, afflictions sorted, anguish of all sizes, fine nets and stratagems to catch us in, Bibles laid open, millions of surprises, blessings beforehand, ties of gratefulness, the sound of glory ringing in our ears; without, our shame; within, our consciences; angels and grace, eternal hopes and fears. Yet all these fences and their whole array one cunning bosom-sin blows quite away.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

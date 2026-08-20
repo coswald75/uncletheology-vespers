@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When God Gives Us What We Demand — Vespers</title>
+<meta name="description" content="The moment an entire nation looked at what God had given and asked for something else — Israel&#x27;s demand for a king — and the terrifying mercy of a God who sometimes says yes: “he gave them their request; but sent leanness into their soul.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/when-god-gives-us-what-we-demand">
+<meta property="og:type" content="website">
+<meta property="og:title" content="When God Gives Us What We Demand — Vespers">
+<meta property="og:description" content="The moment an entire nation looked at what God had given and asked for something else — Israel&#x27;s demand for a king — and the terrifying mercy of a God who sometimes says yes: “he gave them their request; but sent leanness into their soul.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/when-god-gives-us-what-we-demand">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Surprise · Thursday · August 6, 2026</div>
+      <h1 class="ep-title">When God Gives Us What We Demand</h1>
+      <div class="ep-sub ui">The Surprise · Israel&#x27;s demand for a king, and the discipline of answered prayer<span class="dot">·</span>38 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/when-god-gives-us-what-we-demand.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The moment an entire nation looked at what God had given and asked for something else — Israel&#x27;s demand for a king — and the terrifying mercy of a God who sometimes says yes: “he gave them their request; but sent leanness into their soul.”</p>
+    <div class="ep-body">
+    <p>First Samuel read at length: the elders at Ramah — “make us a king… like all the nations” — the demand God hears as a rejection of himself, the warning of the king who will take and take, and the thunder Samuel calls down in the dry of wheat harvest. Psalm 106 names the pattern, Hosea writes the epitaph — “I gave thee a king in mine anger” — and Matthew Henry the hard phrase: God “gratifies us in wrath.”</p>
+    <p>Then the old moralists on pride, covetousness, ambition and contentment; A. W. Pink on the sovereignty, patience and love of God, with Spurgeon&#x27;s “men will allow God to be everywhere except on his throne”; and Habakkuk&#x27;s man who has nothing and rejoices still — content, “the jewel which no Indian mines can buy.” Closing with Cowper&#x27;s “God Moves in a Mysterious Way.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Samuel 8<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Make us a king… like all the nations” — the demand Samuel hears as a rejection of God, and the warning of the king who will take.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Samuel 12<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Samuel&#x27;s farewell, and the thunder in wheat harvest: “ye have added unto all our sins this evil, to ask us a king.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Psalm 106 · Hosea 13<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“He gave them their request; but sent leanness into their soul”; “I gave thee a king in mine anger, and took him away in my wrath.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Matthew Henry · on 1 Samuel<span class="walk-cite ui">1710</span></div>
+        <div class="walk-note">“God sometimes opposes us from loving-kindness; so at other times he gratifies us in wrath.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">The moralists on pride &amp; discontent<span class="walk-cite ui">South · Jeremy Taylor · Fielding · Tillotson</span></div>
+        <div class="walk-note">“Discontent… to be something they are not, and have something they have not, is the root of all immorality.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">The moralists on ambition<span class="walk-cite ui">Bacon · Machiavelli · Landor</span></div>
+        <div class="walk-note">“However high we reach we are never satisfied” — the demand for freedom that ends, in Plato&#x27;s Republic, in the tyrant.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">A. W. Pink · The Attributes of God<span class="walk-cite ui">1930 · public domain</span></div>
+        <div class="walk-note">The sovereignty of God, patience that “bears with the sin,” and a love that “will not wink at sin, even in his own people.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Spurgeon · on the sovereignty of God<span class="walk-cite ui">quoted in Pink</span></div>
+        <div class="walk-note">“Men will allow God to be everywhere except on his throne” — First Samuel in one sentence.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Habakkuk 3 · the moralists on contentment<span class="walk-cite ui">Scripture · KJV · Sterne · Fuller · Spencer</span></div>
+        <div class="walk-note">“Although the fig tree shall not blossom… yet I will rejoice in the Lord” — content, the jewel no mine can buy.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">William Cowper · “God Moves in a Mysterious Way”<span class="walk-cite ui">1773 · read whole</span></div>
+        <div class="walk-note">“Behind a frowning providence he hides a smiling face.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: what happens when God gives us what we demand.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>There is a moment in the history of Israel that ought to trouble anyone who has ever prayed for something and received it. It is the moment when an entire nation looked at what God had given them, and said: we want something else. And God, in a way that should chill us to the bone, said: very well. You shall have it.</p>
+      <p>The scene is set in the book of First Samuel. The prophet Samuel has grown old. His sons, who were to judge after him, have turned aside after money and taken bribes and perverted judgment. And the elders of Israel come to Samuel at Ramah.</p>
+      <p>From First Samuel:</p>
+      <p>&quot;And said unto him, Behold, thou art old, and thy sons walk not in thy ways: now make us a king to judge us like all the nations.&quot;</p>
+      <p>Like all the nations. There is the tell. Not: give us a righteous judge. Not: raise up a deliverer as You did with Gideon, with Samson, with Deborah. No. Make us like everybody else.</p>
+      <p>&quot;But the thing displeased Samuel, when they said, Give us a king to judge us. And Samuel prayed unto the LORD. And the LORD said unto Samuel, Hearken unto the voice of the people in all that they say unto thee: for they have not rejected thee, but they have rejected me, that I should not reign over them.&quot;</p>
+      <p>They have rejected Me. That is what God hears in the request. Not a practical question about governance. Not a reasonable concern about Samuel&#x27;s corrupt sons. He hears a nation saying: we do not want You to be our king anymore. We would rather have a man.</p>
+      <p>&quot;According to all the works which they have done since the day that I brought them up out of Egypt even unto this day, wherewith they have forsaken me, and served other gods, so do they also unto thee.&quot;</p>
+      <p>God says to Samuel: this is nothing new. They have been doing this since Egypt. Every golden calf, every Baal, every Ashtaroth, every time they looked at the nations around them and said, we want that instead of You. This is simply the latest chapter in a very old story.</p>
+      <p>And then God does a remarkable thing. He does not refuse. He warns, and then He grants.</p>
+      <p>&quot;Now therefore hearken unto their voice: howbeit yet protest solemnly unto them, and shew them the manner of the king that shall reign over them.&quot;</p>
+      <p>And Samuel lays out the bill. The king will take your sons and make them run before his chariots. He will take your daughters to be cooks and bakers. He will take your fields and your vineyards, the best of them, and give them to his servants. He will take a tenth of your seed and your sheep. And at the end of the catalog, this:</p>
+      <p>&quot;And ye shall cry out in that day because of your king which ye shall have chosen you; and the LORD will not hear you in that day.&quot;</p>
+      <p>You will cry out. But it will be too late. You asked for this. You demanded it. And I gave it to you.</p>
+      <p>&quot;Nevertheless the people refused to obey the voice of Samuel; and they said, Nay; but we will have a king over us; that we also may be like all the nations; and that our king may judge us, and go out before us, and fight our battles.&quot;</p>
+      <p>Nay, but we will have a king. There is the stubbornness of the human will in five words. We will have what we want, whatever the cost.</p>
+      <p>Matthew Henry, writing in 1710, puts it this way: &quot;God sometimes opposes us from loving-kindness; so at other times He gratifies us in wrath. He did so here. God knows how to bring glory to Himself, and serves His own wise purposes, even by men&#x27;s foolish counsels.&quot;</p>
+      <p>Gratifies us in wrath. That is one of the most terrifying phrases in all of pastoral theology. That God can say yes, and that yes can be a punishment.</p>
+      <p>The Reverend Cobbin, in the old encyclopedias, warns: &quot;Pride often meets with a downfall; let us beware how we look with contempt on those below us, lest while we are carrying ourselves loftily, our circumstances may be changed, and we be placed as low in the world as we well can be.&quot;</p>
+      <p>And Sydney Smith: &quot;Pride is not the heritage of man; humility should dwell with frailty, and atone for ignorance, error, and imperfection.&quot;</p>
+      <p>What was the sin underneath the demand? It was not merely political. It was spiritual. Israel looked at God&#x27;s provision and called it insufficient. They looked at His rule and called it embarrassing. They coveted what the nations had.</p>
+      <p>From the Collacon, the moralist South writes: &quot;The covetous person lives as if the world were made altogether for him, and not he for the world; to take in everything, and part with nothing.&quot;</p>
+      <p>And Jeremy Taylor: &quot;Covetousness swells the principal to no purpose, and lessens the use to all purposes.&quot;</p>
+      <p>And Fielding, on the deeper disease: &quot;Discontent is a restlessness in men&#x27;s minds; to be something they are not, and have something they have not, is the root of all immorality.&quot;</p>
+      <p>The root of all immorality. That is a strong claim, but think about it. What was the serpent&#x27;s promise in the garden? You shall be as gods. What was Babel? Let us make us a name. What was Israel at Sinai? Make us gods which shall go before us. And here: make us a king like all the nations. The pattern is always the same. What God has given is not enough. We want something else. We want to be something else.</p>
+      <p>And the terrifying mercy of God is that sometimes He lets us have it.</p>
+      <p>The Psalmist knew this pattern. From the hundred and sixth Psalm:</p>
+      <p>&quot;They soon forgat his works; they waited not for his counsel: but lusted exceedingly in the wilderness, and tempted God in the desert. And he gave them their request; but sent leanness into their soul.&quot;</p>
+      <p>He gave them their request. But sent leanness into their soul. That is the anatomy of answered prayer gone wrong. You get the thing, and you lose the substance. The quail come in heaps, and the plague follows. The king arrives in splendor, and the liberty departs. You receive exactly what you demanded, and it hollows you out from the inside.</p>
+      <p>Tillotson warns: &quot;A discontented mind and a diseased body are, beyond comparison, the two greatest evils in this world.&quot; And the peculiar cruelty of discontent is that it survives the getting of what was wanted. The Israelites got their king. They got Saul, tall and handsome, head and shoulders above every man. And within a generation they were crying out under his madness.</p>
+      <p>The moralist Barnes writes: &quot;Impatience deprives man of movement and impels him to danger.&quot; And from another entry in the old encyclopedias: &quot;Impatience is a quality sudden, eager, and insatiable, which grasps at all, and admits of no delay; scorning to wait God&#x27;s leisure, and attend humbly and dutifully upon the issues of His wise and just providence.&quot;</p>
+      <p>Scorning to wait God&#x27;s leisure. That was Israel&#x27;s sin. Not that they had problems. Samuel&#x27;s sons were genuinely corrupt. The Ammonite threat was real. Their concerns were legitimate. But their solution was to seize the wheel from God&#x27;s hands. They did not wait for His counsel. They lusted exceedingly and tempted God, and He gave them their request.</p>
+      <p>The philosophers saw this pattern in their own way. Lord Bacon writes: &quot;Ambition is like choler, which is a humor that maketh men active, earnest, full of alacrity, and stirring, if it be not stopped; but if it be stopped, and cannot have its way, it becometh fiery and thereby malign and venomous.&quot;</p>
+      <p>And Machiavelli: &quot;Whenever men are not obliged by necessity to fight, they fight from ambition, which is so powerful a passion in the human breast that however high we reach we are never satisfied.&quot;</p>
+      <p>However high we reach we are never satisfied. That is the human condition without God. Plato, in his Republic, traces a similar arc. He describes how a democratic city, drunk on its own freedom, begins to elevate the very lowest appetites to the highest place, and in its frenzy for liberation from all restraint, it produces a tyrant. The city that demanded freedom above all things ends in the worst slavery. Plato calls it the greatest and most savage slavery arising out of the extreme of freedom. The pattern holds across civilizations: demand what you want loudly enough, and you will get it, and it will master you.</p>
+      <p>And Landor: &quot;Ambition is but avarice on stilts, and masked. God sometimes sends a famine, sometimes a pestilence, and sometimes a hero, for the chastisement of mankind; none of them surely for our admiration.&quot;</p>
+      <p>But let us return to Scripture, because there is more to this story. Years pass. Saul is made king. The people have what they asked for. And Samuel, now old and gray, stands before them one last time to give his farewell.</p>
+      <p>From First Samuel:</p>
+      <p>&quot;And Samuel said unto all Israel, Behold, I have hearkened unto your voice in all that ye said unto me, and have made a king over you. And now, behold, the king walketh before you: and I am old and grayheaded; and, behold, my sons are with you: and I have walked before you from my childhood unto this day.&quot;</p>
+      <p>&quot;Behold, here I am: witness against me before the LORD, and before his anointed: whose ox have I taken? or whose ass have I taken? or whom have I defrauded? whom have I oppressed? or of whose hand have I received any bribe to blind mine eyes therewith? and I will restore it you.&quot;</p>
+      <p>&quot;And they said, Thou hast not defrauded us, nor oppressed us, neither hast thou taken ought of any man&#x27;s hand.&quot;</p>
+      <p>Do you hear the pathos in that? Samuel stands up and says: you rejected my leadership. Fine. But tell me this, before God and before your new king. Did I steal from you? Did I oppress you? Did I take a bribe? And they cannot say yes. He was faithful. They threw away a faithful steward because they wanted something shinier.</p>
+      <p>Then Samuel rehearses the history. He walks them through it. From Egypt to the promised land. Every time they forgot God. Every time they cried out. Every time God sent a deliverer.</p>
+      <p>&quot;And when they forgat the LORD their God, he sold them into the hand of Sisera, captain of the host of Hazor, and into the hand of the Philistines, and into the hand of the king of Moab, and they fought against them. And they cried unto the LORD, and said, We have sinned, because we have forsaken the LORD, and have served Baalim and Ashtaroth: but now deliver us out of the hand of our enemies, and we will serve thee. And the LORD sent Jerubbaal, and Bedan, and Jephthah, and Samuel, and delivered you out of the hand of your enemies on every side, and ye dwelled safe.&quot;</p>
+      <p>Ye dwelled safe. God kept His end of the bargain every single time. He never failed them. Not once. He sent deliverer after deliverer. And every single time, they forgot again.</p>
+      <p>&quot;And when ye saw that Nahash the king of the children of Ammon came against you, ye said unto me, Nay; but a king shall reign over us: when the LORD your God was your king.&quot;</p>
+      <p>When the Lord your God was your king. Samuel drives it home. You already had a King. The God of heaven was your King. And you looked at that and said: not enough. We want a man instead.</p>
+      <p>And then, to prove his point, Samuel calls down thunder in the middle of wheat harvest. In the dry season, when it never storms. He says: watch this.</p>
+      <p>&quot;Is it not wheat harvest to day? I will call unto the LORD, and he shall send thunder and rain; that ye may perceive and see that your wickedness is great, which ye have done in the sight of the LORD, in asking you a king.&quot;</p>
+      <p>&quot;So Samuel called unto the LORD; and the LORD sent thunder and rain that day: and all the people greatly feared the LORD and Samuel.&quot;</p>
+      <p>&quot;And all the people said unto Samuel, Pray for thy servants unto the LORD thy God, that we die not: for we have added unto all our sins this evil, to ask us a king.&quot;</p>
+      <p>Now they see it. Now, with the thunder rolling and the rain ruining the harvest they need to survive, now they understand. We have added unto all our sins this evil. The request itself was a sin. Not because wanting good governance is wrong, but because the heart behind the request was rotten. They wanted to be like everybody else more than they wanted to be God&#x27;s.</p>
+      <p>Matthew Henry, on this passage: &quot;Some will not be brought to see their sins by any gentler methods than storms and thunders. They entreat Samuel to pray for them. Now they see their need of him whom shortly before they slighted.&quot;</p>
+      <p>And this is the part that should give us all pause. Henry continues: &quot;Thus many who will not have Christ to reign over them would yet be glad to have Him intercede for them, to turn away the wrath of God.&quot;</p>
+      <p>We do not want God as King. But we want Him as chaplain when the thunder comes.</p>
+      <p>But Samuel does not leave them in despair. He says:</p>
+      <p>&quot;Fear not: ye have done all this wickedness: yet turn not aside from following the LORD, but serve the LORD with all your heart; and turn ye not aside: for then should ye go after vain things, which cannot profit nor deliver; for they are vain.&quot;</p>
+      <p>Vain things, which cannot profit nor deliver. That is Samuel&#x27;s word for the kings and the idols and the ambitions that look so solid and prove so hollow. They are vain. They cannot deliver.</p>
+      <p>&quot;For the LORD will not forsake his people for his great name&#x27;s sake: because it hath pleased the LORD to make you his people.&quot;</p>
+      <p>There it is. The gospel underneath the judgment. God will not forsake His people. Not because they deserve to be kept, but because it has pleased Him to claim them. His commitment is grounded in His own character, not theirs.</p>
+      <p>And then the final charge:</p>
+      <p>&quot;Only fear the LORD, and serve him in truth with all your heart: for consider how great things he hath done for you. But if ye shall still do wickedly, ye shall be consumed, both ye and your king.&quot;</p>
+      <p>Consider how great things He hath done for you. That is Samuel&#x27;s antidote to discontent. Not a lecture on gratitude as a virtue. A command to remember. Look backward at what God has actually done, and let that memory cure the itch for something else.</p>
+      <p>Centuries later, the prophet Hosea will deliver the epitaph. From Hosea: &quot;I gave thee a king in mine anger, and took him away in my wrath.&quot;</p>
+      <p>I gave thee a king in mine anger. That is the whole history of the monarchy compressed into one sentence. They demanded a king, and God gave one in anger. And then He took the whole institution away in wrath. The thing they demanded became the thing that destroyed them.</p>
+      <p>Petronius, in the old world, observed: &quot;Ingratitude is the daughter of pride.&quot; And Thomson: &quot;Ingratitude, as blind as it is base.&quot; And Richelieu: &quot;Ingratitude dries up the fountain of all goodness.&quot;</p>
+      <p>It dries up the fountain. That is exactly what the Psalmist meant by leanness of soul. When you refuse to be grateful for what God has given, the capacity for receiving joy begins to wither. The fountain dries up. Not because God stops giving, but because your hands are too full of what you grabbed to receive what He offers.</p>
+      <p>Now, there is a question underneath all of this that must be addressed. If God is sovereign, then what does it mean when He gives us what we demand? Is He merely passive? Is He simply stepping aside and letting us ruin ourselves?</p>
+      <p>A. W. Pink, in his study of the attributes of God, takes up this question at length. He writes: &quot;Let us give further proofs that the responsibility of the creature is based upon God&#x27;s sovereignty. How many things are recorded in Scripture which were right because God commanded them, and which would not have been right had He not so commanded! What right had Adam to eat of the trees of the garden? The permission of his Maker, without which he would have been a thief! What right had Israel to borrow of the Egyptians&#x27; jewels and raiment? None, unless Jehovah had authorized it. What right had Israel to slay so many lambs for sacrifice? None, except that God commanded it.&quot;</p>
+      <p>Pink goes on: &quot;God did not place Adam upon a footing of conditional, creature responsibility because it was right He should so place him. No. It was right because God did it. God is sovereign. His will is supreme. So far from God being under any law of right, He is a law unto Himself, so that whatsoever He does is right.&quot;</p>
+      <p>And then Pink quotes Spurgeon. This is from Spurgeon&#x27;s sermon on the parable of the laborers:</p>
+      <p>&quot;There is no attribute more comforting to His children than that of God&#x27;s sovereignty. Under the most adverse circumstances, in the most severe trials, they believe that sovereignty has ordained their afflictions, that sovereignty overrules them, and that sovereignty will sanctify them all. There is nothing for which the children ought more earnestly to contend than the doctrine of their Master over all creation, the kingship of God over all the works of His own hands, the throne of God and His right to sit upon that throne.&quot;</p>
+      <p>Spurgeon goes on: &quot;On the other hand, there is no doctrine more hated by worldlings, no truth of which they have made such a football, as the great, stupendous, but yet most certain doctrine of the sovereignty of the infinite Jehovah. Men will allow God to be everywhere except on His throne. They will allow Him to be in His workshop to fashion worlds and make stars. They will allow Him to be in His almonry to dispense His alms and bestow His bounties. They will allow Him to sustain the earth and bear up the pillars thereof, or light the lamps of heaven, or rule the waves of the ever-moving ocean; but when God ascends His throne, His creatures then gnash their teeth.&quot;</p>
+      <p>Men will allow God to be everywhere except on His throne. That is the heart of the matter. That is First Samuel in one sentence. Israel was happy to have God as their miracle-worker, their sea-parter, their manna-provider. But when it came to the throne, they wanted someone else sitting on it.</p>
+      <p>Spurgeon concludes: &quot;And we proclaim an enthroned God, and His right to do as He wills with His own, to dispose of His creatures as He thinks well, without consulting them in the matter; then it is that we are hissed and execrated, and then it is that men turn a deaf ear to us, for God on His throne is not the God they love. But it is God upon the throne that we love to preach. It is God upon His throne whom we trust.&quot;</p>
+      <p>It is God upon His throne whom we trust. And therein lies the difference between the prayer that is answered with blessing and the demand that is answered with leanness. The one trusts God on His throne. The other tries to pull Him off it.</p>
+      <p>Pink, elsewhere in the same work, writes about the love of God: &quot;God&#x27;s love is no mere amiable weakness or effeminate softness. Scripture declares that whom the Lord loveth He chasteneth, and scourgeth every son whom He receiveth. God will not wink at sin, even in His own people. His love is pure, unmixed with any maudlin sentimentality.&quot;</p>
+      <p>And on the patience of God, Pink distinguishes patience from mere mercy: &quot;It differs from mercy in the formal consideration of the object: mercy respects the creature as miserable, patience respects the creature as criminal; mercy pities him in his misery, and patience bears with the sin which engendered the misery, and is giving birth to more.&quot;</p>
+      <p>Patience bears with the sin. That is what God was doing with Israel. Not indifferent. Not weak. Patient. Bearing with a people who were criminal in their ingratitude, who were giving birth to more and more misery by their demands.</p>
+      <p>And Pink, on the faithfulness of God, gives us the proper response to all of this: &quot;The apprehension of this blessed truth will preserve us from worry. To be full of care, to view our situation with dark forebodings, to anticipate the morrow with sad anxiety, is to reflect poorly upon the faithfulness of God.&quot;</p>
+      <p>He goes on: &quot;The apprehension of this blessed truth will check our murmurings. The Lord knows what is best for each one of us, and one effect of resting on this truth will be the silencing of our petulant complainings. God is greatly honored when, under trial and chastening, we have good thoughts of Him, vindicate His wisdom and justice, and recognize His love in His very rebukes.&quot;</p>
+      <p>Recognize His love in His very rebukes. That is the thing Israel could not do. They could not see that God&#x27;s refusal to give them a king was an act of love. They could not see that His governance through judges and prophets was not a deficiency but a kindness. They looked at what God had arranged and saw only what was missing.</p>
+      <p>And Pink, in one of his finest passages, paints the picture of what it looks like to see rightly. He writes: &quot;The all-sufficiency of God makes Him to be the supreme object which is ever to be sought unto. True happiness consists only in the enjoyment of God. His favor is life, and His lovingkindness is better than life. The Lord is my portion, saith my soul; therefore will I hope in Him.&quot;</p>
+      <p>He continues: &quot;Yea, the Christian, when in his right mind, is able to say: Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls: yet I will rejoice in the Lord, I will joy in the God of my salvation.&quot;</p>
+      <p>That is the opposite of First Samuel. There, the people had flocks and herds and harvests and the living God as their King, and they said: not enough. Here, in Habakkuk, a man has nothing. No figs. No vines. No olives. No flocks. Nothing in the stalls. And he says: yet I will rejoice in the Lord. The difference is not in the circumstances. It is in the soul.</p>
+      <p>Pink also reminds us of the goodness of God in ordinary things: &quot;The goodness of God is seen in the variety of natural pleasures which He has provided for His creatures. God might have been pleased to satisfy our hunger without the food being pleasing to our palates. How His benevolence appears in the varied flavors which He has given to meats, vegetables, and fruits! Our physical lives could have been sustained without beautiful flowers to regale our eyes with their colors, and our nostrils with their sweet perfumes. We might have walked the fields without our ears being saluted by the music of the birds. Whence, then, this loveliness, this charm, so freely diffused over the face of nature? Verily, the tender mercies of the Lord are over all His works.&quot;</p>
+      <p>And we, like Israel, walk through a world drenched in His generosity and say: we want something else. We want to be like all the nations.</p>
+      <p>The old moralists understood this. Sterne writes: &quot;There is scarce any lot so low, but there is something in it to satisfy the man whom it has befallen; Providence having so ordered things that in every man&#x27;s cup, how bitter soever, there are some cordial drops, some good circumstances, which if wisely extracted, are sufficient for the purpose he wants them, that is, to make him contented, and, if not happy, at least resigned.&quot;</p>
+      <p>And Thomas Fuller: &quot;Contentment consisteth not in adding more fuel, but in taking away some fire.&quot;</p>
+      <p>Not in adding more fuel, but in taking away some fire. Israel&#x27;s problem was not that they lacked a king. It was that their desires were burning too hot. They needed less fire, not more fuel.</p>
+      <p>And Secker: &quot;He enjoys much who is thankful for little; a grateful mind is a great mind.&quot;</p>
+      <p>Spencer puts it plainly: &quot;A golden crown cannot cure the headache, nor a velvet slipper give ease to the gout, nor a purple robe fray away a burning fever. So no more can riches, gold, or silver, land and livings, had a man ever so much, minister unto him much joy, yea, or any true joy at all, where the mind is distract and discontent. Without contentment there is no joy of ought, there is no profit, no pleasure in anything.&quot;</p>
+      <p>You can have the king and the palace and the army and the chariot, and without contentment you have nothing. You can have God as your shepherd and your king, and if you are content, you have everything.</p>
+      <p>Macdonald writes: &quot;Any fool knows how to resist, but it is the province of a wise man to know how and when to submit.&quot; And Burton: &quot;We must submit ourselves unto the mighty hand of God, acknowledge our offences, call to Him for mercy.&quot; And Seneca, from the ancient world: &quot;There is one alleviation in misfortunes: to endure and to submit to necessity.&quot;</p>
+      <p>The wise response to God&#x27;s providence is not to demand a different one. It is to submit to the one He has given, and to trust that behind the arrangement we cannot understand, there is a wisdom we cannot yet see.</p>
+      <p>The poet Decker writes: &quot;Patience! why, it is the soul of peace; of all the virtues, it is nearest kin to heaven; it makes men look like gods. The best of men that ever wore earth about him was a sufferer, a soft, meek, patient, humble, tranquil spirit; the first true gentleman that ever breathed.&quot;</p>
+      <p>And Doudney, in verse: &quot;But the waiting time, my brothers, is the hardest time of all.&quot;</p>
+      <p>The waiting time is the hardest time. And Israel could not wait. They could not endure the gap between what they had and what they wanted. They could not sit still in the discomfort of imperfect governance and trust that God was working. And so they demanded, and God gave, and the leanness came.</p>
+      <p>The poet Wilbye puts it in a single verse: &quot;There is a jewel which no Indian mines can buy, no chemic art can counterfeit. It makes men rich in greatest poverty, makes water wine, turns wooden cups to gold. The homely whistle to sweet music&#x27;s strain. Seldom it comes, to few from heaven sent, that much in little, all in naught: content.&quot;</p>
+      <p>That much in little, all in naught: content. The jewel that cannot be bought or counterfeited. The thing Israel threw away when they demanded a king.</p>
+      <p>But here is the mercy in the story, the mercy that Israel nearly missed and that we must not. Samuel says: &quot;For the LORD will not forsake his people for his great name&#x27;s sake.&quot; And again: &quot;Moreover as for me, God forbid that I should sin against the LORD in ceasing to pray for you: but I will teach you the good and the right way.&quot;</p>
+      <p>God does not forsake. Even when He disciplines. Even when He gives us what we demanded and lets us taste the leanness. He does not abandon. Samuel promises to keep praying. God promises to keep His people for His name&#x27;s sake. The door is not locked. The road back is open. The thunder is not the end of the story. It is the beginning of repentance.</p>
+      <p>Pink, on the grace of God, writes: &quot;The grace of God is manifested in and by and through the Lord Jesus Christ. The law was given by Moses, grace and truth came by Jesus Christ. This does not mean that God never exercised grace toward any before His Son became incarnate. But grace and truth were fully revealed and perfectly exemplified when the Redeemer came to this earth, and died for His people upon the cross.&quot;</p>
+      <p>There is a King, after all, that Israel needed. Not Saul. Not even David, though David was a man after God&#x27;s own heart. The King they needed, and the King we need, is the one who came not to be served but to serve, and to give His life a ransom for many. The one who did not grasp at equality with God but emptied Himself. The one who, when we demanded our own way, did not give us leanness but gave us Himself.</p>
+      <p>We close tonight with a hymn by William Cowper, written in 1773.</p>
+      <p>God moves in a mysterious way
+His wonders to perform;
+He plants His footsteps in the sea
+And rides upon the storm.</p>
+      <p>Deep in unfathomable mines
+Of never-failing skill
+He treasures up His bright designs
+And works His sovereign will.</p>
+      <p>Ye fearful saints, fresh courage take;
+The clouds ye so much dread
+Are big with mercy and shall break
+In blessings on your head.</p>
+      <p>Judge not the Lord by feeble sense,
+But trust Him for His grace;
+Behind a frowning providence
+He hides a smiling face.</p>
+      <p>His purposes will ripen fast,
+Unfolding every hour;
+The bud may have a bitter taste,
+But sweet will be the flower.</p>
+      <p>Blind unbelief is sure to err
+And scan His work in vain;
+God is His own interpreter,
+And He will make it plain.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

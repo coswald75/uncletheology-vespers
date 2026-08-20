@@ -1,0 +1,18 @@
+{
+  // uncletheology.com — static album site (Roots of Reason).
+  // No Worker logic and no gate: just serve the generated public/ tree.
+  // Build step (Cloudflare Pages / CI): `python3 build.py` -> public/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "uncletheology",
+  "compatibility_date": "2026-06-24",
+  "observability": { "enabled": true },
+  "main": "worker.js",
+  "routes": [
+    { "pattern": "uncletheology.com", "custom_domain": true },
+    { "pattern": "www.uncletheology.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS"
+  }
+}
