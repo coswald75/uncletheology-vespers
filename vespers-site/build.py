@@ -475,6 +475,73 @@ EPISODES = [
         ],
     },
     {
+        "slug": "the-thief-and-the-citizen",
+        "idea": "The Thief and the Citizen",
+        "lane": "Pastor Politics",
+        "day": "Wednesday",
+        "date_display": "August 19, 2026",
+        "sub": "Pastor Politics · Ephesians 4 — the mission of the church, and how far the word \u2018disciple\u2019 reaches",
+        "duration": "36 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-thief-and-the-citizen.mp3",
+        "length": 52529849,
+        "lede": "Fifth in the lane, and the foundation under the other four: what is the church's "
+                "mission, and does the citizen's life belong inside it? Ephesians 4's converted "
+                "thief — “let him labour… that he may have to give” — is the hinge: Scripture "
+                "commands, then leaves a gap of competence, and closing that gap is discipleship. "
+                "Carried into the citizen's life through the kingdom texts, Augustine's two cities, "
+                "and Calvin.",
+        "body": [
+            "Fifth in the Pastor Politics lane, going down to the foundation the other four assumed. "
+            "The Great Commission — “teach all nations… teaching them to observe all things "
+            "whatsoever I have commanded” — is the church's marching order; the live dispute "
+            "(DeYoung and Gilbert, Nine Marks vs. the missional writers) is how far “disciple” "
+            "reaches. The common ground is Ephesians 4's thief: “let him that stole steal no more, "
+            "but rather let him labour… that he may have to give.” The command stands over a gap — "
+            "how to find work, learn a trade — that Scripture never fills; walking a man across that "
+            "gap is not a distraction from discipleship but its substance. Carry it into the "
+            "citizen: Jeremiah's “seek the peace of the city,” Micah's “do justly,” “obey "
+            "magistrates,” “pray for kings… who will have all men to be saved” — bookend commands, "
+            "with the prudential middle (which policy, which candidate) left open.",
+            "Then the kingdom texts, read whole rather than as conversation-enders: “my kingdom is "
+            "not of this world” (an otherness of origin and method, spoken in a Roman courtroom by "
+            "one who would not decline the word king); the mustard seed and leaven, hidden in "
+            "method but total in reach — “till the whole was leavened”; and “render unto Caesar” "
+            "with its unspoken half — the coin bears Caesar's image, the man bears God's. "
+            "Augustine's two cities “formed by two loves,” the dividing line running through every "
+            "nation and congregation, and the pilgrim church that “desires and maintains a common "
+            "agreement among men.” Calvin facing both cliffs — revolutionaries and flatterers of "
+            "princes — and holding the balance: “very widely separated, and not adverse.” Closing "
+            "on the church as embassy — “we are ambassadors for Christ” — and Newton's “Glorious "
+            "Things of Thee Are Spoken.”",
+        ],
+        "walk": [
+            ("Matthew 28 · Ephesians 4", "Scripture · KJV",
+             "“Teach… all things whatsoever I have commanded”; and the converted thief — “let him "
+             "labour… that he may have to give” — the gap between command and competence."),
+            ("Jeremiah 29 · Micah 6 · 1 Timothy 2", "Scripture · KJV",
+             "“Seek the peace of the city”; “do justly”; “pray for kings… who will have all men to "
+             "be saved” — the political duty fastened to the mission."),
+            ("John 18 · Acts 1", "Scripture · KJV",
+             "“My kingdom is not of this world” — otherness of origin and method, spoken to Pilate; "
+             "and “witnesses… unto the uttermost part of the earth.”"),
+            ("Matthew 13 · Luke 17", "Scripture · KJV",
+             "The mustard seed and the leaven — hidden method, total reach, “till the whole was "
+             "leavened.”"),
+            ("Matthew 22", "Scripture · KJV",
+             "“Render unto Caesar” — and the unspoken half: the coin bears Caesar's image; the man "
+             "bears God's."),
+            ("Augustine · City of God", "Marcus Dods translation",
+             "Two cities “formed by two loves” — the line running through every nation; and the "
+             "pilgrim church that “maintains a common agreement among men.”"),
+            ("Calvin · Institutes IV.20", "Beveridge translation",
+             "Both cliffs — revolutionaries and flatterers of princes; and the balance, “very "
+             "widely separated, and not adverse to each other.”"),
+            ("2 Corinthians 5 · Newton", "Scripture & Olney Hymns",
+             "“We are ambassadors for Christ” — the embassy on foreign soil; and “Glorious Things "
+             "of Thee Are Spoken, Zion, city of our God.”"),
+        ],
+    },
+    {
         "slug": "beauty",
         "idea": "Beauty",
         "lane": "Great Ideas",
