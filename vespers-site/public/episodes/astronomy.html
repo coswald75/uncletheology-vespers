@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astronomy — Vespers</title>
+<meta name="description" content="The fifth great idea. From the fourth day of creation — lights made after light itself — through Job&#x27;s Pleiades and Orion, Basil against the astrologers, Aristarchus and Copernicus and Galileo&#x27;s “still, it moves,” Milton&#x27;s Raphael declining to settle the question, and Pascal&#x27;s terror of the infinite spaces, home to Addison&#x27;s “The spacious firmament on high.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/astronomy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Astronomy — Vespers">
+<meta property="og:description" content="The fifth great idea. From the fourth day of creation — lights made after light itself — through Job&#x27;s Pleiades and Orion, Basil against the astrologers, Aristarchus and Copernicus and Galileo&#x27;s “still, it moves,” Milton&#x27;s Raphael declining to settle the question, and Pascal&#x27;s terror of the infinite spaces, home to Addison&#x27;s “The spacious firmament on high.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/astronomy">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Great Ideas · Tuesday · August 11, 2026</div>
+      <h1 class="ep-title">Astronomy</h1>
+      <div class="ep-sub ui">Great Ideas · No. 5 — the fourth day of creation to the trial of Galileo, and back to a hymn<span class="dot">·</span>28 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/astronomy.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The fifth great idea. From the fourth day of creation — lights made after light itself — through Job&#x27;s Pleiades and Orion, Basil against the astrologers, Aristarchus and Copernicus and Galileo&#x27;s “still, it moves,” Milton&#x27;s Raphael declining to settle the question, and Pascal&#x27;s terror of the infinite spaces, home to Addison&#x27;s “The spacious firmament on high.”</p>
+    <div class="ep-body">
+    <p>A survey of the fifth great idea, read through the canon Adler&#x27;s Syntopicon indexes. The sun, moon, and stars come late in the creation week — the fourth day, after light already exists — and Job is asked who could bind the sweet influences of Pleiades or loose the bands of Orion. The Psalms give the claim its shortest form: he telleth the number of the stars; he calleth them all by their names. Basil, preaching on the fourth day, asks why light was made before the sun — the sun a vehicle for light, not its father — and turns a preacher&#x27;s patience on astrology, “a true spider&#x27;s web.”</p>
+    <p>Then the long quarrel over what moves: Aristarchus proposing a sun-centred heaven and losing, Copernicus reviving it on his deathbed, Galileo before the Inquisition and the whispered “still, it moves.” Milton stages the whole argument in Eden and lets Raphael decline to settle it — “Heaven is as the book of God before thee set.” Pascal shudders at the eternal silence of the infinite spaces; Newton is only a boy on the sea-shore before the great ocean of truth; Spurgeon and Thomas Dick make astronomy a cure for pride. Closing where it began — Psalm 19 — in Joseph Addison&#x27;s ode, “The hand that made us is divine.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Genesis 1 · the fourth day<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The lights made after light already exists — sun, moon, and stars for signs and seasons; “and God saw that it was good.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Job · the Pleiades and Orion<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion?” — the maker who hangeth the earth upon nothing.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Psalm 8 · 19 · 147<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“What is man, that thou art mindful of him”; “The heavens declare the glory of God”; “he telleth the number of the stars; he calleth them all by their names.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Plato · Timaeus<span class="walk-cite ui">Jowett translation</span></div>
+        <div class="walk-note">“Time and the heaven came into being at the same instant” — the stars set in their orbits to hold the numbers of time.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Basil · Hexaemeron<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Why light before the sun — the sun a vehicle for light, not its father — and a demolition of astrology, “a true spider&#x27;s web.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Aristarchus · Copernicus · Kepler · Galileo<span class="walk-cite ui">encyclopedia · PD</span></div>
+        <div class="walk-note">The sun-centred idea proposed, lost, and recovered — down to Galileo before the Inquisition, and the whispered “still, it moves.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Milton · Paradise Lost VIII<span class="walk-cite ui">1667</span></div>
+        <div class="walk-note">Adam&#x27;s doubt, and Raphael&#x27;s answer — “Heaven is as the book of God” — declining to settle whether Heaven moves or Earth.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Pascal · Pensées<span class="walk-cite ui">Trotter translation</span></div>
+        <div class="walk-note">“The eternal silence of these infinite spaces frightens me” — the vertigo of how much room there turned out to be.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Newton · Herschel · Laplace<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">The boy on the sea-shore before the great ocean of truth; the telescope finding more than the old system had room for.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">Spurgeon &amp; Thomas Dick · Treasury of David<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Astronomy as a cure for pride — “I am lost in my own nothingness,” and yet endowed with sense and reason to know its Author.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">11</div>
+      <div class="walk-body">
+        <div class="walk-src">Joseph Addison · “The spacious firmament on high”<span class="walk-cite ui">The Spectator, 1712</span></div>
+        <div class="walk-note">Psalm 19 wrought into an ode — “The hand that made us is divine.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day. Tonight: the next of the great ideas — Astronomy. A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Astronomy is the fifth idea on Mortimer Adler&#x27;s map of the great ideas, the map he called the Syntopicon — a table of contents for the long conversation of the West. Adler is our map tonight, never our source. We go instead to the voices he points us toward, starting on the fourth day of creation and ending with a hymn printed in a London magazine.</p>
+      <p>From Genesis:</p>
+      <p>And God said, Let there be lights in the firmament of the heaven to divide the day from the night; and let them be for signs, and for seasons, and for days, and years. And let them be for lights in the firmament of the heaven to give light upon the earth: and it was so. And God made two great lights; the greater light to rule the day, and the lesser light to rule the night: he made the stars also. And God set them in the firmament of the heaven to give light upon the earth, and to rule over the day and over the night, and to divide the light from the darkness: and God saw that it was good.</p>
+      <p>The sun, moon, and stars come late in that week — the fourth day, after light itself already exists. Job asks who could presume to have made them.</p>
+      <p>From Job:</p>
+      <p>He stretcheth out the north over the empty place, and hangeth the earth upon nothing. By his spirit he hath garnished the heavens; his hand hath formed the crooked serpent.</p>
+      <p>Job is asked, later in the same book:</p>
+      <p>Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion? Canst thou bring forth Mazzaroth in his season? or canst thou guide Arcturus with his sons? Knowest thou the ordinances of heaven? canst thou set the dominion thereof in the earth?</p>
+      <p>And Job says elsewhere of the same maker:</p>
+      <p>Which commandeth the sun, and it riseth not; and sealeth up the stars. Which alone spreadeth out the heavens, and treadeth upon the waves of the sea. Which maketh Arcturus, Orion, and Pleiades, and the chambers of the south.</p>
+      <p>The Psalms give the same claim its shortest form:</p>
+      <p>By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth.</p>
+      <p>From the Psalms also:</p>
+      <p>When I consider thy heavens, the work of thy fingers, the moon and the stars, which thou hast ordained; what is man, that thou art mindful of him? and the son of man, that thou visitest him?</p>
+      <p>And from the same book, a longer psalm we will come back to before the night is over:</p>
+      <p>The heavens declare the glory of God; and the firmament sheweth his handywork. Day unto day uttereth speech, and night unto night sheweth knowledge. There is no speech nor language, where their voice is not heard. Their line is gone out through all the earth, and their words to the end of the world. In them hath he set a tabernacle for the sun, which is as a bridegroom coming out of his chamber, and rejoiceth as a strong man to run a race. His going forth is from the end of the heaven, and his circuit unto the ends of it: and there is nothing hid from the heat thereof.</p>
+      <p>The Psalms also say, more simply:</p>
+      <p>He telleth the number of the stars; he calleth them all by their names.</p>
+      <p>Amos names the same maker by his handiwork:</p>
+      <p>Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth — the LORD is his name.</p>
+      <p>And Isaiah:</p>
+      <p>Lift up your eyes on high, and behold who hath created these things, that bringeth out their host by number: he calleth them all by names by the greatness of his might, for that he is strong in power; not one faileth.</p>
+      <p>Scripture speaks this way often — signs in the heavens for the last day, as much as for the first. From Isaiah again:</p>
+      <p>For the stars of heaven and the constellations thereof shall not give their light: the sun shall be darkened in his going forth, and the moon shall not cause her light to shine.</p>
+      <p>From Joel:</p>
+      <p>And I will shew wonders in the heavens and in the earth, blood, and fire, and pillars of smoke. The sun shall be turned into darkness, and the moon into blood, before the great and the terrible day of the LORD come.</p>
+      <p>From Matthew:</p>
+      <p>Immediately after the tribulation of those days shall the sun be darkened, and the moon shall not give her light, and the stars shall fall from heaven, and the powers of the heavens shall be shaken. Heaven and earth shall pass away, but my words shall not pass away.</p>
+      <p>And from Revelation:</p>
+      <p>And I beheld when he had opened the sixth seal, and, lo, there was a great earthquake; and the sun became black as sackcloth of hair, and the moon became as blood; and the stars of heaven fell unto the earth, even as a fig tree casteth her untimely figs, when she is shaken of a mighty wind; and the heaven departed as a scroll when it is rolled together, and every mountain and island were moved out of their places.</p>
+      <p>Scripture can also speak of the sun&#x27;s motion in the plainer language of what the eye sees, as on the day Joshua prayed. From Joshua:</p>
+      <p>Sun, stand thou still upon Gibeon; and thou, Moon, in the valley of Ajalon. And the sun stood still, and the moon stayed, until the people had avenged themselves upon their enemies. So the sun stood still in the midst of heaven, and hasted not to go down about a whole day.</p>
+      <p>Whether the sun moves, or only seems to — that question belongs to the philosophers, and they took it up early. Three centuries before the Christian era, a Greek astronomer named Aristarchus of Samos proposed something startling. The encyclopedia entry is brief:</p>
+      <p>A Greek astronomer, who first conceived the idea of the rotundity of the earth and its revolution both on its own axis and round the sun, in promulgating which idea he was accused of impiously disturbing the serenity of the gods.</p>
+      <p>Aristarchus found few followers. The dominant Greek account put the earth at the center and gave the heavenly bodies a different job than motion for its own sake — Plato, in the Timaeus, has his craftsman-god set them in their orbits to hold time together.</p>
+      <p>From Plato, in Benjamin Jowett&#x27;s translation:</p>
+      <p>Time, then, and the heaven came into being at the same instant, in order that, having been created together, if ever there was to be a dissolution of them, they might be dissolved together. It was framed after the pattern of the eternal nature, that it might resemble this as far as was possible; for the pattern exists from eternity, and the created heaven has been, and is, and will be, in all time. Such was the mind and thought of God in the creation of time. The sun and moon and five other stars, which are called the planets, were created by him in order to distinguish and preserve the numbers of time; and when he had made their several bodies, he placed them in the orbits in which the circle of the other was revolving — in seven orbits seven stars.</p>
+      <p>Three and a half centuries into the Christian era, Basil of Caesarea preached through the days of creation, verse by verse, and paused on the fourth day to ask why light itself was made before the sun that gives it.</p>
+      <p>From Basil:</p>
+      <p>The sun and the moon did not yet exist, in order that those who live in ignorance of God may not consider the sun as the origin and the father of light, or as the maker of all that grows out of the earth. That is why there was a fourth day, and then God said, Let there be lights in the firmament of the heaven. Already light was created; why therefore say that the sun was created to give light? He has put &quot;to give light&quot; instead of &quot;illumination.&quot; There is nothing here contradictory to what has been said of light. Then the actual nature of light was produced; now the sun&#x27;s body is constructed to be a vehicle for that original light. A lamp is not fire. Fire has the property of illuminating, and we have invented the lamp to light us in darkness. In the same way, the luminous bodies have been fashioned as a vehicle for that pure, clear, and immaterial light.</p>
+      <p>The eighteenth-century English writer Robert Dodsley put the same point in a single line, gathered in the old encyclopedia of quotations under &quot;Sun&quot;:</p>
+      <p>The sun is not God, though His noblest image; he enlighteneth the world with his brightness; his warmth giveth life to the products of the earth; admire him as the creature, the instrument of God, but worship him not.</p>
+      <p>Basil goes on, later in the same sermon, to take up a harder question — not who made the lights, but what may rightly be read from them. Isaiah had already drawn the line, mocking the wise men of Babylon:</p>
+      <p>Thou art wearied in the multitude of thy counsels. Let now the astrologers, the stargazers, the monthly prognosticators, stand up, and save thee from these things that shall come upon thee.</p>
+      <p>Basil takes the same target and works it with a preacher&#x27;s patience. From Basil:</p>
+      <p>The inventors of astrology, seeing that in the extent of time many signs escaped them, divided it and enclosed each part in narrow limits, as if in the least and shortest interval the greatest difference should be found between one birth and another. Such an one is born in this moment; he will be a prince over cities and will govern the people, in the fullness of riches and power. Another is born the instant after; he will be poor, miserable, and will wander daily from door to door begging his bread.</p>
+      <p>He goes on:</p>
+      <p>The child is born. The nurse ascertains the sex; then she awaits the wail which is a sign of its life. Until then how many moments have passed, do you think? And to obtain such minute knowledge, so impossible to grasp, each planet must be questioned to find its position as regards the signs of the Zodiac at the moment of the child&#x27;s birth. Thus, if it is impossible to find exactly the hour of birth, and if the least change can upset all, then both those who give themselves up to this imaginary science, and those who listen to them open-mouthed as if they could learn from them the future, are supremely ridiculous.</p>
+      <p>He goes on to press the point with the Zodiac itself:</p>
+      <p>Such an one will have curly hair and bright eyes, because he is born under the Ram; such is the appearance of a ram. Another is born under the Bull: he will be enured to hardship and of a slavish character, because the bull bows under the yoke. He who is born under the Ram will be liberal, not because this part of heaven gives this characteristic, but because such is the nature of the beast. If heaven has different characteristics derived from these animals, it is then itself subject to external influences, since its causes depend on the brutes who graze in our fields. This pretended science is a true spider&#x27;s web: if a gnat, or a fly, or some insect equally feeble falls into it, it is held entangled; if a stronger animal approaches, it passes through without trouble, carrying the weak tissue away with it.</p>
+      <p>The question Aristarchus raised and lost never entirely went away. By the later Middle Ages the system built to save his rivals&#x27; fixed earth had grown so intricate that even kings complained of it. Bartlett&#x27;s Familiar Quotations preserves a saying attributed to Alfonso the Wise, the thirteenth-century king of Castile, on being shown the full machinery of circles within circles that Ptolemy&#x27;s astronomy required: that it seemed a crank machine, and that it was a pity the Creator had not taken advice.</p>
+      <p>In Europe the question finally came to a crisis. From the Nuttall Encyclopædia, on Nicolaus Copernicus:</p>
+      <p>Founder of modern astronomy, born at Thorn, in Poland, and educated at Cracow and Bologna; became canon of Frauenburg. His chief interest lay in the heavenly bodies, and his demonstrations regarding their movements, which yet he deferred publishing till he was near his end; and indeed it was only when he was unconscious and dying that the first printed copy of the work was put into his hands. It was entitled &quot;De Orbium Revolutionibus,&quot; and was written in proof of the great first principle of astronomy, that the sun is the centre of the solar system, and that the earth and planets circle round it; the work was dedicated to Pope Paul the Third, and was received with favour by the Catholic Church, though, strange to say, it was denounced by Luther and Melanchthon as contrary to the Scriptures of truth.</p>
+      <p>On Johannes Kepler, the same encyclopedia is fonder of the man than tidy about his sentences:</p>
+      <p>Illustrious astronomer, born at Weil der Stadt, in poverty; studied at Tübingen chiefly mathematics and astronomy; joined Tycho Brahé at Prague as assistant. He was long occupied in studying the motions of the star Mars, with calculations repeated seventy times, and with the discovery of the planetary laws of the universe — these last are called, from his discovery of them, Kepler&#x27;s Laws; the first, that the planets move on elliptic orbits. Sir Henry Wotton saw him living in a camera obscura tent, doing ingenious things, inventing toys, writing almanacs, and being ill off for cash — &quot;an ingenious person, if there ever was one among Adam&#x27;s posterity,&quot; as Thomas Carlyle later put it, &quot;busy discovering the system of the world — grandest conquest ever made, or to be made, by the sons of Adam.&quot;</p>
+      <p>And on Galileo, the same page turns from the telescope to the trial:</p>
+      <p>An illustrious Italian mathematician, physicist, and astronomer, born at Pisa; demonstrated the isochronism of the pendulum, invented the thermometer and the hydrostatic balance, propounded the law of falling bodies, constructed the first astronomical telescope, and by means of it satisfied himself of, and proved, the truth of the Copernican doctrine, that the sun and not the earth is the centre of the planetary system. His insistence on this truth provoked the hostility of the Church, and an ecclesiastical decree pronounced the Copernican theory heresy; for the profession of it he was brought to the bar of the Inquisition, where he was compelled to forswear it by oath, concluding his recantation, it is said, with the exclamation, &quot;still, it moves.&quot;</p>
+      <p>Montaigne, writing a generation before Galileo&#x27;s trial, had already warned what it might cost a man to look too hard at the sun. Gathered under &quot;Sun&quot; in the old encyclopedia of prose quotations:</p>
+      <p>We must be satisfied with the light transmitted to us by the rays of the sun; and he who lifts up his eye to take in a larger quantity, must not be surprised if, as a reward for his presumption, he should lose his eyesight.</p>
+      <p>Milton staged the whole quarrel as a conversation in Eden, half a century after Galileo. Adam, having been given a tour of the universe by the angel Raphael, admits he still has one doubt. From Milton, Paradise Lost:</p>
+      <p>When I behold this goodly frame, this world, of Heaven and Earth consisting, and compute their magnitudes — this Earth, a spot, a grain, an atom, with the firmament compared, and all her numbered stars, that seem to roll spaces incomprehensible, merely to officiate light round this opacous Earth, this punctual spot, one day and night, in all her vast survey useless besides — reasoning I oft admire, how Nature, wise and frugal, could commit such disproportions, with superfluous hand so many nobler bodies to create, greater so manifold, to this one use; while the sedentary Earth, that better might with far less compass move, served by more noble than herself, attains her end without least motion, and receives, as tribute, such a sumless journey brought of incorporeal speed, her warmth and light — speed, to describe whose swiftness number fails.</p>
+      <p>He goes on. Raphael answers:</p>
+      <p>To ask or search, I blame thee not; for Heaven is as the book of God before thee set, wherein to read his wonderous works, and learn his seasons, hours, or days, or months, or years. This to attain, whether Heaven move or Earth, imports not, if thou reckon right. The rest, from Man or Angel, the great Architect did wisely to conceal, and not divulge his secrets to be scanned by them who ought rather admire — or, if they list to try conjecture, he his fabrick of the Heavens hath left to their disputes, perhaps to move his laughter at their quaint opinions wide hereafter, when they come to model Heaven and calculate the stars, how they will wield the mighty frame; how build, unbuild, contrive to save appearances; how gird the sphere with centrick and eccentrick scribbled o&#x27;er, cycle and epicycle, orb in orb.</p>
+      <p>Raphael goes on, and finally puts the Copernican hypothesis to Adam as a question, not a doctrine:</p>
+      <p>What if the sun be center to the world, and other stars, by his attractive virtue and their own, incited, dance about him various rounds? Their wandering course, now high, now low, then hid, progressive, retrograde, or standing still, in six thou seest; and what if seventh to these the planet Earth, so stedfast though she seem, insensibly three different motions move? Which else to several spheres thou must ascribe, moved contrary with thwart obliquities; or save the sun his labour, and that swift nocturnal and diurnal rhomb supposed, invisible else above all stars, the wheel of day and night — which needs not thy belief, if earth, industrious of herself, fetch day travelling east, and with her part averse from the sun&#x27;s beam meet night, her other part still luminous by his ray.</p>
+      <p>Raphael will not settle the question, and lets it run further than Adam expected — into whether other worlds might be inhabited too:</p>
+      <p>And other suns perhaps, with their attendant moons, thou wilt descry — communicating male and female light, which two great sexes animate the world — stored in each orb, perhaps, with some that live. For such vast room in Nature unpossessed by living soul, desert and desolate, only to shine, yet scarce to contribute each orb a glimpse of light conveyed so far down to this habitable, which returns light back to them, is obvious to dispute.</p>
+      <p>A French contemporary of Milton&#x27;s, writing in the same generation, felt a different kind of vertigo — not about which body moves, but about how much room there turned out to be for it to move in. From Blaise Pascal&#x27;s Pensées, in W. F. Trotter&#x27;s translation:</p>
+      <p>When I consider the short duration of my life, swallowed up in the eternity before and after, the little space which I fill, and even can see, engulfed in the infinite immensity of spaces of which I am ignorant, and which know me not, I am frightened, and am astonished at being here rather than there; for there is no reason why here rather than there, why now rather than then. Who has put me here? By whose order and direction have this place and time been allotted to me?</p>
+      <p>He set the feeling down again, later, in a single sentence:</p>
+      <p>The eternal silence of these infinite spaces frightens me.</p>
+      <p>Isaac Newton, who gave the moving heavens their law of gravitation, took the vastness rather differently near the end of his life. As it is commonly remembered:</p>
+      <p>I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the sea-shore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.</p>
+      <p>The same law that held the planets in their courses was found to govern the comets too, wanderers that had frightened people for centuries. Gathered under &quot;Comet&quot; in the old encyclopedia of prose quotations, from Bishop Watson:</p>
+      <p>Who can contemplate without astonishment the motion of a comet, running far beyond the orb of Saturn, endeavoring to escape into the pathless regions of unbounded space, yet feeling at its utmost distance the attractive influence of the sun; hearing, as it were, the voice of God arresting its progress and compelling it, after a lapse of ages, to reiterate its ancient course?</p>
+      <p>The naturalist Alexander von Humboldt, who spent a lifetime cataloguing the natural world, confessed that none of it dimmed the plain pleasure of looking up. Gathered under &quot;Heaven&quot; in the old encyclopedia of prose quotations:</p>
+      <p>The appearance of the heavens has, under all circumstances, a never-ending charm for me — in the clear starlight as well as in dark nights, in the soft blue as well as in the cloudy or dark-grey sky, in which the eye loses itself, without being able to distinguish anything.</p>
+      <p>The telescope, meanwhile, kept finding more than the old system had room for. From the Nuttall Encyclopædia, on Sir William Herschel:</p>
+      <p>A distinguished astronomer, born at Hanover, son of a musician, and bred to the profession; came to England at the end of the Seven Years&#x27; War, and obtained sundry appointments as an organist; gave his leisure time to the study of astronomy and survey of the heavens; discovered the planet Uranus, which he called Georgium Sidus in honour of George the Third; discovered also the two innermost belts of Saturn, as well as drew up a catalogue of five thousand heavenly bodies or clusters of them.</p>
+      <p>And on Pierre-Simon Laplace, who tried to show that the system, once discovered, would hold together on its own:</p>
+      <p>A celebrated French mathematician, born at Beaumont-en-Auge, in Normandy, the son of a farmer; becoming a member of the Académie des Sciences, he attained a position among mathematicians and astronomers almost equal to Newton&#x27;s; his &quot;Three Laws&quot; demonstrated the stability of the solar system; his &quot;Mécanique Céleste&quot; is unrivalled in that class of work. Lagrange had proved that on Newton&#x27;s theory of gravitation the planetary system would endure for ever; Laplace, still more cunningly, even guessed that it could not have been made on any other scheme.</p>
+      <p>Charles Spurgeon compiled a running commentary on the Psalms called the Treasury of David, gathering the comments of centuries onto each verse. On the psalm we heard earlier — when I consider thy heavens, the work of thy fingers — he quotes the eighteenth-century pastor and naturalist Christopher Christian Sturm:</p>
+      <p>Could we transport ourselves above the moon, could we reach the highest star above our heads, we would instantly discover new skies, new stars, new suns, new systems, and perhaps more magnificently adorned. But even there, the vast dominions of our great Creator would not terminate; we would then find, to our astonishment, that we had only arrived at the borders of the works of God. What is the clod of earth which we inhabit, with all the magnificent scenes it presents to us, in comparison of those innumerable worlds? Were this earth annihilated, its absence would no more be observed than that of a grain of sand from the sea shore. What then am I, when reckoned among the infinite number of God&#x27;s creatures? I am lost in my own nothingness.</p>
+      <p>He goes on:</p>
+      <p>But as little as I appear in this respect, I find myself great in others. There is great beauty in this starry firmament which God has chosen for his throne. I am dazzled with their splendor, and enchanted with their beauty. But notwithstanding this, however beautiful, and however richly adorned, yet this sky is void of intelligence. It is a stranger to its own beauty, while I, who am mere clay, molded by a divine hand, am endowed with sense and reason.</p>
+      <p>He goes on:</p>
+      <p>I can contemplate the beauty of these shining worlds; nay, more, I am already, to a certain degree, acquainted with their sublime Author; and by faith I see some small rays of his divine glory. O may I be more and more acquainted with his works, and make the study of them my employ, until by a glorious change I rise to dwell with him above the starry regions.</p>
+      <p>Spurgeon goes on, quoting the Scottish minister and astronomer Thomas Dick, from his book The Solar System:</p>
+      <p>A survey of the solar system has a tendency to moderate the pride of man, and to promote humility. Pride is one of the distinguishing characteristics of puny man, and has been one of the chief causes of all the contentions, wars, and sinful projects which have desolated and demoralized our sinful world. Man is exposed to numerous degradations and calamities: the rage of storms and tempests, the devastations of earthquakes and volcanoes, the ravages of the sword, famine, pestilence, and numerous diseases; and at length he must sink into the grave, and his body must become the companion of worms. Yet, in such circumstances, man — that puny worm of the dust, whose knowledge is so limited, and whose follies are so numerous and glaring — has the effrontery to strut in all the haughtiness of pride, and to glory in his shame.</p>
+      <p>Dick goes on:</p>
+      <p>When other arguments and motives produce little effect on certain minds, no considerations seem likely to have a more powerful tendency to counteract this deplorable propensity to pride in human beings, than those which are borrowed from the objects connected with astronomy. They show us what an insignificant being, what a mere atom indeed, man appears amidst the immensity of creation. What is the whole of this globe on which we dwell, compared with the solar system, which contains a mass of matter millions of times greater? What is this earth, in comparison of the billions of suns and worlds which by the telescope have been observed throughout the starry regions? Could we take our station on the lofty pinnacles of Heaven, and look down on this scarcely distinguishable speck of earth, we would be ready to exclaim with Seneca: is it to this little spot that the great designs and vast desires of men are confined?</p>
+      <p>We close where we began — the psalm that opened tonight&#x27;s reading, the heavens declare the glory of God. In the year seventeen twelve, the essayist Joseph Addison printed a paper in the Spectator on the strengthening of faith, and near its end he quoted those same verses, and then, in his words, let the reader see the thought &quot;wrought into the following ode.&quot; Here it is whole. From Joseph Addison:</p>
+      <p>The spacious firmament on high,
+With all the blue ethereal sky,
+And spangled heavens, a shining frame,
+Their great Original proclaim.
+The unwearied sun, from day to day,
+Does his Creator&#x27;s power display,
+And publishes to every land
+The work of an Almighty hand.</p>
+      <p>Soon as the evening shades prevail,
+The moon takes up the wondrous tale,
+And nightly to the listening earth
+Repeats the story of her birth;
+Whilst all the stars that round her burn,
+And all the planets in their turn,
+Confirm the tidings as they roll,
+And spread the truth from pole to pole.</p>
+      <p>What though, in solemn silence, all
+Move round the dark terrestrial ball?
+What though nor real voice nor sound
+Amid their radiant orbs be found?
+In reason&#x27;s ear they all rejoice,
+And utter forth a glorious voice,
+For ever singing, as they shine,
+&quot;The hand that made us is divine.&quot;</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

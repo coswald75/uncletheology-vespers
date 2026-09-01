@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Portion Nearest You — Vespers</title>
+<meta name="description" content="Ecclesiastes names the portion nearest you — a wife, a labour, an heir — and three successful men in the books of Samuel and Kings who kept their hands full of everything except their own sons. Eli, Samuel, and David; and the order of love that tells you which good is nearest, closing on a hymn about the house closest of all.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/the-portion-nearest-you">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Portion Nearest You — Vespers">
+<meta property="og:description" content="Ecclesiastes names the portion nearest you — a wife, a labour, an heir — and three successful men in the books of Samuel and Kings who kept their hands full of everything except their own sons. Eli, Samuel, and David; and the order of love that tells you which good is nearest, closing on a hymn about the house closest of all.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/the-portion-nearest-you">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Monday · August 10, 2026</div>
+      <h1 class="ep-title">The Portion Nearest You</h1>
+      <div class="ep-sub ui">The Scriptures · Ecclesiastes — the wife, the heir, and three fathers who lost their sons<span class="dot">·</span>28 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/the-portion-nearest-you.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Ecclesiastes names the portion nearest you — a wife, a labour, an heir — and three successful men in the books of Samuel and Kings who kept their hands full of everything except their own sons. Eli, Samuel, and David; and the order of love that tells you which good is nearest, closing on a hymn about the house closest of all.</p>
+    <div class="ep-body">
+    <p>The Preacher names the portion three ways: the portion shared — “live joyfully with the wife whom thou lovest… for that is thy portion” — the portion hoarded, the man alone with no end to his labour and no one to ask “for whom do I labour?”, and the portion left behind, handed to an heir who may be “a wise man or a fool.” Around each, the commonplace books gather the older voices — Bacon, Seneca, Quarles, Locke — on the wife, on solitude, on covetousness, on the heir.</p>
+    <p>Then three men who could have known their heirs and looked the other way: Eli, whose sons “knew not the LORD” and whose mild “why do ye such things?” was the whole of his discipline; Samuel, raised in that house, whose own sons “turned aside after lucre”; and David, of whom it is said that his father “had not displeased him at any time.” Paul states the plain obligation — “if any provide not for his own… he hath denied the faith” — and Augustine gives it an order: love those brought near you by the accidents of time and place and blood. Closing on David Denham&#x27;s “Sweet Home,” and the house it finally points to.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 9 · the portion shared<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Live joyfully with the wife whom thou lovest… for that is thy portion” — the nearest good named, and named with a person.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 4 · the portion hoarded<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The man alone with no end to his labour — “for whom do I labour?” — and the threefold cord not quickly broken.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Ecclesiastes 2 · the portion left behind<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“I should leave it unto the man that shall be after me… who knoweth whether he shall be a wise man or a fool?”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">The commonplace stones<span class="walk-cite ui">Collacon · public domain</span></div>
+        <div class="walk-note">On the wife, on solitude, on covetousness, on the heir — Bacon, Seneca, Quarles, Locke: the older names for a near thing.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Samuel 2–4 · Eli<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Sons who “knew not the LORD,” a father who asked “why do ye such things?” and did no more — and the verdict that fell on the house.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Samuel 8 · Samuel<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The man raised in that house, whose own sons “turned aside after lucre, and took bribes.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Kings 1 · David<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Adonijah, whom his father “had not displeased… at any time” — a throne, and a son never once asked, why hast thou done so?</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Timothy 5<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Let them learn first to shew piety at home… if any provide not for his own, he hath denied the faith.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine · On Christian Doctrine<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">The order of love — “pay special regard to those who, by the accidents of time, or place, or circumstance, are brought into closer connection with you.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">David Denham · “Sweet Home”<span class="walk-cite ui">1837</span></div>
+        <div class="walk-note">The house closest of all, and where it points — “feel in the presence of Jesus at home.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the portion nearest you — Ecclesiastes on the wife and the heir, and three successful men who kept their hands full of everything except their own sons.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Ecclesiastes names the portion once, and names a person while it does it. From Ecclesiastes:</p>
+      <p>Go thy way, eat thy bread with joy, and drink thy wine with a merry heart; for God now accepteth thy works. Let thy garments be always white; and let thy head lack no ointment. Live joyfully with the wife whom thou lovest all the days of the life of thy vanity, which he hath given thee under the sun, all the days of thy vanity: for that is thy portion in this life, and in thy labour which thou takest under the sun. Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.</p>
+      <p>From the commonplace books, on the wife:</p>
+      <p>He that hath a wife and child hath given hostages to fortune.</p>
+      <p>Lord Bacon.</p>
+      <p>Love thy wife as thyself; honor her more than thyself.</p>
+      <p>Rabbi Simon.</p>
+      <p>Nothing flatters a man so much as the happiness of his wife; he is always proud of himself as the source of it.</p>
+      <p>Justus Moser.</p>
+      <p>He that takes a wife takes care.</p>
+      <p>Franklin.</p>
+      <p>A wise man should have a useful and good wife in his house, or not marry at all.</p>
+      <p>Euripides.</p>
+      <p>The death of a man&#x27;s wife is like cutting down an ancient oak that has long shaded the family mansion; henceforth the glare of the world, with its cares and vicissitudes, falls upon the old widower&#x27;s heart, and there is nothing to break their force, or shield them from the full weight of misfortune.</p>
+      <p>Lamartine.</p>
+      <p>It is better to have a wife who cheapens everything, and buys nothing, than to be impoverished by one whose vanity will purchase everything, but whose pride will cheapen nothing.</p>
+      <p>Colton.</p>
+      <p>A wife must have a hard heart, if a devoted husband who will anticipate every wish, cannot win it.</p>
+      <p>Sarah Claxton.</p>
+      <p>To the wife should be given the keys of the husband&#x27;s house.</p>
+      <p>P. J. Bailey.</p>
+      <p>A wife that dishonoreth her husband most dishonoreth herself.</p>
+      <p>Arria.</p>
+      <p>The Preacher turns from the portion shared to the portion hoarded. From Ecclesiastes:</p>
+      <p>Again, I considered all travail, and every right work, that for this a man is envied of his neighbour. This is also vanity and vexation of spirit. Then I returned, and I saw vanity under the sun. There is one alone, and there is not a second; yea, he hath neither child nor brother: yet is there no end of all his labour; neither is his eye satisfied with riches; neither saith he, For whom do I labour, and bereave my soul of good? This is also vanity, yea, it is a sore travail. Two are better than one; because they have a good reward for their labour. For if they fall, the one will lift up his fellow: but woe to him that is alone when he falleth; for he hath not another to help him up. Again, if two lie together, then they have heat: but how can one be warm alone? And if one prevail against him, two shall withstand him; and a threefold cord is not quickly broken.</p>
+      <p>From the commonplace books, on solitude:</p>
+      <p>But little do men perceive what solitude is and how far it extends.</p>
+      <p>Lord Bacon.</p>
+      <p>That which happens to the soil when it ceases to be cultivated by the social man, happens to man himself when he foolishly forsakes society for solitude; the brambles grow up in his desert heart.</p>
+      <p>Rivarol.</p>
+      <p>In solitude we are oftener troubled with impertinent and unprofitable thoughts, than entertained with agreeable and useful ones.</p>
+      <p>J. Mason.</p>
+      <p>Solitude is only beneficial to the wise and the good; it is terrible to the bad.</p>
+      <p>Foscolo.</p>
+      <p>Solitude holds a cup sparkling with bliss in her right hand, a raging dagger in her left; to the blest she offers her goblet, but stretches toward the wretch the ruthless steel.</p>
+      <p>Klopstock.</p>
+      <p>Solitude is the audience-chamber of God.</p>
+      <p>Anne C. Lynch.</p>
+      <p>Reflect in solitude on everything that bears relation to God and His religion.</p>
+      <p>T. Gibson.</p>
+      <p>Sages and fools are the only two kinds of people that the world can afford to have live in solitude.</p>
+      <p>H. W. Shaw.</p>
+      <p>On the labour that never asks whom it is for, the moralists call it by its older name. From the commonplace books, on covetousness:</p>
+      <p>The covetous man, in seeking after riches, purchaseth care for himself, envy from his neighbors, a prey for thieves, peril for his person, damnation for his soul, curses for his children, and law for his heirs.</p>
+      <p>Lucretius, in the Collacon&#x27;s attribution.</p>
+      <p>Covetousness, by a greediness of getting more, deprives itself of the true end of getting; it loses the enjoyment of what it has got.</p>
+      <p>Sprat.</p>
+      <p>Covetousness is never to be satisfied; the more it has, the more it wants.</p>
+      <p>Luther.</p>
+      <p>By liberality, men&#x27;s vices are covered; by covetousness, laid open to the world.</p>
+      <p>Augustine, in the same collection — a different work from the one we close with tonight.</p>
+      <p>No vice has been more correctly delineated than covetousness; none pursued and attacked with more energy and ardor; yet the monster remains unsubdued, and stalks forth, imprinting the giant footsteps of desolation. An avaricious temper has been detected through the most specious disguises, traced in all its workings, portrayed in all its symptoms; but who has been able successfully to prescribe for its cure?</p>
+      <p>H. Martyn.</p>
+      <p>Some men are so covetous as if they were to live forever; and others so profuse as if they were to die the next moment.</p>
+      <p>Aristotle.</p>
+      <p>Covetousness is a vice of the soul, whereby a man desireth to have from all parties without reason, and unjustly withholdeth that which belongeth to another.</p>
+      <p>Aristippus.</p>
+      <p>The Preacher&#x27;s third case is the nearest of all — the one he cannot even call a stranger. From Ecclesiastes:</p>
+      <p>Yea, I hated all my labour which I had taken under the sun: because I should leave it unto the man that shall be after me. And who knoweth whether he shall be a wise man or a fool? yet shall he have rule over all my labour wherein I have laboured, and wherein I have shewed myself wise under the sun. This is also vanity. Therefore I went about to cause my heart to despair of all the labour which I took under the sun. For there is a man whose labour is in wisdom, and in knowledge, and in equity; yet to a man that hath not laboured therein shall he leave it for his portion. This also is vanity and a great evil. For what hath man of all his labour, and of the vexation of his heart, wherein he hath laboured under the sun? For all his days are sorrows, and his travail grief; yea, his heart taketh not rest in the night. This is also vanity.</p>
+      <p>From the commonplace books, on the heir:</p>
+      <p>He who sees his heir in his own child, carries his eye over hopes and possessions lying far beyond his gravestone, viewing his life, even here, as a period but closed with a comma; he who sees his heir in another man&#x27;s child, sees the full stop at the end of the sentence.</p>
+      <p>Bulwer.</p>
+      <p>If God hath blest thee with inheritance, and children to inherit, trust not the staff of thy family to the hands of one; make not many beggars in the building up of one great heir, lest if he miscarry through a prodigal will, the rest sink through a hard necessity.</p>
+      <p>F. Quarles.</p>
+      <p>Men are not proprietors of what they have merely for themselves, their children have a title to part of it, which comes to be wholly theirs, when death has put an end to their parents&#x27; use of it; and this we call inheritance.</p>
+      <p>J. Locke.</p>
+      <p>The perpetual enjoyment of things is given to no one, and one heir gives place to another, as wave succeeds wave.</p>
+      <p>Horace.</p>
+      <p>The man who has abundance of this world&#x27;s riches and is without an heir to inherit them, is to be pitied.</p>
+      <p>Menander.</p>
+      <p>What madness is it for a man to starve himself to enrich his heir, and so turn a friend into an enemy! For his joy at your death will be proportioned to what you leave him.</p>
+      <p>Seneca.</p>
+      <p>Solomon did not know whether his heir would be wise or a fool. Three men in the book of Samuel did know, or could have known, and looked the other way. The first is Eli. From the first book of Samuel:</p>
+      <p>Now the sons of Eli were sons of Belial; they knew not the LORD. And the priest&#x27;s custom with the people was, that, when any man offered sacrifice, the priest&#x27;s servant came, while the flesh was in seething, with a fleshhook of three teeth in his hand; and he struck it into the pan, or kettle, or caldron, or pot; all that the fleshhook brought up the priest took for himself. So they did in Shiloh unto all the Israelites that came thither. Also before they burnt the fat, the priest&#x27;s servant came, and said to the man that sacrificed, Give flesh to roast for the priest; for he will not have sodden flesh of thee, but raw. And if any man said unto him, Let them not fail to burn the fat presently, and then take as much as thy soul desireth; then he would answer him, Nay; but thou shalt give it me now: and if not, I will take it by force. Wherefore the sin of the young men was very great before the LORD: for men abhorred the offering of the LORD.</p>
+      <p>He goes on, on the father&#x27;s response:</p>
+      <p>Now Eli was very old, and heard all that his sons did unto all Israel; and how they lay with the women that assembled at the door of the tabernacle of the congregation. And he said unto them, Why do ye such things? for I hear of your evil dealings by all this people. Nay, my sons; for it is no good report that I hear: ye make the LORD&#x27;s people to transgress. If one man sin against another, the judge shall judge him: but if a man sin against the LORD, who shall intreat for him? Notwithstanding they hearkened not unto the voice of their father, because the LORD would slay them.</p>
+      <p>Then the verdict comes, and it does not land on the sons alone. From the same chapter:</p>
+      <p>And there came a man of God unto Eli, and said unto him, Thus saith the LORD, Did I plainly appear unto the house of thy father, when they were in Egypt in Pharaoh&#x27;s house? And did I choose him out of all the tribes of Israel to be my priest, to offer upon mine altar, to burn incense, to wear an ephod before me? and did I give unto the house of thy father all the offerings made by fire of the children of Israel? Wherefore kick ye at my sacrifice and at mine offering, which I have commanded in my habitation; and honourest thy sons above me, to make yourselves fat with the chiefest of all the offerings of Israel my people? Wherefore the LORD God of Israel saith, I said indeed that thy house, and the house of thy father, should walk before me for ever: but now the LORD saith, Be it far from me; for them that honour me I will honour, and they that despise me shall be lightly esteemed.</p>
+      <p>The chapter goes on to name the sign — both sons dead in one day — and closes the household&#x27;s decline. Eli himself does not survive the news. From later in the book, apart from the battle that surrounds it:</p>
+      <p>And it came to pass, when he made mention of the ark of God, that he fell from off the seat backward by the side of the gate, and his neck brake, and he died: for he was an old man, and heavy. And he had judged Israel forty years.</p>
+      <p>From the commonplace books, on indulgence:</p>
+      <p>An indulgent mother makes a sluttish daughter.</p>
+      <p>D. Eremita.</p>
+      <p>Indulgence infallibly produces selfishness and hardness of heart, and nothing but a pretty severe discipline and control can lay the foundation of a magnanimous character.</p>
+      <p>J. Jeffrey.</p>
+      <p>How many children are ruined by indulgence! Indulgence is not kindness or tenderness, but it may be the effect of one or the other.</p>
+      <p>N. Webster.</p>
+      <p>He that not only commits some act of sin, but lives indulgently in it, is never to be recounted a regenerate man.</p>
+      <p>H. Hammond.</p>
+      <p>By indulging the vices of your friend, you make them your own.</p>
+      <p>Publius Syrus.</p>
+      <p>A man should inure himself to voluntary labor; and not give up to indulgence and pleasures, as they beget no good constitution of body, nor knowledge of the mind.</p>
+      <p>Socrates.</p>
+      <p>Inordinate indulgence always ends in discontent.</p>
+      <p>Magoon.</p>
+      <p>The indulgence of any one form of gratification, in such a manner as to destroy the power of another form of gratification, also in the end diminishes, and frequently destroys, the power of deriving happiness, even from that which is indulged.</p>
+      <p>F. Wayland.</p>
+      <p>Immoderate indulgence must assuredly produce some terrible misfortune in the end.</p>
+      <p>Terence.</p>
+      <p>A child without simplicity, a maiden without innocence, a boy without truthfulness, are not more piteous sights than the man who has wasted and thrown away his youth in self-indulgence.</p>
+      <p>Smiles.</p>
+      <p>The second man grew up inside that house and watched it. From further on in the same book:</p>
+      <p>And it came to pass, when Samuel was old, that he made his sons judges over Israel. Now the name of his firstborn was Joel; and the name of his second, Abiah: they were judges in Beersheba. And his sons walked not in his ways, but turned aside after lucre, and took bribes, and perverted judgment.</p>
+      <p>The third man is David, and the household this time is a throne. From the opening of the first book of Kings:</p>
+      <p>Now king David was old and stricken in years; and they covered him with clothes, but he gat no heat. Then Adonijah the son of Haggith exalted himself, saying, I will be king: and he prepared him chariots and horsemen, and fifty men to run before him. And his father had not displeased him at any time in saying, Why hast thou done so? and he also was a very goodly man; and his mother bare him after Absalom.</p>
+      <p>From the commonplace books, on parents:</p>
+      <p>The behavior of parents toward their children gives sufficient evidence even to those who never had children, that the parental affection is common to mankind.</p>
+      <p>T. Reid.</p>
+      <p>In most cases bad parents beget bad children; if parents have no scruples about false coin and false weights, the sons are apt to commit the same crimes.</p>
+      <p>Rabbi Jehuda.</p>
+      <p>Unless parents set a good example to their children, they will furnish a plain reason to be used by them against themselves; and this is to be feared, that if they have not lived an honorable life, their sons will despise them and abandon them in their old age.</p>
+      <p>Aristotle.</p>
+      <p>What will parents be able to say to God at the day of judgment, for all their neglect of their children, in matter of instruction and example, and restraint from evil.</p>
+      <p>Tillotson.</p>
+      <p>Those parents act most wisely who have foresight enough to provide not only for the youth, but for the age of their offspring; who teach them usefulness, and not to expect too much from the world; to become betimes familiarized with stern and actual realities of life.</p>
+      <p>Acton.</p>
+      <p>The hand of our parents traces on our feeble hearts those first characters to which example and time give firmness, and which perhaps God alone can efface.</p>
+      <p>Voltaire.</p>
+      <p>God hath wisely and kindly implanted in the breasts of parents a most ardent principle of affection toward their children; and, indeed, the various trials and difficulties of a family require more than ordinary regard to conduct it with propriety; to bear with patience whatever transpires, and to watch with constancy against every evil to which children are exposed.</p>
+      <p>C. Buck.</p>
+      <p>The joys of parents are secret, and so are their griefs and fears; they cannot utter the one, nor they will not utter the other. Children sweeten labors, but they make misfortunes more bitter; they increase the cares of life, but they mitigate the remembrance of death.</p>
+      <p>Lord Bacon.</p>
+      <p>One epistle states the obligation as plainly as it is stated anywhere in the New Testament. From the first letter to Timothy:</p>
+      <p>Rebuke not an elder, but intreat him as a father; and the younger men as brethren; the elder women as mothers; the younger as sisters, with all purity. Honour widows that are widows indeed. But if any widow have children or nephews, let them learn first to shew piety at home, and to requite their parents: for that is good and acceptable before God. Now she that is a widow indeed, and desolate, trusteth in God, and continueth in supplications and prayers night and day. But if any provide not for his own, and specially for those of his own house, he hath denied the faith, and is worse than an infidel.</p>
+      <p>Not those of us in general — those of your own house. From the commonplace books, on home:</p>
+      <p>Home is the one place in all this world where hearts are sure of each other; it is the place of confidence; it is the place where we tear off that mask of guarded and suspicious coldness which the world forces us to wear in self-defense.</p>
+      <p>F. W. Robertson.</p>
+      <p>Any feeling that takes a man away from his home, is a traitor to the household; home should be the centre of joy, equatorial and tropical.</p>
+      <p>H. W. Beecher.</p>
+      <p>There is no outward prosperity which can counteract indolence, extravagance, and folly at home; no spirit can long endure bad domestic influence. Man is strong, but his heart is not adamant; he delights in enterprise and action; but to sustain him, he needs a tranquil mind and a whole heart.</p>
+      <p>Grew.</p>
+      <p>Home is the residence not merely of the body, but of the heart; it is a place for the affections to unfold and develop themselves; for children to love, and learn, and play in; for husband and wife to toil smilingly together, and make life a blessing. The object of all ambition should be to be happy at home; if we are not happy there, we cannot be happy elsewhere.</p>
+      <p>Annie E. Lancaster.</p>
+      <p>To be happy at home is the ultimate result of all ambition, the end to which all enterprise and labor tends, and of which every desire prompts the prosecution. It is indeed at home that every man must be known by those who would make a just estimate either of his virtue or felicity; for smiles and embroidery are alike occasional.</p>
+      <p>Dr. Johnson.</p>
+      <p>Home is the shrine of love, the heaven of life; and however humble, it is better than gold if hallowed by a mother.</p>
+      <p>Mrs. T. K. E. Knowles.</p>
+      <p>Those who always remain at home are like the inhabitants of the tomb.</p>
+      <p>Ibn Kalákis.</p>
+      <p>To Adam, Paradise was home; and among the good of his descendants home is paradise.</p>
+      <p>J. C. Hare.</p>
+      <p>The man of high descent may love the halls and lands of his inheritance as a part of himself, as trophies of his birth and power; the poor man&#x27;s attachment to the tenement he holds has a worthier root, struck deep into a purer soil; his household gods are of flesh and blood, with no alloy of silver, gold, or precious stones; and when they endear bare floors and walls, despite of toil and scanty meals, that man has his love of home from God, and his rude hut becomes a solemn place.</p>
+      <p>Dickens.</p>
+      <p>The sensations of joy felt on approaching the home of a beloved one, are like the twilight of morning before the sun has become visible.</p>
+      <p>Langley.</p>
+      <p>We pity the man, however prosperous his pecuniary condition, or however great his fame, who has not a happy home. A happy home is the heaven of this life.</p>
+      <p>R. Bonner.</p>
+      <p>Home should be a place of repose, of peace, of cheerfulness, of comfort, where the soul can renew strength to encounter the labor and troubles of life.</p>
+      <p>James Ellis.</p>
+      <p>None of this makes the wider world nothing. From the commonplace books, on neighbor and on charity:</p>
+      <p>Neighbors are those in whom we find toward us the greatest bonds of charity, and not them that live near about us.</p>
+      <p>Thomas Morton.</p>
+      <p>A kind neighbor is not one who does half a dozen great favors in as many years; but the doer of little every-day kindnesses.</p>
+      <p>M. W. Jacobus.</p>
+      <p>Whatsoever duties we perform in kindness toward our neighbors, we perform unto God.</p>
+      <p>W. Lenthall.</p>
+      <p>Nothing seems much clearer than the direction of charity. Would we all but relieve, according to the measure of our means, those objects immediately within the range of our personal knowledge, how much of the worst evil of poverty might be alleviated!</p>
+      <p>Dr. T. Chalmers.</p>
+      <p>There is a debt of mercy and pity, of charity and compassion, of relief and succor, due to human nature, and payable from one man to another; and such as deny to pay it to the distressed in the time of their abundance, may justly expect it will be denied themselves in a time of want.</p>
+      <p>W. Burkitt.</p>
+      <p>Every man is my neighbor, who although he hath done me some wrong, or hurt me by any manner of way, yet notwithstanding, he hath not put off the nature of man, or ceased to be flesh and blood, and the creature of God most like unto myself.</p>
+      <p>Luther.</p>
+      <p>The sweet charities of life, sympathy, affection, and benevolence, are the blessings blended with sorrow, sickness, and infirmity; and from the restraints of temper and mutual forbearance we practice to each other, arise the kindnesses and good-will which are the charms of social life.</p>
+      <p>King.</p>
+      <p>Charity in adversity is patient, in prosperity temperate, in passions strong, in good works quick, in temptations secure, in hospitality bountiful, amongst her true children joyful, amongst her false friends patient.</p>
+      <p>N. Lynge.</p>
+      <p>How beautiful it is to be able to sing for purposes of charity!</p>
+      <p>Jenny Lind.</p>
+      <p>The nature of charity is to draw all things to itself, and make them partakers of itself.</p>
+      <p>Lactantius.</p>
+      <p>A bad neighbor brings bad fortune with him.</p>
+      <p>Plautus.</p>
+      <p>A bad neighbor is as great a misfortune as a good one is a blessing.</p>
+      <p>Hesiod, in the same collection.</p>
+      <p>One writer worked out the arithmetic of that tension at length, and gave it a name we still use. From Augustine, On Christian Doctrine:</p>
+      <p>No sinner is to be loved as a sinner; and every man is to be loved as a man for God&#x27;s sake; but God is to be loved for His own sake. And if God is to be loved more than any man, each man ought to love God more than himself. Likewise we ought to love another man better than our own body, because all things are to be loved in reference to God, and another man can have fellowship with us in the enjoyment of God, whereas our body cannot; for the body only lives through the soul, and it is by the soul that we enjoy God.</p>
+      <p>He goes on, in the chapter that follows, on how that love is distributed among people we cannot love equally in practice:</p>
+      <p>All men are to be loved equally. But since you cannot do good to all, you are to pay special regard to those who, by the accidents of time, or place, or circumstance, are brought into closer connection with you. For, suppose that you had a great deal of some commodity, and felt bound to give it away to somebody who had none, and that it could not be given to more than one person; if two persons presented themselves, neither of whom had either from need or relationship a greater claim upon you than the other, you could do nothing fairer than choose by lot to which you would give what could not be given to both. Just so among men: since you cannot consult for the good of them all, you must take the matter as decided for you by a sort of lot, according as each man happens for the time being to be more closely connected with you.</p>
+      <p>He goes on, in the chapter after that, to say what the lot is for — that the closer connection is never the whole of the debt:</p>
+      <p>Now of all who can with us enjoy God, we love partly those to whom we render services, partly those who render services to us, partly those who both help us in our need and in turn are helped by us, partly those upon whom we confer no advantage and from whom we look for none. We ought to desire, however, that they should all join with us in loving God, and all the assistance that we either give them or accept from them should tend to that one end. And hence it is that we love even our enemies. For we do not fear them, seeing they cannot take away from us what we love; but we pity them rather, because the more they hate us the more are they separated from Him whom we love. For if they would turn to Him, they must of necessity love Him as the supreme good, and love us too as partakers with them in so great a blessing.</p>
+      <p>The lot has already fallen. It fell on Eli, and on Samuel, and on David, long before it fell on any of us — a wife, a house, a handful of sons brought nearer by nothing but time and place and blood. We close on a hymn about the house closest of all, and where it finally points.</p>
+      <p>David Denham wrote it in eighteen thirty-seven, to the same tune as the old parlor song about home. From Denham&#x27;s Sweet Home:</p>
+      <p>Mid scenes of confusion and creature complaints, how sweet to the soul is communion with saints! To find at the banquet of mercy there&#x27;s room, and feel in the presence of Jesus at home. Home, home, sweet, sweet home. Prepare me, dear Savior, for glory, my home.</p>
+      <p>Sweet bonds that unite all the children of peace! And, thrice precious, Jesus, whose love cannot cease, though oft from thy presence in sadness I roam, I long to behold thee in glory, at home. Home, home, sweet, sweet home.</p>
+      <p>I sigh from this body of sin to be free, which hinders my joy and communion with thee; though now my temptations like billows may foam, all, all will be peace, when I&#x27;m with thee at home. Home, home, sweet, sweet home.</p>
+      <p>While here in the valley of conflict I stay, O give me submission and strength as my day! In all my afflictions to thee would I come, rejoicing in hope of my glorious home. Home, home, sweet, sweet home.</p>
+      <p>Whate&#x27;er thou deniest, O give me thy grace! The Spirit&#x27;s sure witness, and smiles of thy face; endue me with patience to wait at thy throne, and find, even now, a sweet foretaste of home. Home, home, sweet, sweet home.</p>
+      <p>I long, dearest Lord, in thy beauties to shine, no more as an exile in sorrow to pine, and in thy fair image, arise from the tomb, with glorified millions to praise thee at home. Home, home, sweet, sweet home. Receive me, dear Savior, in glory, my home.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

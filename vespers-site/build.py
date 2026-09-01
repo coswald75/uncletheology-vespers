@@ -224,6 +224,136 @@ EPISODES = [
         ],
     },
     {
+        "slug": "astronomy",
+        "idea": "Astronomy",
+        "lane": "Great Ideas",
+        "day": "Tuesday",
+        "date_display": "August 11, 2026",
+        "sub": "Great Ideas · No. 5 — the fourth day of creation to the trial of Galileo, and back to a hymn",
+        "duration": "28 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/astronomy.mp3",
+        "length": 39725263,
+        "lede": "The fifth great idea. From the fourth day of creation — lights made after light itself — "
+                "through Job's Pleiades and Orion, Basil against the astrologers, Aristarchus and "
+                "Copernicus and Galileo's “still, it moves,” Milton's Raphael declining to settle the "
+                "question, and Pascal's terror of the infinite spaces, home to Addison's “The spacious "
+                "firmament on high.”",
+        "body": [
+            "A survey of the fifth great idea, read through the canon Adler's Syntopicon indexes. The "
+            "sun, moon, and stars come late in the creation week — the fourth day, after light already "
+            "exists — and Job is asked who could bind the sweet influences of Pleiades or loose the "
+            "bands of Orion. The Psalms give the claim its shortest form: he telleth the number of the "
+            "stars; he calleth them all by their names. Basil, preaching on the fourth day, asks why "
+            "light was made before the sun — the sun a vehicle for light, not its father — and turns a "
+            "preacher's patience on astrology, “a true spider's web.”",
+            "Then the long quarrel over what moves: Aristarchus proposing a sun-centred heaven and "
+            "losing, Copernicus reviving it on his deathbed, Galileo before the Inquisition and the "
+            "whispered “still, it moves.” Milton stages the whole argument in Eden and lets Raphael "
+            "decline to settle it — “Heaven is as the book of God before thee set.” Pascal shudders at "
+            "the eternal silence of the infinite spaces; Newton is only a boy on the sea-shore before "
+            "the great ocean of truth; Spurgeon and Thomas Dick make astronomy a cure for pride. "
+            "Closing where it began — Psalm 19 — in Joseph Addison's ode, “The hand that made us is "
+            "divine.”",
+        ],
+        "walk": [
+            ("Genesis 1 · the fourth day", "Scripture · KJV",
+             "The lights made after light already exists — sun, moon, and stars for signs and seasons; "
+             "“and God saw that it was good.”"),
+            ("Job · the Pleiades and Orion", "Scripture · KJV",
+             "“Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion?” — the "
+             "maker who hangeth the earth upon nothing."),
+            ("Psalm 8 · 19 · 147", "Scripture · KJV",
+             "“What is man, that thou art mindful of him”; “The heavens declare the glory of God”; "
+             "“he telleth the number of the stars; he calleth them all by their names.”"),
+            ("Plato · Timaeus", "Jowett translation",
+             "“Time and the heaven came into being at the same instant” — the stars set in their "
+             "orbits to hold the numbers of time."),
+            ("Basil · Hexaemeron", "public domain",
+             "Why light before the sun — the sun a vehicle for light, not its father — and a "
+             "demolition of astrology, “a true spider's web.”"),
+            ("Aristarchus · Copernicus · Kepler · Galileo", "encyclopedia · PD",
+             "The sun-centred idea proposed, lost, and recovered — down to Galileo before the "
+             "Inquisition, and the whispered “still, it moves.”"),
+            ("Milton · Paradise Lost VIII", "1667",
+             "Adam's doubt, and Raphael's answer — “Heaven is as the book of God” — declining to "
+             "settle whether Heaven moves or Earth."),
+            ("Pascal · Pensées", "Trotter translation",
+             "“The eternal silence of these infinite spaces frightens me” — the vertigo of how much "
+             "room there turned out to be."),
+            ("Newton · Herschel · Laplace", "public domain",
+             "The boy on the sea-shore before the great ocean of truth; the telescope finding more "
+             "than the old system had room for."),
+            ("Spurgeon & Thomas Dick · Treasury of David", "public domain",
+             "Astronomy as a cure for pride — “I am lost in my own nothingness,” and yet endowed "
+             "with sense and reason to know its Author."),
+            ("Joseph Addison · “The spacious firmament on high”", "The Spectator, 1712",
+             "Psalm 19 wrought into an ode — “The hand that made us is divine.”"),
+        ],
+    },
+    {
+        "slug": "the-portion-nearest-you",
+        "idea": "The Portion Nearest You",
+        "lane": "The Scriptures",
+        "day": "Monday",
+        "date_display": "August 10, 2026",
+        "sub": "The Scriptures · Ecclesiastes — the wife, the heir, and three fathers who lost their sons",
+        "duration": "28 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-portion-nearest-you.mp3",
+        "length": 40109442,
+        "lede": "Ecclesiastes names the portion nearest you — a wife, a labour, an heir — and three "
+                "successful men in the books of Samuel and Kings who kept their hands full of "
+                "everything except their own sons. Eli, Samuel, and David; and the order of love that "
+                "tells you which good is nearest, closing on a hymn about the house closest of all.",
+        "body": [
+            "The Preacher names the portion three ways: the portion shared — “live joyfully with the "
+            "wife whom thou lovest… for that is thy portion” — the portion hoarded, the man alone "
+            "with no end to his labour and no one to ask “for whom do I labour?”, and the portion "
+            "left behind, handed to an heir who may be “a wise man or a fool.” Around each, the "
+            "commonplace books gather the older voices — Bacon, Seneca, Quarles, Locke — on the wife, "
+            "on solitude, on covetousness, on the heir.",
+            "Then three men who could have known their heirs and looked the other way: Eli, whose sons "
+            "“knew not the LORD” and whose mild “why do ye such things?” was the whole of his "
+            "discipline; Samuel, raised in that house, whose own sons “turned aside after lucre”; and "
+            "David, of whom it is said that his father “had not displeased him at any time.” Paul "
+            "states the plain obligation — “if any provide not for his own… he hath denied the faith” "
+            "— and Augustine gives it an order: love those brought near you by the accidents of time "
+            "and place and blood. Closing on David Denham's “Sweet Home,” and the house it finally "
+            "points to.",
+        ],
+        "walk": [
+            ("Ecclesiastes 9 · the portion shared", "Scripture · KJV",
+             "“Live joyfully with the wife whom thou lovest… for that is thy portion” — the nearest "
+             "good named, and named with a person."),
+            ("Ecclesiastes 4 · the portion hoarded", "Scripture · KJV",
+             "The man alone with no end to his labour — “for whom do I labour?” — and the threefold "
+             "cord not quickly broken."),
+            ("Ecclesiastes 2 · the portion left behind", "Scripture · KJV",
+             "“I should leave it unto the man that shall be after me… who knoweth whether he shall be "
+             "a wise man or a fool?”"),
+            ("The commonplace stones", "Collacon · public domain",
+             "On the wife, on solitude, on covetousness, on the heir — Bacon, Seneca, Quarles, Locke: "
+             "the older names for a near thing."),
+            ("1 Samuel 2–4 · Eli", "Scripture · KJV",
+             "Sons who “knew not the LORD,” a father who asked “why do ye such things?” and did no "
+             "more — and the verdict that fell on the house."),
+            ("1 Samuel 8 · Samuel", "Scripture · KJV",
+             "The man raised in that house, whose own sons “turned aside after lucre, and took "
+             "bribes.”"),
+            ("1 Kings 1 · David", "Scripture · KJV",
+             "Adonijah, whom his father “had not displeased… at any time” — a throne, and a son "
+             "never once asked, why hast thou done so?"),
+            ("1 Timothy 5", "Scripture · KJV",
+             "“Let them learn first to shew piety at home… if any provide not for his own, he hath "
+             "denied the faith.”"),
+            ("Augustine · On Christian Doctrine", "public domain",
+             "The order of love — “pay special regard to those who, by the accidents of time, or "
+             "place, or circumstance, are brought into closer connection with you.”"),
+            ("David Denham · “Sweet Home”", "1837",
+             "The house closest of all, and where it points — “feel in the presence of Jesus at "
+             "home.”"),
+        ],
+    },
+    {
         "slug": "the-earthy-piety-of-providence",
         "idea": "The Earthy Piety of Providence",
         "lane": "The Scriptures",
