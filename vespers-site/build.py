@@ -31,6 +31,71 @@ DISCLAIMER = ("A survey of the great ideas — not necessarily an endorsement of
 # Episodes, newest first.
 EPISODES = [
     {
+        "slug": "you-cant-pray-a-lie",
+        "idea": "You Can't Pray a Lie",
+        "lane": "Fiction's Most Famous Passages",
+        "day": "Friday",
+        "date_display": "September 4, 2026",
+        "sub": "Fiction's Most Famous Passages · Twain — Huck's war with his conscience, and a witness that can be taught to lie",
+        "duration": "32 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/you-cant-pray-a-lie.mp3",
+        "length": 46500325,
+        "lede": "The greatest scene of moral crisis in American fiction — Huck Finn alone in the "
+                "wigwam, deciding whether to turn in Jim: the two attempts to pray, the letter to "
+                "Miss Watson, the river memories, and “All right, then, I'll go to hell.” A boy's "
+                "conscience working perfectly, aimed at exactly the wrong target — and what Scripture "
+                "says about a witness that can be taught to lie.",
+        "body": [
+            "From Adventures of Huckleberry Finn. Two con men have sold Jim — the runaway who fed "
+            "Huck, kept his watches, and called him honey — and Huck sits alone on the raft to "
+            "decide, with everything his slave-country world taught him saying that the sin is "
+            "helping Jim and the way back to God is turning him in. The reading carries the crisis "
+            "whole: the conscience “grinding” him, the prayer whose words won't come (“You can't "
+            "pray a lie — I found that out”), the letter that leaves him “washed clean of sin,” the "
+            "flood of memories of Jim's kindness, and the tearing of the paper: “All right, then, "
+            "I'll go to hell.”",
+            "Then the theology hidden in the wigwam. Paul says conscience is real — a witness "
+            "“bearing witness, accusing or else excusing” — but a witness is not a lawgiver; it can "
+            "be suborned, catechized, handed false evidence from childhood. “God alone is Lord of "
+            "the conscience,” says the Westminster Confession — not Miss Watson, not the Sunday-"
+            "school. Scripture knows the malformed conscience (“seared with a hot iron”; “whosoever "
+            "killeth you will think that he doeth God service”; Paul's own “I verily thought… I "
+            "ought”) and the woe over every culture that teaches its children to “call evil good.” "
+            "What defeats fifty years of Missouri is not an argument but a face — the seen brother "
+            "where the unseen God tests us. A conscience does not need silencing or obeying; it "
+            "needs redeeming — “purge your conscience… to serve the living God.” Closing on the "
+            "slave-trader turned hymn-writer John Newton: “Amazing grace… that saved a wretch like "
+            "me.”",
+        ],
+        "walk": [
+            ("Twain · Huckleberry Finn, ch. 31", "public domain",
+             "Huck's war with his conscience — the two prayers, the letter, and “All right, then, "
+             "I'll go to hell.” (the slur replaced with “slave” throughout)."),
+            ("Romans 2", "Scripture · KJV",
+             "Conscience as a witness — “bearing witness, and their thoughts… accusing or else "
+             "excusing” — a witness to a standard it did not write, and can be made to swear to a "
+             "false one."),
+            ("Westminster Confession · Gerson", "public domain",
+             "“God alone is Lord of the conscience” — not the Sunday-school, not the whole "
+             "church-going consensus of the Missouri shore."),
+            ("1 Timothy 4 · Isaiah 5", "Scripture · KJV",
+             "A conscience “seared with a hot iron”; and the woe on those who “call evil good, and "
+             "good evil… that put darkness for light.”"),
+            ("John 16 · Acts 26", "Scripture · KJV",
+             "“Whosoever killeth you will think that he doeth God service”; and Paul's own “I "
+             "verily thought… I ought” — the word of conscience turned to the crime."),
+            ("Proverbs 14 · Psalm 66", "Scripture · KJV",
+             "“There is a way which seemeth right unto a man…”; and the sound doctrine out of Huck's "
+             "broken compass — “If I regard iniquity in my heart, the Lord will not hear me.”"),
+            ("Philemon · Hebrews 9", "Scripture · KJV",
+             "The re-formed conscience's letter about a runaway — “not now as a servant, but a "
+             "brother beloved”; and the blood that purges conscience rather than silencing it."),
+            ("John Newton · “Amazing Grace”", "Olney Hymns, 1779",
+             "The slave-trader whose conscience grace took apart and re-formed — “'twas grace that "
+             "taught my heart to fear, and grace my fears relieved.”"),
+        ],
+    },
+    {
         "slug": "a-wise-and-eloquent-piety",
         "idea": "A Wise and Eloquent Piety",
         "lane": "The Scriptures",
