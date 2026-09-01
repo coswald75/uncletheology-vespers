@@ -98,10 +98,10 @@ EPISODES = [
     {
         "slug": "a-wise-and-eloquent-piety",
         "idea": "A Wise and Eloquent Piety",
-        "lane": "The Scriptures",
+        "lane": "The Surprise",
         "day": "Monday",
         "date_display": "August 31, 2026",
-        "sub": "The Scriptures · sapiens atque eloquens pietas — how a person is formed, from the Shema to the commonplace books",
+        "sub": "The Surprise · sapiens atque eloquens pietas — how a person is formed, from the Shema to the commonplace books",
         "duration": "70 min",
         "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/a-wise-and-eloquent-piety.mp3",
         "length": 101336615,
