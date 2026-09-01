@@ -673,6 +673,69 @@ EPISODES = [
         ],
     },
     {
+        "slug": "he-gave-them-their-request",
+        "idea": "He Gave Them Their Request",
+        "lane": "The Scriptures",
+        "day": "Monday",
+        "date_display": "August 17, 2026",
+        "sub": "The Scriptures · Psalm 106 — the king Israel demanded, the meat they wept for, and prayers granted in wrath",
+        "duration": "35 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/he-gave-them-their-request.mp3",
+        "length": 49864696,
+        "lede": "Psalm 106:15 — “he gave them their request; but sent leanness into their soul.” The "
+                "oldest warning in the life of prayer: God sometimes grants a request as a judgment. "
+                "The king Israel demanded, the quails they wept for at the graves of craving, and "
+                "the moralists on desire and contentment — closing on Newton's “Prayer Answered by "
+                "Crosses.”",
+        "body": [
+            "A survey built on one verse — “he gave them their request; but sent leanness into their "
+            "soul.” Long before Israel asked for a king, Deuteronomy had provided for one, defined "
+            "by what he must not multiply and the book he must keep at his elbow. Then the demand: "
+            "“make us a king to judge us like all the nations” — the thing that had been provided "
+            "for, and still a rejection, “they have not rejected thee, but they have rejected me.” "
+            "Samuel's warning that the king they want “will take, will take, will take” where the "
+            "law said “he shall not multiply.” Matthew Henry's refrain: “as sometimes he opposes us "
+            "from loving-kindness, so at other times he gratifies us in wrath.”",
+            "Then the older instance: the quails in the wilderness, Egypt's menu remembered course "
+            "by course and the bread of heaven called “nothing at all,” the meat “yet between their "
+            "teeth” when the plague fell, and the place named Kibroth-hattaavah — the graves of "
+            "craving. The commentators over Psalm 106:15 (“what is asked in passion is often given "
+            "in wrath”; Barnes on the prosperity few can bear), the moralists on desire, "
+            "covetousness, and ambition (“crowns are always stuffed with thorns”), and Hannah More "
+            "— “did not God sometimes withhold in mercy what we ask, we should be ruined at our own "
+            "request.” Set against it, contentment (“nature is content with little, grace with "
+            "less, sin with nothing”; Paul's “I have learned… therewith to be content”), and the "
+            "last turn: the demand granted in Saul, but the promise kept in David — and in a King "
+            "no one thought to ask for. Closing on Newton's “Prayer Answered by Crosses.”",
+        ],
+        "walk": [
+            ("Deuteronomy 17 · 1 Samuel 8", "Scripture · KJV",
+             "The king provided for — “he shall not multiply” — and the king demanded — “make us a "
+             "king… like all the nations,” “they have rejected me.”"),
+            ("Samuel's warning", "Scripture · KJV",
+             "Where the law said “shall not multiply,” the king they want “will take, will take, "
+             "will take” — “and ye shall be his servants.”"),
+            ("Numbers 11 · the quails", "Scripture · KJV",
+             "Egypt's menu remembered, the manna called “nothing at all,” the meat “yet between "
+             "their teeth,” and Kibroth-hattaavah — the graves of craving."),
+            ("Psalm 78 · Psalm 106", "Scripture · KJV",
+             "“He gave them their request; but sent leanness into their soul” — the verse the whole "
+             "night walks toward."),
+            ("Henry · Barnes · JFB", "public domain",
+             "“What is asked in passion is often given in wrath”; the prosperity few Christians can "
+             "bear; the wish that carries “its own punishment.”"),
+            ("The moralists on desire", "commonplace books · PD",
+             "Raleigh, Johnson, Bacon, Brooks on desire, covetousness, and ambition — “crowns are "
+             "always stuffed with thorns.”"),
+            ("Philippians 4 · 1 Timothy 6", "Scripture · KJV",
+             "The other side of the ledger — “I have learned, in whatsoever state I am, therewith "
+             "to be content”; “godliness with contentment is great gain.”"),
+            ("Hannah More · John Newton", "public domain",
+             "“Did not God… withhold in mercy what we ask, we should be ruined at our own request”; "
+             "and “Prayer Answered by Crosses.”"),
+        ],
+    },
+    {
         "slug": "the-transformation",
         "idea": "The Transformation",
         "lane": "Fiction's Most Famous Passages",
