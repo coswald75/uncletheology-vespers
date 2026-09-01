@@ -606,6 +606,70 @@ EPISODES = [
         ],
     },
     {
+        "slug": "words-without-knowledge",
+        "idea": "Words Without Knowledge",
+        "lane": "Pastor Politics",
+        "day": "Wednesday",
+        "date_display": "August 12, 2026",
+        "sub": "Pastor Politics · Job's whirlwind — the discipline of knowing the edge of your own competence",
+        "duration": "33 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/words-without-knowledge.mp3",
+        "length": 48014583,
+        "lede": "Job 38, out of the whirlwind: “Who is this that darkeneth counsel by words without "
+                "knowledge?” The fourth question this lane has circled — not whether to speak, or "
+                "how, or at what cost, but whether you actually know what you're talking about. "
+                "Solomon asking for an understanding heart, Jethro drawing the edge of Moses's "
+                "competence, and Paul footnoting his own sermon on Mars' Hill.",
+        "body": [
+            "Fourth in the Pastor Politics lane. After the mandate to speak, the manner, and the "
+            "cost comes the question underneath them: competence. God puts it to Job from the storm "
+            "— “words without knowledge” — and Job repeats the charge back on himself: “things too "
+            "wonderful for me, which I knew not.” Against him stands Solomon, handed the whole "
+            "apparatus of a throne and opening his reign by confessing “I am but a little child; I "
+            "know not how to go out or come in,” asking not for policy but for the instrument that "
+            "produces it — an understanding heart. And Jethro, telling Moses “this thing is too "
+            "heavy for thee”: competence is not a quantity a man has or lacks whole; it has a "
+            "shape, and the sin is refusing to find its edge.",
+            "Then the wisdom books (“he that answereth a matter before he heareth it, it is "
+            "folly”), Ecclesiastes on the house of God (“let thy words be few”), and Paul on the "
+            "teachers at Ephesus “understanding neither what they say, nor whereof they affirm” — "
+            "the office wanted before the knowledge was had. Correction done right (Apollos taken "
+            "aside by Priscilla and Aquila, privately) and confidence kept inside its edge (Paul "
+            "footnoting “your own poets” on Mars' Hill). The commonplace books on discretion, "
+            "ignorance, and prudence — and Parsons closing the loophole: “too great prudence is "
+            "imprudence,” lest the competence-test become a costume for cowardice. The test: does "
+            "the confession of a limit lead you to do the reading and then speak, or to stop? "
+            "Closing on Paul's doxology to “the only wise God” and Walter Chalmers Smith's "
+            "“Immortal, invisible.”",
+        ],
+        "walk": [
+            ("Job 38 & 42", "Scripture · KJV",
+             "“Who is this that darkeneth counsel by words without knowledge?” — and Job's rare "
+             "reply, repeating the charge on himself: “things too wonderful for me.”"),
+            ("1 Kings 3", "Scripture · KJV",
+             "Solomon opening his reign — “I am but a little child; I know not how to go out or come "
+             "in” — and asking for an understanding heart."),
+            ("Exodus 18", "Scripture · KJV",
+             "Jethro to Moses: “this thing is too heavy for thee” — competence has a shape; the sin "
+             "is refusing to find its edge."),
+            ("Proverbs · Ecclesiastes 5", "Scripture · KJV",
+             "“He that answereth a matter before he heareth it”; “God is in heaven, and thou upon "
+             "earth: therefore let thy words be few.”"),
+            ("1 Timothy 1 · James 3", "Scripture · KJV",
+             "The teachers “understanding neither what they say”; “be not many masters, knowing "
+             "that we shall receive the greater condemnation.”"),
+            ("Acts 18 · Acts 17", "Scripture · KJV",
+             "Apollos corrected privately by Priscilla and Aquila; and Paul on Mars' Hill "
+             "footnoting “your own poets” — careful even while standing alone."),
+            ("Commonplace books · Cowper", "public domain",
+             "Discretion, ignorance, prudence — and “too great prudence is imprudence”; “knowledge "
+             "is proud… wisdom is humble that he knows no more.”"),
+            ("1 Timothy 1 · W. C. Smith", "Scripture & 1867 hymn",
+             "The doxology to “the only wise God,” turned into “Immortal, invisible, God only "
+             "wise… ‘tis only the splendour of light hideth thee.”"),
+        ],
+    },
+    {
         "slug": "astronomy",
         "idea": "Astronomy",
         "lane": "Great Ideas",

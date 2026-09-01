@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Words Without Knowledge — Vespers</title>
+<meta name="description" content="Job 38, out of the whirlwind: “Who is this that darkeneth counsel by words without knowledge?” The fourth question this lane has circled — not whether to speak, or how, or at what cost, but whether you actually know what you&#x27;re talking about. Solomon asking for an understanding heart, Jethro drawing the edge of Moses&#x27;s competence, and Paul footnoting his own sermon on Mars&#x27; Hill.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/words-without-knowledge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Words Without Knowledge — Vespers">
+<meta property="og:description" content="Job 38, out of the whirlwind: “Who is this that darkeneth counsel by words without knowledge?” The fourth question this lane has circled — not whether to speak, or how, or at what cost, but whether you actually know what you&#x27;re talking about. Solomon asking for an understanding heart, Jethro drawing the edge of Moses&#x27;s competence, and Paul footnoting his own sermon on Mars&#x27; Hill.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/words-without-knowledge">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Pastor Politics · Wednesday · August 12, 2026</div>
+      <h1 class="ep-title">Words Without Knowledge</h1>
+      <div class="ep-sub ui">Pastor Politics · Job&#x27;s whirlwind — the discipline of knowing the edge of your own competence<span class="dot">·</span>33 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/words-without-knowledge.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Job 38, out of the whirlwind: “Who is this that darkeneth counsel by words without knowledge?” The fourth question this lane has circled — not whether to speak, or how, or at what cost, but whether you actually know what you&#x27;re talking about. Solomon asking for an understanding heart, Jethro drawing the edge of Moses&#x27;s competence, and Paul footnoting his own sermon on Mars&#x27; Hill.</p>
+    <div class="ep-body">
+    <p>Fourth in the Pastor Politics lane. After the mandate to speak, the manner, and the cost comes the question underneath them: competence. God puts it to Job from the storm — “words without knowledge” — and Job repeats the charge back on himself: “things too wonderful for me, which I knew not.” Against him stands Solomon, handed the whole apparatus of a throne and opening his reign by confessing “I am but a little child; I know not how to go out or come in,” asking not for policy but for the instrument that produces it — an understanding heart. And Jethro, telling Moses “this thing is too heavy for thee”: competence is not a quantity a man has or lacks whole; it has a shape, and the sin is refusing to find its edge.</p>
+    <p>Then the wisdom books (“he that answereth a matter before he heareth it, it is folly”), Ecclesiastes on the house of God (“let thy words be few”), and Paul on the teachers at Ephesus “understanding neither what they say, nor whereof they affirm” — the office wanted before the knowledge was had. Correction done right (Apollos taken aside by Priscilla and Aquila, privately) and confidence kept inside its edge (Paul footnoting “your own poets” on Mars&#x27; Hill). The commonplace books on discretion, ignorance, and prudence — and Parsons closing the loophole: “too great prudence is imprudence,” lest the competence-test become a costume for cowardice. The test: does the confession of a limit lead you to do the reading and then speak, or to stop? Closing on Paul&#x27;s doxology to “the only wise God” and Walter Chalmers Smith&#x27;s “Immortal, invisible.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Job 38 &amp; 42<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Who is this that darkeneth counsel by words without knowledge?” — and Job&#x27;s rare reply, repeating the charge on himself: “things too wonderful for me.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Kings 3<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Solomon opening his reign — “I am but a little child; I know not how to go out or come in” — and asking for an understanding heart.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Exodus 18<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Jethro to Moses: “this thing is too heavy for thee” — competence has a shape; the sin is refusing to find its edge.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Proverbs · Ecclesiastes 5<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“He that answereth a matter before he heareth it”; “God is in heaven, and thou upon earth: therefore let thy words be few.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Timothy 1 · James 3<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The teachers “understanding neither what they say”; “be not many masters, knowing that we shall receive the greater condemnation.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Acts 18 · Acts 17<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Apollos corrected privately by Priscilla and Aquila; and Paul on Mars&#x27; Hill footnoting “your own poets” — careful even while standing alone.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Commonplace books · Cowper<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Discretion, ignorance, prudence — and “too great prudence is imprudence”; “knowledge is proud… wisdom is humble that he knows no more.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">1 Timothy 1 · W. C. Smith<span class="walk-cite ui">Scripture &amp; 1867 hymn</span></div>
+        <div class="walk-note">The doxology to “the only wise God,” turned into “Immortal, invisible, God only wise… ‘tis only the splendour of light hideth thee.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: words without knowledge — the discipline of knowing what you are actually competent to say.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Three nights now this lane has circled a single question from different sides. The mandate to speak at all. The manner of the speech once you&#x27;ve decided to give it. The cost of saying the honest thing in a room that would rather you didn&#x27;t. There is a fourth question underneath all three, and it is the one a man is least likely to put to himself, because putting it well requires the very thing it is testing for. Not whether you should speak. Not how. Not what it will cost. Whether you actually know what you are talking about.</p>
+      <p>The Lord put that question to Job directly, out of a storm, after some thirty chapters of a good man arguing his own case at length. From the book of Job:</p>
+      <p>Then the LORD answered Job out of the whirlwind, and said, Who is this that darkeneth counsel by words without knowledge? Gird up now thy loins like a man; for I will demand of thee, and answer thou me.</p>
+      <p>Darkeneth counsel. Not lies — Job never lied, and the friends who had been arguing with him for chapters were, if anything, the ones playing loose with the facts. Job&#x27;s problem was different. He spoke with real confidence into a subject too large for him, and the effect of many true-sounding words was less light in the room, not more.</p>
+      <p>Job&#x27;s own answer, later, is worth hearing in full, because he does something rare: he repeats the charge back at himself.</p>
+      <p>Then Job answered the LORD, and said, I know that thou canst do every thing, and that no thought can be withholden from thee. Who is he that hideth counsel without knowledge? therefore have I uttered that I understood not; things too wonderful for me, which I knew not. Hear, I beseech thee, and I will speak: I will demand of thee, and declare thou unto me. I have heard of thee by the hearing of the ear: but now mine eye seeth thee. Wherefore I abhor myself, and repent in dust and ashes.</p>
+      <p>Things too wonderful for me, which I knew not. That is the whole book compressed into a clause: a man who had been arguing, with real learning and real sincerity, about a governance he had never once seen from the inside.</p>
+      <p>Set beside Job the one king in the record who was handed the largest political competence imaginable and used his first act in office to say he didn&#x27;t have any. From the first book of Kings:</p>
+      <p>In Gibeon the LORD appeared to Solomon in a dream by night: and God said, Ask what I shall give thee. And Solomon said, Thou hast shewed unto thy servant David my father great mercy, according as he walked before thee in truth, and in righteousness, and in uprightness of heart with thee; and thou hast kept for him this great kindness, that thou hast given him a son to sit on his throne, as it is this day. And now, O LORD my God, thou hast made thy servant king instead of David my father: and I am but a little child: I know not how to go out or come in. And thy servant is in the midst of thy people which thou hast chosen, a great people, that cannot be numbered nor counted for multitude. Give therefore thy servant an understanding heart to judge thy people, that I may discern between good and bad: for who is able to judge this thy so great a people?</p>
+      <p>And the speech pleased the Lord, that Solomon had asked this thing. And God said unto him, Because thou hast asked this thing, and hast not asked for thyself long life; neither hast asked riches for thyself, nor hast asked the life of thine enemies; but hast asked for thyself understanding to discern judgment; Behold, I have done according to thy words: lo, I have given thee a wise and an understanding heart; so that there was none like thee before thee, neither after thee shall any arise like unto thee.</p>
+      <p>A little child. Not a figure of speech — an actual confession, from a new king with the whole apparatus of the state already in his hand, that he does not know how to go out or come in. He does not ask for policy positions, or for the answers to the hard cases already piling up on his desk. He asks for the instrument that produces them: an understanding heart, a working method for telling good from bad case by case — because he already knows the alternative is a king who guesses and calls it certainty.</p>
+      <p>The same discipline, worked out as an actual reform of government rather than a private prayer, comes earlier, from Moses&#x27;s father-in-law. From Exodus:</p>
+      <p>And it came to pass on the morrow, that Moses sat to judge the people: and the people stood by Moses from the morning unto the evening. And when Moses&#x27; father in law saw all that he did to the people, he said, What is this thing that thou doest to the people? why sittest thou thyself alone, and all the people stand by thee from morning unto even? And Moses said unto his father in law, Because the people come unto me to enquire of God: when they have a matter, they come unto me; and I judge between one and another, and I do make them know the statutes of God, and his laws.</p>
+      <p>And Moses&#x27; father in law said unto him, The thing that thou doest is not good. Thou wilt surely wear away, both thou, and this people that is with thee: for this thing is too heavy for thee; thou art not able to perform it thyself alone. Hearken now unto my voice, I will give thee counsel, and God shall be with thee: Be thou for the people to God-ward, that thou mayest bring the causes unto God: and thou shalt teach them ordinances and laws, and shalt shew them the way wherein they must walk, and the work that they must do. Moreover thou shalt provide out of all the people able men, such as fear God, men of truth, hating covetousness; and place such over them, to be rulers of thousands, and rulers of hundreds, rulers of fifties, and rulers of tens: and let them judge the people at all seasons: and it shall be, that every great matter they shall bring unto thee, but every small matter they shall judge: so shall it be easier for thyself, and they shall bear the burden with thee.</p>
+      <p>So Moses hearkened to the voice of his father in law, and did all that he had said. And Moses chose able men out of all Israel, and made them heads over the people, rulers of thousands, rulers of hundreds, rulers of fifties, and rulers of tens: and they judged the people at all seasons: the hard causes they brought unto Moses, but every small matter they judged themselves.</p>
+      <p>This thing is too heavy for thee; thou art not able to perform it thyself alone. Not a rebuke of Moses&#x27;s competence in general — the man had led a nation out of slavery. It is a rebuke of one particular overreach: a single judge hearing every case across the whole of a nation&#x27;s disputes, because he had not yet drawn the line between what he alone could rightly decide and what could be handed to able men. Competence is not a fixed quantity a man either has or lacks whole. It has a shape. It covers some matters and not others, and the sin Jethro is naming is not ignorance — everyone is ignorant of nearly everything — the sin is refusing to find the edge of it.</p>
+      <p>The proverbs return to this so often it amounts to a genre of its own. From the book of Proverbs:</p>
+      <p>He that answereth a matter before he heareth it, it is folly and shame unto him.</p>
+      <p>Seest thou a man that is hasty in his words? there is more hope of a fool than of him.</p>
+      <p>The way of a fool is right in his own eyes: but he that hearkeneth unto counsel is wise.</p>
+      <p>He that hath knowledge spareth his words: and a man of understanding is of an excellent spirit. Even a fool, when he holdeth his peace, is counted wise: and he that shutteth his lips is esteemed a man of understanding.</p>
+      <p>Seest thou a man wise in his own conceit? there is more hope of a fool than of him.</p>
+      <p>The heart of the righteous studieth to answer: but the mouth of the wicked poureth out evil things.</p>
+      <p>A fool hath no delight in understanding, but that his heart may discover itself.</p>
+      <p>Seven proverbs, one diagnosis. It is not the volume of a man&#x27;s opinions that reveals whether the work has been done behind them. It is the ratio of what he says to what he has actually taken the trouble to hear.</p>
+      <p>The Preacher applies the same rule to the most dangerous room a man can open his mouth in — the house of God, where a claim to know God&#x27;s mind carries the most weight and gets the least checking. From Ecclesiastes:</p>
+      <p>Keep thy foot when thou goest to the house of God, and be more ready to hear, than to give the sacrifice of fools: for they consider not that they do evil. Be not rash with thy mouth, and let not thine heart be hasty to utter any thing before God: for God is in heaven, and thou upon earth: therefore let thy words be few. For a dream cometh through the multitude of business; and a fool&#x27;s voice is known by multitude of words.</p>
+      <p>For God is in heaven, and thou upon earth. The remedy the text gives for rashness is not silence as such — it is a right accounting of the distance between the speaker and the subject.</p>
+      <p>Paul, writing to Timothy about the church at Ephesus, names the failure exactly, and names its motive. From the first letter to Timothy:</p>
+      <p>As I besought thee to abide still at Ephesus, when I went into Macedonia, that thou mightest charge some that they teach no other doctrine, neither give heed to fables and endless genealogies, which minister questions, rather than godly edifying which is in faith: now the end of the commandment is charity out of a pure heart, and of a good conscience, and of faith unfeigned: from which some having swerved have turned aside unto vain jangling; desiring to be teachers of the law; understanding neither what they say, nor whereof they affirm.</p>
+      <p>Desiring to be teachers. Not commissioned, not competent — desiring. The office was wanted before the knowledge was had, and the knowledge never caught up, because wanting the office was the actual project the whole time.</p>
+      <p>James, in a single verse this lane has not yet read straight, puts the cost on the front end rather than waiting for the argument to go wrong. From the epistle of James:</p>
+      <p>My brethren, be not many masters, knowing that we shall receive the greater condemnation.</p>
+      <p>Not many masters — not many teachers, in most renderings of the word. The warning is not against teaching as such. It is against multiplying teachers past the number of people who have actually earned the standing, because the man who takes the chair takes the judgment that goes with the chair.</p>
+      <p>Paul&#x27;s instructions for choosing church leaders name the same danger by its most common occasion — not malice, but simple newness. From the same letter, on the qualifications for an overseer:</p>
+      <p>Not a novice, lest being lifted up with pride he fall into the condemnation of the devil.</p>
+      <p>Novice — newly planted. The disqualification is not bad character. It is insufficient time for the position to have tested what the man actually knows against what he only supposes he knows, and Paul names the specific fall that follows: not error exactly, but pride, the same desiring-to-be-teachers dressed in different clothes.</p>
+      <p>The New Testament also shows what correction looks like when it actually works, which is worth as much as the warnings. From the book of Acts, concerning a preacher already excellent by any ordinary measure:</p>
+      <p>And a certain Jew named Apollos, born at Alexandria, an eloquent man, and mighty in the scriptures, came to Ephesus. This man was instructed in the way of the Lord; and being fervent in the spirit, he spake and taught diligently the things of the Lord, knowing only the baptism of John. And he began to speak boldly in the synagogue: whom when Aquila and Priscilla had heard, they took him unto them, and expounded unto him the way of God more perfectly.</p>
+      <p>Eloquent, mighty in the scriptures, fervent, bold — and still short one piece of the doctrine, and he did not know it until two members of the congregation took him aside. Not in the synagogue. Not from the platform. They took him unto them. The correction of a man&#x27;s incompetence, handled well, is nearly always done in private, by people with less eloquence and more information, and nothing in the record suggests Apollos resented it. He went on from Ephesus to Achaea and helped the believers there considerably.</p>
+      <p>The positive case — a man speaking in public, under real pressure, on ground he has not fully mapped, and staying carefully inside the edge of what he can actually defend — is Paul at Athens. From Acts:</p>
+      <p>Then Paul stood in the midst of Mars&#x27; hill, and said, Ye men of Athens, I perceive that in all things ye are too superstitious. For as I passed by, and beheld your devotions, I found an altar with this inscription, TO THE UNKNOWN GOD. Whom therefore ye ignorantly worship, him declare I unto you. God that made the world and all things therein, seeing that he is Lord of heaven and earth, dwelleth not in temples made with hands; neither is worshipped with men&#x27;s hands, as though he needed any thing, seeing he giveth to all life, and breath, and all things; and hath made of one blood all nations of men for to dwell on all the face of the earth, and hath determined the times before appointed, and the bounds of their habitation; that they should seek the Lord, if haply they might feel after him, and find him, though he be not far from every one of us: for in him we live, and move, and have our being; as certain also of your own poets have said, For we are also his offspring. Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man&#x27;s device. And the times of this ignorance God winked at; but now commandeth all men every where to repent.</p>
+      <p>Notice the small, careful move in the middle of a sermon to strangers on their own hill: as certain also of your own poets have said. He does not claim the line as his own insight. He names it as a citation, from a source his hearers would recognize and he was careful not to misrepresent. A man confident enough to stand alone on Mars&#x27; Hill was still careful enough to footnote.</p>
+      <p>The commonplace-book writers worked this same ground for centuries under the heading of discretion, and a few of them are worth hearing together.</p>
+      <p>From Addison:</p>
+      <p>Discretion is the perfection of reason, and a guide to us in all the duties of life. There are many shining qualities in the mind of man, but there is none so useful as discretion; it is this indeed which gives a value to all the rest, which sets them at work in their proper times and places, and turns them to the advantage of the person who is possessed of them. Without it, learning is pedantry, and wit impertinence; virtue itself looks like weakness.</p>
+      <p>From Lord Bacon:</p>
+      <p>Discretion in conduct and speech is more than eloquence.</p>
+      <p>From Colton:</p>
+      <p>Without discretion, the cause of Christianity is injured.</p>
+      <p>From Swift:</p>
+      <p>There is no talent so useful toward rising in the world, or which puts men more out of the power of fortune, as that quality generally possessed by the dullest sort of men, and in common speech called discretion.</p>
+      <p>From Bovee:</p>
+      <p>Discretion is the salt, and fancy the sugar of life; the one preserves, the other sweetens it.</p>
+      <p>And from Euripides, in a nautical figure the Reference Corpus keeps returning to whenever the subject is timing:</p>
+      <p>Dangerous is a daring pilot and sailor in a ship; wise is he who knows his time to moor it in safety; to my mind discretion is valor.</p>
+      <p>Swift&#x27;s barb is worth sitting with a moment longer. He is not flattering discretion. He is noting, a little bitterly, that it is not a mark of brilliance — it is available to dull men, which means the brilliant have no excuse for lacking it.</p>
+      <p>Under the heading of ignorance:</p>
+      <p>From Whately:</p>
+      <p>He that is not aware of his ignorance will be only misled by his knowledge.</p>
+      <p>From Tillotson:</p>
+      <p>He that does not know those things which are of use and necessity for him to know, is but an ignorant man, whatever he may know besides.</p>
+      <p>From Jeremy Taylor:</p>
+      <p>It is next to impossible to make people understand their ignorance, for it requires knowledge to perceive it; and therefore he that can perceive it hath it not.</p>
+      <p>Under prudence and its failures:</p>
+      <p>From Burke:</p>
+      <p>If the prudence of reserve and decorum dictates silence in some circumstances, in others prudence of a higher order may justify us in speaking our thoughts.</p>
+      <p>From Cicero:</p>
+      <p>Prudence is the knowledge of things to be sought, and to be avoided.</p>
+      <p>From Goldsmith, on the want of it:</p>
+      <p>Want of prudence is too frequently the want of virtue; nor is there on earth a more powerful advocate for vice than poverty.</p>
+      <p>And from Colton again, on the particular imprudence of the overzealous defender — a warning aimed less at the man arguing a bad cause than at the man arguing a good one badly:</p>
+      <p>If a cause be good, the most violent attack of its enemies will not injure it so much as an indiscreet defense of it by its friends.</p>
+      <p>That one is worth pausing on in a lane about pastors and politics. Most of the damage done to a good cause is not done by its opponents. It is done by defenders who never asked whether they had actually done the reading before they picked up the sword.</p>
+      <p>A few more from the same compiler, under imprudence and indiscretion, said quickly and left to stand on their own:</p>
+      <p>From Fordyce: It is the first imprudence that ruins.</p>
+      <p>From Cassiodorus: It is a great indiscretion for a man to promise what he is not able to perform.</p>
+      <p>From Plutarch: One indiscretion hides many virtues.</p>
+      <p>From Parsons, the paradox worth carrying home: Too great prudence is imprudence.</p>
+      <p>Parsons is not contradicting everything just said. He is closing a loophole in it. The chapter so far could be heard as an argument for permanent caution, for never speaking until certainty arrives — and certainty of that kind does not arrive, not on Wednesday and not on any other day. A prudence that never risks a sentence has stopped being prudence and become a different vice wearing its clothes.</p>
+      <p>One line, uncredited to any school, that a poet put more sharply than the moralists managed in prose. From Cowper:</p>
+      <p>Knowledge is proud that he has learn&#x27;d so much, wisdom is humble that he knows no more.</p>
+      <p>That is the whole night in one couplet. Knowledge and wisdom are not opposites and they do not compete for the same territory — a man can have a great deal of knowledge and still be wise enough to know its border. The trouble starts when he mistakes the size of what he has learned for the size of what there is.</p>
+      <p>One more, from the pulpit rather than the commonplace book. Spurgeon, commenting on the ninth Psalm, quotes Thomas Watson on the specific danger of a confidence that has outrun its own foundation. From Spurgeon, quoting Watson:</p>
+      <p>Faith is an intelligent grace; though there can be knowledge without faith, yet there can be no faith without knowledge. Knowledge must carry the torch before faith. A blind faith is as bad as a dead faith. So necessary is knowledge to the being of faith, that the Scriptures do sometimes baptize faith with the name of knowledge.</p>
+      <p>Watson is speaking about saving faith, not politics, and the almanac register keeps those two subjects where they belong, side by side rather than merged into one. But the shape of the claim travels. Conviction that has outrun its evidence is not boldness. It only looks like boldness from the outside, for as long as no one asks it a second question.</p>
+      <p>Paul names the same tension directly, and it is worth hearing before drawing any conclusion, because it heads off the most obvious objection to everything read so far. From the first letter to the Corinthians:</p>
+      <p>Now as touching things offered unto idols, we know that we all have knowledge. Knowledge puffeth up, but charity edifieth. And if any man think that he knoweth any thing, he knoweth nothing yet as he ought to know.</p>
+      <p>And a few chapters later, on the permanent condition rather than any one failure of it:</p>
+      <p>For we know in part, and we prophesy in part. But when that which is perfect is come, then that which is in part shall be done away. When I was a child, I spake as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things. For now we see through a glass, darkly; but then face to face: now I know in part; but then shall I know even as also I am known.</p>
+      <p>We know in part. Not: some of us know and some do not. Everyone, always, this side of glory, is operating on partial information — which is either the argument for never speaking, or it is simply the permanent working condition of everyone who has ever had to speak about anything, including the four hundred prophets and Micaiah alike, including Job&#x27;s friends and Job. The honest man is not the one who has escaped that condition. There is no escaping it. He is the one who has done the work to know where, on this particular subject, his portion of the knowledge actually ends — and says so, instead of borrowing confidence from the size of the room he&#x27;s speaking to.</p>
+      <p>Here is the strongest objection to this whole chapter, and it deserves a straight answer rather than a dodge: if silence is a sin of omission, as this lane argued three weeks ago, doesn&#x27;t &quot;I&#x27;m not sure I know enough&quot; become the permanent alibi of the pastor who never wanted to speak in the first place? The competence test can be honestly failed, or it can be a costume worn by cowardice — and from the outside, in the moment, the two can look identical. The answer is not a formula; Scripture doesn&#x27;t hand us one. But notice where the weight falls in every example read tonight. Solomon&#x27;s confession of ignorance was the opening move of a reign that went on to judge two women over a living child by the end of the same chapter. Jethro&#x27;s counsel produced more judges, not fewer verdicts. Paul&#x27;s footnote on Mars&#x27; Hill came in the middle of the most public sermon of his career, not instead of it. In not one of these cases does the admission of a limit end in silence. It ends in a narrower, harder, more honestly defended kind of speech. The test for whether &quot;I don&#x27;t know enough&quot; is honest or is cowardice wearing its clothes is the same test Colton&#x27;s line about indiscreet friends already gave us for a good cause: does the confession lead you to do the reading and then speak, or does it lead you to stop? Only one of those is competence. The other has borrowed its name.</p>
+      <p>So: what is a pastor, or anyone else, actually meant to do with all this on an ordinary Wednesday?</p>
+      <p>Not go silent. Nothing tonight argues for silence — three earlier nights in this lane already argued the opposite, at some length, and nothing here withdraws it. What tonight argues for is a narrower and harder discipline: know the edge of your own competence before you open your mouth, and say so out loud once you have reached it. Jethro did not tell Moses to stop judging Israel. He told him to judge what he could actually judge, and hand the rest to able men. Solomon did not refuse the throne. He asked, before doing anything else with it, for the one thing a throne cannot supply on its own. Apollos did not stop preaching once Priscilla and Aquila had corrected him. He preached on, in a different city, having taken the correction instead of defending the gap it exposed.</p>
+      <p>The four hundred prophets from three weeks ago and the desiring-to-be-teachers from tonight are, underneath, the same failure examined from two directions. The court prophets knew exactly what was wanted and supplied it without ever quite believing a false word — the corruption was in the audience more than the content. Paul&#x27;s teachers at Ephesus are the same office without even that excuse: they are teaching what they have not actually learned, on a subject that punishes precisely that kind of guessing. Between the two stands the ordinary temptation of anyone handed a pulpit, a platform, or simply an opinion other people will repeat: to speak past the edge of what you have done the work to know, because stopping at the edge feels like admitting weakness, when in this book it is closer to the definition of wisdom.</p>
+      <p>Ask the plain question underneath Job&#x27;s storm and Solomon&#x27;s dream and Paul&#x27;s footnote on Mars&#x27; Hill, before the next sentence rather than after it: have I heard enough to say this, or have I only felt strongly enough to say it? Those are not the same feeling, and they are very easy to confuse — especially from a pulpit, and most especially about politics, where everyone has an opinion and hardly anyone has done the reading.</p>
+      <p>Paul closed the very passage read tonight — his charge to Timothy about the teachers who did not understand what they affirmed — with a doxology to the one being in the room whose knowledge has no edge left to reach. From the first letter to Timothy:</p>
+      <p>Now unto the King eternal, immortal, invisible, the only wise God, be honour and glory for ever and ever. Amen.</p>
+      <p>Walter Chalmers Smith took that verse and built a hymn on it, two centuries later. We close with it tonight.</p>
+      <p>Immortal, invisible, God only wise,
+In light inaccessible hid from our eyes,
+Most blessed, most glorious, the Ancient of Days,
+Almighty, victorious, thy great Name we praise.</p>
+      <p>Unresting, unhasting, and silent as light,
+Nor wanting, nor wasting, thou rulest in might;
+Thy justice like mountains high soaring above
+Thy clouds, which are fountains of goodness and love.</p>
+      <p>To all, life thou givest — to both great and small;
+In all life thou livest, the true life of all;
+We blossom and flourish as leaves on the tree,
+And wither and perish — but naught changeth thee.</p>
+      <p>Great Father of glory, pure Father of light,
+Thine angels adore thee, all veiling their sight;
+All laud we would render; O help us to see
+&#x27;Tis only the splendour of light hideth thee.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>
