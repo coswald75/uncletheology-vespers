@@ -289,6 +289,67 @@ EPISODES = [
         ],
     },
     {
+        "slug": "the-emperor-at-the-door",
+        "idea": "The Emperor at the Door",
+        "lane": "Pastor Politics",
+        "day": "Wednesday",
+        "date_display": "August 26, 2026",
+        "sub": "Pastor Politics · Ambrose and Theodosius — a bishop, an emperor, and the door of the church",
+        "duration": "37 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-emperor-at-the-door.mp3",
+        "length": 53036727,
+        "lede": "A case, not an argument — the most famous encounter between a bishop and an emperor in "
+                "the history of the church. After the massacre at Thessalonica, Ambrose of Milan "
+                "shuts the door against Theodosius — his friend, his protector, the most powerful "
+                "man on earth — with a private letter first, then a bar from the table, and finally "
+                "a law. Everything this lane argued in the abstract, happened in the flesh.",
+        "body": [
+            "Sixth in the Pastor Politics lane, and a change of register: one pastor, one ruler, one "
+            "crime, one door. After a riot at Thessalonica, Theodosius let his rage “be the "
+            "minister of his vengeance” — seven thousand killed to an “appointed number,” after "
+            "mercy had been promised. Ambrose acts first in private, in a letter written in his own "
+            "hand: he cannot stay silent (the watchman of Ezekiel — “his blood will I require at "
+            "thine hand”), so he tells the emperor his sin the way Nathan told David, and bars him "
+            "from the table until he repents — “I follow you with my love… in that I set God before "
+            "you.”",
+            "Then the door, the eight months of exclusion, and the penance — not a humiliation but "
+            "a law: a thirty-day stay between any death sentence and its execution, binding on the "
+            "emperor himself, the fence built at the exact cliff he'd gone over. The emperor prone "
+            "on the pavement praying Psalm 51; “purple can make emperors, but not priests,” a "
+            "boundary drawn in peacetime and received with thanks. Its scriptural precedent — "
+            "Azariah withstanding King Uzziah at the altar (“the boundary does not bend for good "
+            "kings”); the apostles' “I withstood him to the face… doing nothing by partiality”; and "
+            "Rufinus, the courtier who could always get a meeting, meeting the one man he could not "
+            "manage. Closing on Psalm 51 entire and Wesley's “Depth of Mercy.”",
+        ],
+        "walk": [
+            ("Theodoret · Sozomen", "public domain",
+             "The massacre at Thessalonica — rage as “the minister of vengeance,” seven thousand "
+             "slain to an “appointed number.”"),
+            ("Ambrose · Letter to Theodosius", "public domain",
+             "The private rebuke, in his own hand — the watchman's charge, David's sin, and “I dare "
+             "not offer the sacrifice if you intend to be present.”"),
+            ("Ezekiel 3 · 2 Samuel 12", "Scripture · KJV",
+             "The watchman — “his blood will I require at thine hand”; and Nathan to David: “I have "
+             "sinned against the LORD.”"),
+            ("The door & the law", "Theodoret · Sozomen",
+             "Eight months excluded; and the penance — a thirty-day stay on every death sentence, "
+             "the fence built at the cliff he went over."),
+            ("2 Chronicles 26", "Scripture · KJV",
+             "Azariah withstanding King Uzziah at the altar — “it appertaineth not unto thee”; the "
+             "boundary does not bend for good kings."),
+            ("Galatians 2 · 1 Timothy 5", "Scripture · KJV",
+             "“I withstood him to the face”; and rebuke “without preferring one before another, "
+             "doing nothing by partiality.”"),
+            ("Augustine · City of God", "public domain",
+             "The penance that moved the people “past fear into love” — the kneeling every "
+             "counselor warns against, and the thing that made the story immortal."),
+            ("Psalm 51 · Charles Wesley", "Scripture & “Depth of Mercy”",
+             "“Deliver me from bloodguiltiness, O God” — the emperor's own case, word for word; and "
+             "“Jesus weeps, but loves me still.”"),
+        ],
+    },
+    {
         "slug": "being",
         "idea": "Being",
         "lane": "Great Ideas",
