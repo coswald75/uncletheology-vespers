@@ -98,9 +98,9 @@ EPISODES = [
         "day": "Thursday",
         "date_display": "August 20, 2026",
         "sub": "The Surprise · 2 Timothy — why ease is no proof of the right road",
-        "duration": "30 min",
+        "duration": "35 min",
         "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-compass-and-the-cross.mp3",
-        "length": 42997597,
+        "length": 50821427,
         "lede": "There is an instrument most of us carry without knowing it — a compass that reads "
                 "comfort as true north and discomfort as a wrong turn. Tonight’s readings gather around "
                 "a letter from a Roman prison, in which an old man tells the son he loves not “stay "
@@ -160,9 +160,9 @@ EPISODES = [
         "day": "Tuesday",
         "date_display": "August 18, 2026",
         "sub": "Great Ideas · No. 6 — what beauty is, where it lives, what it is for, and what it costs",
-        "duration": "30 min",
+        "duration": "34 min",
         "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/beauty.mp3",
-        "length": 42945676,
+        "length": 48802543,
         "lede": "The sixth great idea. Beauty enters Scripture as a commandment — priestly garments "
                 "“for glory and for beauty” — and the tradition circles it all night: Plato’s "
                 "ladder, Aristotle’s magnitude and order, Augustine’s “Too late loved I Thee,” "
@@ -230,9 +230,9 @@ EPISODES = [
         "day": "Tuesday",
         "date_display": "August 11, 2026",
         "sub": "Great Ideas · No. 5 — the fourth day of creation to the trial of Galileo, and back to a hymn",
-        "duration": "28 min",
+        "duration": "34 min",
         "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/astronomy.mp3",
-        "length": 39725263,
+        "length": 49150450,
         "lede": "The fifth great idea. From the fourth day of creation — lights made after light itself — "
                 "through Job's Pleiades and Orion, Basil against the astrologers, Aristarchus and "
                 "Copernicus and Galileo's “still, it moves,” Milton's Raphael declining to settle the "
@@ -297,9 +297,9 @@ EPISODES = [
         "day": "Monday",
         "date_display": "August 10, 2026",
         "sub": "The Scriptures · Ecclesiastes — the wife, the heir, and three fathers who lost their sons",
-        "duration": "28 min",
+        "duration": "33 min",
         "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-portion-nearest-you.mp3",
-        "length": 40109442,
+        "length": 47449509,
         "lede": "Ecclesiastes names the portion nearest you — a wife, a labour, an heir — and three "
                 "successful men in the books of Samuel and Kings who kept their hands full of "
                 "everything except their own sons. Eli, Samuel, and David; and the order of love that "
