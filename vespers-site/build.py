@@ -289,6 +289,69 @@ EPISODES = [
         ],
     },
     {
+        "slug": "being",
+        "idea": "Being",
+        "lane": "Great Ideas",
+        "day": "Tuesday",
+        "date_display": "August 25, 2026",
+        "sub": "Great Ideas · No. 7 — from the burning bush to Parmenides, and the name that is a verb",
+        "duration": "34 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/being.mp3",
+        "length": 49609518,
+        "lede": "The seventh great idea, and the largest — Being, the idea underneath every other idea. "
+                "Two great openings: a burning bush (“I AM THAT I AM”) and a Greek poem (Parmenides "
+                "on the one road that “It is”). Plato and Aristotle, Augustine's “they neither "
+                "altogether are, nor altogether are not,” Aquinas on the fire of participation, and "
+                "Paul on Mars' hill — “in him we live, and move, and have our being.”",
+        "body": [
+            "A survey of the great idea beneath all the others: not what a thing is, but what it is "
+            "for anything to be at all. The tradition has two openings. The bush — God, asked for a "
+            "name, gives a verb, “I AM THAT I AM,” and the name Jehovah is built on the verb to be. "
+            "And the Greek poem — Parmenides' goddess: only two roads, that It is (and cannot not "
+            "be) and that It is not (which cannot even be thought). Plato divides what always is "
+            "from what is always becoming, and traces the world to “a father and maker past finding "
+            "out”; Aristotle makes “being as being” a science; Marcus Aurelius reads the river of "
+            "becoming without the second column of the ledger — the One who is the same.",
+            "Then Christendom's synthesis. Augustine hears the bush at the summit of the Confessions "
+            "— created things “neither altogether are, nor altogether are not… only He truly is who "
+            "remains unchangeably.” Aquinas sharpens it: in God alone there is no seam between "
+            "essence and existence — everything else “is on fire by participation,” burning with a "
+            "fire not its own. Watson preaches it (“no creature can write itself Alpha”), Pink on "
+            "the solitariness of God (“He sustains all, but is Himself independent of all” — "
+            "aseity). Descartes turns the order around, starting from the self — and an old divine's "
+            "dry reply, that existence is not a conclusion but “the thing you wake up in the middle "
+            "of.” Closing where the night began: Paul on Mars' hill, “in him we live, and move, and "
+            "have our being,” Christ's “Before Abraham was, I am,” and Olivers' hymn “The God of "
+            "Abraham Praise.”",
+        ],
+        "walk": [
+            ("Exodus 3 · Psalm 90 · 102", "Scripture · KJV",
+             "“I AM THAT I AM” — asked for a name, God gives a verb; and the ledger's two columns: "
+             "what waxes old like a garment, and “thou art the same.”"),
+            ("Parmenides · Plato · Aristotle", "public-domain translations",
+             "The two roads — “It is,” and “It is not,” which cannot be thought; the maker “past "
+             "finding out”; and the science of “being as being.”"),
+            ("Augustine · Confessions", "Pusey's translation",
+             "Created things “neither altogether are, nor altogether are not… that truly is which "
+             "remains unchangeably” — the bush quoted at the summit."),
+            ("Aquinas · Summa", "Dominican Fathers' translation",
+             "Essence and existence one in God alone — everything else “on fire by participation,” "
+             "burning with a borrowed fire."),
+            ("Watson · A. W. Pink", "public domain",
+             "“No creature can write itself Alpha”; and the solitariness of God — “He sustains all, "
+             "but is Himself independent of all” (aseity)."),
+            ("Descartes · John Taylor", "public domain",
+             "“I think, therefore I am” — the modern turn to the self; and the reply, that existence "
+             "is not a conclusion but “the thing you wake up in the middle of.”"),
+            ("Acts 17 · John 8 · Revelation 1", "Scripture · KJV",
+             "“In him we live, and move, and have our being”; “Before Abraham was, I am”; “which is, "
+             "and which was, and which is to come.”"),
+            ("Thomas Olivers · “The God of Abraham Praise”", "1770, from the Yigdal",
+             "The divine-attributes hymn turned to English — “Jehovah, great I AM! by earth and "
+             "heaven confessed.”"),
+        ],
+    },
+    {
         "slug": "father-mapples-sermon",
         "idea": "Father Mapple's Sermon",
         "lane": "Fiction's Most Famous Passages",
