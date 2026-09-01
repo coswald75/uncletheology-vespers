@@ -116,7 +116,7 @@
   .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
     font-style: italic; }
 
-  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .programme { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 12px; }
   .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
     border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
   .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
@@ -278,21 +278,27 @@
         <span class="tag ui">Book by book</span>
       </div>
       <div class="card">
-        <div class="num ui">II · Great Ideas</div>
-        <h3>The Syntopicon</h3>
-        <p>Mortimer Adler's index to the Great Ideas, taken in alphabetical order.</p>
+        <div class="num ui">II · The Syntopicon</div>
+        <h3>Great Ideas</h3>
+        <p>Mortimer Adler's index to the great ideas of the West, taken in alphabetical order.</p>
         <span class="tag ui">A→Z</span>
       </div>
       <div class="card">
-        <div class="num ui">III · Public domain</div>
-        <h3>The Shelf</h3>
-        <p>Classics in the common domain, read and discussed — Dickens and the shelf beyond.</p>
+        <div class="num ui">III · The novels</div>
+        <h3>Fiction's Most Famous Passages</h3>
+        <p>The great passages of the great novels, read whole and weighed against Scripture.</p>
         <span class="tag ui">Public domain</span>
       </div>
       <div class="card">
-        <div class="num ui">IV · Wildcard</div>
+        <div class="num ui">IV · The public square</div>
+        <h3>Pastor Politics</h3>
+        <p>The pastor and the public square — the mandate to speak, its manner, its cost, and its mission.</p>
+        <span class="tag ui">The two cities</span>
+      </div>
+      <div class="card">
+        <div class="num ui">V · Wildcard</div>
         <h3>The Surprise</h3>
-        <p>Other things that are of interest to the Architect of Vespers.</p>
+        <p>Sermon scraps and other things of interest to the Architect of Vespers.</p>
         <span class="tag ui">Wherever</span>
       </div>
     </div>
