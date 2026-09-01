@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create in Me a Clean Heart — Vespers</title>
+<meta name="description" content="The worst hour of a good man&#x27;s life, and what God did with it. David on the roof, the letter that killed Uriah, the year of silence, and Nathan&#x27;s “Thou art the man” — then Psalm 51 whole: “Against thee, thee only, have I sinned… Create in me a clean heart.” The old writers on the broken and contrite heart, and the apostle&#x27;s word that ends the night — “where sin abounded, grace did much more abound.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/create-in-me-a-clean-heart">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Create in Me a Clean Heart — Vespers">
+<meta property="og:description" content="The worst hour of a good man&#x27;s life, and what God did with it. David on the roof, the letter that killed Uriah, the year of silence, and Nathan&#x27;s “Thou art the man” — then Psalm 51 whole: “Against thee, thee only, have I sinned… Create in me a clean heart.” The old writers on the broken and contrite heart, and the apostle&#x27;s word that ends the night — “where sin abounded, grace did much more abound.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/create-in-me-a-clean-heart">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Monday · August 31, 2026</div>
+      <h1 class="ep-title">Create in Me a Clean Heart</h1>
+      <div class="ep-sub ui">The Scriptures · David and Bathsheba, and Psalm 51 — the broken heart and grace outrunning sin<span class="dot">·</span>36 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/create-in-me-a-clean-heart.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The worst hour of a good man&#x27;s life, and what God did with it. David on the roof, the letter that killed Uriah, the year of silence, and Nathan&#x27;s “Thou art the man” — then Psalm 51 whole: “Against thee, thee only, have I sinned… Create in me a clean heart.” The old writers on the broken and contrite heart, and the apostle&#x27;s word that ends the night — “where sin abounded, grace did much more abound.”</p>
+    <div class="ep-body">
+    <p>A companion to Saul — the king who followed him, and a psalm written out of the wreckage. David stays home when kings go to war, sees Bathsheba, sends the letter that sets Uriah “in the forefront of the hottest battle,” and “the thing that David had done displeased the LORD.” A year of silence, then Nathan&#x27;s parable of the one ewe lamb and “Thou art the man.” Four words of confession — “I have sinned against the LORD” — and the sentence lifts: “The LORD also hath put away thy sin.” Then Psalm 51 read whole: “Against thee, thee only, have I sinned”; “Create in me a clean heart” — a verb, Barnes notes, that belongs to God alone, the making of something where there was nothing; “the sacrifices of God are a broken spirit.”</p>
+    <p>Then the old writers on that broken heart. Watson on gospel-mourning — spontaneous, spiritual (“David does not say, the sword is ever before me, but, my sin is ever before me”), particular (“a child of God says, I have done this evil”), self-loathing, purifying, and yet dropping “from the eye of faith… as the rainbow in the cloud.” The commonplace books on repentance and confession (Origen, South, Adams, Venning), the companion psalm (“when I kept silence, my bones waxed old”), and Paul&#x27;s sentence that ends the night — “where sin abounded, grace did much more abound.” Spurgeon&#x27;s dungeon into which the law lets light (“there can be no grace where there is no guilt… our Paradise Regained is far more glorious than our Paradise Lost”), the psalm&#x27;s turn outward to the walls of Jerusalem (“Visit not my sin on Thy Church”), and Wesley&#x27;s “Depth of Mercy”: “Jesus weeps, but loves me still.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">2 Samuel 11–12<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The roof, the letter, the year of silence — and Nathan&#x27;s ewe lamb: “Thou art the man”; “I have sinned against the LORD.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Psalm 51<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Against thee, thee only, have I sinned”; “Create in me a clean heart, O God”; “the sacrifices of God are a broken spirit.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Barnes · Henry · Poole<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“Create — a work of almighty power”; the hypocrite who “would have some favorite lust spared.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Thomas Watson · the Beatitudes<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Gospel-mourning — spontaneous, particular (“I have done this evil”), self-loathing, purifying, dropping “from the eye of faith.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">The commonplace books<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Origen, South, Adams, Venning on repentance — “a weeping eye” on the past, “a watchful eye” on the future.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Psalm 32<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The companion psalm of the silent year — “when I kept silence, my bones waxed old… I acknowledged my sin, and thou forgavest.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Romans 5 · Spurgeon<span class="walk-cite ui">Scripture &amp; public domain</span></div>
+        <div class="walk-note">“Where sin abounded, grace did much more abound” — the dungeon into which the law lets light; “Paradise Regained… more glorious than Paradise Lost.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Psalm 51 close · Charles Wesley<span class="walk-cite ui">Scripture &amp; “Depth of Mercy”</span></div>
+        <div class="walk-note">The turn outward — “build thou the walls of Jerusalem”; and “God is love!… Jesus weeps, but loves me still!”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the worst hour of a good man&#x27;s life, and what God did with it. Last week the readings watched Saul lose a kingdom by degrees, refusing to wait and refusing to let go. Tonight the readings turn to the man who followed him, and to a psalm written out of the wreckage. We will read the story, then the psalm, then the old writers on the broken heart, and we will end where the apostle ends, with grace outrunning sin.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Begin with a spring afternoon and a king who stayed home. From the second book of Samuel:</p>
+      <p>And it came to pass, after the year was expired, at the time when kings go forth to battle, that David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David tarried still at Jerusalem.</p>
+      <p>And it came to pass in an eveningtide, that David arose from off his bed, and walked upon the roof of the king&#x27;s house: and from the roof he saw a woman washing herself; and the woman was very beautiful to look upon. And David sent and enquired after the woman. And one said, Is not this Bath-sheba, the daughter of Eliam, the wife of Uriah the Hittite? And David sent messengers, and took her; and she came in unto him, and he lay with her; for she was purified from her uncleanness: and she returned unto her house. And the woman conceived, and sent and told David, and said, I am with child.</p>
+      <p>There follows a stretch the reading will pass over: the king sends for the husband, brings him home from the siege, and tries three times to cover what he has done. Uriah will not go down to his own house while the ark and the armies of Israel abide in tents. So the king writes a letter, and sends it by the hand of the man it condemns.</p>
+      <p>And he wrote in the letter, saying, Set ye Uriah in the forefront of the hottest battle, and retire ye from him, that he may be smitten, and die. And it came to pass, when Joab observed the city, that he assigned Uriah unto a place where he knew that valiant men were. And the men of the city went out, and fought with Joab: and there fell some of the people of the servants of David; and Uriah the Hittite died also.</p>
+      <p>And when the wife of Uriah heard that Uriah her husband was dead, she mourned for her husband. And when the mourning was past, David sent and fetched her to his house, and she became his wife, and bare him a son. But the thing that David had done displeased the LORD.</p>
+      <p>A year passes in the white space between those words and the next ones. The king does not speak. Then a prophet comes with a story about sheep.</p>
+      <p>And the LORD sent Nathan unto David. And he came unto him, and said unto him, There were two men in one city; the one rich, and the other poor. The rich man had exceeding many flocks and herds: But the poor man had nothing, save one little ewe lamb, which he had bought and nourished up: and it grew up together with him, and with his children; it did eat of his own meat, and drank of his own cup, and lay in his bosom, and was unto him as a daughter.</p>
+      <p>And there came a traveller unto the rich man, and he spared to take of his own flock and of his own herd, to dress for the wayfaring man that was come unto him; but took the poor man&#x27;s lamb, and dressed it for the man that was come to him.</p>
+      <p>And David&#x27;s anger was greatly kindled against the man; and he said to Nathan, As the LORD liveth, the man that hath done this thing shall surely die: And he shall restore the lamb fourfold, because he did this thing, and because he had no pity.</p>
+      <p>And Nathan said to David, Thou art the man.</p>
+      <p>Nathan goes on:</p>
+      <p>Thus saith the LORD God of Israel, I anointed thee king over Israel, and I delivered thee out of the hand of Saul; And I gave thee thy master&#x27;s house, and thy master&#x27;s wives into thy bosom, and gave thee the house of Israel and of Judah; and if that had been too little, I would moreover have given unto thee such and such things. Wherefore hast thou despised the commandment of the LORD, to do evil in his sight? thou hast killed Uriah the Hittite with the sword, and hast taken his wife to be thy wife, and hast slain him with the sword of the children of Ammon.</p>
+      <p>Now therefore the sword shall never depart from thine house; because thou hast despised me, and hast taken the wife of Uriah the Hittite to be thy wife. Thus saith the LORD, Behold, I will raise up evil against thee out of thine own house, and I will take thy wives before thine eyes, and give them unto thy neighbour, and he shall lie with thy wives in the sight of this sun. For thou didst it secretly: but I will do this thing before all Israel, and before the sun.</p>
+      <p>And David said unto Nathan, I have sinned against the LORD. And Nathan said unto David, The LORD also hath put away thy sin; thou shalt not die.</p>
+      <p>Four words of confession, and the sentence lifts. The old expositors do not hurry past that. From Matthew Henry:</p>
+      <p>God will not suffer his people to lie still in sin. By this parable Nathan drew from David a sentence against himself. In his application, he was faithful. He says in plain terms, Thou art the man. God shows how much he hates sin, even in his own people; and wherever he finds it, he will not let it go unpunished.</p>
+      <p>He goes on:</p>
+      <p>David says not a word to excuse himself or make light of his sin, but freely owns it. When David said, I have sinned, and Nathan perceived that he was a true penitent, he assured him his sin was forgiven. Thou shalt not die: that is, not die eternally, nor be for ever put away from God, as thou wouldest have been, if thou hadst not put away the sin. Though thou shalt all thy days be chastened of the Lord, yet thou shalt not be condemned with the world.</p>
+      <p>And Henry adds the sentence that keeps the whole thing honest:</p>
+      <p>For one momentary gratification of a vile lust, David had to endure many days and years of extreme distress.</p>
+      <p>From Matthew Poole, on the four words themselves:</p>
+      <p>I now freely confess that sin which I have hitherto so wickedly smothered; and I have deserved all these and far heavier judgments for it; and I am more troubled for my sin against my sovereign Lord and gracious God, than for the shame and punishment that follow it.</p>
+      <p>And on the answer that comes back:</p>
+      <p>The Lord also hath put away thy sin, that is, so far as concerns thy own life and eternal salvation; both which were forfeited by this sin.</p>
+      <p>From John Gill:</p>
+      <p>The Lord hath put away thy sin; would not charge it upon him, impute it to him, or punish him for it, but freely and fully forgive it, cast it behind his back, and into the depth of the sea; cause it to pass from him and never more bring it against him, and which is the Lord&#x27;s act, and his only, against whom sin is committed.</p>
+      <p>The child born of that night dies, and the narrative gives it a chapter; we will not read it here. What we will read is what the king wrote afterward.</p>
+      <p>From the Psalms:</p>
+      <p>Have mercy upon me, O God, according to thy lovingkindness: according unto the multitude of thy tender mercies blot out my transgressions. Wash me throughly from mine iniquity, and cleanse me from my sin. For I acknowledge my transgressions: and my sin is ever before me. Against thee, thee only, have I sinned, and done this evil in thy sight: that thou mightest be justified when thou speakest, and be clear when thou judgest.</p>
+      <p>Behold, I was shapen in iniquity; and in sin did my mother conceive me. Behold, thou desirest truth in the inward parts: and in the hidden part thou shalt make me to know wisdom. Purge me with hyssop, and I shall be clean: wash me, and I shall be whiter than snow. Make me to hear joy and gladness; that the bones which thou hast broken may rejoice. Hide thy face from my sins, and blot out all mine iniquities.</p>
+      <p>Create in me a clean heart, O God; and renew a right spirit within me. Cast me not away from thy presence; and take not thy holy spirit from me. Restore unto me the joy of thy salvation; and uphold me with thy free spirit. Then will I teach transgressors thy ways; and sinners shall be converted unto thee.</p>
+      <p>Deliver me from bloodguiltiness, O God, thou God of my salvation: and my tongue shall sing aloud of thy righteousness. O Lord, open thou my lips; and my mouth shall shew forth thy praise. For thou desirest not sacrifice; else would I give it: thou delightest not in burnt offering. The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise.</p>
+      <p>Do good in thy good pleasure unto Zion: build thou the walls of Jerusalem. Then shalt thou be pleased with the sacrifices of righteousness, with burnt offering and whole burnt offering: then shall they offer bullocks upon thine altar.</p>
+      <p>Henry, on the opening of it:</p>
+      <p>David, being convinced of his sin, poured out his soul to God in prayer for mercy and grace. Whither should backsliding children return, but to the Lord their God, who alone can heal them? Those that truly repent of their sins, will not be ashamed to own their repentance. Also, he instructs others what to do, and what to say. David had not only done much, but suffered much in the cause of God; yet he flees to God&#x27;s infinite mercy, and depends upon that alone for pardon and peace.</p>
+      <p>He goes on, and this is the sentence to keep:</p>
+      <p>The believer longs to have the whole debt of his sins blotted out, and every stain cleansed; he would be thoroughly washed from all his sins; but the hypocrite always has some secret reserve, and would have some favorite lust spared.</p>
+      <p>Against thee, thee only. A man has wronged a soldier, a wife, an army, a nation — and he says, against thee only. Albert Barnes takes that up:</p>
+      <p>That is, the sin, considered as an offence against God, now appeared to him so enormous and so aggravated, that, for the moment, he lost sight of it considered in any other of its bearings. We are not to suppose that David did not believe and notice that he had done wrong to people, or that he had offended against human laws. His crime against Uriah and his family was of the deepest and most aggravated character, but still the offence derived its chief heinousness from the fact that it was a violation of the law of God.</p>
+      <p>Barnes goes on:</p>
+      <p>The state of mind here illustrated is that which occurs in every case of true penitence. It is not merely because that which has been done is a violation of human law; it is not that it brings us to poverty or disgrace: it is that it is of itself, and apart from all other relations and consequences, an offence against God; a violation of his pure and holy law; a wrong done against him, and in his sight.</p>
+      <p>And on the phrase that follows — done this evil in thy sight:</p>
+      <p>Or, When thine eye was fixed on me. God saw what he had done; and David knew, or might have known, that the eye of God was upon him in his wickedness. It was to him then a great aggravation of his sin that he had dared to commit it when he knew that God saw everything. The presence of a child — or even of an idiot — would restrain people from many acts of sin which they would venture to commit if alone; how much more should the fact that God is always present, and always sees all that is done, restrain us from open and from secret transgression.</p>
+      <p>Then the prayer turns from what he has done to what he is, and asks for a verb that belongs to God alone. Create in me a clean heart. Barnes again:</p>
+      <p>The word rendered create is a word which is properly employed to denote an act of creation; that is, of causing something to exist where there was nothing before. It is the word which is used in the beginning of Genesis: In the beginning God created the heaven and the earth. There is clearly a recognition of the divine power, or a feeling on the part of David that this could be done by God alone.</p>
+      <p>He goes on, on the second half of it:</p>
+      <p>Renew a right spirit within me. The Hebrew word means properly that which is erect, or that which is made to stand up, or which is firm or established. He prays for a heart that would be firm in the purposes of virtue; that would not yield to temptation; that would carry out holy resolutions; that would be stedfast in the service of God.</p>
+      <p>And Barnes notices what the word renew implies:</p>
+      <p>The language is that of one who had done right formerly, but who had fallen into sin, and who desired that he might be brought back into his former condition.</p>
+      <p>Jamieson, Fausset and Brown say it in five words: Create — a work of almighty power.</p>
+      <p>Now to the verse the whole psalm has been walking toward. The sacrifices of God are a broken spirit. Henry:</p>
+      <p>Those who are thoroughly convinced of their misery and danger by sin, would spare no cost to obtain the remission of it. But as they cannot make satisfaction for sin, so God cannot take any satisfaction in them, otherwise than as expressing love and duty to him. The good work wrought in every true penitent, is a broken spirit, a broken and a contrite heart, and sorrow for sin. It is a heart that is tender, and pliable to God&#x27;s word. Oh that there were such a heart in every one of us!</p>
+      <p>Henry goes on:</p>
+      <p>God is graciously pleased to accept this; it is instead of all burnt-offering and sacrifice. The broken heart is acceptable to God only through Jesus Christ; there is no true repentance without faith in him. Men despise that which is broken, but God will not. He will not overlook it, he will not refuse or reject it.</p>
+      <p>From Barnes, on the same words:</p>
+      <p>The sacrifices which God desires and approves; the sacrifices without which no other offering would be acceptable. A broken spirit — a mind broken or crushed under the weight of conscious guilt. The idea is that of a burden laid on the soul until it is crushed and subdued.</p>
+      <p>From Poole:</p>
+      <p>A broken and a contrite heart, that is, a heart deeply afflicted and grieved for sin, humbled under the sense of God&#x27;s displeasure, and earnestly seeking and willing to accept of reconciliation with God upon any terms. This is opposed to that hard or stony heart, of which we read so oft, which signifies a heart insensible of the burden of sin, stubborn and rebellious against God.</p>
+      <p>From Gill:</p>
+      <p>That is humbled under a sense of sin; is smitten, wounded, and broken with it, by the word of God in the hand of the Spirit, which is a hammer to break the rock in pieces; and that not merely in a legal, but in an evangelical way; grieving for sin as committed against a God of love; broken and melted down under a sense of it, in a view of pardoning grace.</p>
+      <p>The Cambridge Bible adds one observation that ties the psalm back to the prophet&#x27;s visit:</p>
+      <p>A broken spirit and a contrite heart are those in which sorrow and affliction have done their work, and the obstinacy of pride has been replaced by the humility of penitence. Though David had despised the word of the LORD, he is confident that God will not despise him.</p>
+      <p>The Puritan Thomas Watson preached a long treatment of the second beatitude — blessed are those who mourn — and much of it is a description of the psalm we have just read. What follows is a lightly modernized text. From Watson:</p>
+      <p>Mourning is put here, for repentance. It implies both sorrow, which is the cloud, and tears which are the rain distilling in this golden shower. But will all mourning entitle a man to blessedness? No; there is a twofold mourning which is far from making one blessed.</p>
+      <p>He begins with the counterfeits, and the first is the most sobering:</p>
+      <p>A despairing kind of mourning. Such was Judas&#x27; mourning. He saw his sin, he was sorry, he made confession, he justifies Christ, he makes restitution. He did not plead necessity or good intentions — but he makes an open acknowledgment of his sin. I have sinned.</p>
+      <p>Then he turns to the real thing, and his first mark is that it is unforced:</p>
+      <p>It is spontaneous and free. It must come as water out of a spring, not as fire out of a flint. Tears for sin must be like the myrrh which drops from the tree freely without cutting or forcing. God is for a freewill offering.</p>
+      <p>His second mark divides the whole field:</p>
+      <p>Gospel-mourning is spiritual; that is, when we mourn for sin more than suffering. Pharaoh says, Take away the plague. He never thought of the plague of his heart. A sinner mourns because judgment follows at the heels of sin — but David cries out, My sin is ever before me. God had threatened that the sword should ride in circuit in his family — but David does not say, The sword is ever before me — but, My sin is ever before me. The offence against God troubled him. He grieved more for his treason against God than the bloody axe.</p>
+      <p>Watson insists that true mourning names things:</p>
+      <p>Gospel-mourning is for sin in particular. The deceitful man is occupied with generalities. It is with a true penitent as it is with a wounded man. He comes to the surgeon and shows him all his wounds. Here I was cut with the sword; here I was shot with a bullet. So a true penitent bewails all his particular sins. And David lays his fingers upon the sore — and points to that very sin which troubled him. I have done this evil. A wicked man will say he is a sinner — but a child of God says, I have done this evil.</p>
+      <p>He goes on:</p>
+      <p>Gospel-mourning is joined with self-loathing. The sinner admires himself. The penitent loathes himself. A true penitent is troubled not only for the shameful consequence of sin — but for the loathsome nature of sin; not only the sting of sin — but the deformed face of sin. He not only leaves sin — but loathes sin.</p>
+      <p>And:</p>
+      <p>Gospel-mourning must be purifying. We must so weep for sin, as to weep out sin. We must not only mourn — but turn.</p>
+      <p>Watson hands on a line from Augustine here, as he reports it:</p>
+      <p>He truly bewails the sins he has committed, who never commits the sins he has bewailed.</p>
+      <p>And because a night of this could easily leave a man in the dark, Watson sets a lamp at the end of it:</p>
+      <p>Gospel tears must drop from the eye of faith. Our disease must make us mourn — but when we look up to our Physician, who has made a remedy of his own blood, we must not mourn without hope. Believing tears are precious. When the clouds of sorrow have overcast the soul, some sunshine of faith must break forth. Though our tears drop to the earth — yet our faith must reach heaven. After the greatest rain, faith must appear as the rainbow in the cloud.</p>
+      <p>The commonplace books have gathered the same counsel from a wide company. From the old encyclopedia of prose quotations, on repentance and confession. Origen:</p>
+      <p>When the sinner becomes his own accuser, and confesses his sin, he discharges the cause of his malady.</p>
+      <p>Seneca, in the same collection:</p>
+      <p>Why does no man confess his vices? Because he is yet in them; it is for a waking man to tell his dream.</p>
+      <p>Robert South:</p>
+      <p>True repentance has a double aspect; it looks upon things past with a weeping eye, and upon the future with a watchful eye.</p>
+      <p>Thomas Adams:</p>
+      <p>Repentance is faith&#x27;s usher, and dews all her way with tears. Repentance reads the law and weeps; faith reads the Gospel and comforts.</p>
+      <p>Lewis Dilwyn, in one line:</p>
+      <p>Repentance without amendment is like continual pumping in a ship without stopping the leaks.</p>
+      <p>Ralph Venning:</p>
+      <p>Late repentance is seldom true, but true repentance is seldom too late.</p>
+      <p>And the same collection sets beside them the other half of the night. Thomas Adams again:</p>
+      <p>Grace comes into the soul as the morning sun into the world; there is first a dawning, then a mean light, and at last the sun in his excellent brightness.</p>
+      <p>Philip Henry:</p>
+      <p>If the end of one mercy were not the beginning of another, we were undone.</p>
+      <p>And Christian Bovee, with the question the rest of the night will answer:</p>
+      <p>We believe that God&#x27;s power is without limit; why should we not believe the same of His mercy?</p>
+      <p>The man who wrote the psalm wrote another one about the same year of silence. From the Psalms again:</p>
+      <p>Blessed is he whose transgression is forgiven, whose sin is covered. Blessed is the man unto whom the LORD imputeth not iniquity, and in whose spirit there is no guile.</p>
+      <p>When I kept silence, my bones waxed old through my roaring all the day long. For day and night thy hand was heavy upon me: my moisture is turned into the drought of summer.</p>
+      <p>I acknowledged my sin unto thee, and mine iniquity have I not hid. I said, I will confess my transgressions unto the LORD; and thou forgavest the iniquity of my sin.</p>
+      <p>The apostle Paul, writing to the Romans, sets the whole matter in one sentence. From the letter to the Romans:</p>
+      <p>Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life. For as by one man&#x27;s disobedience many were made sinners, so by the obedience of one shall many be made righteous. Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound: That as sin hath reigned unto death, even so might grace reign through righteousness unto eternal life by Jesus Christ our Lord.</p>
+      <p>Henry, on that:</p>
+      <p>The moral law showed that many thoughts, tempers, words, and actions, were sinful, thus transgressions were multiplied. Not making sin to abound the more, but discovering the sinfulness of it, even as the letting in a clearer light into a room, discovers the dust and filth which were there before, but were not seen.</p>
+      <p>And Henry adds:</p>
+      <p>The terrors of the law make gospel comforts the more sweet.</p>
+      <p>Spurgeon preached that sentence one Sunday morning in the spring of eighteen eighty-eight, and gave it a whole hour. What follows is a lightly modernized text. He begins with the same figure Henry used, and enlarges it:</p>
+      <p>Man&#x27;s nature and character was like a dark dungeon which knew no ray of light. Yonder prisoner does not perceive the horrible filthiness and corruption of the place wherein he is immured, so long as he is in darkness. When a lamp is brought, or a window is opened and the light of day comes in, he finds out to his dismay the hideous condition of his den. He spies loathsome creatures upon the walls, and marks how others burrow out of sight because the light annoys them. He may, perhaps, have guessed that all was not as it should be, but he had not imagined the abundance of the evils. The light has entered, and the offense abounds.</p>
+      <p>He goes on:</p>
+      <p>Law does not make us sinful, but it displays our sinfulness. In the presence of the perfect standard we see our shortcomings. The law of God is the mirror in which a man sees the spots upon his face. It does not wash you — you cannot wash in a mirror, but it prompts you to seek the cleansing water.</p>
+      <p>Spurgeon then lays down what he calls an axiom:</p>
+      <p>You may take it as an axiom, a thing self-evident, that there can be no grace where there is no guilt; there can be no mercy where there is no sin. There can be justice, there can be benevolence, but there cannot be mercy unless there is criminality. It is a misuse of words to talk of forgiving a man who has done no wrong. It would be an insult to innocence to offer it mercy. You must, therefore, have sin or you cannot have grace — that is clear.</p>
+      <p>Then he turns the text over and asks how grace can be said to abound more than sin, which is his real business for the hour:</p>
+      <p>The Lord Jesus Christ found us in a horrible pit and in the miry clay, and He not only lifted us up out of it, but He set our feet upon a rock, and established our goings. Raised from hell, we are lifted not to the bowers of Eden, but to the throne of God. Redeemed human nature has greater capacities than unfallen human nature.</p>
+      <p>He goes on:</p>
+      <p>An unfallen being could not hate sin with the intensity of abhorrence which is found in the renewed heart. We now know by personal experience the horror of sin, and there is now within us an instinctive shuddering at it. What noble deeds men have been capable of, when the love of God has been shed abroad in their hearts! In human character, where sin abounded, grace did much more abound.</p>
+      <p>And he ends the movement with a single line:</p>
+      <p>Our Paradise Regained is far more glorious than our Paradise Lost.</p>
+      <p>At the end of the hour he turns to the man who cannot believe any of it applies to him:</p>
+      <p>I see you writing, in text hand, great black words of condemnation, but there is nothing in them all. Broken in pieces, all asunder, ground between the millstones, reduced to nothing, yet believe this revelation of God, that where sin abounded, grace did much more abound. Notice that much more — much more abound.</p>
+      <p>He will not leave the door open on the other side, either:</p>
+      <p>Does anyone say, as Paul foresaw that some would say, Let us sin, that grace may abound? He that turns God&#x27;s mercy into a reason for sin has within him something worse than a heart of stone.</p>
+      <p>Now return to the psalm, because it does not end where we might expect. After the bones and the hyssop and the broken heart, the man who prayed it turns outward, to a city.</p>
+      <p>Do good in thy good pleasure unto Zion: build thou the walls of Jerusalem.</p>
+      <p>Barnes, on that turn:</p>
+      <p>From himself — his deep sorrow, his conscious guilt, his earnest prayer for pardon and salvation — the psalmist turns to Zion, to the city of God, to the people of the Lord. These, after all, lay nearer to his heart than his own personal salvation. Such a prayer he would be led to offer from the remembrance of the dishonor which he had brought on the cause of religion, and it was natural for him to pray that his own misconduct might not have the effect of hindering the cause of God in the world.</p>
+      <p>And on the walls themselves, Barnes offers this: that the walls of Jerusalem, which David had undertaken to build, were not as yet finished, that the public works begun for the protection of the city had not been completed, and that this is the language a man would use who was actually engaged in that work, and whose heart was intensely fixed on seeing it done.</p>
+      <p>Jamieson, Fausset and Brown put the prayer in six words: Visit not my sin on Thy Church.</p>
+      <p>Henry closes the psalm this way:</p>
+      <p>Those who have been in spiritual troubles, know how to pity and pray for others afflicted in like manner. No personal fears or troubles of conscience can make the soul, which has received grace, careless about the interests of the church of God. And let this be the continued joy of all the redeemed, that they have redemption through the blood of Christ, the forgiveness of sins according to the riches of his grace.</p>
+      <p>We close with part of a longer hymn by Charles Wesley, written in seventeen forty. It is called &quot;Depth of Mercy.&quot;</p>
+      <p>Depth of mercy! Can there be
+mercy still reserved for me?
+Can my God His wrath forbear?
+me, the chief of sinners, spare?</p>
+      <p>I have long withstood His grace,
+long provoked Him to His face;
+would not hearken to His calls,
+grieved Him by a thousand falls.</p>
+      <p>I my Master have denied;
+I afresh have crucified,
+oft profaned His hallowed name,
+put Him to an open shame.</p>
+      <p>There for me the Savior stands,
+shows His wounds and spreads His hands.
+God is love! I know, I feel;
+Jesus weeps, but loves me still!</p>
+      <p>Now incline me to repent,
+let me now my fall lament;
+now my foul revolt deplore!
+weep, believe, and sin no more.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

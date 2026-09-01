@@ -165,6 +165,70 @@ EPISODES = [
         ],
     },
     {
+        "slug": "create-in-me-a-clean-heart",
+        "idea": "Create in Me a Clean Heart",
+        "lane": "The Scriptures",
+        "day": "Monday",
+        "date_display": "August 31, 2026",
+        "sub": "The Scriptures · David and Bathsheba, and Psalm 51 — the broken heart and grace outrunning sin",
+        "duration": "36 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/create-in-me-a-clean-heart.mp3",
+        "length": 52440568,
+        "lede": "The worst hour of a good man's life, and what God did with it. David on the roof, the "
+                "letter that killed Uriah, the year of silence, and Nathan's “Thou art the man” — "
+                "then Psalm 51 whole: “Against thee, thee only, have I sinned… Create in me a clean "
+                "heart.” The old writers on the broken and contrite heart, and the apostle's word "
+                "that ends the night — “where sin abounded, grace did much more abound.”",
+        "body": [
+            "A companion to Saul — the king who followed him, and a psalm written out of the "
+            "wreckage. David stays home when kings go to war, sees Bathsheba, sends the letter that "
+            "sets Uriah “in the forefront of the hottest battle,” and “the thing that David had "
+            "done displeased the LORD.” A year of silence, then Nathan's parable of the one ewe "
+            "lamb and “Thou art the man.” Four words of confession — “I have sinned against the "
+            "LORD” — and the sentence lifts: “The LORD also hath put away thy sin.” Then Psalm 51 "
+            "read whole: “Against thee, thee only, have I sinned”; “Create in me a clean heart” — a "
+            "verb, Barnes notes, that belongs to God alone, the making of something where there was "
+            "nothing; “the sacrifices of God are a broken spirit.”",
+            "Then the old writers on that broken heart. Watson on gospel-mourning — spontaneous, "
+            "spiritual (“David does not say, the sword is ever before me, but, my sin is ever "
+            "before me”), particular (“a child of God says, I have done this evil”), self-loathing, "
+            "purifying, and yet dropping “from the eye of faith… as the rainbow in the cloud.” The "
+            "commonplace books on repentance and confession (Origen, South, Adams, Venning), the "
+            "companion psalm (“when I kept silence, my bones waxed old”), and Paul's sentence that "
+            "ends the night — “where sin abounded, grace did much more abound.” Spurgeon's dungeon "
+            "into which the law lets light (“there can be no grace where there is no guilt… our "
+            "Paradise Regained is far more glorious than our Paradise Lost”), the psalm's turn "
+            "outward to the walls of Jerusalem (“Visit not my sin on Thy Church”), and Wesley's "
+            "“Depth of Mercy”: “Jesus weeps, but loves me still.”",
+        ],
+        "walk": [
+            ("2 Samuel 11–12", "Scripture · KJV",
+             "The roof, the letter, the year of silence — and Nathan's ewe lamb: “Thou art the "
+             "man”; “I have sinned against the LORD.”"),
+            ("Psalm 51", "Scripture · KJV",
+             "“Against thee, thee only, have I sinned”; “Create in me a clean heart, O God”; “the "
+             "sacrifices of God are a broken spirit.”"),
+            ("Barnes · Henry · Poole", "public domain",
+             "“Create — a work of almighty power”; the hypocrite who “would have some favorite lust "
+             "spared.”"),
+            ("Thomas Watson · the Beatitudes", "public domain",
+             "Gospel-mourning — spontaneous, particular (“I have done this evil”), self-loathing, "
+             "purifying, dropping “from the eye of faith.”"),
+            ("The commonplace books", "public domain",
+             "Origen, South, Adams, Venning on repentance — “a weeping eye” on the past, “a "
+             "watchful eye” on the future."),
+            ("Psalm 32", "Scripture · KJV",
+             "The companion psalm of the silent year — “when I kept silence, my bones waxed old… I "
+             "acknowledged my sin, and thou forgavest.”"),
+            ("Romans 5 · Spurgeon", "Scripture & public domain",
+             "“Where sin abounded, grace did much more abound” — the dungeon into which the law "
+             "lets light; “Paradise Regained… more glorious than Paradise Lost.”"),
+            ("Psalm 51 close · Charles Wesley", "Scripture & “Depth of Mercy”",
+             "The turn outward — “build thou the walls of Jerusalem”; and “God is love!… Jesus "
+             "weeps, but loves me still!”"),
+        ],
+    },
+    {
         "slug": "i-ought-to-be-thy-adam",
         "idea": "I Ought to Be Thy Adam",
         "lane": "Fiction's Most Famous Passages",
