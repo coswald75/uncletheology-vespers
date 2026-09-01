@@ -161,6 +161,67 @@ EPISODES = [
         ],
     },
     {
+        "slug": "father-mapples-sermon",
+        "idea": "Father Mapple's Sermon",
+        "lane": "Fiction's Most Famous Passages",
+        "day": "Friday",
+        "date_display": "August 21, 2026",
+        "sub": "Fiction's Most Famous Passages · Melville — the whole of Father Mapple's Jonah sermon, and the tradition in its wake",
+        "duration": "37 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/father-mapples-sermon.mp3",
+        "length": 53767712,
+        "lede": "The most famous sermon in American fiction, entire — old Father Mapple climbing his "
+                "rope-ladder pulpit in the Whaleman's Chapel to preach Jonah to a room of sailors: "
+                "the hymn, the flight to Tarshish, the crooked lamp, and the two-stranded lesson of "
+                "woe and delight. Then the texts it stands on — Psalm 139, Watson, Paul — and "
+                "Cowper's “God moves in a mysterious way.”",
+        "body": [
+            "From Moby-Dick, chapter nine, uncut. Ishmael, waiting out a stormy New Bedford Sunday, "
+            "hears old Father Mapple — a harpooneer turned chaplain — climb to a pulpit built like a "
+            "ship's prow and preach the book of Jonah. The reading carries the whole chapter: the "
+            "hymn sung above the howling storm, the flight to Tarshish (“that he paid the fare "
+            "thereof”), the ringing of the coins, the lamp burning straight in a heeled-over cabin "
+            "— “so my conscience hangs in me… but the chambers of my soul are all in crookedness” — "
+            "the casting of the lots, the prayer from the fish's belly (“not clamorous for pardon, "
+            "but grateful for punishment”), and the peroration: on the starboard hand of every woe, "
+            "a sure delight.",
+            "Then what the sermon is built on. Mapple preaches from Jonah 1, and his whole reading "
+            "of the flight is spun from five words — “he paid the fare thereof.” The tradition "
+            "answers the flight with the text that makes it absurd: “Whither shall I flee from thy "
+            "presence?” — and Thomas Watson's dry gloss, that a man may change his port but not his "
+            "jurisdiction. Obedience (Quarles, Hare), repentance (Venning, Adams), and the "
+            "preacher's own woe — “lest… when I have preached to others, I myself should be a "
+            "castaway” — lifted straight from Paul. Closing on Cowper's “God moves in a mysterious "
+            "way… behind a frowning providence he hides a smiling face.”",
+        ],
+        "walk": [
+            ("Melville · Moby-Dick, ch. 9", "1851 · public domain",
+             "Father Mapple's sermon entire — the ship-prow pulpit, the hymn, and the two-stranded "
+             "lesson of Jonah."),
+            ("Jonah 1", "Scripture · KJV",
+             "“He paid the fare thereof” — the five words the whole sermon is spun from, and the "
+             "flight from the presence of the LORD."),
+            ("Psalm 139", "Scripture · KJV",
+             "“Whither shall I flee from thy presence?” — the text that makes the flight absurd "
+             "before it begins."),
+            ("Thomas Watson", "public domain",
+             "Providence's diocese reaches to heaven, earth, and sea — a man may change his port, "
+             "but not his jurisdiction."),
+            ("Quarles · J. C. Hare", "commonplace books · PD",
+             "“True obedience neither procrastinates nor questions”; “the virtue of Christianity is "
+             "obedience.”"),
+            ("Venning · Thomas Adams", "public domain",
+             "“Late repentance is seldom true, but true repentance is seldom too late”; repentance "
+             "reads the law and weeps."),
+            ("1 Corinthians 9 · Galatians 1", "Scripture · KJV",
+             "The preacher's own woe — “lest… I myself should be a castaway” — and “if I yet "
+             "pleased men, I should not be the servant of Christ.”"),
+            ("Cowper · “God moves in a mysterious way”", "1774",
+             "“Behind a frowning providence he hides a smiling face” — the note the sermon ends on: "
+             "the God chiefly known by His rod."),
+        ],
+    },
+    {
         "slug": "the-compass-and-the-cross",
         "idea": "The Compass and the Cross",
         "lane": "The Surprise",
