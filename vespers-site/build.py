@@ -31,6 +31,75 @@ DISCLAIMER = ("A survey of the great ideas — not necessarily an endorsement of
 # Episodes, newest first.
 EPISODES = [
     {
+        "slug": "a-wise-and-eloquent-piety",
+        "idea": "A Wise and Eloquent Piety",
+        "lane": "The Scriptures",
+        "day": "Monday",
+        "date_display": "August 31, 2026",
+        "sub": "The Scriptures · sapiens atque eloquens pietas — how a person is formed, from the Shema to the commonplace books",
+        "duration": "70 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/a-wise-and-eloquent-piety.mp3",
+        "length": 101336615,
+        "lede": "Johann Sturm's motto for his school — sapiens atque eloquens pietas, a wise and "
+                "eloquent piety — as the thread through the whole tradition on how a person is formed: "
+                "Scripture and the fathers, Augustine and Calvin on spoiling the Egyptians, Luther and "
+                "Erasmus and Milton on schooling, and a long drink from the commonplace books on "
+                "education, example, and habit.",
+        "body": [
+            "A survey of formation — what learning is for, who is responsible for it, and how early "
+            "it begins — under Johann Sturm's three-word aim for his Strasbourg school: sapiens atque "
+            "eloquens pietas, with piety the noun and wisdom and eloquence the adjectives. Scripture "
+            "first: the Shema's “teach them diligently unto thy children,” the four-link chain of "
+            "Psalm 78, the curriculum that opens Proverbs, Paul's “from a child thou hast known the "
+            "holy scriptures,” and Hebrews on senses “exercised by reason of use.” Then the fathers "
+            "and reformers — Augustine on wisdom without eloquence and eloquence without wisdom, and "
+            "on spoiling the Egyptians (taking the gold of pagan learning for the gospel); Calvin, "
+            "sharper: “in despising the gifts, we insult the Giver.”",
+            "Then the schoolmasters who built on that permission — Luther to the German nobility "
+            "(“it is not many books… but good things, however little of them, often read”), Erasmus "
+            "on the colt and the popinjay and the graft bent while it still bows (“diligent and holy "
+            "bringing up is the fountain of all virtue”), and Milton's definition of “a complete and "
+            "generous education.” The Massachusetts “Old Deluder Satan” school law of 1647 — a "
+            "literacy statute with a soteriology in its preamble. And then the commonplace books "
+            "themselves, opened at Reading, Education, Learning, Instruction, Example, Habit, "
+            "Discipline, Knowledge, Children, and Home. Closing with Longfellow's “The Ladder of "
+            "Saint Augustine”: the heights “were not attained by sudden flight, but they, while their "
+            "companions slept, were toiling upward in the night.”",
+        ],
+        "walk": [
+            ("Deuteronomy 6 · Psalm 78 · Proverbs 1", "Scripture · KJV",
+             "“Teach them diligently unto thy children”; the four-link chain from fathers to the "
+             "generation to come; and the curriculum that opens Proverbs."),
+            ("2 Timothy 3 · Hebrews 5", "Scripture · KJV",
+             "“From a child thou hast known the holy scriptures”; and maturity as a trained faculty "
+             "— senses “exercised by reason of use.”"),
+            ("Augustine · On Christian Doctrine", "public domain",
+             "Wisdom without eloquence, of little service; eloquence without wisdom, a positive "
+             "injury. And spoiling the Egyptians — the gold of pagan learning taken for the gospel."),
+            ("Calvin · Institutes", "public domain",
+             "“In despising the gifts, we insult the Giver” — the light of truth in profane authors "
+             "traced back to the Spirit, its only fountain."),
+            ("Luther · To the German Nobility", "1520",
+             "Schools built on the Gospel; and the rule a prolific writer would not expect — “not "
+             "many books… but good things, however little of them, often read.”"),
+            ("Erasmus · On the Education of Children", "Sherry's translation",
+             "The colt, the popinjay, the graft bent while it still bows — “diligent and holy "
+             "bringing up is the fountain of all virtue.”"),
+            ("Milton · Of Education", "1644",
+             "“A complete and generous education… fits a man to perform justly, skilfully and "
+             "magnanimously all the offices both private and public, of peace and war.”"),
+            ("The “Old Deluder Satan” Law", "Massachusetts, 1647",
+             "A literacy statute with a soteriology in its preamble — schools required so that men "
+             "not be kept from the knowledge of the Scriptures."),
+            ("The commonplace books", "Collacon & others · public domain",
+             "Reading, Education, Learning, Instruction, Example, Habit, Discipline, Knowledge, "
+             "Children, Home — the headings under which a tradition kept what it would not lose."),
+            ("Longfellow · “The Ladder of Saint Augustine”", "1850",
+             "“The heights by great men reached and kept were not attained by sudden flight, but "
+             "they, while their companions slept, were toiling upward in the night.”"),
+        ],
+    },
+    {
         "slug": "the-severed-head",
         "idea": "The Severed Head",
         "lane": "The Surprise",

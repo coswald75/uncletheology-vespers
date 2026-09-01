@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Wise and Eloquent Piety — Vespers</title>
+<meta name="description" content="Johann Sturm&#x27;s motto for his school — sapiens atque eloquens pietas, a wise and eloquent piety — as the thread through the whole tradition on how a person is formed: Scripture and the fathers, Augustine and Calvin on spoiling the Egyptians, Luther and Erasmus and Milton on schooling, and a long drink from the commonplace books on education, example, and habit.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/a-wise-and-eloquent-piety">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Wise and Eloquent Piety — Vespers">
+<meta property="og:description" content="Johann Sturm&#x27;s motto for his school — sapiens atque eloquens pietas, a wise and eloquent piety — as the thread through the whole tradition on how a person is formed: Scripture and the fathers, Augustine and Calvin on spoiling the Egyptians, Luther and Erasmus and Milton on schooling, and a long drink from the commonplace books on education, example, and habit.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/a-wise-and-eloquent-piety">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Scriptures · Monday · August 31, 2026</div>
+      <h1 class="ep-title">A Wise and Eloquent Piety</h1>
+      <div class="ep-sub ui">The Scriptures · sapiens atque eloquens pietas — how a person is formed, from the Shema to the commonplace books<span class="dot">·</span>70 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/a-wise-and-eloquent-piety.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Johann Sturm&#x27;s motto for his school — sapiens atque eloquens pietas, a wise and eloquent piety — as the thread through the whole tradition on how a person is formed: Scripture and the fathers, Augustine and Calvin on spoiling the Egyptians, Luther and Erasmus and Milton on schooling, and a long drink from the commonplace books on education, example, and habit.</p>
+    <div class="ep-body">
+    <p>A survey of formation — what learning is for, who is responsible for it, and how early it begins — under Johann Sturm&#x27;s three-word aim for his Strasbourg school: sapiens atque eloquens pietas, with piety the noun and wisdom and eloquence the adjectives. Scripture first: the Shema&#x27;s “teach them diligently unto thy children,” the four-link chain of Psalm 78, the curriculum that opens Proverbs, Paul&#x27;s “from a child thou hast known the holy scriptures,” and Hebrews on senses “exercised by reason of use.” Then the fathers and reformers — Augustine on wisdom without eloquence and eloquence without wisdom, and on spoiling the Egyptians (taking the gold of pagan learning for the gospel); Calvin, sharper: “in despising the gifts, we insult the Giver.”</p>
+    <p>Then the schoolmasters who built on that permission — Luther to the German nobility (“it is not many books… but good things, however little of them, often read”), Erasmus on the colt and the popinjay and the graft bent while it still bows (“diligent and holy bringing up is the fountain of all virtue”), and Milton&#x27;s definition of “a complete and generous education.” The Massachusetts “Old Deluder Satan” school law of 1647 — a literacy statute with a soteriology in its preamble. And then the commonplace books themselves, opened at Reading, Education, Learning, Instruction, Example, Habit, Discipline, Knowledge, Children, and Home. Closing with Longfellow&#x27;s “The Ladder of Saint Augustine”: the heights “were not attained by sudden flight, but they, while their companions slept, were toiling upward in the night.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Deuteronomy 6 · Psalm 78 · Proverbs 1<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Teach them diligently unto thy children”; the four-link chain from fathers to the generation to come; and the curriculum that opens Proverbs.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">2 Timothy 3 · Hebrews 5<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“From a child thou hast known the holy scriptures”; and maturity as a trained faculty — senses “exercised by reason of use.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine · On Christian Doctrine<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Wisdom without eloquence, of little service; eloquence without wisdom, a positive injury. And spoiling the Egyptians — the gold of pagan learning taken for the gospel.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Calvin · Institutes<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“In despising the gifts, we insult the Giver” — the light of truth in profane authors traced back to the Spirit, its only fountain.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Luther · To the German Nobility<span class="walk-cite ui">1520</span></div>
+        <div class="walk-note">Schools built on the Gospel; and the rule a prolific writer would not expect — “not many books… but good things, however little of them, often read.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Erasmus · On the Education of Children<span class="walk-cite ui">Sherry&#x27;s translation</span></div>
+        <div class="walk-note">The colt, the popinjay, the graft bent while it still bows — “diligent and holy bringing up is the fountain of all virtue.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Milton · Of Education<span class="walk-cite ui">1644</span></div>
+        <div class="walk-note">“A complete and generous education… fits a man to perform justly, skilfully and magnanimously all the offices both private and public, of peace and war.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">The “Old Deluder Satan” Law<span class="walk-cite ui">Massachusetts, 1647</span></div>
+        <div class="walk-note">A literacy statute with a soteriology in its preamble — schools required so that men not be kept from the knowledge of the Scriptures.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">The commonplace books<span class="walk-cite ui">Collacon &amp; others · public domain</span></div>
+        <div class="walk-note">Reading, Education, Learning, Instruction, Example, Habit, Discipline, Knowledge, Children, Home — the headings under which a tradition kept what it would not lose.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">Longfellow · “The Ladder of Saint Augustine”<span class="walk-cite ui">1850</span></div>
+        <div class="walk-note">“The heights by great men reached and kept were not attained by sudden flight, but they, while their companions slept, were toiling upward in the night.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: a wise and eloquent piety.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>The phrase belongs to Johann Sturm, who opened a school at Strasbourg in fifteen thirty-eight and set down, as the aim of the whole enterprise, three Latin words: sapiens atque eloquens pietas. Wise and eloquent piety. Notice the grammar of it. Piety is the noun. Wisdom and eloquence are the adjectives — they describe what kind of piety is being aimed at. The claim is not that a man should be godly and also, if there is time, well spoken. The claim is that godliness which cannot think and cannot speak is godliness with something missing from it.</p>
+      <p>That formula governed the schools of Protestant Europe for the better part of three centuries. Tonight we read the tradition that produced it and the tradition that lived on it — the men who wrote about how a person is formed, what learning is for, who is responsible for it, and how early it begins. Scripture first, then the fathers, then the reformers, then the schoolmasters, and at the end a long drink from the commonplace books, which is where a tradition keeps what it does not want to lose.</p>
+      <p>Begin where they began. From the fifth book of Moses:</p>
+      <p>Hear, O Israel: The LORD our God is one LORD: And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might. And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up. And thou shalt bind them for a sign upon thine hand, and they shall be as frontlets between thine eyes. And thou shalt write them upon the posts of thy house, and on thy gates.</p>
+      <p>The command is repeated a few chapters later, and the repetition adds a promise:</p>
+      <p>Therefore shall ye lay up these my words in your heart and in your soul, and bind them for a sign upon your hand, that they may be as frontlets between your eyes. And ye shall teach them your children, speaking of them when thou sittest in thine house, and when thou walkest by the way, when thou liest down, and when thou risest up. And thou shalt write them upon the door posts of thine house, and upon thy gates: That your days may be multiplied, and the days of your children, in the land which the LORD sware unto your fathers to give them, as the days of heaven upon the earth.</p>
+      <p>The same charge, given as a song. From the Psalms:</p>
+      <p>Give ear, O my people, to my law: incline your ears to the words of my mouth. I will open my mouth in a parable: I will utter dark sayings of old: Which we have heard and known, and our fathers have told us. We will not hide them from their children, shewing to the generation to come the praises of the LORD, and his strength, and his wonderful works that he hath done.</p>
+      <p>The psalm goes on, and the chain it describes is four links long:</p>
+      <p>For he established a testimony in Jacob, and appointed a law in Israel, which he commanded our fathers, that they should make them known to their children: That the generation to come might know them, even the children which should be born; who should arise and declare them to their children: That they might set their hope in God, and not forget the works of God, but keep his commandments: And might not be as their fathers, a stubborn and rebellious generation; a generation that set not their heart aright, and whose spirit was not stedfast with God.</p>
+      <p>The book of Proverbs opens by stating what it is for, and the statement is a curriculum:</p>
+      <p>The proverbs of Solomon the son of David, king of Israel; To know wisdom and instruction; to perceive the words of understanding; To receive the instruction of wisdom, justice, and judgment, and equity; To give subtilty to the simple, to the young man knowledge and discretion. A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels: To understand a proverb, and the interpretation; the words of the wise, and their dark sayings.</p>
+      <p>And then the sentence on which the whole tradition afterward turns:</p>
+      <p>The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction. My son, hear the instruction of thy father, and forsake not the law of thy mother: For they shall be an ornament of grace unto thy head, and chains about thy neck.</p>
+      <p>From the same book, one line:</p>
+      <p>Train up a child in the way he should go: and when he is old, he will not depart from it.</p>
+      <p>From Paul, to the Ephesians:</p>
+      <p>Children, obey your parents in the Lord: for this is right. Honour thy father and mother; which is the first commandment with promise; That it may be well with thee, and thou mayest live long on the earth. And, ye fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord.</p>
+      <p>To Timothy, on where his own formation came from:</p>
+      <p>But continue thou in the things which thou hast learned and hast been assured of, knowing of whom thou hast learned them; And that from a child thou hast known the holy scriptures, which are able to make thee wise unto salvation through faith which is in Christ Jesus. All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works.</p>
+      <p>And one passage from the letter to the Hebrews, which describes maturity as a trained faculty rather than an accumulated stock:</p>
+      <p>For when for the time ye ought to be teachers, ye have need that one teach you again which be the first principles of the oracles of God; and are become such as have need of milk, and not of strong meat. For every one that useth milk is unskilful in the word of righteousness: for he is a babe. But strong meat belongeth to them that are of full age, even those who by reason of use have their senses exercised to discern both good and evil.</p>
+      <p>By reason of use. That is the phrase the schoolmasters built on.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>Now to the man who stands behind the formula. Augustine, in the fourth book of On Christian Doctrine, takes up the question of whether a Christian teacher needs the art of speaking at all, and how much. He begins with what the teacher is trying to do:</p>
+      <p>If the hearers need teaching, the matter treated of must be made fully known by means of narrative. On the other hand, to clear up points that are doubtful requires reasoning and the exhibition of proof. If, however, the hearers require to be roused rather than instructed, in order that they may be diligent to do what they already know, and to bring their feelings into harmony with the truths they admit, greater vigor of speech is needed. Here entreaties and reproaches, exhortations and upbraidings, and all the other means of rousing the emotions, are necessary.</p>
+      <p>Then he weighs the two things against each other, and he does it by reporting what the teachers of rhetoric had themselves admitted:</p>
+      <p>The work that I am speaking of ought to be undertaken by one who can argue and speak with wisdom, if not with eloquence, and with profit to his hearers, even though he profit them less than he would if he could speak with eloquence too. But we must beware of the man who abounds in eloquent nonsense, and so much the more if the hearer is pleased with what is not worth listening to, and thinks that because the speaker is eloquent what he says must be true.</p>
+      <p>He goes on:</p>
+      <p>And this opinion is held even by those who think that the art of rhetoric should be taught; for they confess that though wisdom without eloquence is of little service to states, yet eloquence without wisdom is frequently a positive injury, and is of service never. If, then, the men who teach the principles of eloquence have been forced by truth to confess this in the very books which treat of eloquence, though they were ignorant of the true, that is, the heavenly wisdom which comes down from the Father of Lights, how much more ought we to feel it who are the sons and the ministers of this higher wisdom!</p>
+      <p>That is the sentence the schoolmasters had in their pocket for a thousand years. Wisdom without eloquence, of little service. Eloquence without wisdom, a positive injury. And then Augustine says where the wisdom comes from, and makes a distinction about reading that is worth hearing slowly:</p>
+      <p>Now a man speaks with more or less wisdom just as he has made more or less progress in the knowledge of Scripture; I do not mean by reading them much and committing them to memory, but by understanding them aright and carefully searching into their meaning. For there are who read and yet neglect them; they read to remember the words, but are careless about knowing the meaning. It is plain we must set far above these the men who are not so retentive of the words, but see with the eyes of the heart into the heart of Scripture. Better than either of these, however, is the man who, when he wishes, can repeat the words, and at the same time correctly apprehends their meaning.</p>
+      <p>He adds a practical consequence for the man who knows he is not gifted:</p>
+      <p>Now it is especially necessary for the man who is bound to speak wisely, even though he cannot speak eloquently, to retain in memory the words of Scripture. For the more he discerns the poverty of his own speech, the more he ought to draw on the riches of Scripture.</p>
+      <p>There is a second passage in Augustine that the whole tradition afterward leaned on, and it comes from the second book of the same work. It answers the question of what a Christian may do with learning that came from outside the church. He puts the answer in a figure taken from the exodus:</p>
+      <p>Moreover, if those who are called philosophers, and especially the Platonists, have said anything that is true and in harmony with our faith, we are not only not to shrink from it, but to claim it for our own use from those who have unlawful possession of it.</p>
+      <p>He works the figure out:</p>
+      <p>For, as the Egyptians had not only the idols and heavy burdens which the people of Israel hated and fled from, but also vessels and ornaments of gold and silver, and garments, which the same people when going out of Egypt appropriated to themselves, designing them for a better use, not doing this on their own authority, but by the command of God — in the same way all branches of heathen learning have not only false and superstitious fancies and heavy burdens of unnecessary toil, which every one of us, when going out under the leadership of Christ from the fellowship of the heathen, ought to abhor and avoid; but they contain also liberal instruction which is better adapted to the use of the truth, and some most excellent precepts of morality; and some truths in regard even to the worship of the One God are found among them.</p>
+      <p>And then the sentence that decides the matter:</p>
+      <p>Now these are, so to speak, their gold and silver, which they did not create themselves, but dug out of the mines of God&#x27;s providence which are everywhere scattered abroad. These, therefore, the Christian, when he separates himself in spirit from the miserable fellowship of these men, ought to take away from them, and to devote to their proper use in preaching the gospel.</p>
+      <p>Augustine then names the men who had already done it:</p>
+      <p>And what else have many good and faithful men among our brethren done? Do we not see with what a quantity of gold and silver and garments Cyprian, that most persuasive teacher and most blessed martyr, was loaded when he came out of Egypt? How much Lactantius brought with him? And Victorinus, and Optatus, and Hilary, not to speak of living men! How much Greeks out of number have borrowed! And prior to all these, that most faithful servant of God, Moses, had done the same thing; for of him it is written that he was learned in all the wisdom of the Egyptians.</p>
+      <p>A thousand years later, Calvin says the same thing in his own way, and rather more sharply. From the Institutes:</p>
+      <p>Therefore, in reading profane authors, the admirable light of truth displayed in them should remind us, that the human mind, however much fallen and perverted from its original integrity, is still adorned and invested with admirable gifts from its Creator. If we reflect that the Spirit of God is the only fountain of truth, we will be careful, as we would avoid offering insult to him, not to reject or condemn truth wherever it appears. In despising the gifts, we insult the Giver.</p>
+      <p>He presses it with a series of questions:</p>
+      <p>How, then, can we deny that truth must have beamed on those ancient lawgivers who arranged civil order and discipline with so much equity? Shall we say that the philosophers, in their exquisite researches and skilful description of nature, were blind? Shall we deny the possession of intellect to those who drew up rules for discourse, and taught us to speak in accordance with reason? Shall we say that those who, by the cultivation of the medical art, expended their industry in our behalf were only raving? What shall we say of the mathematical sciences? Shall we deem them to be the dreams of madmen?</p>
+      <p>And he answers his own questions:</p>
+      <p>Nay, we cannot read the writings of the ancients on these subjects without the highest admiration; an admiration which their excellence will not allow us to withhold. But shall we deem anything to be noble and praiseworthy, without tracing it to the hand of God? Far from us be such ingratitude.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>That permission — that a Christian may take the gold wherever he finds it — is what made a school possible. What made schools actual was a set of arguments about who is responsible for children, and those arguments were made loudly. Luther, writing to the German nobility in fifteen twenty, comes at last to the subject of schools, and says this:</p>
+      <p>Above all, the foremost and most general subject of study, both in the higher and the lower schools, should be the Holy Scriptures, and for the young boys the Gospel. And would to God that every town had a girls&#x27; school also, in which the girls were taught the Gospel for an hour each day either in German or Latin.</p>
+      <p>He asks a question that assumes a standard we have quietly lowered:</p>
+      <p>Ought not every Christian at his ninth or tenth year to know the entire holy Gospel from which he derives his name and his life? A spinner or a seamstress teaches her daughter the trade in her early years.</p>
+      <p>Then he turns, and the turn is grief rather than argument:</p>
+      <p>O how unjustly we deal with these poor young people who are committed to us for direction and instruction! We must give a terrible accounting for our neglect to set the Word of God before them.</p>
+      <p>He reaches for Jeremiah to say it:</p>
+      <p>Mine eyes are grown weary with weeping, my bowels are terrified, my liver is poured out upon the ground, because of the destruction of the daughter of my people, for the youth and the children perish in all the streets of the whole city; they said to their mothers, Where is bread and wine? and they swooned as the wounded in the streets of the city and gave up the ghost in their mothers&#x27; bosom.</p>
+      <p>And he applies it:</p>
+      <p>This pitiful evil we do not see — how even now the young folk in the midst of Christendom languish and perish miserably for want of the Gospel, in which we ought to be giving them constant instruction and training.</p>
+      <p>Luther has a rule about reading, too, and it is not the rule you would expect from a man who wrote as much as he did:</p>
+      <p>The number of theological books must also be lessened, and a selection made of the best of them. For it is not many books or much reading that makes men learned; but it is good things, however little of them, often read, that make men learned in the Scriptures, and make them godly, too.</p>
+      <p>He says the same about the fathers — that they are a road and not a destination:</p>
+      <p>Indeed the writings of all the holy fathers should be read only for a time, in order that through them we may be led to the Holy Scriptures. The dear fathers wished, by their writings, to lead us to the Scriptures, but we so use them as to be led away from the Scriptures, though the Scriptures alone are our vineyard in which we ought all to work and toil.</p>
+      <p>And he ends the section with a piece of advice to parents:</p>
+      <p>But where the Holy Scriptures do not rule, there I advise no one to send his son. Everyone not unceasingly busy with the Word of God must become corrupt.</p>
+      <p>Now to the book at the centre of tonight&#x27;s reading. Erasmus wrote a treatise on the education of children, and it was put into English by Richard Sherry in the middle of the sixteenth century. What follows is Sherry&#x27;s translation with its spelling modernized and its old printer&#x27;s contractions written out, so that it can be heard; the words themselves are his, and are not otherwise altered.</p>
+      <p>Erasmus begins with fathers who think the work is finished when it has scarcely begun:</p>
+      <p>But some think they have gaily done the office of a father, when they have only begotten children, whereas this is the least portion of love that the name of a father requireth.</p>
+      <p>He then describes, at length and with evident affection, how much trouble a household will go to over a child&#x27;s body:</p>
+      <p>What great thought take the mothers commonly lest the infant should look agog or asquint, lest he should be puff-cheeked, wry-necked, crook-shouldered, crook-legged, splay-footed, and lest that the proportion of his body should not be trim in every point. They have regard also to their milk, their meat, their baths, and their movings, by which things the physicians in many books have taught that the children get good health of their body: neither do they defer this diligence unto the seventh or tenth year, but even as soon as the child cometh out of the mother&#x27;s womb, they take great charge of this. And they do well, for the infancy not regarded, oftentimes causeth men to have a sickly and sore diseased old age, if they happen to come to it.</p>
+      <p>And having granted all of that, he asks his question:</p>
+      <p>No man calleth this too hasty a care which is used for the worser part of man. Why then is that part of man, whereby we be properly called men, neglected so many years?</p>
+      <p>He puts it a second way, as a picture:</p>
+      <p>Should he not do all against God&#x27;s forbidding which would trim his cap, letting his head be unkempt, and all scabbed? Yet much more unreasonable is it that we should bestow just labours upon the mortal body, and to have no regard of the immortal soul.</p>
+      <p>Then he turns to the animals, and this is the passage the schoolmasters loved:</p>
+      <p>Further, if a man have at home a horse colt, or a whelp of a good kind, will he not straightway begin to fashion him to do somewhat, and will do that so much the more gladly, the readier the young age is to follow the teacher&#x27;s mind? We will teach a popinjay while time is, to speak as a man doth, knowing well that the elder he waxeth, the less apt he will be to be taught, yea the common proverb giving warning of this thing: that an old popinjay careth not for the rod.</p>
+      <p>And then the question lands:</p>
+      <p>And what a thing is it to be diligent in a bird, and slow in teaching thy son?</p>
+      <p>He goes on to the gardeners:</p>
+      <p>What do the witty husbandmen? Do they not teach even straightway the plants while they be yet tender, to put away their wild nature by grafting, and will not tarry till they be waxen big and mighty? And they do not only take heed that the little tree grow not crooked or have any other fault, but if there be any, they make haste to amend it, while it will yet bow, and follow the hand of the fashioner.</p>
+      <p>And he draws the rule out of it:</p>
+      <p>And what living thing, or what plant will be as the owner or husbandman would have it to serve for, except our diligence help nature? The sooner it is done, the better will it come to pass.</p>
+      <p>Then Erasmus says why the case of a human being is different from the case of a colt, and the answer is that we are born with less and given more:</p>
+      <p>Indeed to many dumb beasts, nature the mother of all things hath given more help to do their natural offices, but because the providence of God hath of all creatures unto men only given the strength of reason, she hath left the greatest part to education.</p>
+      <p>He continues:</p>
+      <p>That is the cause why unto other beasts nature hath given swiftness, flight, sharpness of sight, greatness, and strength of body, scales, fleeces, hairs, horns, nails, venom, whereby they may both defend their health, and provide for their living, and bring up their young: and bringeth forth man only soft, naked, and unfenced: but instead of all this, hath given him a mind able to receive all discipline, because in this only are all things, if a man will exercise it.</p>
+      <p>And he states the conclusion plainly:</p>
+      <p>Diligent and holy bringing up is the fountain of all virtue.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>Erasmus is arguing throughout with people who say that the first years are too early — that a small child is too tender for study, and that little is gained by it anyway. He answers that the small child learns fastest of all:</p>
+      <p>Some things be necessary to be known when we be somewhat elder, which by a certain peculiar readiness of nature, the tender age perceiveth both much more quickly, and also more easily than doth the elder, as the first beginnings of letters, the knowledge of tongues, tales and fables of poets. Finally, why should that age be thought unmeet to learning, which is apt to learn manners?</p>
+      <p>He answers the objection that the gain is small:</p>
+      <p>Thou wilt say that it is but of little value that is done in those first years. Why is it despised as a small thing, which is necessary to a very great matter? And why is that lucre, be it never so little, yet a lucre, despised of purpose? Now if you often put a little to a little, there riseth a great heap.</p>
+      <p>He adds a second gain, which is simply that the child is occupied:</p>
+      <p>Finally while he doth these things, at the least he shall be kept from those faults, wherewith we see commonly that age to be infected. For nothing doth better occupy the whole mind of man, than studies.</p>
+      <p>And then he says what kind of teacher such a child must have, and it is the sentence to carry away from the whole treatise:</p>
+      <p>You must have for this tender age a teacher to enter it by fair means, and not discourage it by foul. And there be also some things both pleasant to be known, and as it were akin to children&#x27;s wits, which to learn is rather a play than a labour.</p>
+      <p>Later in the same treatise Erasmus writes to a friend who has become a father, and the counsel is domestic and immediate:</p>
+      <p>This one thing I would warn you of boldly indeed, but lovingly, not to suffer after the judgment and example of the common people, that the first age of your infant should flit away without all fruit of good instruction, and then at the last to set him to learn his first letters, when both his age will not so well be handled, and his wit shall be more ready to evil.</p>
+      <p>He tells him what to do instead:</p>
+      <p>Yea rather even now look about for some man, as of manners pure and uncorrupt, so also well learned: and into his lap deliver your little child, as it were to a nurse of his tender mind, that even with his milk he may suck in sweet learning: and divide the care of thy little son to his nurses and teacher, that they should sustain the little body with very good juice, and so endue his mind with very wholesome opinions, and very honest learning.</p>
+      <p>And then Erasmus makes the comparison that the rest of the tradition kept repeating, because once heard it is difficult to unhear:</p>
+      <p>Wherefore who may not see that they do lewdly and also untowardly which in tilling their land, building their houses, keeping their horse, use the greatest diligence they can, and take to counsel men that be wise, and of great experience: in bringing up and teaching their children, for whose sakes all other things are gotten, take so little regard.</p>
+      <p>A hundred years after Erasmus, and in a very different country, John Milton wrote a short letter to a friend on the same subject. It is barely twenty pages long and it has been argued about ever since. He begins by saying what learning is finally for, and he does not begin with usefulness:</p>
+      <p>The end then of learning is to repair the ruins of our first parents by regaining to know God aright, and out of that knowledge to love him, to imitate him, to be like him, as we may the nearest by possessing our souls of true virtue, which being united to the heavenly grace of faith makes up the highest perfection.</p>
+      <p>He explains why the study of languages comes into it at all, and he is careful to put language in its place:</p>
+      <p>Seeing every nation affords not experience and tradition enough for all kind of learning, therefore we are chiefly taught the languages of those people who have at any time been most industrious after wisdom; so that language is but the instrument conveying to us things useful to be known.</p>
+      <p>Then the warning:</p>
+      <p>And though a linguist should pride himself to have all the tongues that Babel cleft the world into, yet if he have not studied the solid things in them as well as the words and lexicons, he were nothing so much to be esteemed a learned man, as any yeoman or tradesman competently wise in his mother dialect only.</p>
+      <p>Milton has a complaint about how the young are taught to write, and it is worth hearing because it is the opposite of the usual complaint:</p>
+      <p>We do amiss to spend seven or eight years merely in scraping together so much miserable Latin and Greek, as might be learned otherwise easily and delightfully in one year. And that which casts our proficiency therein so much behind, is our time lost partly in too oft idle vacancies given both to schools and universities, partly in a preposterous exaction, forcing the empty wits of children to compose themes, verses and orations, which are the acts of ripest judgment and the final work of a head filled by long reading and observing, with elegant maxims, and copious invention. These are not matters to be wrung from poor striplings.</p>
+      <p>He complains, too, of beginning at the wrong end — of handing abstractions to beginners:</p>
+      <p>I deem it to be an old error of universities not yet well recovered from, that instead of beginning with arts most easy, and those be such as are most obvious to the sense, they present their young unmatriculated novices at first coming with the most intellective abstractions of logic and metaphysics; so that they having but newly left those grammatic flats and shallows where they stuck unreasonably to learn a few words with lamentable construction, and now on the sudden transported under another climate to be tossed and turmoiled with their unballasted wits in fathomless and unquiet deeps of controversy, do for the most part grow into hatred and contempt of learning, mocked and deluded all this while with ragged notions and babblements, while they expected worthy and delightful knowledge.</p>
+      <p>Then Milton stops complaining, and says so:</p>
+      <p>I shall detain you no longer in the demonstration of what we should not do, but straight conduct ye to a hill side where I will point ye out the right path of a virtuous and noble education; laborious indeed at the first ascent, but else so smooth, so green, so full of goodly prospect, and melodious sounds on every side, that the harp of Orpheus was not more charming.</p>
+      <p>He is confident about what would happen if the thing were done well:</p>
+      <p>I doubt not but ye shall have more ado to drive our dullest and laziest youth, our stocks and stubs from the infinite desire of such a happy nurture, than we have now to hale and drag our choicest and hopefulest wits to that asinine feast of sowthistles and brambles which is commonly set before them, as all the food and entertainment of their tenderest and most docible age.</p>
+      <p>And then comes the definition, which is the most quoted sentence in the whole literature:</p>
+      <p>I call therefore a complete and generous education that which fits a man to perform justly, skilfully and magnanimously all the offices both private and public, of peace and war.</p>
+      <p>Milton&#x27;s own scheme was an academy of about a hundred and fifty, both school and university at once, its day divided into three parts — their studies, their exercise, and their diet — and he thought such houses should be set up in every city in the land. Whether or not the scheme was practical, the definition outlived it, and it was the definition that crossed the ocean.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>For when the general court of Massachusetts, in sixteen forty-seven, required the towns to keep schools — a teacher of reading and writing wherever there were fifty households, and a grammar school wherever there were a hundred — it gave a reason for the law in its opening words. The reason was not prosperity, and it was not civic order. As the records preserve the phrase, the law was aimed against one chief project of that old deluder, Satan: to keep men from the knowledge of the Scriptures.</p>
+      <p>That is a literacy statute with a soteriology in its preamble. Whatever else may be said about it, it is not a small ambition, and it explains why the schools got built.</p>
+      <p>So much for the aim. The rest of tonight belongs to the method, and the method has a shape that is easy to describe and hard to do. It was, in the main, four things: you memorized an architecture before you needed it; you copied masters until their moves became your own; you kept a notebook of everything worth keeping, filed under headings, so that it could be found again under pressure; and you argued in public, frequently, often on the side you had not chosen.</p>
+      <p>The notebook was called a commonplace book, and it is the reason so much of tonight&#x27;s material exists at all. A student read with a pen, pulled out what was worth keeping, and filed it under a head — Education, Instruction, Example, Habit — so that years later, when the subject came up, the whole company of what he had read on it came up with it. What we are about to read is exactly that: a commonplace book, opened at the headings that concern formation. These are the collections&#x27; own attributions, and I give them as they stand.</p>
+      <p>First, on reading itself, because the tradition thought reading was a skill and not a reflex. Erasmus:</p>
+      <p>At the first it is no great matter how much you learn, but how well you learn it.</p>
+      <p>Seneca:</p>
+      <p>It is not how many books thou hast, but how good; careful reading profiteth, while that which is full of variety delighteth.</p>
+      <p>Thomas Fuller:</p>
+      <p>It is thought and digestion which makes books serviceable, and gives health and vigor to the mind.</p>
+      <p>Bacon:</p>
+      <p>Some books are to be tasted, others to be swallowed, and some few to be chewed and digested.</p>
+      <p>Jeremy Taylor reports an exchange:</p>
+      <p>Aquinas was once asked, with what compendium a man might become learned. He answered, By reading of one book.</p>
+      <p>Scaliger, from the other direction:</p>
+      <p>There is no book so worthless, that I cannot collect something from it.</p>
+      <p>Robert Chambers, on what a book can do that a teacher cannot:</p>
+      <p>Books are standing counsellors and preachers, always at hand, and always disinterested, having this advantage over oral instructors, that they are ready to repeat their lesson as often as we please.</p>
+      <p>And Junius, on what a teacher can do that a book cannot:</p>
+      <p>Those who are conversant with books well know how often they mislead us, when we have not a living monitor at hand to assist us in comparing practice with theory.</p>
+      <p>Isaac Watts, on the living monitor:</p>
+      <p>Instructors should not only be skillful in those sciences which they teach, but have skill in the method of teaching, and patience in the practice.</p>
+      <p>Sophocles:</p>
+      <p>Most pleasant is instruction when it comes from one who speaks wisely, and with it comes advantage.</p>
+      <p>And a line from Boyes that every parent and every teacher should probably have framed:</p>
+      <p>If in instructing a child you are vexed with it for a want of adroitness, try, if you have never tried before, to write with your left hand, and then remember that a child is all left hand.</p>
+      <p>Now the heading itself. Education.</p>
+      <p>Kant:</p>
+      <p>To develop in each individual all the perfection of which he is susceptible, is the object of education.</p>
+      <p>James Beattie:</p>
+      <p>The aim of education should be to teach us rather how to think than what to think.</p>
+      <p>William Ellery Channing:</p>
+      <p>He is to be educated because he is a man, and not because he is to make shoes, nails, and pins.</p>
+      <p>Benjamin Tefft, at more length:</p>
+      <p>The one sole design of education when properly understood is not to make a gentleman, or a lawyer, or a mechanic, or a farmer, but to draw out to their utmost limits all the susceptibilities of our threefold nature; and the product of this true discipline is not a scholar, nor a philosopher, nor an artist, but a fully-developed man.</p>
+      <p>Cayley:</p>
+      <p>Real education is the formation and training of the mind; to train the mind requires hard, patient, and independent thinking and work; the mere crude teaching a youth a bundle of facts, which he acquires with no labor, and, only retaining, neither digests nor assimilates, is no training at all.</p>
+      <p>Horace:</p>
+      <p>It is education that improves the powers implanted in us by nature, and sound culture that is the armor of the breast; when moral training fails, the noblest endowments of nature are blemished and lost.</p>
+      <p>Plutarch:</p>
+      <p>Men derive no greater advantage from a liberal education than that it tends to soften and polish their nature, by improving their reasoning faculties and training their habits, thus producing an evenness of temper and banishing all extremes.</p>
+      <p>Coleridge, in one line that orders the whole business:</p>
+      <p>In the education of children love is first to be instilled, and out of love obedience is to be educed.</p>
+      <p>Richter, on when to begin — and the figure is a farmer&#x27;s:</p>
+      <p>As farmers believe it most advantageous to sow in mist, so the first seeds of education should fall in the first and thickest mist of life.</p>
+      <p>Richard Whately, with the same thought as a gardener&#x27;s:</p>
+      <p>Education may be compared to the grafting of a tree. Every gardener knows that the younger the wilding-stock is that is to be grafted, the easier and the more effectual the operation.</p>
+      <p>Francis Atterbury:</p>
+      <p>The force of education is so great, that we may mould the minds and manners of the young into what shape we please, and give them the impression of such habits as shall ever after remain.</p>
+      <p>George Sala, on where it actually begins:</p>
+      <p>Education does not commence with the alphabet; it begins with a mother&#x27;s look, with a father&#x27;s nod of approbation, or a sign of reproof; with a sister&#x27;s gentle pressure of the hand, or a brother&#x27;s noble act of forbearance.</p>
+      <p>Bishop Jebb, saying the same thing from the child&#x27;s side:</p>
+      <p>The education of the child is principally derived from its own observation of the actions, the words, the voice, the looks, of those with whom it lives.</p>
+      <p>Mrs. Sigourney, briefly:</p>
+      <p>We speak of educating our children; do we know that our children also educate us?</p>
+      <p>On the part a man must do himself, because the tradition never thought schooling was the whole of it. Gibbon:</p>
+      <p>The best and most important part of a man&#x27;s education is that which he gives himself.</p>
+      <p>Daniel Webster:</p>
+      <p>Every man must educate himself; his books and teacher are but helps; the work is his. A man is not educated until he has the ability to summon, in an emergency, his mental powers in vigorous exercise to effect its proposed object.</p>
+      <p>Locke:</p>
+      <p>Education begins the gentleman, but reading, good company, and reflection must finish him.</p>
+      <p>Humboldt:</p>
+      <p>The result of any system of education depends entirely upon the power that a man possesses of applying the influences brought to bear upon him to the ends of self-culture, or whether he allows himself to be moulded by them.</p>
+      <p>Horace Greeley:</p>
+      <p>The world is a seminary; man is our class-book; and the chief business of life is education. We are here to learn and to teach; some of us for both of these purposes, all at least for the former.</p>
+      <p>And Goldsmith, on the length of the horizon:</p>
+      <p>The real object of education is to give children resources that will endure as long as life endures.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>Under Learning, the collections are shorter and sharper. Isocrates:</p>
+      <p>It is no shame for a man to learn that which he knoweth not, of what age soever he be.</p>
+      <p>Sir John Powell:</p>
+      <p>He who has no inclination to learn more, will be very apt to think that he knows enough.</p>
+      <p>Plato:</p>
+      <p>The learning and knowledge that we have is at the most but little compared with that of which we are ignorant.</p>
+      <p>Bacon, on what learning does to a man&#x27;s judgment — and this is the whole of Hebrews in a different key:</p>
+      <p>Learning teaches how to carry things in suspense without prejudice till you resolve.</p>
+      <p>Catherall:</p>
+      <p>The three foundations of learning are seeing much, suffering much, and studying much.</p>
+      <p>George Morris, on learning that is never spent:</p>
+      <p>A man of learning who makes no use of what he knows, is like a cloud which gives no rain.</p>
+      <p>Schuyler Colfax:</p>
+      <p>Learning is wealth to the poor, an honor to the rich, an aid to the young, and a support and comfort to the aged.</p>
+      <p>And Pope Pius the Second, ranking it:</p>
+      <p>Common men should esteem learning as silver, noble men prize it as gold, and princes as jewels.</p>
+      <p>Under Instruction. Noah Webster:</p>
+      <p>The first duty of parents is to instruct their children in the principles of religion, honesty, and morality.</p>
+      <p>John Ralph:</p>
+      <p>Religious instruction is as necessary to children as the air is to the life and health of the natural body.</p>
+      <p>Cicero, dividing the world four ways:</p>
+      <p>The wise are instructed by reason; ordinary minds by experience; the stupid by necessity, and brutes by instinct.</p>
+      <p>Demopholus:</p>
+      <p>The disposition is molded in a happy manner by instruction, as the shapeless material assumes a beautiful form in the hands of a skillful artist.</p>
+      <p>Amelia Opie:</p>
+      <p>No one can be in a more unhappy circumstance, than to have neither an ability to give nor to take instruction.</p>
+      <p>Hosea Ballou, on the size of the classroom:</p>
+      <p>The heavens and the earth, the woods and the wayside, teem with instruction and knowledge to the curious and thoughtful.</p>
+      <p>Under Example — and this is the longest heading in the collections, which tells you something about what the old writers thought actually forms a person. Burke:</p>
+      <p>Is example nothing? It is everything; example is the school of mankind, and they will learn at no other.</p>
+      <p>Rochefoucauld:</p>
+      <p>Nothing is so contagious as example; never was there any considerable good or ill done, that did not produce its like.</p>
+      <p>Andrews Norton:</p>
+      <p>Precept is instruction written in the sand; the tide flows over it and the record is gone; example is graven on the rock, and the lesson is not soon lost.</p>
+      <p>Lord Burleigh:</p>
+      <p>Example is more forcible than precept; people look at my six days in the week, to see what I mean on the seventh.</p>
+      <p>Madame Swetchine:</p>
+      <p>There is a transcendent power in example; we reform others unconsciously when we walk uprightly.</p>
+      <p>Hosea Ballou:</p>
+      <p>No reproof or denunciation is so potent as the silent influence of a good example.</p>
+      <p>Henry Shaw:</p>
+      <p>What the world wants is good examples, not so much advice; advice may be wrong, but examples prove themselves.</p>
+      <p>Christian Bovee:</p>
+      <p>Example has more followers than reason; we unconsciously imitate what pleases us, and insensibly approximate to the characters we most admire. In this way, a generous train of thought and of action carries with it an incalculable influence.</p>
+      <p>Xenophon, on the household:</p>
+      <p>We ought to give good examples to our children, because if they see no uncomeliness, they shall be forced to follow goodness and virtue.</p>
+      <p>Juvenal, on the same household from the other side:</p>
+      <p>Examples of vicious courses practised in a domestic circle corrupt more readily and more deeply when we behold them in persons of authority.</p>
+      <p>John Balguy, and this is the sentence that stings:</p>
+      <p>Whatever parent gives his children good instruction, and sets them at the same time a bad example, may be considered as bringing them food in one hand and poison in the other.</p>
+      <p>Thomas Fuller, with a story:</p>
+      <p>Though the words of the wise be as nails fastened by the masters of the assemblies, yet sure their examples are the hammer to drive them in to take the deeper hold. A father that whipped his son for swearing, and swore himself while he whipped him, did more harm by his example than good by his correction.</p>
+      <p>Francis Quarles:</p>
+      <p>If thou desire to see thy child virtuous, let him not see his father&#x27;s vices; thou canst not rebuke that in children that they behold practised in thee; till reason be ripe, examples direct more than precepts; such as thy behaviour is before thy children&#x27;s faces, such commonly is theirs behind their parents&#x27; backs.</p>
+      <p>And Chatfield, honestly:</p>
+      <p>It is much more easy to imitate bad example than good, because it has our natural inclination on its side.</p>
+      <p>Under Habit, because the tradition believed that formation is finally a matter of what a person does without deciding to. Carlyle:</p>
+      <p>Habit is our primal fundamental law — habit and imitation; there is nothing more perennial in us than these two; they are the source of all working and all apprenticeship, of all practice and all learning, in this world.</p>
+      <p>Horace Mann:</p>
+      <p>Habit is a cable; we weave a thread of it every day, and at last we cannot break it.</p>
+      <p>Jeremy Bentham:</p>
+      <p>As the snow gathers together, so are our habits formed; no single flake that is added to the pile, produces a sensible change.</p>
+      <p>Mrs. Sigourney:</p>
+      <p>Habits, though in their commencement like the filmy line of the spider, trembling at every breeze, may, in the end, prove as links of tempered steel.</p>
+      <p>Ovid:</p>
+      <p>Men are creatures of habit. Learn to unlearn bad habits. Nothing is stronger than habit.</p>
+      <p>Locke:</p>
+      <p>Whosoever introduces habits in children deserves the care and attention of their governors.</p>
+      <p>Robert Rantoul:</p>
+      <p>In early childhood, you may lay the foundation of poverty or riches, industry or idleness, good or evil, by the habits to which you train your children; teach them right habits then, and their future life is safe.</p>
+      <p>Lord Brougham:</p>
+      <p>Make sobriety a habit, and intemperance will be hateful; make prudence a habit, and reckless profligacy will be as contrary as the nature of the child, grown or adult, as the most atrocious crimes are to any of us.</p>
+      <p>Goodrich, on what habits finally are:</p>
+      <p>These intellectual and moral habits form many peculiarities of character, and chiefly distinguish one individual from another; they are, therefore, of the utmost importance.</p>
+      <p>Under Discipline. Seneca:</p>
+      <p>No evil propensity of the human heart is so powerful that it may not be subdued by discipline.</p>
+      <p>Herbert Spencer:</p>
+      <p>A stern discipline pervades all nature, which is a little cruel that it may be very kind.</p>
+      <p>Locke, on how it changes over time — and notice that the direction is toward release:</p>
+      <p>If a strict hand be kept over children from the beginning, they will in that age be tractable; and if as they grow up the rigor be gently relaxed according to their deserts, former discipline will increase their love.</p>
+      <p>Isaac Watts, on why the senses are called the senses of discipline:</p>
+      <p>It is by the assistance of the eye and the ear especially, which are called the senses of discipline, that our minds are furnished with various parts of knowledge.</p>
+      <p>And Hugh Blair, at length, on what discipline is worth:</p>
+      <p>That discipline which corrects the baseness of worldly passions, fortifies the heart with virtuous principles, enlightens the mind with useful knowledge, and furnishes it with enjoyment from within itself, is of more consequence to real felicity, than all the provision we can make of the goods of fortune.</p>
+      <p>We&#x27;re going to take a quick break to let your brain rest for a moment. We&#x27;ll be back in 60 seconds.</p>
+      <p>Welcome back to Vespers. Let&#x27;s get back into a wise and eloquent piety.</p>
+      <p>Under Knowledge, where the collections are careful to distinguish the thing from its counterfeit. Cowper:</p>
+      <p>Knowledge and wisdom, far from being one, have ofttimes no connection. Knowledge dwells in heads replete with thoughts of other men; wisdom in minds attentive to their own.</p>
+      <p>Richard Hooker, on how the one becomes the other:</p>
+      <p>Knowledge imparteth wisdom in the minds of all men, whereby general principles for directing of human actions are comprehended, and conclusions derived from them, upon which conclusions groweth, in particularity, the choice of good and evil.</p>
+      <p>Ray Palmer, sorting motives:</p>
+      <p>If you desire knowledge only to know, it is curiosity; if to be known, it is vanity; but to edify, it is charity; or that you may be edified, it is wisdom.</p>
+      <p>Addison:</p>
+      <p>It is no wonder if a great deal of knowledge, which is not capable of making a man wise, has a natural tendency to make him vain and arrogant.</p>
+      <p>Sydney Smith, evenhandedly:</p>
+      <p>Every increase of knowledge may possibly render depravity more depraved, as well as it may increase the strength of virtue; it is in itself only power; and its value depends on its application.</p>
+      <p>Whately, answering the fear:</p>
+      <p>The dangers of knowledge are not to be compared with the dangers of ignorance. Man is more likely to miss his way in darkness than in twilight; in twilight than in full sun.</p>
+      <p>Leibniz, on the commonplace book without naming it:</p>
+      <p>The knowledge which we have acquired ought not to resemble a great shop without order, and without an inventory; we ought to know what we possess, and be able to make it serve us in need.</p>
+      <p>Felton, on the cost:</p>
+      <p>Knowledge will not be acquired without pains and application. It is troublesome and deep digging for pure waters; but when once you come to the spring, they rise up and meet you.</p>
+      <p>Thomas Sprat, on what it does to the soul that has it:</p>
+      <p>It is the property of all true knowledge, especially spiritual, to enlarge the soul by filling it; to enlarge it without swelling it: to make it more capable, and more earnest to know the more it knows.</p>
+      <p>Bacon, on what knowledge is for — and the figure is a marriage:</p>
+      <p>Knowledge may not be as a courtesan for pleasure and vanity only; or as a bondswoman, to acquire and gain for her master&#x27;s use; but as a spouse, for generation, fruit, and comfort.</p>
+      <p>Bernard of Clairvaux, drawing the line where the tradition always drew it:</p>
+      <p>Knowledge that terminates in curiosity and speculation is inferior to that which is useful; and of all useful knowledge that is the most so which consists in a due care and just notion of ourselves.</p>
+      <p>And George Horne, on the bee:</p>
+      <p>There is no kind of knowledge which, in the hands of the diligent and skillful, will not turn to account. Honey exudes from all flowers, the bitter not excepted; and the bee knows how to extract it.</p>
+      <p>And last, under Children and under Home, because every writer we have read tonight assumed that the house is where this happens and the school only continues it. Elihu Burritt:</p>
+      <p>Be ever gentle with the children God has given you; watch over them constantly; reprove them earnestly, but not in anger.</p>
+      <p>Mrs. Oliphant:</p>
+      <p>Truly there is nothing in the world so blessed or so sweet as the heritage of children.</p>
+      <p>Epictetus:</p>
+      <p>Who is not attracted by bright and pleasant children, to prattle, to creep, and to play with them?</p>
+      <p>Thomas Higginson:</p>
+      <p>If I were to choose among all gifts and qualities that which, on the whole, makes life pleasantest, I should select the love of children.</p>
+      <p>Mrs. Sigourney, on the house as a public institution:</p>
+      <p>The strength of a nation, especially of a republican nation, is in the intelligent and well-ordered homes of the people.</p>
+      <p>Edwin Chapin:</p>
+      <p>There is no happiness in life, there is no misery, like that growing out of the dispositions which consecrate or desecrate a home.</p>
+      <p>Henry Ward Beecher:</p>
+      <p>Any feeling that takes a man away from his home is a traitor to the household; home should be the centre of joy.</p>
+      <p>And an anonymous line the collection prints without an author, which will serve as well as any summary of the evening:</p>
+      <p>A well-regulated home is a millennium on a small scale.</p>
+      <p>So the formula, once more, and then we are done. Piety, wise and eloquent. Wisdom, which Augustine said a man has in proportion as he has understood, and not merely remembered, the Scriptures. Eloquence, which the rhetoricians themselves confessed is an injury when it comes without wisdom and a great service when it comes with it. And piety — which in the old Latin never meant a private warmth, but the rendering of what is owed: to God first, and after God to parents, and after parents to the place a man has been set in.</p>
+      <p>Erasmus said the sooner it is done, the better will it come to pass. Milton said the end of learning is to repair the ruins of our first parents. Luther said it is not many books or much reading that makes men learned, but good things, however little of them, often read. And the writer to the Hebrews said that the mature are those who by reason of use have their senses exercised.</p>
+      <p>By reason of use. Not by sudden flight.</p>
+      <p>Which is where Longfellow leaves us, in a poem he named for the man we began with.</p>
+      <p>&quot;The Ladder of Saint Augustine,&quot; by Henry Wadsworth Longfellow.</p>
+      <p>Saint Augustine! well hast thou said,
+That of our vices we can frame
+A ladder, if we will but tread
+Beneath our feet each deed of shame!</p>
+      <p>All common things, each day&#x27;s events,
+That with the hour begin and end,
+Our pleasures and our discontents,
+Are rounds by which we may ascend.</p>
+      <p>The low desire, the base design,
+That makes another&#x27;s virtues less;
+The revel of the ruddy wine,
+And all occasions of excess;</p>
+      <p>The longing for ignoble things;
+The strife for triumph more than truth;
+The hardening of the heart, that brings
+Irreverence for the dreams of youth;</p>
+      <p>All thoughts of ill; all evil deeds,
+That have their root in thoughts of ill;
+Whatever hinders or impedes
+The action of the nobler will;</p>
+      <p>All these must first be trampled down
+Beneath our feet, if we would gain
+In the bright fields of fair renown
+The right of eminent domain.</p>
+      <p>We have not wings, we cannot soar;
+But we have feet to scale and climb
+By slow degrees, by more and more,
+The cloudy summits of our time.</p>
+      <p>The mighty pyramids of stone
+That wedge-like cleave the desert airs,
+When nearer seen, and better known,
+Are but gigantic flights of stairs.</p>
+      <p>The distant mountains, that uprear
+Their solid bastions to the skies,
+Are crossed by pathways, that appear
+As we to higher levels rise.</p>
+      <p>The heights by great men reached and kept
+Were not attained by sudden flight,
+But they, while their companions slept,
+Were toiling upward in the night.</p>
+      <p>Standing on what too long we bore
+With shoulders bent and downcast eyes,
+We may discern — unseen before —
+A path to higher destinies.</p>
+      <p>Nor deem the irrevocable Past,
+As wholly wasted, wholly vain,
+If, rising on its wrecks, at last
+To something nobler we attain.</p>
+      <p>By slow degrees, by more and more. There is no hurry tonight, and there was never meant to be.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>
