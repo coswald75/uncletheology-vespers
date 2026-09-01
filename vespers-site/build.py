@@ -413,6 +413,69 @@ EPISODES = [
         ],
     },
     {
+        "slug": "to-obey-is-better-than-sacrifice",
+        "idea": "To Obey Is Better Than Sacrifice",
+        "lane": "The Scriptures",
+        "day": "Monday",
+        "date_display": "August 24, 2026",
+        "sub": "The Scriptures · Saul — the king who could not wait, and would not let go",
+        "duration": "36 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/to-obey-is-better-than-sacrifice.mp3",
+        "length": 51541438,
+        "lede": "Last week Israel demanded a king; tonight, the man who was that grant — Saul, in three "
+                "scenes: the sacrifice he could not wait to offer, the command he would not fully "
+                "keep (“to obey is better than sacrifice”), and the song he could not bear to hear "
+                "(“Saul hath slain his thousands, and David his ten thousands”). The old writers on "
+                "obedience and on envy, from Gilgal to the spear, closing on Herbert's “Obedience.”",
+        "body": [
+            "A companion to last week's “he gave them their request.” Israel got the king it asked "
+            "for — “higher than any of the people from his shoulders and upward” — and the reign "
+            "turns on three failures of the open hand. Gilgal: told to wait seven days, Saul "
+            "“forced myself” and offered the burnt offering, as if obedience were the compulsion. "
+            "Amalek: told to “utterly destroy,” he spared the best “to sacrifice unto the LORD,” "
+            "and Samuel weighs the scales in public — “to obey is better than sacrifice… for "
+            "rebellion is as the sin of witchcraft.” The old expositors on why the small act was "
+            "judged so hard (“in obedience he offers his own will”), and the line echoing down "
+            "through Psalm 51, Hosea, Micah, and Christ's “I will have mercy, and not sacrifice.”",
+            "Then Saul's most revealing confession — “I feared the people, and obeyed their voice”: "
+            "the king demanded because they wanted to be like the nations turns out to be governed "
+            "by the nations' voice. Even his repentance reaches for the throne — “yet honour me now "
+            "before the elders.” Gene Edwards' question, “do you want anything God does not want "
+            "you to have?” — Saul's ruin was not wanting the throne but refusing to open his hand "
+            "when God took it back. David anointed while Saul still reigns (“the LORD looketh on "
+            "the heart”), the women's song, and the spear — thrown first at David, at last at his "
+            "own son Jonathan, the very heir the throne was being grasped for. The moralists on "
+            "envy and ambition (“Saul stopped is Saul venomous”), Watson on “golden obedience,” "
+            "and Herbert's deed of conveyance, “Obedience.”",
+        ],
+        "walk": [
+            ("1 Samuel 10 & 13", "Scripture · KJV",
+             "The king “higher than any of the people”; and Gilgal — “I forced myself therefore, "
+             "and offered a burnt offering,” the waiting he could not do."),
+            ("1 Samuel 15 · Amalek", "Scripture · KJV",
+             "The best spared “to sacrifice unto the LORD” — and Samuel's verdict, “to obey is "
+             "better than sacrifice… rebellion is as the sin of witchcraft.”"),
+            ("Psalm 51 · Hosea 6 · Micah 6 · Matthew 9", "Scripture · KJV",
+             "The line echoing down — “thou desirest not sacrifice”; “I desired mercy, and not "
+             "sacrifice”; “I will have mercy, and not sacrifice.”"),
+            ("Poole · Calvin · Berleburg Bible", "public domain",
+             "Why the small act was judged so hard — “in obedience he offers his own will,” the "
+             "one thing Saul kept back."),
+            ("1 Samuel 15–16", "Scripture · KJV",
+             "“I feared the people, and obeyed their voice”; the repentance that reaches for the "
+             "throne; and “the LORD looketh on the heart.”"),
+            ("1 Samuel 18 · the song & the spear", "Scripture · KJV",
+             "“Saul hath slain his thousands, and David his ten thousands” — the eye that never "
+             "looked pleasantly again, and the javelin."),
+            ("The moralists on envy · Bacon", "commonplace books · PD",
+             "Envy “the perpetual tormentor of virtue”; ambition “stopped… becometh fiery and "
+             "thereby malign and venomous” — Saul stopped is Saul venomous."),
+            ("Thomas Watson · George Herbert", "public domain",
+             "“Golden obedience”; and Herbert's deed of conveyance, “Obedience” — “resigning up "
+             "the rudder to thy skill.”"),
+        ],
+    },
+    {
         "slug": "father-mapples-sermon",
         "idea": "Father Mapple's Sermon",
         "lane": "Fiction's Most Famous Passages",
