@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Ought to Be Thy Adam — Vespers</title>
+<meta name="description" content="Frankenstein, entire at its center — the creature bounding across the glacier to confront the maker who fled him: “Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel.” The most serious question in the book, put by a creation to a creator with no answer — and the answer the tradition already had, from Job and Isaiah to Herbert&#x27;s “The Pulley.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/i-ought-to-be-thy-adam">
+<meta property="og:type" content="website">
+<meta property="og:title" content="I Ought to Be Thy Adam — Vespers">
+<meta property="og:description" content="Frankenstein, entire at its center — the creature bounding across the glacier to confront the maker who fled him: “Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel.” The most serious question in the book, put by a creation to a creator with no answer — and the answer the tradition already had, from Job and Isaiah to Herbert&#x27;s “The Pulley.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/i-ought-to-be-thy-adam">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Fiction&#x27;s Most Famous Passages · Friday · August 28, 2026</div>
+      <h1 class="ep-title">I Ought to Be Thy Adam</h1>
+      <div class="ep-sub ui">Fiction&#x27;s Most Famous Passages · Shelley — the creature&#x27;s arraignment of his maker on the sea of ice<span class="dot">·</span>34 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/i-ought-to-be-thy-adam.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Frankenstein, entire at its center — the creature bounding across the glacier to confront the maker who fled him: “Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel.” The most serious question in the book, put by a creation to a creator with no answer — and the answer the tradition already had, from Job and Isaiah to Herbert&#x27;s “The Pulley.”</p>
+    <div class="ep-body">
+    <p>From Mary Shelley&#x27;s 1818 novel, the meeting on the sea of ice. Victor Frankenstein, who discovered how to bestow life and fled the room the moment his creature opened its eyes, is confronted on the glacier by the being he abandoned: eight feet tall, self-taught, driven off with stones by everyone he has met. The creature&#x27;s plea is an arraignment — “thou art bound to me by ties only dissoluble by the annihilation of one of us… I ought to be thy Adam, but I am rather the fallen angel, whom thou drivest from joy for no misdeed.” And the sentence that indicts Victor from his own mouth: “For the first time, also, I felt what the duties of a creator towards his creature were.”</p>
+    <p>Then the passage turned over. The creature learned to speak from Paradise Lost, found in the snow and read “as a true history,” so he arraigns his maker in Scripture&#x27;s own words. Job says the same — “Thine hands have made me… yet thou dost destroy me” — but adds what the creature cannot: “thy visitation hath preserved my spirit.” The difference is the whole difference: God did not rest from creation until man was made, did not flee the garden, came calling “Where art thou?” and clothed them. Victor wanted the power of a maker without the office. Isaiah&#x27;s “woe unto him that striveth with his Maker” protects the Potter, not a man who plays at being one — “the Modern Prometheus, not the modern Jehovah.” Closing on Isaiah&#x27;s “I have graven thee upon the palms of my hands,” the Maker who entered His own laboratory, and Herbert&#x27;s “The Pulley”: restlessness kept back in mercy, to toss the creature to His breast.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Shelley · Frankenstein, ch. 10<span class="walk-cite ui">1818/1831 · public domain</span></div>
+        <div class="walk-note">The creature&#x27;s plea on the sea of ice — “I ought to be thy Adam, but I am rather the fallen angel.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Milton · Paradise Lost<span class="walk-cite ui">the 1818 epigraph</span></div>
+        <div class="walk-note">Fallen Adam&#x27;s question to God — “Did I request thee, Maker, from my clay to mould me man?” — the whole novel in one line.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Genesis 1–3<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The Maker who would not rest till man was made, did not flee the garden, and came calling “Where art thou?” — and clothed them.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Job 10<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Thine hands have made me… yet thou dost destroy me” — the creature&#x27;s own words, but with what he lacked: “thy visitation hath preserved my spirit.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Isaiah 45 · Romans 9<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“Woe unto him that striveth with his Maker” — the potter&#x27;s right over the clay, which belongs to the Potter, not to a man who plays at being one.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Arthur Pink · Thomas Brooks<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">The sovereignty that makes creation right because it is His; and ambition “turning medicines into maladies” — Victor&#x27;s biography in four words.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Isaiah 49 · Psalm 27<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“I have graven thee upon the palms of my hands”; “when my father and my mother forsake me, then the LORD will take me up.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">George Herbert · “The Pulley”<span class="walk-cite ui">1633</span></div>
+        <div class="walk-note">Restlessness kept back in mercy — “If goodness lead him not, yet weariness may toss him to my breast.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the creature&#x27;s plea to Victor Frankenstein on the sea of ice — I ought to be thy Adam.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Mary Wollstonecraft Shelley was the daughter of two famous radicals — the philosopher William Godwin and Mary Wollstonecraft, who wrote in defense of the rights of woman and died days after giving birth to her. In 1816 she married the poet Percy Bysshe Shelley. And in 1818, still only twenty years old, she published a novel, anonymously, dedicated to her father: Frankenstein; or, The Modern Prometheus.</p>
+      <p>The preface to that first edition tells where it came from. The author passed the summer of 1816 in the environs of Geneva. The season was cold and rainy, and in the evenings the company crowded around a blazing wood fire and amused themselves with German ghost stories. The tales excited a playful desire of imitation, and three of the party agreed to each write a story founded on some supernatural occurrence. Then the weather turned serene, the others wandered off into the Alps and forgot their ghosts, and — the preface says — the following tale is the only one which was completed.</p>
+      <p>What she completed has never left the language. Within the century an encyclopedia was carrying the monster as his own entry, defining him as a creature made without a soul yet craving human sympathy, who found existence on those terms a curse. Frankenstein is one of the few novels whose name became a common noun. But the book most people know secondhand is stranger and more serious than its reputation: it is a book about creation, and it keeps its Scripture on the front porch. On the title page of 1818 stands a question out of Milton&#x27;s Paradise Lost, fallen Adam&#x27;s question to God — and the whole novel is that question, put by a creature to a maker who has no answer.</p>
+      <p>Here is where we take it up. Victor Frankenstein, a young student of natural philosophy at Ingolstadt, has discovered the secret of bestowing life, and has made a man — eight feet tall, hideous, assembled and animated in secret. The moment it opened its eyes he fled the room in horror, and he has been fleeing it ever since. The creature, abandoned, has educated himself in hiding, been driven off with stones by every human being who has seen him, and has murdered Victor&#x27;s youngest brother. Now Victor, half mad with grief, has gone up alone into the Alps, onto the great glacier below Mont Blanc called the sea of ice.</p>
+      <p>First, the epigraph of 1818. From Milton, Paradise Lost:</p>
+      <p>Did I request thee, Maker, from my clay to mould me man? Did I solicit thee from darkness to promote me?</p>
+      <p>And now the passage. From Mary Shelley, on the sea of ice:</p>
+      <p>I remained in a recess of the rock, gazing on this wonderful and stupendous scene. The sea, or rather the vast river of ice, wound among its dependent mountains, whose aerial summits hung over its recesses. Their icy and glittering peaks shone in the sunlight over the clouds. My heart, which was before sorrowful, now swelled with something like joy; I exclaimed, &quot;Wandering spirits, if indeed ye wander, and do not rest in your narrow beds, allow me this faint happiness, or take me, as your companion, away from the joys of life.&quot;</p>
+      <p>As I said this I suddenly beheld the figure of a man, at some distance, advancing towards me with superhuman speed. He bounded over the crevices in the ice, among which I had walked with caution; his stature, also, as he approached, seemed to exceed that of man. I was troubled; a mist came over my eyes, and I felt a faintness seize me, but I was quickly restored by the cold gale of the mountains.</p>
+      <p>She goes on:</p>
+      <p>I perceived, as the shape came nearer (sight tremendous and abhorred!) that it was the wretch whom I had created. I trembled with rage and horror, resolving to wait his approach and then close with him in mortal combat. He approached; his countenance bespoke bitter anguish, combined with disdain and malignity, while its unearthly ugliness rendered it almost too horrible for human eyes. But I scarcely observed this; rage and hatred had at first deprived me of utterance, and I recovered only to overwhelm him with words expressive of furious detestation and contempt.</p>
+      <p>&quot;Devil,&quot; I exclaimed, &quot;do you dare approach me? And do not you fear the fierce vengeance of my arm wreaked on your miserable head? Begone, vile insect! Or rather, stay, that I may trample you to dust! And, oh! That I could, with the extinction of your miserable existence, restore those victims whom you have so diabolically murdered!&quot;</p>
+      <p>The creature answers:</p>
+      <p>&quot;I expected this reception,&quot; said the daemon. &quot;All men hate the wretched; how, then, must I be hated, who am miserable beyond all living things! Yet you, my creator, detest and spurn me, thy creature, to whom thou art bound by ties only dissoluble by the annihilation of one of us. You purpose to kill me. How dare you sport thus with life? Do your duty towards me, and I will do mine towards you and the rest of mankind. If you will comply with my conditions, I will leave them and you at peace; but if you refuse, I will glut the maw of death, until it be satiated with the blood of your remaining friends.&quot;</p>
+      <p>&quot;Abhorred monster! Fiend that thou art! The tortures of hell are too mild a vengeance for thy crimes. Wretched devil! You reproach me with your creation, come on, then, that I may extinguish the spark which I so negligently bestowed.&quot;</p>
+      <p>My rage was without bounds; I sprang on him, impelled by all the feelings which can arm one being against the existence of another.</p>
+      <p>He easily eluded me and said,</p>
+      <p>&quot;Be calm! I entreat you to hear me before you give vent to your hatred on my devoted head. Have I not suffered enough, that you seek to increase my misery? Life, although it may only be an accumulation of anguish, is dear to me, and I will defend it. Remember, thou hast made me more powerful than thyself; my height is superior to thine, my joints more supple. But I will not be tempted to set myself in opposition to thee.&quot;</p>
+      <p>He goes on:</p>
+      <p>&quot;I am thy creature, and I will be even mild and docile to my natural lord and king if thou wilt also perform thy part, the which thou owest me. Oh, Frankenstein, be not equitable to every other and trample upon me alone, to whom thy justice, and even thy clemency and affection, is most due. Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel, whom thou drivest from joy for no misdeed. Everywhere I see bliss, from which I alone am irrevocably excluded. I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.&quot;</p>
+      <p>&quot;Begone! I will not hear you. There can be no community between you and me; we are enemies. Begone, or let us try our strength in a fight, in which one must fall.&quot;</p>
+      <p>The creature again:</p>
+      <p>&quot;How can I move thee? Will no entreaties cause thee to turn a favourable eye upon thy creature, who implores thy goodness and compassion? Believe me, Frankenstein, I was benevolent; my soul glowed with love and humanity; but am I not alone, miserably alone? You, my creator, abhor me; what hope can I gather from your fellow creatures, who owe me nothing? They spurn and hate me. The desert mountains and dreary glaciers are my refuge. I have wandered here many days; the caves of ice, which I only do not fear, are a dwelling to me, and the only one which man does not grudge. These bleak skies I hail, for they are kinder to me than your fellow beings.&quot;</p>
+      <p>He goes on:</p>
+      <p>&quot;If the multitude of mankind knew of my existence, they would do as you do, and arm themselves for my destruction. Shall I not then hate them who abhor me? I will keep no terms with my enemies. I am miserable, and they shall share my wretchedness. Yet it is in your power to recompense me, and deliver them from an evil which it only remains for you to make so great, that not only you and your family, but thousands of others, shall be swallowed up in the whirlwinds of its rage. Let your compassion be moved, and do not disdain me. Listen to my tale; when you have heard that, abandon or commiserate me, as you shall judge that I deserve. But hear me. The guilty are allowed, by human laws, bloody as they are, to speak in their own defence before they are condemned. Listen to me, Frankenstein. You accuse me of murder, and yet you would, with a satisfied conscience, destroy your own creature. Oh, praise the eternal justice of man! Yet I ask you not to spare me; listen to me, and then, if you can, and if you will, destroy the work of your hands.&quot;</p>
+      <p>Frankenstein answers:</p>
+      <p>&quot;Why do you call to my remembrance,&quot; I rejoined, &quot;circumstances of which I shudder to reflect, that I have been the miserable origin and author? Cursed be the day, abhorred devil, in which you first saw light! Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.&quot;</p>
+      <p>She goes on:</p>
+      <p>&quot;Thus I relieve thee, my creator,&quot; he said, and placed his hated hands before my eyes, which I flung from me with violence; &quot;thus I take from thee a sight which you abhor. Still thou canst listen to me and grant me thy compassion. By the virtues that I once possessed, I demand this from you. Hear my tale; it is long and strange, and the temperature of this place is not fitting to your fine sensations; come to the hut upon the mountain. The sun is yet high in the heavens; before it descends to hide itself behind your snowy precipices and illuminate another world, you will have heard my story and can decide. On you it rests, whether I quit for ever the neighbourhood of man and lead a harmless life, or become the scourge of your fellow creatures and the author of your own speedy ruin.&quot;</p>
+      <p>As he said this he led the way across the ice; I followed. My heart was full, and I did not answer him, but as I proceeded, I weighed the various arguments that he had used and determined at least to listen to his tale. I was partly urged by curiosity, and compassion confirmed my resolution. I had hitherto supposed him to be the murderer of my brother, and I eagerly sought a confirmation or denial of this opinion. For the first time, also, I felt what the duties of a creator towards his creature were, and that I ought to render him happy before I complained of his wickedness. These motives urged me to comply with his demand. We crossed the ice, therefore, and ascended the opposite rock. The air was cold, and the rain again began to descend; we entered the hut, the fiend with an air of exultation, I with a heavy heart and depressed spirits. But I consented to listen, and seating myself by the fire which my odious companion had lighted, he thus began his tale.</p>
+      <p>So ends the meeting on the ice. Now let us turn the passage over.</p>
+      <p>Notice first where the creature learned to talk. He was abandoned in the hour of his making; nobody taught him anything. Hiding in a hovel, he found three books in the snow, and one of them was Paradise Lost, and he read it as a true history. So when he finally stands before his maker, every word he says is borrowed from Scripture at one remove. I am thy creature. Thou hast made me. Destroy the work of your hands. He speaks like a man who has read Genesis and Job, because he has read the poem that is soaked in both.</p>
+      <p>From the book of Genesis:</p>
+      <p>And the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.</p>
+      <p>And from the book of Job, a man arguing with his Maker in almost the creature&#x27;s own words:</p>
+      <p>Thine hands have made me and fashioned me together round about; yet thou dost destroy me. Remember, I beseech thee, that thou hast made me as the clay; and wilt thou bring me into dust again? Hast thou not poured me out as milk, and curdled me like cheese? Thou hast clothed me with skin and flesh, and hast fenced me with bones and sinews. Thou hast granted me life and favour, and thy visitation hath preserved my spirit.</p>
+      <p>Thou hast granted me life and favour. There is the difference, and it is the whole difference. Job can say to his Maker: thy visitation hath preserved my spirit. The creature can say nothing of the kind, because there was no favour and there was no visitation. Job&#x27;s complaint is that a good God seems for a season to be acting out of character. The creature&#x27;s complaint is that his god has no character to act out of — that he was made on a whim, in secret, out of ambition, and deserted before his first day was over.</p>
+      <p>Set the two creations side by side. From the first chapter of Genesis:</p>
+      <p>So God created man in his own image, in the image of God created he him; male and female created he them.</p>
+      <p>And when the making was done, God looked at what He had made, and behold, it was very good. The Puritan Arrowsmith puts it this way:</p>
+      <p>God would not rest from the work of creation until man was formed.</p>
+      <p>Man was not an experiment God walked away from. He was the point — the work God would not rest without. And having formed him, God did not flee the garden. He planted it, placed the man in it, gave him a calling, gave him a wife, and walked there in the cool of the day. Even when the creature rebelled — and in Genesis it is the creature who abandons the Creator, not the other way around — God came looking, calling, Where art thou? And before He sent them out, He clothed them.</p>
+      <p>Now Victor. The night his creature first opened its eyes, Victor ran from the room. He gave it no name — to this day most people think Frankenstein is the monster&#x27;s name, and there is a rough justice in the error, for the only name the creature ever inherited was his negligent father&#x27;s. He gave it no Eden, no calling, no companion, no law, no covenant. And on the glacier, eight chapters of misery later, comes the sentence that quietly indicts him out of his own mouth: For the first time, also, I felt what the duties of a creator towards his creature were. For the first time. The thought had never once occurred to him — not in the years of assembling his man, not in the hour of animating him. He wanted the power of a creator without the office of one. He wanted to make, and not to owe.</p>
+      <p>But wait, someone says. Doesn&#x27;t Scripture say the clay has no standing to complain at all? From the prophet Isaiah:</p>
+      <p>Woe unto him that striveth with his Maker! Let the potsherd strive with the potsherds of the earth. Shall the clay say to him that fashioneth it, What makest thou? or thy work, He hath no hands?</p>
+      <p>And Paul, in the letter to the Romans:</p>
+      <p>Nay but, O man, who art thou that repliest against God? Shall the thing formed say to him that formed it, Why hast thou made me thus? Hath not the potter power over the clay, of the same lump to make one vessel unto honour, and another unto dishonour?</p>
+      <p>If the potter owes the clay nothing, has the creature no case even against Victor? Here we must be careful, and the old Calvinist Arthur Pink, writing on the sovereignty of God, is careful in exactly the right place. He says:</p>
+      <p>God did not place Adam upon a footing of conditional, creature responsibility, because it was right He should so place him. No, it was right because God did it. God did not even give creatures being because it was right for Him to do so — because He was under any obligations to create; but it was right because He did so. God is sovereign.</p>
+      <p>The potter&#x27;s rights over the clay belong to the potter — to the One who is Himself goodness, wisdom, and justice, whose making is therefore right because it is His. Victor is not the potter. He is clay that got its hands on clay. A creature who seizes the office of creator takes on the duties of one without the nature that could bear them — infinite patience, infinite provision, infinite presence. That is why the creature&#x27;s arraignment lands on Victor and would die on the lips before God. Isaiah&#x27;s woe is for the clay that strives with its Maker; it says nothing to protect a man who plays at being one. The novel&#x27;s subtitle already told us this: The Modern Prometheus. Not the modern Jehovah. A thief of fire, not a father of lights.</p>
+      <p>The creature himself knows the difference between his maker and the Maker. Listen to him describe his reading. From Mary Shelley, the creature speaking:</p>
+      <p>But Paradise Lost excited different and far deeper emotions. I read it, as I had read the other volumes which had fallen into my hands, as a true history. It moved every feeling of wonder and awe that the picture of an omnipotent God warring with his creatures was capable of exciting. I often referred the several situations, as their similarity struck me, to my own. Like Adam, I was apparently united by no link to any other being in existence; but his state was far different from mine in every other respect. He had come forth from the hands of God a perfect creature, happy and prosperous, guarded by the especial care of his Creator; he was allowed to converse with and acquire knowledge from beings of a superior nature, but I was wretched, helpless, and alone. Many times I considered Satan as the fitter emblem of my condition, for often, like him, when I viewed the bliss of my protectors, the bitter gall of envy rose within me.</p>
+      <p>He goes on, having found his maker&#x27;s laboratory journal in the pocket of a stolen coat:</p>
+      <p>I sickened as I read. &quot;Hateful day when I received life!&quot; I exclaimed in agony. &quot;Accursed creator! Why did you form a monster so hideous that even you turned from me in disgust? God, in pity, made man beautiful and alluring, after his own image; but my form is a filthy type of yours, more horrid even from the very resemblance. Satan had his companions, fellow devils, to admire and encourage him, but I am solitary and abhorred.&quot;</p>
+      <p>God, in pity, made man after his own image. The creature is the best theologian in the novel. He has read one poem and grasped what his maker, with all his natural philosophy, never did: that to be a creature of God is to be guarded by especial care, and that the horror of his own condition is not his ugliness but his abandonment. Adam had a Maker who stayed. Satan had companions in his fall. He has neither — beneath the fallen angel, because even hell keeps company.</p>
+      <p>Solitude is the creature&#x27;s true element — the glaciers, the caves of ice, the bleak skies kinder than faces. The psalmist knows the register. From the hundred and second psalm:</p>
+      <p>I am like a pelican of the wilderness: I am like an owl of the desert. I watch, and am as a sparrow alone upon the house top.</p>
+      <p>The Scottish poet John Stuart Blackie thought solitude could be a kindness — converse with men makes sharp the glittering wit, but God to man doth speak in solitude. But that is solitude with God in it. Byron, in Childe Harold, wrote the darker ache — to be midst the crowd, the hum, the shock of men, with none who bless us, none whom we can bless:</p>
+      <p>This is to be alone; this, this is solitude!</p>
+      <p>And the creature&#x27;s particular solitude — the solitude of the abandoned child — has its own verse. From the twenty-seventh psalm:</p>
+      <p>When my father and my mother forsake me, then the LORD will take me up.</p>
+      <p>That is the verse the creature needed and never found; his three books held Paradise Lost but no psalter. The orphan in Israel had somewhere to carry the complaint. When the nearest thing he had to a father forsook him, there was no one left to take him up, and he tells us plainly what grew in the vacancy: I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.</p>
+      <p>Hold that sentence up to the light, because the novel itself does. It is half true, and the half matters. True: those who should have loved him sinned against him first — his misery is real, and real injustice made it. False: that virtue is only happiness with good weather, that wickedness is manufactured entirely from without. By the end even he stops pleading it. Scripture would say of him what it says of us all: wronged, truly — and truly wicked; sinned against, and sinning. The creature wants to be either Adam or the fallen angel, innocent or driven. The Bible&#x27;s answer is that every son of Adam is both at once — and that being sinned against, even monstrously, has never yet made one soul clean.</p>
+      <p>And what of the maker&#x27;s sin? Call it by its old name. Victor did not stumble into his laboratory; he was driven, in his own words, by the dream that a new species would bless me as its creator and source; many happy and excellent natures would owe their being to me. Thomas Brooks, the Puritan, has the anatomy of it:</p>
+      <p>Ambition is a gilded misery, a secret poison, a hidden plague, the engineer of deceit, the mother of hypocrisy, the parent of envy, the original of vices, the moth of holiness, the blinder of hearts, turning medicines into maladies, and remedies into diseases. High seats are never but uneasy, and crowns are always stuffed with thorns.</p>
+      <p>Turning medicines into maladies — Victor&#x27;s whole biography in four words. And the old encyclopedia entry that fixed the creature in the common mind saw the same thing from the other side. The Nuttall Encyclopaedia, defining Frankenstein&#x27;s monster:</p>
+      <p>A monster of romance created without a soul, yet not without craving for human sympathy, who found existence on these terms a curse, as a man with high cravings might find science to be without God.</p>
+      <p>Science without God, said the encyclopedist; a soul&#x27;s cravings with no one above to answer them. That is the creature&#x27;s condition — and, come to think of it, his maker&#x27;s.</p>
+      <p>Follow the story to its last room. Victor pursues his creature to the frozen north and dies on the ship that finds him. The creature comes aboard by night and stands over the body. From Mary Shelley, near the end, the creature speaking over his dead maker:</p>
+      <p>Once my fancy was soothed with dreams of virtue, of fame, and of enjoyment. Once I falsely hoped to meet with beings who, pardoning my outward form, would love me for the excellent qualities which I was capable of unfolding. I was nourished with high thoughts of honour and devotion. But now crime has degraded me beneath the meanest animal. No guilt, no mischief, no malignity, no misery, can be found comparable to mine. When I run over the frightful catalogue of my sins, I cannot believe that I am the same creature whose thoughts were once filled with sublime and transcendent visions of the beauty and the majesty of goodness. But it is even so; the fallen angel becomes a malignant devil. Yet even that enemy of God and man had friends and associates in his desolation; I am alone.</p>
+      <p>So the novel ends where it began: a creature and a maker, and between them a debt no one can pay. Mary Shelley wrote the question and had the honesty not to invent an answer. But the question has an answer, and it was old before she asked it. The creature&#x27;s charge was: you made me and then you left me. Hear what the true Maker says to that charge. From the prophet Isaiah:</p>
+      <p>Can a woman forget her sucking child, that she should not have compassion on the son of her womb? yea, they may forget, yet will I not forget thee. Behold, I have graven thee upon the palms of my hands; thy walls are continually before me.</p>
+      <p>Graven upon the palms of his hands. The creature begged his maker to look at the work of his hands and could not get him to bear the sight; our Maker carries His work engraved where He cannot look away. And more than that. The Christian claim is not merely that God, having made us, stayed in the room. It is that when His creatures became hideous — when we became the horror in the story, the thing that murders the innocent and blames its miseries — the Maker did not flee the laboratory. He entered it. He took the clay upon Himself, was born of the forsaken family of Adam, was despised and rejected of men, driven outside the city as the creature was driven from every door — and the gravings in those palms were made by nails. Where Victor cried, Begone, I will not hear you, our Creator says, Come; and him that cometh to me I will in no wise cast out.</p>
+      <p>But now, O LORD, thou art our father — Isaiah again — we are the clay, and thou our potter; and we all are the work of thy hand.</p>
+      <p>Augustine said it in a sentence at the head of his Confessions: Thou madest us for Thyself, and our heart is restless, until it repose in Thee.</p>
+      <p>The restlessness itself, then, is not the curse the creature thought it was. An old poem says it is a cord — that the one blessing God kept back was kept back in mercy, to draw the creature home. Our close tonight. From George Herbert, The Pulley:</p>
+      <p>When God at first made man,
+Having a glass of blessings standing by,
+Let us, said he, pour on him all we can:
+Let the world&#x27;s riches, which dispersed lie,
+Contract into a span.</p>
+      <p>So strength first made a way;
+Then beauty flowed, then wisdom, honour, pleasure:
+When almost all was out, God made a stay,
+Perceiving that alone of all his treasure
+Rest in the bottom lay.</p>
+      <p>For if I should, said he,
+Bestow this jewel also on my creature,
+He would adore my gifts instead of me,
+And rest in Nature, not the God of Nature:
+So both should losers be.</p>
+      <p>Yet let him keep the rest,
+But keep them with repining restlessness:
+Let him be rich and weary, that at least,
+If goodness lead him not, yet weariness
+May toss him to my breast.</p>
+      <p>May you be found tonight not striving with your Maker but resting in Him — the Potter whose right over the clay is goodness all the way down, and whose hands bear the marks of what it cost to keep His work.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

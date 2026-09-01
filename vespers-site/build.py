@@ -100,6 +100,69 @@ EPISODES = [
         ],
     },
     {
+        "slug": "i-ought-to-be-thy-adam",
+        "idea": "I Ought to Be Thy Adam",
+        "lane": "Fiction's Most Famous Passages",
+        "day": "Friday",
+        "date_display": "August 28, 2026",
+        "sub": "Fiction's Most Famous Passages · Shelley — the creature's arraignment of his maker on the sea of ice",
+        "duration": "34 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/i-ought-to-be-thy-adam.mp3",
+        "length": 49606115,
+        "lede": "Frankenstein, entire at its center — the creature bounding across the glacier to "
+                "confront the maker who fled him: “Remember that I am thy creature; I ought to be thy "
+                "Adam, but I am rather the fallen angel.” The most serious question in the book, put "
+                "by a creation to a creator with no answer — and the answer the tradition already "
+                "had, from Job and Isaiah to Herbert's “The Pulley.”",
+        "body": [
+            "From Mary Shelley's 1818 novel, the meeting on the sea of ice. Victor Frankenstein, who "
+            "discovered how to bestow life and fled the room the moment his creature opened its "
+            "eyes, is confronted on the glacier by the being he abandoned: eight feet tall, "
+            "self-taught, driven off with stones by everyone he has met. The creature's plea is an "
+            "arraignment — “thou art bound to me by ties only dissoluble by the annihilation of one "
+            "of us… I ought to be thy Adam, but I am rather the fallen angel, whom thou drivest from "
+            "joy for no misdeed.” And the sentence that indicts Victor from his own mouth: “For the "
+            "first time, also, I felt what the duties of a creator towards his creature were.”",
+            "Then the passage turned over. The creature learned to speak from Paradise Lost, found "
+            "in the snow and read “as a true history,” so he arraigns his maker in Scripture's own "
+            "words. Job says the same — “Thine hands have made me… yet thou dost destroy me” — but "
+            "adds what the creature cannot: “thy visitation hath preserved my spirit.” The "
+            "difference is the whole difference: God did not rest from creation until man was made, "
+            "did not flee the garden, came calling “Where art thou?” and clothed them. Victor wanted "
+            "the power of a maker without the office. Isaiah's “woe unto him that striveth with his "
+            "Maker” protects the Potter, not a man who plays at being one — “the Modern Prometheus, "
+            "not the modern Jehovah.” Closing on Isaiah's “I have graven thee upon the palms of my "
+            "hands,” the Maker who entered His own laboratory, and Herbert's “The Pulley”: "
+            "restlessness kept back in mercy, to toss the creature to His breast.",
+        ],
+        "walk": [
+            ("Shelley · Frankenstein, ch. 10", "1818/1831 · public domain",
+             "The creature's plea on the sea of ice — “I ought to be thy Adam, but I am rather the "
+             "fallen angel.”"),
+            ("Milton · Paradise Lost", "the 1818 epigraph",
+             "Fallen Adam's question to God — “Did I request thee, Maker, from my clay to mould me "
+             "man?” — the whole novel in one line."),
+            ("Genesis 1–3", "Scripture · KJV",
+             "The Maker who would not rest till man was made, did not flee the garden, and came "
+             "calling “Where art thou?” — and clothed them."),
+            ("Job 10", "Scripture · KJV",
+             "“Thine hands have made me… yet thou dost destroy me” — the creature's own words, but "
+             "with what he lacked: “thy visitation hath preserved my spirit.”"),
+            ("Isaiah 45 · Romans 9", "Scripture · KJV",
+             "“Woe unto him that striveth with his Maker” — the potter's right over the clay, which "
+             "belongs to the Potter, not to a man who plays at being one."),
+            ("Arthur Pink · Thomas Brooks", "public domain",
+             "The sovereignty that makes creation right because it is His; and ambition “turning "
+             "medicines into maladies” — Victor's biography in four words."),
+            ("Isaiah 49 · Psalm 27", "Scripture · KJV",
+             "“I have graven thee upon the palms of my hands”; “when my father and my mother forsake "
+             "me, then the LORD will take me up.”"),
+            ("George Herbert · “The Pulley”", "1633",
+             "Restlessness kept back in mercy — “If goodness lead him not, yet weariness may toss "
+             "him to my breast.”"),
+        ],
+    },
+    {
         "slug": "the-severed-head",
         "idea": "The Severed Head",
         "lane": "The Surprise",
