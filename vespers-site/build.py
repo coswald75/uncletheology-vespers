@@ -1283,6 +1283,68 @@ EPISODES = [
         ],
     },
     {
+        "slug": "no-more-a-servant",
+        "idea": "No More a Servant",
+        "lane": "The Surprise",
+        "day": "Thursday",
+        "date_display": "July 30, 2026",
+        "sub": "The Surprise · Galatians 4 — how a slave becomes a child, and a child an heir",
+        "duration": "32 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/no-more-a-servant.mp3",
+        "length": 46290603,
+        "lede": "Galatians 4, whole — “thou art no more a servant, but a son; and if a son, then an "
+                "heir.” The distance of the gospel inside six sentences. Roman adoption and Seneca's "
+                "slaves, the older Scriptures that call a nation God's son, the prodigal who "
+                "rehearsed a servant's speech and was handed a son's robe, and the Puritans warming "
+                "their hands at it — closing on Wesley's “And Can It Be.”",
+        "body": [
+            "From Paul's letter to the Galatians: the heir in his minority “differeth nothing from a "
+            "servant… but when the fulness of the time was come, God sent forth his Son… that we "
+            "might receive the adoption of sons.” To feel it, stand where the first hearers stood — "
+            "the Roman household where the line between slave and son ran through the middle, and "
+            "adoption was the legal act that made an heir entire. Seneca's letter on slaves (“show "
+            "me a man who is not a slave”) could diagnose the bondage but not open the door. The "
+            "older Scriptures had already told redemption in the household's language — “Israel is "
+            "my son, even my firstborn”; “is not he thy father that hath bought thee?”; “when Israel "
+            "was a child, then I loved him.”",
+            "Then the doctrine as a story: the prodigal who rehearsed “make me as one of thy hired "
+            "servants” and was cut off mid-sentence by a robe, a ring, shoes, a feast — the boy "
+            "asked for wages and was given inheritance. Matthew Henry on the arithmetic that "
+            "doesn't occur in nature (“all God's children are heirs”), Watson on worms made kings, "
+            "Pink on a love “free, spontaneous, uncaused… He loves from Himself.” The freed slave "
+            "homesick for his chains (“how turn ye again to the weak and beggarly elements?”), the "
+            "two households of Sarah and Hagar, and the Spirit's witness — the family word “Abba” "
+            "put in grown men's mouths, and cried twice from the cross. Closing on Wesley's “And "
+            "Can It Be”: “My chains fell off, my heart was free.”",
+        ],
+        "walk": [
+            ("Galatians 4", "Scripture · KJV",
+             "“Thou art no more a servant, but a son; and if a son, then an heir of God through "
+             "Christ.”"),
+            ("Seneca · Letter 47", "public domain",
+             "The Roman house of slaves — “show me a man who is not a slave” — a bondage he could "
+             "diagnose but not undo."),
+            ("Exodus 4 · Hosea 11 · Isaiah 63", "Scripture · KJV",
+             "Redemption told in the household's language — “Israel is my son”; “when Israel was a "
+             "child, then I loved him”; “thou, O Lord, art our Father.”"),
+            ("Luke 15 · the prodigal", "Scripture · KJV",
+             "The servant's speech cut off mid-sentence by a robe, a ring, shoes, a feast — the boy "
+             "asked for wages, was given inheritance."),
+            ("Matthew Henry · Thomas Watson", "public domain",
+             "“All God's children are heirs” — the arithmetic that doesn't occur in nature; and "
+             "worms made kings, “set upon the throne.”"),
+            ("A. W. Pink · love of God", "public domain",
+             "A love “free, spontaneous, uncaused… He loves from Himself” — “everything to repel "
+             "Him,” and He loved anyway."),
+            ("Romans 8 · Galatians 4", "Scripture · KJV",
+             "The Spirit of adoption crying “Abba, Father”; the two households of the bondwoman and "
+             "the free."),
+            ("Charles Wesley · “And Can It Be”", "1738",
+             "The freed prisoner's hymn — “My chains fell off, my heart was free; I rose, went "
+             "forth and followed Thee.”"),
+        ],
+    },
+    {
         "slug": "the-manner-of-the-dispute",
         "idea": "The Manner of the Dispute",
         "lane": "Pastor Politics",
