@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Transformation — Vespers</title>
+<meta name="description" content="The whole of Henry Jekyll&#x27;s confession, uncut — the first potion, the face in the glass, the bench in Regent&#x27;s Park — set against the heresy underneath it: that a man is not one but two, and the guilty half can be carved off. Augustine, who once believed exactly that, and Paul, and Donne, answer it.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/the-transformation">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Transformation — Vespers">
+<meta property="og:description" content="The whole of Henry Jekyll&#x27;s confession, uncut — the first potion, the face in the glass, the bench in Regent&#x27;s Park — set against the heresy underneath it: that a man is not one but two, and the guilty half can be carved off. Augustine, who once believed exactly that, and Paul, and Donne, answer it.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/the-transformation">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Fiction&#x27;s Most Famous Passages · Friday · August 14, 2026</div>
+      <h1 class="ep-title">The Transformation</h1>
+      <div class="ep-sub ui">Fiction&#x27;s Most Famous Passages · Stevenson — Jekyll&#x27;s confession, and the old heresy that a man is two<span class="dot">·</span>34 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/the-transformation.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The whole of Henry Jekyll&#x27;s confession, uncut — the first potion, the face in the glass, the bench in Regent&#x27;s Park — set against the heresy underneath it: that a man is not one but two, and the guilty half can be carved off. Augustine, who once believed exactly that, and Paul, and Donne, answer it.</p>
+    <div class="ep-body">
+    <p>From The Strange Case of Dr. Jekyll and Mr. Hyde — the novel whose title became an ordinary word. Stevenson&#x27;s doctor states his own case: not that a good man sometimes does evil, but that “man is not truly one, but truly two,” and that a clever enough chemistry could house the two in separate identities — the unjust going his way, delivered from the remorse of his upright twin. The reading carries the confession whole: the first potion drunk “late one accursed night,” the leap of welcome at the ugly face in the glass, the involuntary change on a park bench, and the end — “I bring the life of that unhappy Henry Jekyll to an end.”</p>
+    <p>Then the answer the tradition already had. Jekyll&#x27;s theory has a Persian name — Manichaeism, two natures, the self a mere battlefield — and Augustine held it for a decade before the Confessions took it apart from the inside: “not the presence of another mind, but the punishment of my own… both be bad.” Paul had said it first (“O wretched man that I am! who shall deliver me”), and Scripture will not grant the premise even at creation (“in the image of God created he him”) or after the fall (“the heart is deceitful above all things”). The doctor wants not to stop sinning but to sin without being a sinner — a disposable second self to take the blame. Closing on Donne&#x27;s “Batter my heart”: not a chemist&#x27;s separation, but a captor stronger than the captivity.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Stevenson · Jekyll and Hyde<span class="walk-cite ui">1886 · public domain</span></div>
+        <div class="walk-note">“Henry Jekyll&#x27;s Full Statement of the Case,” uncut — the theory of man&#x27;s dual nature, the first transformation, and the confession&#x27;s last line.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">The Manichean fantasy<span class="walk-cite ui">named, not endorsed</span></div>
+        <div class="walk-note">Two natures, two substances, the self merely the battlefield they share — the old heresy Jekyll&#x27;s chemistry is built to prove.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine · Confessions<span class="walk-cite ui">Pusey&#x27;s translation</span></div>
+        <div class="walk-note">The man who held that doctrine for a decade, taking it apart: “I who willed, I who nilled, I, I myself… not another mind, but the punishment of my own.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Romans 7 · Galatians 5<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“The good that I would I do not”; flesh against Spirit — one self at war, and “who shall deliver me from the body of this death?”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Genesis 1 · Jeremiah 17<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“In the image of God created he him” — one likeness, not a good half and an evil half; and a heart deceitful “above all things.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">1 John 1<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“If we confess our sins, he is faithful… to cleanse us” — not confess and relocate, but the one self owned and forgiven entirely.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Carlyle · Channing<span class="walk-cite ui">commonplace books · PD</span></div>
+        <div class="walk-note">Conscience that inspects the one self faithfully — and will not be fobbed off with a second identity to absorb the verdict.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">John Donne · “Batter my heart”<span class="walk-cite ui">Holy Sonnets</span></div>
+        <div class="walk-note">The opposite prayer to Jekyll&#x27;s — not division but conquest: “Except you enthrall me, never shall be free.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the transformation — from The Strange Case of Dr. Jekyll and Mr. Hyde.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>Robert Louis Stevenson was a Scottish novelist and essayist, born in Edinburgh, trained for the law and called to the bar in 1875 before he gave it up entirely for writing. He is the author of Treasure Island and Kidnapped, and of one short book that has done something almost no other novel has managed: it has left its own title behind as an ordinary word. People who have never opened the book still say of someone, that man is a real Jekyll and Hyde, and mean exactly what Stevenson meant.</p>
+      <p>He wrote it at Bournemouth, on the south coast of England, in the autumn of 1885, during one of the long stretches of poor health that shadowed most of his life. The story told about its writing — by his wife Fanny, and later by his stepson, in versions that do not quite agree with each other — is that it came to him first as a nightmare. Fanny said she woke him out of it, thinking he was in distress, and that he turned on her, angry at being interrupted: he had been dreaming, he said, a fine bogey tale, and she had startled him awake at the first transformation scene. He is said to have written the whole of a first draft in a matter of days, in a kind of fever, and then to have set it aside and written it again. It was published in January of 1886.</p>
+      <p>The novel itself is told mostly from outside, through the eyes of a lawyer named Utterson, whose old friend Dr. Henry Jekyll — respectable, generous, well liked — has written a will leaving everything to a man named Edward Hyde, small, young, and instantly hated by everyone who meets him, though none of them can say quite why. Over the course of the book, Hyde tramples a child in the street, and later beats an old man to death with a cane, and then disappears; Jekyll, meanwhile, grows more and more withdrawn, shutting himself in his laboratory, until one night Utterson and Jekyll&#x27;s butler break down the laboratory door and find Hyde&#x27;s body on the floor, dead by his own hand, wearing Jekyll&#x27;s clothes, far too large for him. Beside the body is a long written confession in Jekyll&#x27;s own hand. That confession is the passage tonight — the whole of it, uncut, in the doctor&#x27;s own words.</p>
+      <p>From Robert Louis Stevenson — Henry Jekyll&#x27;s own statement of the case:</p>
+      <p>I was born in the year eighteen-something, to a large fortune, endowed besides with excellent parts, inclined by nature to industry, fond of the respect of the wise and good among my fellow men, and thus, as might have been supposed, with every guarantee of an honourable and distinguished future. And indeed the worst of my faults was a certain impatient gaiety of disposition, such as has made the happiness of many, but such as I found it hard to reconcile with my imperious desire to carry my head high, and wear a more than commonly grave countenance before the public. Hence it came about that I concealed my pleasures; and that when I reached years of reflection, and began to look round me and take stock of my progress and position in the world, I stood already committed to a profound duplicity of life. Many a man would have even blazoned such irregularities as I was guilty of; but from the high views that I had set before me, I regarded and hid them with an almost morbid sense of shame.</p>
+      <p>He goes on:</p>
+      <p>It was thus rather the exacting nature of my aspirations than any particular degradation in my faults, that made me what I was, and, with even a deeper trench than in the majority of men, severed in me those provinces of good and ill which divide and compound man&#x27;s dual nature. In this case, I was driven to reflect deeply and inveterately on that hard law of life, which lies at the root of religion and is one of the most plentiful springs of distress. Though so profound a double-dealer, I was in no sense a hypocrite; both sides of me were in dead earnest; I was no more myself when I laid aside restraint and plunged in shame, than when I laboured, in the eye of day, at the furtherance of knowledge or the relief of sorrow and suffering.</p>
+      <p>And it chanced that the direction of my scientific studies, which led wholly towards the mystic and the transcendental, reacted and shed a strong light on this consciousness of the perennial war among my members. With every day, and from both sides of my intelligence, the moral and the intellectual, I thus drew steadily nearer to that truth, by whose partial discovery I have been doomed to such a dreadful shipwreck: that man is not truly one, but truly two.</p>
+      <p>He goes on:</p>
+      <p>I say two, because the state of my own knowledge does not pass beyond that point. Others will follow, others will outstrip me on the same lines; and I hazard the guess that man will be ultimately known for a mere polity of multifarious, incongruous and independent denizens. I, for my part, from the nature of my life, advanced infallibly in one direction and in one direction only. It was on the moral side, and in my own person, that I learned to recognise the thorough and primitive duality of man; I saw that, of the two natures that contended in the field of my consciousness, even if I could rightly be said to be either, it was only because I was radically both; and from an early date, even before the course of my scientific discoveries had begun to suggest the most naked possibility of such a miracle, I had learned to dwell with pleasure, as a beloved daydream, on the thought of the separation of these elements.</p>
+      <p>If each, I told myself, could be housed in separate identities, life would be relieved of all that was unbearable; the unjust might go his way, delivered from the aspirations and remorse of his more upright twin; and the just could walk steadfastly and securely on his upward path, doing the good things in which he found his pleasure, and no longer exposed to disgrace and penitence by the hands of this extraneous evil. It was the curse of mankind that these incongruous faggots were thus bound together — that in the agonised womb of consciousness, these polar twins should be continuously struggling.</p>
+      <p>Later, describing the drug itself:</p>
+      <p>I hesitated long before I put this theory to the test of practice. I knew well that I risked death; for any drug that so potently controlled and shook the very fortress of identity, might, by the least scruple of an overdose or at the least inopportunity in the moment of exhibition, utterly blot out that immaterial tabernacle which I looked to it to change. But the temptation of a discovery so singular and profound at last overcame the suggestions of alarm. I had long since prepared my tincture; I purchased at once, from a firm of wholesale chemists, a large quantity of a particular salt which I knew, from my experiments, to be the last ingredient required; and late one accursed night, I compounded the elements, watched them boil and smoke together in the glass, and when the ebullition had subsided, with a strong glow of courage, drank off the potion.</p>
+      <p>He describes what followed:</p>
+      <p>The most racking pangs succeeded: a grinding in the bones, deadly nausea, and a horror of the spirit that cannot be exceeded at the hour of birth or death. Then these agonies began swiftly to subside, and I came to myself as if out of a great sickness. There was something strange in my sensations, something indescribably new and, from its very novelty, incredibly sweet. I felt younger, lighter, happier in body; within I was conscious of a heady recklessness, a current of disordered sensual images running like a millrace in my fancy, a solution of the bonds of obligation, an unknown but not an innocent freedom of the soul. I knew myself, at the first breath of this new life, to be more wicked, tenfold more wicked, sold a slave to my original evil; and the thought, in that moment, braced and delighted me like wine. I stretched out my hands, exulting in the freshness of these sensations; and in the act, I was suddenly aware that I had lost in stature.</p>
+      <p>He goes on:</p>
+      <p>There was no mirror, at that date, in my room; that which stands beside me as I write, was brought there later on and for the very purpose of these transformations. The night, however, was far gone into the morning — the morning, black as it was, was nearly ripe for the conception of the day — the inmates of my house were locked in the most rigorous hours of slumber; and I determined, flushed as I was with hope and triumph, to venture in my new shape as far as to my bedroom. I crossed the yard, wherein the constellations looked down upon me, I could have thought, with wonder, the first creature of that sort that their unsleeping vigilance had yet disclosed to them; I stole through the corridors, a stranger in my own house; and coming to my room, I saw for the first time the appearance of Edward Hyde.</p>
+      <p>He continues:</p>
+      <p>I must here speak by theory alone, saying not that which I know, but that which I suppose to be most probable. The evil side of my nature, to which I had now transferred the stamping efficacy, was less robust and less developed than the good which I had just deposed. Again, in the course of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had been much less exercised and much less exhausted. And hence, as I think, it came about that Edward Hyde was so much smaller, slighter and younger than Henry Jekyll. Even as good shone upon the countenance of the one, evil was written broadly and plainly on the face of the other. Evil besides — which I must still believe to be the lethal side of man — had left on that body an imprint of deformity and decay. And yet when I looked upon that ugly idol in the glass, I was conscious of no repugnance, rather of a leap of welcome. This, too, was myself. It seemed natural and human.</p>
+      <p>He goes on:</p>
+      <p>In my eyes it bore a livelier image of the spirit, it seemed more express and single, than the imperfect and divided countenance I had been hitherto accustomed to call mine. And in so far I was doubtless right. I have observed that when I wore the semblance of Edward Hyde, none could come near to me at first without a visible misgiving of the flesh. This, as I take it, was because all human beings, as we meet them, are commingled out of good and evil: and Edward Hyde, alone in the ranks of mankind, was pure evil.</p>
+      <p>I lingered but a moment at the mirror: the second and conclusive experiment had yet to be attempted; it yet remained to be seen if I had lost my identity beyond redemption and must flee before daylight from a house that was no longer mine; and hurrying back to my cabinet, I once more prepared and drank the cup, once more suffered the pangs of dissolution, and came to myself once more with the character, the stature and the face of Henry Jekyll.</p>
+      <p>Some months pass. Jekyll has used the drug freely, indulging as Hyde what he would not do in his own name, and telling himself that Hyde alone is guilty of it. Then, one afternoon in Regent&#x27;s Park, without having taken the drug at all:</p>
+      <p>It was a fine, clear, January day, wet under foot where the frost had melted, but cloudless overhead; and the Regent&#x27;s Park was full of winter chirrupings and sweet with spring odours. I sat in the sun on a bench; the animal within me licking the chops of memory; the spiritual side a little drowsed, promising subsequent penitence, but not yet moved to begin. After all, I reflected, I was like my neighbours; and then I smiled, comparing myself with other men, comparing my active good-will with the lazy cruelty of their neglect. And at the very moment of that vainglorious thought, a qualm came over me, a horrid nausea and the most deadly shuddering. These passed away, and left me faint; and then as in its turn faintness subsided, I began to be aware of a change in the temper of my thoughts, a greater boldness, a contempt of danger, a solution of the bonds of obligation. I looked down; my clothes hung formlessly on my shrunken limbs; the hand that lay on my knee was corded and hairy. I was once more Edward Hyde.</p>
+      <p>He goes on:</p>
+      <p>A moment before I had been safe of all men&#x27;s respect, wealthy, beloved — the cloth laying for me in the dining-room at home; and now I was the common quarry of mankind, hunted, houseless, a known murderer, thrall to the gallows.</p>
+      <p>From this point the drug begins to fail him, and to fail unpredictably — sometimes changing him back to Hyde against his will, in daylight, in company, without warning. He writes the remainder of his confession under the last of a dwindling supply, knowing the change will overtake him permanently, and soon, whether he writes another word or not. His statement — and the novel — end this way:</p>
+      <p>About a week has passed, and I am now finishing this statement under the influence of the last of the old powders. This, then, is the last time, short of a miracle, that Henry Jekyll can think his own thoughts or see his own face — now how sadly altered! — in the glass. Nor must I delay too long to bring my writing to an end; for if my narrative has hitherto escaped destruction, it has been by a combination of great prudence and great good luck. Should the throes of change take me in the act of writing it, Hyde will tear it in pieces; but if some time shall have elapsed after I have laid it by, his wonderful selfishness and circumscription to the moment will probably save it once again from the action of his ape-like spite.</p>
+      <p>He closes:</p>
+      <p>And indeed the doom that is closing on us both has already changed and crushed him. Half an hour from now, when I shall again and forever reindue that hated personality, I know how I shall sit shuddering and weeping in my chair, or continue, with the most strained and fearstruck ecstasy of listening, to pace up and down this room — my last earthly refuge — and give ear to every sound of menace. Will Hyde die upon the scaffold? or will he find courage to release himself at the last moment? God knows; I am careless; this is my true hour of death, and what is to follow concerns another than myself. Here then, as I lay down the pen and proceed to seal up my confession, I bring the life of that unhappy Henry Jekyll to an end.</p>
+      <p>Notice what Jekyll&#x27;s theory actually is, underneath the horror-story machinery. He does not say that a good man sometimes does evil. He says man is not one but two — that there are, quite literally, two natures sharing one body, and that if a chemist were only clever enough, they could be pulled apart and housed separately, the evil one running free without staining the good one at all. That is not a new idea. It is a very old heresy with a Persian name, Manichaeism, and it teaches exactly what Jekyll wants to believe: that good and evil are two substances, two competing natures, and that the self caught between them is not really responsible for either — merely the battlefield they happen to share.</p>
+      <p>There is a man who knew this fantasy from the inside, because he held it as a doctrine for the better part of a decade before he could not hold it any longer. His name was Augustine, a professor of rhetoric in the late fourth century, and before he was a bishop or a saint he was, by his own later account, a Manichee — a believer in exactly Jekyll&#x27;s two natures, one of them safely not-him. He wrote about the collapse of that belief in his Confessions, describing the actual experience of a will divided against itself in the months before his conversion.</p>
+      <p>From Augustine, in Edward Pusey&#x27;s translation:</p>
+      <p>For of a forward will, was a lust made; and a lust served, became custom; and custom not resisted, became necessity. By which links, as it were, joined together — whence I called it a chain — a hard bondage held me enthralled. But that new will which had begun to be in me, freely to serve Thee, and to wish to enjoy Thee, O God, the only assured pleasantness, was not yet able to overcome my former wilfulness, strengthened by age. Thus did my two wills, one new, and the other old, one carnal, the other spiritual, struggle within me; and by their discord, undid my soul.</p>
+      <p>He goes on:</p>
+      <p>I understood, by my own experience, what I had read, how the flesh lusteth against the spirit and the spirit against the flesh. Myself verily either way; yet more myself, in that which I approved in myself, than in that which in myself I disapproved.</p>
+      <p>But Augustine will not let himself off with Jekyll&#x27;s comfortable conclusion — that there are therefore two of him, one guilty and one not. He turns and corrects the very Manichees he once was:</p>
+      <p>Let them perish from Thy presence, O God, as perish vain talkers and seducers of the soul: who observing that in deliberating there were two wills, affirm that there are two minds in us of two kinds, one good, the other evil. Themselves are truly evil, when they hold these evil things. Myself, when I was deliberating upon serving the Lord my God now, as I had long purposed, it was I who willed, I who nilled, I, I myself. I neither willed entirely, nor nilled entirely. Therefore was I at strife with myself, and rent asunder by myself. And this rent befell me against my will, and yet indicated, not the presence of another mind, but the punishment of my own. Therefore it was no more I that wrought it, but sin that dwelt in me.</p>
+      <p>He goes on, naming the fantasy exactly:</p>
+      <p>If a man deliberate whether he should go to their conventicle or to the theatre, these Manichees cry out, Behold, here are two natures: one good, draws this way; another bad, draws back that way. But I say that both be bad.</p>
+      <p>The better part of fifteen centuries apart, and answering to two entirely different accounts of the universe, Stevenson&#x27;s chemist and Augustine&#x27;s bishop describe the identical inward sensation — a will at war with itself, one part commanding what the other part will not do. They diverge completely on what to make of it. Jekyll takes the war as proof that he contains two people, and spends the whole of his fortune and his genius trying to get them a legal separation. Augustine takes the same war as proof that he is one person, badly divided, and that the division itself is the wound needing a physician, not a paperwork problem needing a second address.</p>
+      <p>Paul had said it first, long before either of them, in language Augustine is plainly echoing. From Paul, to the Romans, in the King James Version:</p>
+      <p>For that which I do I allow not: for what I would, that do I not; but what I hate, that do I. Now then it is no more I that do it, but sin that dwelleth in me. For I know that in me — that is, in my flesh — dwelleth no good thing: for to will is present with me; but how to perform that which is good I find not. For the good that I would I do not: but the evil which I would not, that I do.</p>
+      <p>He goes on:</p>
+      <p>I find then a law, that, when I would do good, evil is present with me. For I delight in the law of God after the inward man: but I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members. O wretched man that I am! who shall deliver me from the body of this death? I thank God through Jesus Christ our Lord. So then with the mind I myself serve the law of God; but with the flesh the law of sin.</p>
+      <p>Notice the shape of Paul&#x27;s cry against the shape of Jekyll&#x27;s project. Both men are wretched over the same fact — a self at war with itself. But Jekyll asks how to be delivered from one half of himself, by amputation. Paul asks who shall deliver me, singular, whole — not from a rival person sharing his body, but from himself, from the body of this death that is entirely his own. The relief Paul finds is not a legal separation. It is rescue. And it comes from outside him, not from a chemist&#x27;s tincture brewed in his own cabinet.</p>
+      <p>Scripture will not grant Jekyll his premise even at the level of creation. Man was not made two. From Genesis, in the King James Version: So God created man in his own image, in the image of God created he him; male and female created he them. One image, one likeness, stamped through the whole of the creature — not a good half and an evil half assembled together at the factory. And when that one man fell, the corruption did not lodge itself tidily in a spare compartment, leaving the rest untouched. It went all the way through. From Jeremiah: The heart is deceitful above all things, and desperately wicked: who can know it? Not half the heart. The heart.</p>
+      <p>This is worth pausing on, because Stevenson&#x27;s own text half-admits it and half-resists it. Jekyll writes that Hyde, quote, alone in the ranks of mankind, was pure evil — that every other human being is commingled out of good and evil. He says this as though it excuses him: I am merely ordinary, mixed, like everyone; the pure evil is safely elsewhere, in the other one. But that mixture he is describing so calmly — good and evil, commingled, in every human being he has ever met — is not a fact he is entitled to shrug past. It is the entire problem the doctrine of the fall was written to name.</p>
+      <p>The commonplace books of an older generation of preachers and moralists worried this same knot for centuries, long before any laboratory scene was written. Thomas Carlyle, on the false comfort of thinking oneself divided rather than guilty: To say that we have a clear conscience is to utter a solecism; had we never sinned, we should have had no conscience. And on the honesty conscience actually requires, William Ellery Channing: Conscience, if suffered to inspect faithfully and speak plainly, will recount irregular desires and defective motives, talents wasted, and time misspent. Neither man offers the sinner an Edward Hyde to blame. The conscience they describe inspects the one self, faithfully, and will not be fobbed off with a second identity to absorb the verdict.</p>
+      <p>Paul names the actual battlefield in Galatians: For the flesh lusteth against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that ye cannot do the things that ye would. It sounds, for a moment, like Jekyll&#x27;s language — two things in conflict inside one person. But notice what the two things are. Not two natures of equal and opposite standing, evil versus a merely different flavor of the same self, the way Jekyll frames his own good and evil as a matched pair, twins, polities. Flesh against Spirit. One of those is not native to the man at all; it is what the Spirit of God does in him from outside, contesting a corruption that was, before grace arrived, uncontested and entire.</p>
+      <p>Here is the real diagnosis of what Jekyll wants, underneath the science-fiction machinery: not to stop sinning, but to sin without becoming, in his own eyes, a sinner. He wants a name to pin it on that is not his name — a second self, sacrificial and disposable, who can be blamed, hunted, and finally destroyed, while the respectable name goes on collecting its dinner invitations. It is worth saying plainly that this is not a scientific romance&#x27;s invention. It is the ordinary maneuver of every conscience that has ever excused itself: not I sinned, but that was the drink talking, that was a mood, that was not the real me. Scripture has a short answer for the maneuver, in the first letter of John: If we say that we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness. Not confess and relocate. Confess and be cleansed — the one self, owned entirely, forgiven entirely.</p>
+      <p>And notice, last, how the story itself is honest enough not to grant its own premise a happy ending. Jekyll never gets his separation. The drug does not divide him into two clean identities, one redeemable and one expendable; it only ever produces the same single, ruined man, wearing first one face and then the other, and near the end unable to choose which. His confession does not close with relief, or with the guilty half safely excised. It closes with extinction — I bring the life of that unhappy Henry Jekyll to an end. Both of him die together, because they were, in the way that matters, never two.</p>
+      <p>Scripture does hold out a change in the self worth wanting, but it is never partition. Paul, writing to the Ephesians, describes putting off the old man and putting on the new — not a second man conjured to take the blame, but the same one man, remade. That is a different kind of ending than a laboratory can produce, and a different kind of hope than a cabinet full of chemicals can promise.</p>
+      <p>If Jekyll&#x27;s prayer was for separation — divide me, so the guilty part can be someone else — there is an older prayer that asks for the opposite: not division but conquest, not a second self carved off but the one self finally overmastered by something stronger than its own divided will. John Donne prayed it in a sonnet a little over two and a half centuries before Stevenson wrote his novel. Lightly modernized in spelling, from his Holy Sonnets, the one that opens on a single violent verb:</p>
+      <p>Batter my heart, three-person&#x27;d God; for you
+As yet but knock, breathe, shine, and seek to mend;
+That I may rise and stand, o&#x27;erthrow me, and bend
+Your force to break, blow, burn, and make me new.
+I, like an usurp&#x27;d town, to another due,
+Labour to admit you, but oh, to no end;
+Reason, your viceroy in me, me should defend,
+But is captived, and proves weak or untrue.
+Yet dearly I love you, and would be loved fain,
+But am betroth&#x27;d unto your enemy.
+Divorce me, untie, or break that knot again;
+Take me to you, imprison me, for I,
+Except you enthrall me, never shall be free,
+Nor ever chaste, except you ravish me.</p>
+      <p>Not a chemist&#x27;s separation, but a captor stronger than the captivity already in possession. Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

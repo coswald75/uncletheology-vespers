@@ -293,6 +293,67 @@ EPISODES = [
         ],
     },
     {
+        "slug": "the-transformation",
+        "idea": "The Transformation",
+        "lane": "Fiction's Most Famous Passages",
+        "day": "Friday",
+        "date_display": "August 14, 2026",
+        "sub": "Fiction's Most Famous Passages · Stevenson — Jekyll's confession, and the old heresy that a man is two",
+        "duration": "34 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-transformation.mp3",
+        "length": 48753632,
+        "lede": "The whole of Henry Jekyll's confession, uncut — the first potion, the face in the "
+                "glass, the bench in Regent's Park — set against the heresy underneath it: that a man "
+                "is not one but two, and the guilty half can be carved off. Augustine, who once "
+                "believed exactly that, and Paul, and Donne, answer it.",
+        "body": [
+            "From The Strange Case of Dr. Jekyll and Mr. Hyde — the novel whose title became an "
+            "ordinary word. Stevenson's doctor states his own case: not that a good man sometimes "
+            "does evil, but that “man is not truly one, but truly two,” and that a clever enough "
+            "chemistry could house the two in separate identities — the unjust going his way, "
+            "delivered from the remorse of his upright twin. The reading carries the confession "
+            "whole: the first potion drunk “late one accursed night,” the leap of welcome at the "
+            "ugly face in the glass, the involuntary change on a park bench, and the end — “I bring "
+            "the life of that unhappy Henry Jekyll to an end.”",
+            "Then the answer the tradition already had. Jekyll's theory has a Persian name — "
+            "Manichaeism, two natures, the self a mere battlefield — and Augustine held it for a "
+            "decade before the Confessions took it apart from the inside: “not the presence of "
+            "another mind, but the punishment of my own… both be bad.” Paul had said it first "
+            "(“O wretched man that I am! who shall deliver me”), and Scripture will not grant the "
+            "premise even at creation (“in the image of God created he him”) or after the fall "
+            "(“the heart is deceitful above all things”). The doctor wants not to stop sinning but "
+            "to sin without being a sinner — a disposable second self to take the blame. Closing on "
+            "Donne's “Batter my heart”: not a chemist's separation, but a captor stronger than the "
+            "captivity.",
+        ],
+        "walk": [
+            ("Stevenson · Jekyll and Hyde", "1886 · public domain",
+             "“Henry Jekyll's Full Statement of the Case,” uncut — the theory of man's dual nature, "
+             "the first transformation, and the confession's last line."),
+            ("The Manichean fantasy", "named, not endorsed",
+             "Two natures, two substances, the self merely the battlefield they share — the old "
+             "heresy Jekyll's chemistry is built to prove."),
+            ("Augustine · Confessions", "Pusey's translation",
+             "The man who held that doctrine for a decade, taking it apart: “I who willed, I who "
+             "nilled, I, I myself… not another mind, but the punishment of my own.”"),
+            ("Romans 7 · Galatians 5", "Scripture · KJV",
+             "“The good that I would I do not”; flesh against Spirit — one self at war, and “who "
+             "shall deliver me from the body of this death?”"),
+            ("Genesis 1 · Jeremiah 17", "Scripture · KJV",
+             "“In the image of God created he him” — one likeness, not a good half and an evil half; "
+             "and a heart deceitful “above all things.”"),
+            ("1 John 1", "Scripture · KJV",
+             "“If we confess our sins, he is faithful… to cleanse us” — not confess and relocate, "
+             "but the one self owned and forgiven entirely."),
+            ("Carlyle · Channing", "commonplace books · PD",
+             "Conscience that inspects the one self faithfully — and will not be fobbed off with a "
+             "second identity to absorb the verdict."),
+            ("John Donne · “Batter my heart”", "Holy Sonnets",
+             "The opposite prayer to Jekyll's — not division but conquest: “Except you enthrall me, "
+             "never shall be free.”"),
+        ],
+    },
+    {
         "slug": "astronomy",
         "idea": "Astronomy",
         "lane": "Great Ideas",
