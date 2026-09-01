@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty — Vespers</title>
+<meta name="description" content="The sixth great idea. Beauty enters Scripture as a commandment — priestly garments “for glory and for beauty” — and the tradition circles it all night: Plato’s ladder, Aristotle’s magnitude and order, Augustine’s “Too late loved I Thee,” Aquinas’s wholeness, proportion, and radiance, down to Isaiah’s two hardest sayings and a schoolmaster’s hymn on a hill above Bath.">
+<link rel="canonical" href="https://vesperstonight.com/episodes/beauty">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beauty — Vespers">
+<meta property="og:description" content="The sixth great idea. Beauty enters Scripture as a commandment — priestly garments “for glory and for beauty” — and the tradition circles it all night: Plato’s ladder, Aristotle’s magnitude and order, Augustine’s “Too late loved I Thee,” Aquinas’s wholeness, proportion, and radiance, down to Isaiah’s two hardest sayings and a schoolmaster’s hymn on a hill above Bath.">
+<meta property="og:url" content="https://vesperstonight.com/episodes/beauty">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">Great Ideas · Tuesday · August 18, 2026</div>
+      <h1 class="ep-title">Beauty</h1>
+      <div class="ep-sub ui">Great Ideas · No. 6 — what beauty is, where it lives, what it is for, and what it costs<span class="dot">·</span>30 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/beauty.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">The sixth great idea. Beauty enters Scripture as a commandment — priestly garments “for glory and for beauty” — and the tradition circles it all night: Plato’s ladder, Aristotle’s magnitude and order, Augustine’s “Too late loved I Thee,” Aquinas’s wholeness, proportion, and radiance, down to Isaiah’s two hardest sayings and a schoolmaster’s hymn on a hill above Bath.</p>
+    <div class="ep-body">
+    <p>A survey of the sixth of the hundred and two great ideas, read through the canon it indexes. Beauty enters the story early and as a command — “holy garments… for glory and for beauty” — and the Psalms turn the word toward God himself: the one thing David desired, to behold the beauty of the LORD. Among the Greeks the great account is Diotima’s ladder in the Symposium, climbing from a fair body to beauty absolute; Aristotle answers with the measuring rod — “beauty depends on magnitude and order.” Augustine picks the ladder and climbs it weeping. Aquinas gives the medieval definition in a single breath: integrity, proportion, brightness — wholeness, proportion, radiance — each with its likeness in the Son.</p>
+    <p>Then the commonplace books and the Puritans, wary and unwearied: Quarles’s warning, Bacon’s “no excellent beauty that hath not some strangeness in the proportion,” Watson’s “well-coloured dirt” set against “grace is our best beauty,” Emerson’s kosmos, Spurgeon slowing over David’s one desire. And Isaiah, who holds the two hardest sayings together — “no beauty that we should desire him,” and “thine eyes shall see the king in his beauty” — and lets them interpret one another: the beauty was there all along; the failure was in the eyes. Closing with Folliott Pierpoint’s “For the Beauty of the Earth,” in its original wording.</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Exodus 28 · the Psalms · Ecclesiastes 3:11<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Beauty enters as a commandment — priestly garments “for glory and for beauty” — and David’s one desire, to behold the beauty of the LORD; the Preacher’s “every thing beautiful in his time.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Plato · Symposium — Diotima’s ladder<span class="walk-cite ui">Jowett translation</span></div>
+        <div class="walk-note">Love of a beautiful body is only the first rung; the climb ends in “beauty absolute, separate, simple, and everlasting.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Aristotle · Poetics<span class="walk-cite ui">Butcher translation</span></div>
+        <div class="walk-note">The measuring rod against the ladder — “beauty depends on magnitude and order”; a thing big enough to see and small enough to hold.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine · Confessions X<span class="walk-cite ui">Pusey translation</span></div>
+        <div class="walk-note">“Too late loved I Thee, O Thou Beauty of ancient days, yet ever new” — the ladder become a person, the climb become a rescue.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Aquinas · Summa Theologica I, Q39<span class="walk-cite ui">Dominican Fathers translation</span></div>
+        <div class="walk-note">Beauty’s three conditions — integrity, proportion, clarity; wholeness, proportion, radiance, each with its likeness in the Son.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">The commonplace stones<span class="walk-cite ui">Collacon · public domain</span></div>
+        <div class="walk-note">Clarendon, Cervantes, Quarles’s warning, Milton’s tempter — and the answers: Porter, Upham, Greville’s test, “true beauty increases on examination.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Francis Bacon · Of Beauty<span class="walk-cite ui">Essays</span></div>
+        <div class="walk-note">“There is no excellent beauty, that hath not some strangeness in the proportion” — and beauty as summer fruit, easy to corrupt.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Thomas Watson · Body of Divinity<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">From beauty to a Maker — the painting implies an artist — and from “well-coloured dirt” to “grace is our best beauty.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">9</div>
+      <div class="walk-body">
+        <div class="walk-src">Emerson · Nature, ch. III<span class="walk-cite ui">1836</span></div>
+        <div class="walk-note">The Greeks called the world kosmos, beauty; nature medicinal to the cramped eye; “beauty is the mark God sets upon virtue.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">10</div>
+      <div class="walk-body">
+        <div class="walk-src">Spurgeon on Psalm 27 · Isaiah 53 &amp; 33:17<span class="walk-cite ui">public domain · KJV</span></div>
+        <div class="walk-note">“The King in his beauty” — Isaiah’s two hardest sayings held together: no beauty we should desire him, and eyes that shall see the King in his beauty.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">11</div>
+      <div class="walk-body">
+        <div class="walk-src">Folliott Pierpoint · “For the Beauty of the Earth”<span class="walk-cite ui">1864</span></div>
+        <div class="walk-note">Written on a hill above Bath — a hymn of thanksgiving for beauty itself, in its original wording.</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: the sixth of the great ideas — Beauty.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>We are walking the hundred and two great ideas in the order Mortimer Adler mapped them, and tonight the map brings us to Beauty — what it is, where it lives, what it is for, and what it costs. The readings run from the Scriptures through the Greeks, the fathers and the schoolmen, the essayists and the Puritans, down to the poets and preachers nearer our own day. As always, the texts will do the talking.</p>
+      <p>We begin where the tradition of our audience begins, with the Scriptures. Beauty enters the story early, and it enters as a commandment. When God ordains a priesthood, he ordains its clothing, and gives the reason in four words. From the book of Exodus:</p>
+      <p>And thou shalt make holy garments for Aaron thy brother for glory and for beauty.</p>
+      <p>Not for warmth. Not for modesty only. For glory and for beauty. The psalmists take up the word and turn it toward God himself. From the Psalms, David&#x27;s one request:</p>
+      <p>One thing have I desired of the LORD, that will I seek after; that I may dwell in the house of the LORD all the days of my life, to behold the beauty of the LORD, and to enquire in his temple.</p>
+      <p>And again:</p>
+      <p>Give unto the LORD the glory due unto his name; worship the LORD in the beauty of holiness.</p>
+      <p>And again, the prayer of Moses the man of God:</p>
+      <p>And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us; yea, the work of our hands establish thou it.</p>
+      <p>The psalmist locates beauty in a place as well as a person:</p>
+      <p>Out of Zion, the perfection of beauty, God hath shined.</p>
+      <p>Honour and majesty are before him: strength and beauty are in his sanctuary.</p>
+      <p>And the Preacher widens it to the whole creation. From Ecclesiastes:</p>
+      <p>He hath made every thing beautiful in his time: also he hath set the world in their heart, so that no man can find out the work that God maketh from the beginning to the end.</p>
+      <p>Every thing beautiful in his time — and yet the work as a whole past finding out. Hold that sentence; nearly every reading tonight is an attempt to find out that work anyway.</p>
+      <p>Among the Greeks, the great account of beauty is put in the mouth of a woman. In Plato&#x27;s Symposium, Socrates reports what he was taught by Diotima, a wise woman of Mantineia: that love of a beautiful body is only the first rung of a ladder. In Benjamin Jowett&#x27;s translation. From Plato:</p>
+      <p>He will be content to love and tend him, and will search out and bring to the birth thoughts which may improve the young, until he is compelled to contemplate and see the beauty of institutions and laws, and to understand that the beauty of them all is of one family, and that personal beauty is a trifle; and after laws and institutions he will go on to the sciences, that he may see their beauty, being not like a servant in love with the beauty of one youth or man or institution, himself a slave mean and narrow-minded, but drawing towards and contemplating the vast sea of beauty, he will create many fair and noble thoughts and notions in boundless love of wisdom; until on that shore he grows and waxes strong, and at last the vision is revealed to him of a single science, which is the science of beauty everywhere.</p>
+      <p>He goes on:</p>
+      <p>He who has been instructed thus far in the things of love, and who has learned to see the beautiful in due order and succession, when he comes toward the end will suddenly perceive a nature of wondrous beauty — a nature which in the first place is everlasting, not growing and decaying, or waxing and waning; secondly, not fair in one point of view and foul in another, or at one time or in one relation or at one place fair, at another time or in another relation or at another place foul — but beauty absolute, separate, simple, and everlasting, which without diminution and without increase, or any change, is imparted to the ever-growing and perishing beauties of all other things.</p>
+      <p>He goes on:</p>
+      <p>And the true order of going, or being led by another, to the things of love, is to begin from the beauties of earth and mount upwards for the sake of that other beauty, using these as steps only, and from one going on to two, and from two to all fair forms, and from fair forms to fair practices, and from fair practices to fair notions, until from fair notions he arrives at the notion of absolute beauty, and at last knows what the essence of beauty is. This, my dear Socrates, said the stranger of Mantineia, is that life above all others which man should live, in the contemplation of beauty absolute.</p>
+      <p>And the ladder ends in a question:</p>
+      <p>But what if man had eyes to see the true beauty — the divine beauty, I mean, pure and clear and unalloyed, not clogged with the pollutions of mortality and all the colours and vanities of human life — thither looking, and holding converse with the true beauty simple and divine? Remember how in that communion only, beholding beauty with the eye of the mind, he will be enabled to bring forth, not images of beauty, but realities, and bringing forth and nourishing true virtue to become the friend of God and be immortal, if mortal man may. Would that be an ignoble life?</p>
+      <p>Where Plato climbs, Aristotle measures. In the Poetics he is asking what makes a tragedy well made, and in passing he gives the most workmanlike definition of beauty in the ancient world. In S. H. Butcher&#x27;s translation. From Aristotle:</p>
+      <p>A beautiful object, whether it be a living organism or any whole composed of parts, must not only have an orderly arrangement of parts, but must also be of a certain magnitude; for beauty depends on magnitude and order. Hence a very small animal organism cannot be beautiful; for the view of it is confused, the object being seen in an almost imperceptible moment of time. Nor, again, can one of vast size be beautiful; for as the eye cannot take it all in at once, the unity and sense of the whole is lost for the spectator; as for instance if there were one a thousand miles long.</p>
+      <p>Magnitude and order — a thing must be big enough to see and small enough to hold. Between the ladder and the measuring rod, most later accounts of beauty pick a side.</p>
+      <p>Augustine picked the ladder, and climbed it weeping. The most famous sentences ever written about beauty are a confession of arriving late. In Pusey&#x27;s translation. From Augustine:</p>
+      <p>Too late loved I Thee, O Thou Beauty of ancient days, yet ever new! too late I loved Thee! And behold, Thou wert within, and I abroad, and there I searched for Thee; deformed I, plunging amid those fair forms which Thou hadst made. Thou wert with me, but I was not with Thee. Things held me far from Thee, which, unless they were in Thee, were not at all. Thou calledst, and shoutedst, and burstest my deafness. Thou flashedst, shonest, and scatteredst my blindness. Thou breathedst odours, and I drew in breath and panted for Thee. I tasted, and hunger and thirst. Thou touchedst me, and I burned for Thy peace.</p>
+      <p>Everything the Greeks said of beauty absolute, Augustine says to it. The ladder has become a person, and the climb has become a rescue.</p>
+      <p>The schoolmen inherited both the ladder and the measuring rod, and Thomas Aquinas, asking why the theologians ascribe beauty especially to the Son of God, gives the medieval definition in a single breath. In the Dominican Fathers&#x27; translation. From Aquinas:</p>
+      <p>Beauty includes three conditions: integrity or perfection, since those things which are impaired are by the very fact ugly; due proportion or harmony; and lastly, brightness or clarity, whence things are called beautiful which have a bright color.</p>
+      <p>Wholeness, proportion, radiance. He goes on to say that each of the three has its likeness in the Son — who has in Himself truly and perfectly the nature of the Father, who is the express Image of the Father, and who is the Word, the light and splendor of the intellect. For Aquinas the definition of beauty and the doctrine of God are the same lesson taught twice.</p>
+      <p>Now some smaller stones, from the commonplace books. The Earl of Clarendon:</p>
+      <p>It was a very proper answer to him who asked why any man should be delighted with beauty, that it was a question that none but a blind man could ask; since any beautiful object doth so much attract the sight of all men, that it is in no man&#x27;s power not to be pleased with it.</p>
+      <p>Anacharsis the Scythian:</p>
+      <p>The greatest gift that ever the gods bestowed upon man is beauty; for it both delighteth the eye, contenteth the mind, and winneth good will and favor of all men.</p>
+      <p>Cervantes:</p>
+      <p>Beauty in a modest woman is like fire at a distance, or like a sharp sword; neither doth the one burn, nor the other wound those that come not too near them.</p>
+      <p>And Francis Quarles, less charmed:</p>
+      <p>Gaze not on beauty too much, lest it blast thee; nor too long, lest it blind thee; nor too near, lest it burn thee. If thou like it, it deceives thee; if thou love it, it disturbs thee; if thou hunt after it, it destroys thee; if virtue accompany it, it is the heart&#x27;s paradise; if vice associate it, it is the soul&#x27;s purgatory; it is the wise man&#x27;s bonfire, and the fool&#x27;s furnace.</p>
+      <p>Richard Steele, gentler than Quarles but no less wary:</p>
+      <p>Beauty has been the delight and torment of the world ever since it began; the philosophers have felt its influence so sensibly that almost every one of them has left some saying or other which intimated that he knew too well the power of it.</p>
+      <p>And Milton, in Paradise Regained, has the tempter told flatly what beauty&#x27;s power amounts to:</p>
+      <p>Beauty stands in the admiration only of weak minds led captive; cease to admire, and all her plumes fall flat and shrink into a trivial toy, at every sudden slighting quite abashed.</p>
+      <p>But the commonplace books answer their own suspicions. Jane Porter:</p>
+      <p>Beauty of form affects the mind, but then it must be understood that it is not the mere shell that we admire; we are attracted by the idea that this shell is only a beautiful case adjusted to the shape and value of a still more beautiful pearl within. The perfection of outward loveliness is the soul shining through its crystalline covering.</p>
+      <p>Thomas Upham:</p>
+      <p>If man, or woman either, wishes to realize the full power of personal beauty, it must be by cherishing noble hopes and purposes; by having something to do, and something to live for, which is worthy of humanity, and which, by expanding the capacities of the soul, gives expansion and symmetry to the body which contains it.</p>
+      <p>And Lord Greville offers a test:</p>
+      <p>The criterion of true beauty is that it increases on examination; if false, that it lessens. There is something, therefore, in true beauty that corresponds with right reason, and is not merely the creation of fancy.</p>
+      <p>Francis Bacon wrote an essay on beauty scarcely longer than a page, and nearly every sentence of it has been quoted ever since. From Bacon, Of Beauty:</p>
+      <p>Virtue is like a rich stone, best plain set; and surely virtue is best, in a body that is comely, though not of delicate features; and that hath rather dignity of presence, than beauty of aspect. Neither is it almost seen, that very beautiful persons are otherwise of great virtue; as if nature were rather busy, not to err, than in labor to produce excellency. And therefore they prove accomplished, but not of great spirit; and study rather behavior, than virtue. But this holds not always.</p>
+      <p>He goes on:</p>
+      <p>In beauty, that of favor, is more than that of color; and that of decent and gracious motion, more than that of favor. That is the best part of beauty, which a picture cannot express; no, nor the first sight of the life. There is no excellent beauty, that hath not some strangeness in the proportion. A man cannot tell whether Apelles, or Albert Durer, were the more trifler; whereof the one, would make a personage by geometrical proportions; the other, by taking the best parts out of divers faces, to make one excellent. Such personages, I think, would please nobody, but the painter that made them. Not but I think a painter may make a better face than ever was; but he must do it by a kind of felicity, as a musician that maketh an excellent air in music, and not by rule. A man shall see faces, that if you examine them part by part, you shall find never a good; and yet altogether do well.</p>
+      <p>And he ends where the Preacher began, with fruit in its season:</p>
+      <p>Beauty is as summer fruits, which are easy to corrupt, and cannot last; and for the most part it makes a dissolute youth, and an age a little out of countenance; but yet certainly again, if it light well, it maketh virtue shine, and vices blush.</p>
+      <p>The Puritans took Bacon&#x27;s suspicion and gave it a theology. Thomas Watson, in the Body of Divinity, argues from beauty to a Maker:</p>
+      <p>The world must have a maker, and could not make itself. If one should go into a far country, and see stately edifices, he would never imagine that they could build themselves — but that there had been some artificer to raise such majestic structures. Just so, this great fabric of the world could not create itself, it must have some builder or maker, and that is God. To imagine that the work of the creation was not framed by the Lord Jehovah, is as if we should conceive a beautiful painting to be drawn without the hand of an artist.</p>
+      <p>He goes on, looking at the world God made:</p>
+      <p>God made this great lump and mass, with neither shape nor order; and then beautified it. He divided the sea and the earth, he decked the earth with flowers, the trees with fruit. But what is beauty when it is masked over? Therefore, that we might behold this glory, God made the light. The heavens were bespangled with the sun, moon, and stars — so that the world&#x27;s beauty might be beheld and admired.</p>
+      <p>And looking at what became of it:</p>
+      <p>Sin has much eclipsed the beauty, soured the sweetness, and marred the harmony of the world. How bitter is that gall, a drop whereof can embitter a whole sea!</p>
+      <p>Watson will not let the argument stop at the creature. He goes on:</p>
+      <p>Did God make this glorious world? Did he make everything good? Was there in the creature so much beauty and sweetness? Oh! then what sweetness is there in God? The cause is always more noble than the effect. Is there beauty in a rose? What beauty then is there in Christ, the Rose of Sharon! Does oil make the face shine? How will the light of God&#x27;s countenance make it shine!</p>
+      <p>And on the beauty of a person, he is blunt:</p>
+      <p>If you have beauty, it is but well-colored dirt! Your body is but air and dust mingled together, and this dust will deteriorate back into the dust.</p>
+      <p>Yet even that dust, Watson says, was made with care:</p>
+      <p>The head, the most excellent architectural part, is the fountain of thought, and the seat of reason. In nature the head is the best piece — but in grace the heart excels. The eye is the beauty of the face; it shines and sparkles like a lesser sun in the body. The ear is the conduit-pipe through which knowledge is conveyed. Better lose our seeing than our hearing, for faith comes by hearing. To have an ear open to God is the best jewel on the ear. And the tongue — David calls the tongue his glory, because it is an instrument to set forth the glory of God. The soul at first was a viol in tune to praise God, and the tongue made the music.</p>
+      <p>But he does not leave us in the dirt. From Watson again:</p>
+      <p>Grace is our best beauty, it makes us like God and angels. As the sun is to the world, so is holiness to the soul. We read that Aaron put on his garments for glory and beauty. When we wear the embroidered garment of holiness, it is for glory and beauty. As the diamond to a ring, so is holiness to the soul.</p>
+      <p>And in another place Watson turns the idea of beauty into a description of how God works on a soul:</p>
+      <p>As the best creature was made out of nothing; so when a man sees himself to be nothing, out of this nothing God makes a most beautiful creature. It is God&#x27;s usual method to make a man poor in spirit — and then fill him with the graces of the Spirit. As we deal with a watch, we take it first to pieces, and then set all the wheels and pins in order — so the Lord first takes a man all to pieces, shows him his undone condition — and then sets him in frame.</p>
+      <p>And into a description of why a soul loves God at all:</p>
+      <p>Our love to God is sincere, when it is pure and without self-interest. We must love Christ, as Augustine says, for Himself — as we love sweet wine for its taste. God&#x27;s beauty and love must be the two loadstones to draw our love to Him. Many love God because He gives them food and wine, and not for His intrinsic excellencies. We must love God more for what He is — than for what He bestows.</p>
+      <p>A few more stones from the commonplace books, on beauty and truth. The Earl of Shaftesbury:</p>
+      <p>The most natural beauty in the world is honesty and moral truth; for all beauty is truth; true features make the beauty of a face, and true proportions the beauty of architecture, as true measures that of harmony and music.</p>
+      <p>Laurence Sterne:</p>
+      <p>When the whole apology is read, it will be found at last that beauty, like truth, is never so glorious as when it goes the plainest.</p>
+      <p>Victor Cousin:</p>
+      <p>Moral beauty is the basis of all true beauty. This foundation is somewhat covered and veiled in nature; art brings it out, and gives it more transparent forms.</p>
+      <p>Schiller:</p>
+      <p>It is only through the morning gate of the beautiful that you can penetrate into the realm of knowledge; that which we feel here as beauty, we shall one day know as truth.</p>
+      <p>And the short ones. George Herbert, from his book of proverbs: Beauty draws more than oxen. Virgil, in warning: Trust not too much to beauty. And Pope: Beauties in vain their pretty eyes may roll; charms strike the sight, but merit wins the soul.</p>
+      <p>Edwin Whipple, on what the sight of beauty does:</p>
+      <p>The contemplation of beauty in nature, in art, in literature, in human character, diffuses through our being a soothing and subtle joy, by which the heart&#x27;s anxious and aching cares are softly smiled away.</p>
+      <p>And William Ellery Channing, on where beauty is found:</p>
+      <p>Beauty is an all-pervading presence; it unfolds to the numberless flowers of the spring; it waves in the branches of the trees and the green blades of grass; it haunts the depths of the earth and the sea, and gleams out in the hues of the shell and the precious stone; and not only these minute objects, but the ocean, the mountains, the clouds, the heavens, the stars, the rising and setting sun, all overflow with beauty.</p>
+      <p>Channing&#x27;s countryman Emerson made that thought a system. In his little book called Nature, the chapter on beauty begins with the Greek word for the world. From Emerson:</p>
+      <p>A nobler want of man is served by nature, namely, the love of Beauty. The ancient Greeks called the world kosmos, beauty. Such is the constitution of all things, or such the plastic power of the human eye, that the primary forms, as the sky, the mountain, the tree, the animal, give us a delight in and for themselves; a pleasure arising from outline, color, motion, and grouping. And as the eye is the best composer, so light is the first of painters. There is no object so foul that intense light will not make beautiful.</p>
+      <p>He goes on, on what the sight of beauty does to a working man:</p>
+      <p>The influence of the forms and actions in nature is so needful to man, that, in its lowest functions, it seems to lie on the confines of commodity and beauty. To the body and mind which have been cramped by noxious work or company, nature is medicinal and restores their tone. The tradesman, the attorney comes out of the din and craft of the street, and sees the sky and the woods, and is a man again. In their eternal calm, he finds himself. The health of the eye seems to demand a horizon. We are never tired, so long as we can see far enough.</p>
+      <p>And then, to beauty and the will:</p>
+      <p>The presence of a higher, namely, of the spiritual element is essential to its perfection. The high and divine beauty which can be loved without effeminacy, is that which is found in combination with the human will. Beauty is the mark God sets upon virtue. Every natural action is graceful. Every heroic act is also decent, and causes the place and the bystanders to shine.</p>
+      <p>And he ends the chapter with a confession the Greeks would have recognized:</p>
+      <p>The world thus exists to the soul to satisfy the desire of beauty. This element I call an ultimate end. No reason can be asked or given why the soul seeks beauty. Beauty, in its largest and profoundest sense, is one expression for the universe. God is the all-fair. Truth, and goodness, and beauty, are but different faces of the same All. But beauty in nature is not ultimate. It is the herald of inward and eternal beauty, and is not alone a solid and satisfactory good.</p>
+      <p>Emerson also put the whole matter into four lines of verse, about a flower blooming where nobody goes. From his poem on the rhodora: if eyes were made for seeing, then beauty is its own excuse for being.</p>
+      <p>Charles Spurgeon, in the Treasury of David, comes to the verse we began with — David&#x27;s one desire, to behold the beauty of the Lord — and slows down over every word. From Spurgeon:</p>
+      <p>One thing. Divided aims tend to distraction, weakness, disappointment. The man of one book is eminent, the man of one pursuit is successful. Let all our affections be bound up in one affection, and that affection set upon heavenly things. Have I desired — what we cannot at once attain, it is well to desire. God judges us very much by the desire of our hearts. He who rides a lame horse is not blamed by his master for want of speed, if he makes all the haste he can, and would make more if he could. God takes the will for the deed with his children.</p>
+      <p>He goes on:</p>
+      <p>Of the Lord. This is the right target for desires, this is the well into which to dip our buckets, this is the door to knock at, the bank to draw upon. Desire of men, and lie upon the dunghill with Lazarus. Desire of the Lord, and to be carried of angels into Abraham&#x27;s bosom.</p>
+      <p>And then to the beholding itself:</p>
+      <p>To behold the beauty of the Lord. An exercise both for earthly and heavenly worshipers. We must not enter the assemblies of the saints in order to see and be seen, or merely to hear the minister. We must repair to the gatherings of the righteous, intent upon the gracious object of learning more of the loving Father, more of the glorified Jesus, more of the mysterious Spirit, in order that we may the more lovingly admire, and the more reverently adore our glorious God.</p>
+      <p>And he cannot contain himself:</p>
+      <p>What a word is that, the beauty of the Lord! Think of it, dear reader! Better far — behold it by faith! What a sight will that be when every faithful follower of Jesus shall behold the King in his beauty! Oh, for that infinitely blessed vision!</p>
+      <p>Spurgeon&#x27;s phrase — the King in his beauty — is the prophet Isaiah&#x27;s. And Isaiah is the writer who holds the two hardest sayings about beauty in the whole canon, and he holds them together. Of the coming Servant of the Lord, the prophet writes:</p>
+      <p>For he shall grow up before him as a tender plant, and as a root out of a dry ground: he hath no form nor comeliness; and when we shall see him, there is no beauty that we should desire him.</p>
+      <p>No beauty that we should desire him. And yet, from the same prophet, this promise:</p>
+      <p>Thine eyes shall see the king in his beauty: they shall behold the land that is very far off.</p>
+      <p>The tradition of the church has read both of the Servant, and let the two verses interpret one another: the beauty was there all along, and the failure was in the eyes. That is the severest thing the canon says about our sense of beauty — not that beauty is vain, but that we cannot be trusted to see it.</p>
+      <p>On beauty that can be trusted, the Scriptures speak once more. From Proverbs:</p>
+      <p>Favour is deceitful, and beauty is vain: but a woman that feareth the LORD, she shall be praised.</p>
+      <p>And from the apostle Peter:</p>
+      <p>Whose adorning let it not be that outward adorning of plaiting the hair, and of wearing of gold, or of putting on of apparel; but let it be the hidden man of the heart, in that which is not corruptible, even the ornament of a meek and quiet spirit, which is in the sight of God of great price.</p>
+      <p>And the apostle Paul gives beauty a place in the mind&#x27;s nightly housekeeping:</p>
+      <p>Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.</p>
+      <p>We close with a hymn. In the spring of eighteen sixty-three a young English schoolmaster named Folliott Pierpoint sat on a hill above the city of Bath, looked at the country below him, and wrote a hymn of thanksgiving for beauty itself. Here it is in its original wording, from the collection where it first appeared. For the Beauty of the Earth, by Folliott Sandford Pierpoint:</p>
+      <p>For the beauty of the earth,
+For the beauty of the skies,
+For the Love which from our birth
+Over and around us lies:
+Christ, our God, to Thee we raise
+This our Sacrifice of Praise.</p>
+      <p>For the beauty of each hour
+Of the day and of the night,
+Hill and vale, and tree and flower,
+Sun and moon and stars of light:
+Christ, our God, to Thee we raise
+This our Sacrifice of Praise.</p>
+      <p>For the joy of ear and eye,
+For the heart and brain&#x27;s delight,
+For the mystic harmony
+Linking sense to sound and sight:
+Christ, our God, to Thee we raise
+This our Sacrifice of Praise.</p>
+      <p>For the joy of human love,
+Brother, sister, parent, child,
+Friends on earth, and friends above;
+For all gentle thoughts and mild:
+Christ, our God, to Thee we raise
+This our Sacrifice of Praise.</p>
+      <p>For each perfect Gift of Thine
+To our race so freely given,
+Graces human and Divine,
+Flowers of earth, and buds of Heaven:
+Christ, our God, to Thee we raise
+This our Sacrifice of Praise.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

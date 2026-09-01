@@ -31,6 +31,199 @@ DISCLAIMER = ("A survey of the great ideas — not necessarily an endorsement of
 # Episodes, newest first.
 EPISODES = [
     {
+        "slug": "the-severed-head",
+        "idea": "The Severed Head",
+        "lane": "The Surprise",
+        "day": "Thursday",
+        "date_display": "August 27, 2026",
+        "sub": "The Surprise · headship, hierarchy, and the body — walking around Lewis’s That Hideous Strength",
+        "duration": "50 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-severed-head.mp3",
+        "length": 72730066,
+        "lede": "Hierarchy is a word our age says through clenched teeth. Tonight we take it out of "
+                "quarantine — what the catechisms meant by superiors, inferiors, and equals; what the "
+                "apostles meant by the head and the body; and what happens in a college, a country, or a "
+                "marriage when the head abdicates and a usurper takes its place. The map is Lewis’s "
+                "That Hideous Strength.",
+        "body": [
+            "A long walk around the last of C. S. Lewis’s science-fiction trilogy — a book that "
+            "is, under all its machinery, about headship: the head and the body, what a head owes, and "
+            "what happens when the head is severed. Lewis is within living memory, so the evening walks "
+            "around his pages rather than through them and lets the older voices read. It begins with the "
+            "boy who learned about headship the hard way — a father’s failure of attention after "
+            "a mother’s death — and moves out to the grammar of order itself: the Westminster "
+            "Larger Catechism on superiors, inferiors, and equals; Absalom at the gate, stealing the "
+            "hearts of Israel; and the one body of 1 Corinthians 12, where the members cannot say to one "
+            "another, I have no need of thee.",
+            "Then the head that is worth having — the head of Ephesians and Colossians “from which "
+            "all the body… increaseth,” and the head of Mark 10 and Philippians 2 who came not to "
+            "be ministered unto but to minister, who descended before he was exalted. Edwards on the "
+            "excellency of Christ, the admirable conjunction of lion and lamb, infinite highness and "
+            "infinite condescension. The severed head is the abdicated or the usurped one; the true head "
+            "bows lowest. Closing with Matthew Bridges’ “Crown Him with Many Crowns,” read whole.",
+        ],
+        "walk": [
+            ("Exodus 20:12 · Westminster Larger Catechism", "Scripture · KJV · 1647",
+             "“Honour thy father and thy mother” read as the catechism reads it — the duties "
+             "of superiors, inferiors, and equals; the grammar of order our age has forgotten."),
+            ("2 Samuel 15 · Absalom at the gate", "Scripture · KJV",
+             "The usurper who “stole the hearts of the men of Israel” — headship seized by "
+             "flattery, the counterfeit of a head that serves."),
+            ("1 Corinthians 12 · the body", "Scripture · KJV",
+             "Many members, one body — “the eye cannot say unto the hand, I have no need of "
+             "thee”; the honour spent on the parts that lack it."),
+            ("Ephesians 4–5 · Colossians 2", "Scripture · KJV",
+             "The head “from which all the body by joints and bands… increaseth with the increase "
+             "of God” — headship as nourishment, not domination."),
+            ("Mark 10:42–45 · Philippians 2", "Scripture · KJV",
+             "“Whosoever will be chief… shall be servant of all” — the head who descends "
+             "before he is exalted; the mind of Christ."),
+            ("Jonathan Edwards · The Excellency of Christ", "public domain",
+             "The admirable conjunction of lion and lamb — infinite highness and infinite condescension "
+             "meeting in one person."),
+            ("The commonplace stones · Equality & Subordination", "Collacon · public domain",
+             "Old handbook sayings on equality, subordination, and authority — read as bare "
+             "attributions, the tradition’s cross-talk on rank."),
+            ("C. S. Lewis · That Hideous Strength", "1945 · paraphrased",
+             "Walked around, not read — the abolition of hierarchy that abolishes the man; why nobody "
+             "is looking after anybody once the head is gone."),
+            ("Matthew Bridges · “Crown Him with Many Crowns”", "1851",
+             "The close, read whole — the many crowns of the head who was first crowned with thorns."),
+        ],
+    },
+    {
+        "slug": "the-compass-and-the-cross",
+        "idea": "The Compass and the Cross",
+        "lane": "The Surprise",
+        "day": "Thursday",
+        "date_display": "August 20, 2026",
+        "sub": "The Surprise · 2 Timothy — why ease is no proof of the right road",
+        "duration": "30 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/the-compass-and-the-cross.mp3",
+        "length": 42997597,
+        "lede": "There is an instrument most of us carry without knowing it — a compass that reads "
+                "comfort as true north and discomfort as a wrong turn. Tonight’s readings gather around "
+                "a letter from a Roman prison, in which an old man tells the son he loves not “stay "
+                "safe” but “come share this suffering with me” — and the whole tradition "
+                "circles that sentence.",
+        "body": [
+            "A meditation on comfort as a false compass — the needle that swings toward ease and calls "
+            "it the right road — set against the logic of Paul’s last letter. From a Roman prison, "
+            "awaiting execution, the apostle writes to Timothy not “I love you, therefore stay safe,” "
+            "but “I love you, therefore come share this suffering.” The moralists and philosophers "
+            "circle it: Seneca on the good man whom God tests as a father tests a son; Epictetus on "
+            "struggling with circumstances and the labours of Hercules; Bunyan’s Hill Difficulty, and "
+            "Timorous and Mistrust running back down it at the sight of the lions.",
+            "Then the Scriptures make the paradox a doctrine: “faithful are the wounds of a friend”; "
+            "the chastening of Hebrews 12 as the mark of sonship, not abandonment; the Psalmist’s “it "
+            "is good for me that I have been afflicted.” Pink on the faithfulness and the love of God; "
+            "Spurgeon’s “Song of the Steadfast.” And the road ends where the letter ends — "
+            "“I have fought a good fight… henceforth there is laid up for me a crown” — "
+            "closing with Cowper’s “’Tis my happiness below not to live without the cross.”",
+        ],
+        "walk": [
+            ("2 Timothy 1", "Scripture · KJV",
+             "The letter itself — “God hath not given us the spirit of fear”; “be thou "
+             "partaker of the afflictions of the gospel.” Love that calls into hard country, not away "
+             "from it."),
+            ("The false compass", "host framing",
+             "The instrument between heart and conscience that reads comfort as true north — nearly "
+             "always trusted, and the whole evening stands against it."),
+            ("Seneca · Of Providence", "Stewart translation · PD",
+             "Why good men suffer — God “disciplines those whom he approves, whom he loves”; "
+             "the father who tests the son."),
+            ("Epictetus · Discourses I", "Long translation · PD",
+             "How we should struggle with circumstances — and the labours of Hercules, who was not "
+             "made great by ease."),
+            ("Bunyan · The Pilgrim’s Progress", "public domain",
+             "The Hill Difficulty, and Timorous and Mistrust turning back at the lions — comfort as a "
+             "compass, dramatised."),
+            ("Proverbs 27:6 · Hebrews 12 · Psalm 119", "Scripture · KJV",
+             "“Faithful are the wounds of a friend”; chastening as the mark of sonship; “it is "
+             "good for me that I have been afflicted.”"),
+            ("A. W. Pink · The Attributes of God", "1930",
+             "The faithfulness and the love of God — a love that wills our good over our ease."),
+            ("Spurgeon · Treasury of David", "public domain",
+             "The Song of the Steadfast — read against the counsel to flee; “corn is cleaned with "
+             "wind.”"),
+            ("2 Timothy 4 · the crown", "Scripture · KJV",
+             "“I have fought a good fight, I have finished my course” — the crown at the end of "
+             "the hard road."),
+            ("William Cowper · hymn", "as printed by Spurgeon · PD",
+             "“’Tis my happiness below not to live without the cross” — the closing stanzas."),
+        ],
+    },
+    {
+        "slug": "beauty",
+        "idea": "Beauty",
+        "lane": "Great Ideas",
+        "day": "Tuesday",
+        "date_display": "August 18, 2026",
+        "sub": "Great Ideas · No. 6 — what beauty is, where it lives, what it is for, and what it costs",
+        "duration": "30 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/beauty.mp3",
+        "length": 42945676,
+        "lede": "The sixth great idea. Beauty enters Scripture as a commandment — priestly garments "
+                "“for glory and for beauty” — and the tradition circles it all night: Plato’s "
+                "ladder, Aristotle’s magnitude and order, Augustine’s “Too late loved I Thee,” "
+                "Aquinas’s wholeness, proportion, and radiance, down to Isaiah’s two hardest sayings "
+                "and a schoolmaster’s hymn on a hill above Bath.",
+        "body": [
+            "A survey of the sixth of the hundred and two great ideas, read through the canon it indexes. "
+            "Beauty enters the story early and as a command — “holy garments… for glory and for "
+            "beauty” — and the Psalms turn the word toward God himself: the one thing David desired, "
+            "to behold the beauty of the LORD. Among the Greeks the great account is Diotima’s ladder in "
+            "the Symposium, climbing from a fair body to beauty absolute; Aristotle answers with the "
+            "measuring rod — “beauty depends on magnitude and order.” Augustine picks the ladder "
+            "and climbs it weeping. Aquinas gives the medieval definition in a single breath: integrity, "
+            "proportion, brightness — wholeness, proportion, radiance — each with its likeness in the Son.",
+            "Then the commonplace books and the Puritans, wary and unwearied: Quarles’s warning, "
+            "Bacon’s “no excellent beauty that hath not some strangeness in the proportion,” "
+            "Watson’s “well-coloured dirt” set against “grace is our best beauty,” "
+            "Emerson’s kosmos, Spurgeon slowing over David’s one desire. And Isaiah, who holds the "
+            "two hardest sayings together — “no beauty that we should desire him,” and “thine "
+            "eyes shall see the king in his beauty” — and lets them interpret one another: the beauty "
+            "was there all along; the failure was in the eyes. Closing with Folliott Pierpoint’s “For "
+            "the Beauty of the Earth,” in its original wording.",
+        ],
+        "walk": [
+            ("Exodus 28 · the Psalms · Ecclesiastes 3:11", "Scripture · KJV",
+             "Beauty enters as a commandment — priestly garments “for glory and for beauty” — "
+             "and David’s one desire, to behold the beauty of the LORD; the Preacher’s “every "
+             "thing beautiful in his time.”"),
+            ("Plato · Symposium — Diotima’s ladder", "Jowett translation",
+             "Love of a beautiful body is only the first rung; the climb ends in “beauty absolute, "
+             "separate, simple, and everlasting.”"),
+            ("Aristotle · Poetics", "Butcher translation",
+             "The measuring rod against the ladder — “beauty depends on magnitude and order”; a "
+             "thing big enough to see and small enough to hold."),
+            ("Augustine · Confessions X", "Pusey translation",
+             "“Too late loved I Thee, O Thou Beauty of ancient days, yet ever new” — the ladder "
+             "become a person, the climb become a rescue."),
+            ("Aquinas · Summa Theologica I, Q39", "Dominican Fathers translation",
+             "Beauty’s three conditions — integrity, proportion, clarity; wholeness, proportion, "
+             "radiance, each with its likeness in the Son."),
+            ("The commonplace stones", "Collacon · public domain",
+             "Clarendon, Cervantes, Quarles’s warning, Milton’s tempter — and the answers: "
+             "Porter, Upham, Greville’s test, “true beauty increases on examination.”"),
+            ("Francis Bacon · Of Beauty", "Essays",
+             "“There is no excellent beauty, that hath not some strangeness in the proportion” — "
+             "and beauty as summer fruit, easy to corrupt."),
+            ("Thomas Watson · Body of Divinity", "public domain",
+             "From beauty to a Maker — the painting implies an artist — and from “well-coloured "
+             "dirt” to “grace is our best beauty.”"),
+            ("Emerson · Nature, ch. III", "1836",
+             "The Greeks called the world kosmos, beauty; nature medicinal to the cramped eye; “beauty is "
+             "the mark God sets upon virtue.”"),
+            ("Spurgeon on Psalm 27 · Isaiah 53 & 33:17", "public domain · KJV",
+             "“The King in his beauty” — Isaiah’s two hardest sayings held together: no "
+             "beauty we should desire him, and eyes that shall see the King in his beauty."),
+            ("Folliott Pierpoint · “For the Beauty of the Earth”", "1864",
+             "Written on a hill above Bath — a hymn of thanksgiving for beauty itself, in its original "
+             "wording."),
+        ],
+    },
+    {
         "slug": "the-earthy-piety-of-providence",
         "idea": "The Earthy Piety of Providence",
         "lane": "The Scriptures",
