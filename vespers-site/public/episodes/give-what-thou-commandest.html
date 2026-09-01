@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Give What Thou Commandest — Vespers</title>
+<meta name="description" content="Augustine&#x27;s dangerous prayer — “Give what Thou commandest, and command what Thou wilt.” The difference between a law that only demands and a King who supplies the power before He asks you to rise and walk. Eleven frightened men sent to the whole earth, Gideon in the winepress called “mighty man of valour,” Ezekiel&#x27;s “I will… cause you to walk,” and the gospel that “bids me fly and lends me wings.”">
+<link rel="canonical" href="https://vesperstonight.com/episodes/give-what-thou-commandest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Give What Thou Commandest — Vespers">
+<meta property="og:description" content="Augustine&#x27;s dangerous prayer — “Give what Thou commandest, and command what Thou wilt.” The difference between a law that only demands and a King who supplies the power before He asks you to rise and walk. Eleven frightened men sent to the whole earth, Gideon in the winepress called “mighty man of valour,” Ezekiel&#x27;s “I will… cause you to walk,” and the gospel that “bids me fly and lends me wings.”">
+<meta property="og:url" content="https://vesperstonight.com/episodes/give-what-thou-commandest">
+<meta property="og:site_name" content="Vespers">
+<meta property="og:image" content="https://vesperstonight.com/assets/cover.jpg">
+<meta name="theme-color" content="#090911">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #090911;
+    --bg-2:      #0c0c18;
+    --surface:   #141426;
+    --surface-2: #1b1b34;
+    --rule:      #29294a;
+    --ink:       #ece6d6;
+    --ink-soft:  #b9b7cc;
+    --ink-faint: #7c7b95;
+    --indigo:    #7d79c4;
+    --indigo-deep:#4b4a80;
+    --blue:      #6f8fb6;
+    --brass:     #c9a45c;
+    --brass-deep:#a8853f;
+    --link:      #c9a45c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Spectral", Georgia, serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1100px 620px at 82% -8%, rgba(75,74,128,0.42), transparent 60%),
+      radial-gradient(900px 700px at -6% 12%, rgba(46,45,90,0.34), transparent 55%),
+      linear-gradient(180deg, #0b0b16 0%, #090911 44%, #070710 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  /* worn-vinyl grain over everything */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>"); background-size: 180px 180px;
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  body > * { position: relative; z-index: 1; }
+  .ui { font-family: "Inter", system-ui, sans-serif; }
+  a { color: var(--link); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 40px 24px 120px; }
+
+  /* header */
+  .site-header { border-bottom: 1px solid var(--rule); background: rgba(9,9,17,0.6);
+    backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 5; }
+  .site-header-inner { max-width: 960px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0.34em;
+    text-transform: uppercase; font-size: 15px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--brass); }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-family: "Inter", sans-serif; font-size: 12.5px; font-weight: 500;
+    letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none;
+    text-transform: uppercase; }
+  .site-nav a:hover { color: var(--brass); }
+  .brass-rule { height: 1px; border: 0; margin: 0;
+    background: linear-gradient(90deg, transparent, var(--brass-deep) 20%, var(--brass) 50%, var(--brass-deep) 80%, transparent);
+    opacity: 0.55; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 46px;
+    align-items: center; margin: 46px 0 30px; }
+  .hero-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--indigo);
+    margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .hero h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 40px;
+    line-height: 1.16; letter-spacing: -0.005em; margin: 0 0 20px; color: var(--ink); }
+  .hero h1 em { font-style: italic; color: var(--brass); }
+  .hero-lede { font-size: 18px; color: var(--ink-soft); margin: 0 0 18px; max-width: 52ch; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border-radius: 12px; display: block;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(125,121,196,0.18);
+  }
+  .hero-art::after { content: ""; position: absolute; inset: -14%;
+    background: radial-gradient(circle at 50% 45%, rgba(125,121,196,0.28), transparent 62%);
+    z-index: -1; }
+
+  /* equalizer — a quiet jazz nod */
+  .eq { display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; }
+  .eq span { width: 3px; background: var(--brass); border-radius: 2px;
+    animation: eq 1.4s ease-in-out infinite; opacity: 0.85; }
+  .eq span:nth-child(1){ height: 40%; animation-delay: 0s; }
+  .eq span:nth-child(2){ height: 90%; animation-delay: 0.2s; }
+  .eq span:nth-child(3){ height: 60%; animation-delay: 0.4s; }
+  .eq span:nth-child(4){ height: 100%; animation-delay: 0.1s; }
+  .eq span:nth-child(5){ height: 50%; animation-delay: 0.5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+  @media (prefers-reduced-motion: reduce) { .eq span { animation: none; } }
+
+  /* sections */
+  .section { margin: 62px 0 0; }
+  .section-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass);
+    margin-bottom: 8px; }
+  .section h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 27px;
+    margin: 0 0 6px; color: var(--ink); }
+  .section .section-sub { color: var(--ink-faint); font-size: 15px; margin: 0 0 26px;
+    font-style: italic; }
+
+  .programme { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .card { background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--rule); border-radius: 12px; padding: 16px 15px 17px; }
+  .card .num { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.11em;
+    color: var(--indigo); text-transform: uppercase; margin-bottom: 9px; }
+  .card h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 18px;
+    margin: 0 0 7px; color: var(--ink); }
+  .card p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .card .tag { display: inline-block; margin-top: 12px; font-family: "Inter", sans-serif;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-faint); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 3px 9px; }
+
+  /* listen / coming soon */
+  .listen { margin: 62px 0 0; padding: 34px 34px; border: 1px solid var(--rule);
+    border-radius: 16px; background:
+      radial-gradient(600px 300px at 90% -40%, rgba(75,74,128,0.3), transparent 60%),
+      var(--bg-2); text-align: center; }
+  .listen h2 { font-family: "Spectral", serif; font-weight: 400; font-size: 26px;
+    margin: 0 0 10px; }
+  .listen p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 22px; }
+  .subs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em; padding: 11px 20px; border-radius: 999px;
+    border: 1px solid var(--rule); color: var(--ink-faint); }
+  .sub.soon { opacity: 0.85; }
+  .archive { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule);
+    text-align: left; }
+  .arch-h { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint);
+    text-align: center; margin-bottom: 14px; }
+  .arch-list { list-style: none; margin: 0 auto; padding: 0; max-width: 520px; }
+  .arch-list li { border-bottom: 1px solid var(--rule); }
+  .arch-list li:last-child { border-bottom: 0; }
+  .arch-list a { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 14px; padding: 12px 4px; text-decoration: none; }
+  .arch-list a:hover .arch-idea { color: var(--brass); }
+  .arch-idea { font-family: "Spectral", serif; font-size: 18px; color: var(--ink); }
+  .arch-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-faint); white-space: nowrap; }
+
+  blockquote.pull { font-family: "Spectral", serif; font-style: italic; font-size: 21px;
+    line-height: 1.5; color: var(--ink); border: 0; border-left: 2px solid var(--brass);
+    margin: 60px 0 0; padding: 6px 0 6px 26px; max-width: 60ch; }
+  blockquote.pull .who { display: block; margin-top: 12px; font-style: normal;
+    font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-faint); }
+
+  .site-footer { border-top: 1px solid var(--rule); margin-top: 26px; padding: 30px 24px 40px;
+    text-align: center; font-family: "Inter", sans-serif; font-size: 12.5px;
+    letter-spacing: 0.04em; color: var(--ink-faint); }
+  .site-footer .foot-mark { letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* about page prose */
+  .prose { max-width: 62ch; }
+  .prose h1 { font-family: "Spectral", serif; font-weight: 300; font-size: 38px;
+    margin: 30px 0 8px; }
+  .prose .kicker { font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+  .prose p { font-size: 18px; color: var(--ink-soft); }
+  .prose p.first::first-letter { font-size: 3.2em; float: left; line-height: 0.8;
+    padding: 6px 10px 0 0; color: var(--brass); font-weight: 500; }
+  .prose .closer { font-family: "Spectral", serif; font-style: italic; font-size: 22px;
+    color: var(--ink); margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .back { margin-top: 40px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .back a { color: var(--brass); text-decoration: none; }
+
+  /* episode page */
+  .ep-head { margin: 24px 0 6px; }
+  .ep-eyebrow { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--indigo); margin-bottom: 14px; }
+  .ep-title { font-family: "Spectral", serif; font-weight: 300; font-size: 56px; line-height: 1;
+    margin: 0 0 12px; color: var(--ink); }
+  .ep-sub { font-size: 12.5px; letter-spacing: 0.05em; color: var(--ink-faint);
+    text-transform: uppercase; }
+  .ep-sub .dot { color: var(--brass); margin: 0 9px; }
+  .ep-player { margin: 26px 0 6px; padding: 16px 18px; border: 1px solid var(--rule);
+    border-radius: 12px; background: var(--bg-2); }
+  .ep-player audio { width: 100%; display: block; }
+  .ep-disclaimer { font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+    border-left: 2px solid var(--brass-deep); padding: 2px 0 2px 14px; margin: 18px 0 34px; }
+  .ep-lede { font-family: "Spectral", serif; font-style: italic; font-size: 21px; color: var(--ink);
+    margin: 0 0 20px; }
+  .ep-body p { font-size: 17.5px; color: var(--ink-soft); }
+  .walk { margin: 48px 0 0; }
+  .walk-h { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .walk-sub { color: var(--ink-faint); font-style: italic; font-size: 15px; margin: 0 0 22px; }
+  .walk-list { list-style: none; margin: 0; padding: 0; }
+  .walk-item { display: flex; gap: 18px; padding: 17px 0; border-top: 1px solid var(--rule); }
+  .walk-item:last-child { border-bottom: 1px solid var(--rule); }
+  .walk-n { font-family: "Inter", sans-serif; font-size: 13px; color: var(--indigo);
+    flex: 0 0 26px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+  .walk-src { font-family: "Spectral", serif; font-size: 19px; color: var(--ink); }
+  .walk-cite { font-family: "Inter", sans-serif; font-size: 10.5px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-faint); margin-left: 12px; white-space: nowrap; }
+  .walk-note { color: var(--ink-soft); font-size: 15px; margin-top: 5px; line-height: 1.55; }
+
+  /* transcript */
+  .transcript { margin: 44px 0 0; border-top: 1px solid var(--rule); }
+  .transcript > summary { list-style: none; cursor: pointer; padding: 22px 0 6px;
+    font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--brass); display: flex; align-items: center; gap: 10px; }
+  .transcript > summary::-webkit-details-marker { display: none; }
+  .transcript > summary::after { content: "＋"; color: var(--ink-faint); font-weight: 400;
+    margin-left: auto; font-size: 15px; }
+  .transcript[open] > summary::after { content: "－"; }
+  .transcript > summary:hover { color: var(--gold, var(--brass)); }
+  .transcript-body { max-width: 62ch; padding-top: 8px; }
+  .transcript-body p { font-size: 16.5px; color: var(--ink-soft); line-height: 1.62;
+    margin: 0 0 15px; }
+  .transcript-note { font-family: "Inter", sans-serif; font-size: 12px; font-style: italic;
+    color: var(--ink-faint); margin: 0 0 18px; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .ep-title { font-size: 42px; }
+    .walk-cite { display: block; margin: 4px 0 0; white-space: normal; }
+    .hero-art { order: -1; max-width: 340px; }
+    .hero h1 { font-size: 32px; }
+    .programme { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="brand ui">Vespers<span class="dot">.</span></a>
+    <nav class="site-nav ui">
+      <a href="/#listen">Listen</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<hr class="brass-rule">
+<main>
+  <article>
+    <div class="ep-head">
+      <div class="ep-eyebrow ui">The Surprise · Thursday · August 13, 2026</div>
+      <h1 class="ep-title">Give What Thou Commandest</h1>
+      <div class="ep-sub ui">The Surprise · Augustine&#x27;s prayer — a command that arrives with the power to keep it<span class="dot">·</span>35 min</div>
+    </div>
+
+    <div class="ep-player">
+      <audio controls preload="none" src="https://sermons-cdn.sermonsteward.com/vespers/episodes/give-what-thou-commandest.mp3"></audio>
+    </div>
+    <p class="ep-disclaimer ui">A survey of the great ideas — not necessarily an endorsement of any one contribution.</p>
+
+    <p class="ep-lede">Augustine&#x27;s dangerous prayer — “Give what Thou commandest, and command what Thou wilt.” The difference between a law that only demands and a King who supplies the power before He asks you to rise and walk. Eleven frightened men sent to the whole earth, Gideon in the winepress called “mighty man of valour,” Ezekiel&#x27;s “I will… cause you to walk,” and the gospel that “bids me fly and lends me wings.”</p>
+    <div class="ep-body">
+    <p>From Acts 1: eleven frightened men given a command aimed at the whole earth — and the hinge Matthew Henry saw, “those whom he employs in his service he will qualify for it.” The command and the power arrive in the same sentence. It&#x27;s the shape of every commissioning: Moses (“certainly I will be with thee”), Gideon called “mighty man of valour” while hiding in a winepress (“go in this thy might — have not I sent thee?”), even the first command in Eden, given as blessing before it was earned. But once the law was broken it went on demanding and stopped enabling — Paul&#x27;s “O wretched man that I am!” The pagan moralists felt the same gap and reached inward: Marcus Aurelius disciplining self-love with more self-love, “because it has no one to ask.”</p>
+    <p>The answer comes from outside moral philosophy — Augustine on his knees: “Give what Thou enjoinest, and enjoin what Thou wilt” — not lowering the command, but asking God to supply as gift the very thing it requires. And the answer had been given centuries before he prayed it: Ezekiel&#x27;s “a new heart… and I will… cause you to walk in my statutes”; Deuteronomy&#x27;s circumcised heart; Christ&#x27;s “without me ye can do nothing”; Paul&#x27;s “it is God which worketh in you both to will and to do”; John&#x27;s “his commandments are not grievous.” Pink on grace “unasked and undesired,” and Berridge&#x27;s rhyme — “Run, John, and work, the law commands, yet finds me neither feet nor hands… it bids me fly and lends me wings.” The command was kept — the multitude no man could number — because it was never given alone. Closing on Herbert&#x27;s “The Elixir”: “who sweeps a room as for Thy laws, makes that and the action fine.”</p>
+    </div>
+
+    <section class="walk">
+      <div class="walk-h ui">Tonight's walk</div>
+      <p class="walk-sub">One idea, read chronologically — Scripture and the philosophers, all in
+      the public domain.</p>
+      <ol class="walk-list"><li class="walk-item">
+      <div class="walk-n ui">1</div>
+      <div class="walk-body">
+        <div class="walk-src">Acts 1 · Matthew Henry<span class="walk-cite ui">Scripture &amp; public domain</span></div>
+        <div class="walk-note">Eleven men sent to the whole earth — “ye shall receive power”; “those whom he employs in his service he will qualify for it.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">2</div>
+      <div class="walk-body">
+        <div class="walk-src">Judges 6 · Genesis 1<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">Gideon called “mighty man of valour” in the winepress — “go in this thy might, have not I sent thee?”; and the first command, given as blessing.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">3</div>
+      <div class="walk-body">
+        <div class="walk-src">Romans 7<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">The gap the law leaves — “O wretched man that I am! who shall deliver me?” — a command that only accuses.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">4</div>
+      <div class="walk-body">
+        <div class="walk-src">Marcus Aurelius · the moralists<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">Duty pressed as far as unaided reason can — self-love disciplined by more self-love, “because it has no one to ask.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">5</div>
+      <div class="walk-body">
+        <div class="walk-src">Augustine · Confessions<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“Give what Thou enjoinest, and enjoin what Thou wilt” — not the command lowered, but the strength supplied as gift.</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">6</div>
+      <div class="walk-body">
+        <div class="walk-src">Ezekiel 36 · Deuteronomy 30 · John 15<span class="walk-cite ui">Scripture · KJV</span></div>
+        <div class="walk-note">“I will… cause you to walk in my statutes”; the circumcised heart; “without me ye can do nothing.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">7</div>
+      <div class="walk-body">
+        <div class="walk-src">Philippians 2 · 1 John 5 · A. W. Pink<span class="walk-cite ui">Scripture &amp; public domain</span></div>
+        <div class="walk-note">“It is God which worketh in you both to will and to do”; “his commandments are not grievous”; grace “unasked and undesired.”</div>
+      </div>
+    </li><li class="walk-item">
+      <div class="walk-n ui">8</div>
+      <div class="walk-body">
+        <div class="walk-src">Berridge&#x27;s rhyme · Herbert&#x27;s “The Elixir”<span class="walk-cite ui">public domain</span></div>
+        <div class="walk-note">“It bids me fly and lends me wings”; and “who sweeps a room as for Thy laws, makes that and the action fine.”</div>
+      </div>
+    </li></ol>
+    </section>
+
+    <details class="transcript">
+      <summary class="ui">Transcript</summary>
+      <div class="transcript-body">
+      <p>Welcome to Vespers, where we take up the last hour of your day.</p>
+      <p>Tonight: a command that arrives with everything needed to keep it — the difference between a law that only demands and a King who tells us to rise and walk only after providing the power to do so.</p>
+      <p>A reminder: this is a survey of great ideas, not necessarily an endorsement of any one contribution.</p>
+      <p>We begin where every command begins for those who have to keep it — not with the command alone, but with the One who gives it.</p>
+      <p>From the Acts of the Apostles:</p>
+      <p>The former treatise have I made, O Theophilus, of all that Jesus began both to do and teach, until the day in which he was taken up, after that he through the Holy Ghost had given commandments unto the apostles whom he had chosen: to whom also he shewed himself alive after his passion by many infallible proofs, being seen of them forty days, and speaking of the things pertaining to the kingdom of God. And, being assembled together with them, commanded them that they should not depart from Jerusalem, but wait for the promise of the Father, which, saith he, ye have heard of me. For John truly baptized with water; but ye shall be baptized with the Holy Ghost not many days hence. When they therefore were come together, they asked of him, saying, Lord, wilt thou at this time restore again the kingdom to Israel? And he said unto them, It is not for you to know the times or the seasons, which the Father hath put in his own power. But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth.</p>
+      <p>Eleven men. Fishermen, a tax collector, a zealot, men who had scattered and hidden away when their teacher was arrested a few weeks before. And the last thing he says to them, before he is lifted out of their sight, is a command aimed at the whole earth. Go and be my witnesses — not only here, but in Judea; not only in Judea, but among the Samaritans they had been raised to despise; not only there, but to the last mile of the last country. On its face it is an absurd command. Eleven frightened men, one small upper room, and the whole world.</p>
+      <p>Matthew Henry, working through the passage, saw the hinge on which the whole thing turns.</p>
+      <p>From Matthew Henry:</p>
+      <p>But you shall receive the power of the Holy Ghost coming upon you, shall be animated and actuated by a better spirit than your own; you shall have power to preach the gospel, and to prove it out of the scriptures of the Old Testament, and to confirm it both by miracles and by sufferings. Christ&#x27;s witnesses shall receive power for that work to which he calls them; those whom he employs in his service he will qualify for it, and will bear them out in it.</p>
+      <p>Notice that carefully: those whom he employs in his service he will qualify for it. The command and the power to keep it arrive in the same sentence. That is the subject tonight — not obedience as a topic on its own, but obedience joined always to its source. What happens when a command comes without that joining? Every honest tradition, sacred and secular alike, has had to answer that question, because every honest tradition has felt the gap between what is required and what is possible.</p>
+      <p>It is, in fact, the shape of nearly every commissioning story in the Old Testament. Moses, told to go to Pharaoh, asks who am I, that I should go — and is answered not with a pep talk but with a promise: certainly I will be with thee. Centuries later the same pattern repeats with a man hiding from the enemy he is about to be sent against.</p>
+      <p>From the book of Judges:</p>
+      <p>And there came an angel of the LORD, and sat under an oak which was in Ophrah, that pertained unto Joash the Abi-ezrite: and his son Gideon threshed wheat by the winepress, to hide it from the Midianites. And the angel of the LORD appeared unto him, and said unto him, The LORD is with thee, thou mighty man of valour. And Gideon said unto him, Oh my Lord, if the LORD be with us, why then is all this befallen us? And the LORD looked upon him, and said, Go in this thy might, and thou shalt save Israel from the hand of the Midianites: have not I sent thee? And he said unto him, Oh my Lord, wherewith shall I save Israel? behold, my family is poor in Manasseh, and I am the least in my father&#x27;s house. And the LORD said unto him, Surely I will be with thee, and thou shalt smite the Midianites as one man.</p>
+      <p>Mighty man of valour, said to a man hiding in a winepress. The title comes before the courage does, because the title is not a compliment on what Gideon already is — it is a promise of what the presence of God is about to make him. Go in this thy might is followed at once by have not I sent thee, as if the sending itself were the might. It is the same grammar as receive power for that work to which he calls them, centuries later, spoken this time to eleven men in an upper room instead of one man in a winepress.</p>
+      <p>The pattern is old — older than Sinai, older than the exodus. The very first command given to the human race already assumed a strength beyond the two who received it.</p>
+      <p>From the book of Genesis:</p>
+      <p>And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth. So God created man in his own image, in the image of God created he him; male and female created he them. And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every living thing that moveth upon the earth.</p>
+      <p>Be fruitful. Multiply. Subdue. Have dominion. Spoken to two people in an unfinished garden, over a whole planet they had not yet seen. The command outran the ones who received it from the very first sentence of the human story — and it was given as a blessing, not a burden, before either of them had done a single thing to earn it.</p>
+      <p>But once the law had been broken, it changed character. It went on demanding, and it stopped enabling. Paul, a man trained in that law from childhood, gives the most exact account on record of what that gap feels like from the inside.</p>
+      <p>From the epistle to the Romans:</p>
+      <p>I find then a law, that, when I would do good, evil is present with me. For I delight in the law of God after the inward man: but I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members. O wretched man that I am! who shall deliver me from the body of this death? I thank God through Jesus Christ our Lord. So then with the mind I myself serve the law of God; but with the flesh the law of sin.</p>
+      <p>O wretched man that I am — not a beginner&#x27;s complaint. A mature one, from a man who delighted in the law after the inward man and still could not, by that delight alone, keep it. Something has to change, or the command is only ever an accusation.</p>
+      <p>Long before the gospel reached them, the moral philosophers of the pagan world felt this same gap and reached for their own answers.</p>
+      <p>From the Stoic Epictetus: Be not diverted from your duty by any idle reflections the silly world may make on you, for their censures are not in your power, and consequently should be no part of your concern.</p>
+      <p>From Seneca: It is foolish to strive with what we cannot avoid; we are born subjects, and to obey God is perfect liberty; he who does this shall be free, safe, and quiet; all his actions shall succeed to his wishes.</p>
+      <p>From Aristotle: Wicked men obey for fear, but the good for love.</p>
+      <p>From Cicero: He who obeys with modesty, appears worthy of some day or other being allowed to command.</p>
+      <p>The Roman emperor Marcus Aurelius, writing privately to himself, pressed the ideal as far as unaided reason could press it.</p>
+      <p>From the Meditations:</p>
+      <p>Let it be thy earnest and incessant care as a Roman and a man to perform whatsoever it is that thou art about, with true and unfeigned gravity, natural affection, freedom and justice: and as for all other cares, and imaginations, how thou mayest ease thy mind of them. Which thou shalt do, if thou shalt go about every action as thy last action, free from all vanity, all passionate and wilful aberration from reason, and from all hypocrisy, and self-love, and dislike of those things which by the fates or appointment of God have happened unto thee.</p>
+      <p>Notice where that sentence ends its search for strength: within. Freedom from self-love, achieved by more discipline against self-love. Reason correcting reason. It is the most dignified statement of duty the ancient world produced, and it never once asks for help, because it has no one to ask.</p>
+      <p>Inside the household of faith, later writers drew the same line, but with somewhere to send the plea. The Puritan Thomas Brooks: A man sincerely obedient will not pick and choose what commands to obey, and what to reject. Martin Luther, characteristically blunt: True obedience to God is the obedience of faith and good works; that is, he is truly obedient to God who trusts Him and does what He commands. Lord Bacon put the diagnosis of the alternative plainly: To say a blind custom of obedience should be a surer obligation than duty taught and understood, is to say a blind man may tread surer with a guide, than a seeing man with a light. And Francis Quarles, plainest of all: Let the ground of all thy religious actions be obedience; examine not why it is commanded, but observe it because it is commanded. True obedience neither procrastinates nor questions.</p>
+      <p>But even Quarles&#x27;s plain counsel does not answer the deeper question. It tells a man what obedience looks like. It does not tell him where the strength for it will come from. Seneca had called obedience to God perfect liberty without ever explaining how a slave to sin becomes free enough to render it. The answer, when it finally comes, comes from outside the whole tradition of moral philosophy — from a converted rhetorician on his knees, examining his own life one besetting weakness at a time.</p>
+      <p>Augustine, in his Confessions, works through his temptations one by one — the pleasures of food, of the ear, of being well thought of — and arrives, like Paul, at the discovery that he cannot make himself obedient by resolving harder. So he stops resolving and starts asking.</p>
+      <p>From Augustine&#x27;s Confessions:</p>
+      <p>I can do all things through Him that strengtheneth me. Strengthen me, that I can. Give what Thou enjoinest, and enjoin what Thou wilt.</p>
+      <p>He returns to the same prayer later in the same book, examining a different temptation:</p>
+      <p>And in this way also Thou commandest us continence. Give what Thou enjoinest, and enjoin what Thou wilt.</p>
+      <p>Notice what the sentence does. It does not ask God to lower the command. It does not negotiate the standard down to what a weak man can manage on his own strength. It asks God to supply, as gift, the very thing the command requires — and having asked that, it hands God back the pen: enjoin what Thou wilt, once Thou hast agreed to give what Thou enjoinest. It is Seneca&#x27;s obedience is perfect liberty, and Marcus Aurelius&#x27;s care to perform whatsoever it is that thou art about, turned at last into a prayer instead of a resolution. And a prayer, unlike a resolution, can be answered.</p>
+      <p>The remarkable thing is that the answer to Augustine&#x27;s prayer was given centuries before he prayed it, through the prophet Ezekiel, to a captive nation that had broken every commandment it had ever received.</p>
+      <p>From the book of Ezekiel:</p>
+      <p>A new heart also will I give you, and a new spirit will I put within you: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh. And I will put my spirit within you, and cause you to walk in my statutes, and ye shall keep my judgments, and do them.</p>
+      <p>Cause you to walk. Not merely enable — cause. The keeping of the command is folded into the gift of the Spirit before a single statute is mentioned again. Moses had said something of the same thing centuries earlier, in a single verse it is easy to walk past.</p>
+      <p>From the book of Deuteronomy:</p>
+      <p>And the LORD thy God will circumcise thine heart, and the heart of thy seed, to love the LORD thy God with all thine heart, and with all thy soul, that thou mayest live.</p>
+      <p>The circumcision of the heart, which no man performs on himself. Love for God, which the law can command but never produce, arrives here as something God does to a person, not something a person does for God. Jesus, on the last night before his death, gave his own disciples the same truth in the shape of a picture.</p>
+      <p>From the Gospel of John:</p>
+      <p>Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; no more can ye, except ye abide in me. I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.</p>
+      <p>Without me ye can do nothing — not without me it is harder. Nothing. And Paul, who had felt that same wretchedness from the inside, wrote its resolution just afterward, in the same letter.</p>
+      <p>From the epistle to the Romans:</p>
+      <p>There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit. For the law of the Spirit of life in Christ Jesus hath made me free from the law of sin and death. For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh: that the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit.</p>
+      <p>The law of the Spirit has done what the law of Moses, weakened by human flesh, never could — not lowered the righteousness required, but fulfilled it in those who walk by the Spirit rather than the flesh. Paul says the same thing to the Philippians in one compressed sentence that holds command and gift together without any strain between them.</p>
+      <p>From the epistle to the Philippians:</p>
+      <p>Wherefore, my beloved, as ye have always obeyed, not as in my presence only, but now much more in my absence, work out your own salvation with fear and trembling. For it is God which worketh in you both to will and to do of his good pleasure.</p>
+      <p>Work out your own salvation — that is the command, and it is real, and it is not softened. For it is God which worketh in you both to will and to do — that is the gift underneath the command, without which the command could never be kept. Peter states the same principle as a plain fact about the Christian life rather than an exhortation to it.</p>
+      <p>From the second epistle of Peter:</p>
+      <p>According as his divine power hath given unto us all things that pertain unto life and godliness, through the knowledge of him that hath called us to glory and virtue.</p>
+      <p>All things that pertain unto life and godliness — already given, according to his divine power, before the command to pursue them is ever obeyed. Thomas Watson, in his Body of Divinity, drew the conclusion out plainly for his own congregation, tying it to the very words Christ himself used of his commandments.</p>
+      <p>From Thomas Watson:</p>
+      <p>Obey God the Son. Kiss the Son, lest he be angry. Kiss him with a kiss of obedience. Christ&#x27;s commands are not grievous. Whatever he commands, is for our interest and benefit.</p>
+      <p>And John, writing near the end of his own life, states the same thing as settled doctrine, the conclusion every pagan moralist tried and failed to reason his way to.</p>
+      <p>From the first epistle of John:</p>
+      <p>For this is the love of God, that we keep his commandments: and his commandments are not grievous.</p>
+      <p>Not because the commandments are small. They are not small; Jesus called them the whole of the law and the prophets. They are not grievous because, for those in Christ, they no longer arrive alone.</p>
+      <p>Why would God do this — supply, as pure gift, the very obedience he requires? A. W. Pink spent an entire chapter of his study of the divine attributes on that question, and it rewards hearing him at some length, because he refuses every easy answer.</p>
+      <p>From Pink&#x27;s The Attributes of God:</p>
+      <p>Divine grace is the sovereign and saving favor of God exercised in the bestowment of blessings upon those who have no merit in them and for which no compensation is demanded from them. Grace can neither be bought, earned, nor won by the creature. If it could be, it would cease to be grace. When a thing is said to be of grace we mean that the recipient has no claim upon it, that it was in nowise due him. It comes to him as pure charity, and, at first, unasked and undesired.</p>
+      <p>He goes on, tracing the doctrine to its fullest statement in Paul:</p>
+      <p>The fullest exposition of the amazing grace of God is to be found in the Epistles of the Apostle Paul. In his writings grace stands in direct opposition to works and worthiness, all works and worthiness, of whatever kind or degree. Grace and works will no more unite than an acid and an alkali. By grace are ye saved through faith; and that not of yourselves; it is the gift of God: not of works, lest any man should boast.</p>
+      <p>Pink then names three marks of this grace:</p>
+      <p>There are three principal characteristics of Divine grace. First, it is eternal. Grace was planned before it was exercised, purposed before it was imparted. Secondly, it is free, for none did ever purchase it. Thirdly, it is sovereign, because God exercises it toward and bestows it upon whom He pleases. If grace reigns, then it is on the throne, and the occupant of the throne is sovereign. Hence the throne of grace.</p>
+      <p>He traces the same sovereignty into the choosing of its recipients:</p>
+      <p>The distinguishing grace of God is seen in saving those people whom He has sovereignly singled out to be His high favorites. By distinguishing we mean that grace discriminates, makes differences, chooses some and passes by others. It was distinguishing grace which selected Abraham from the midst of his idolatrous neighbors and made him the friend of God. It was distinguishing grace which saved publicans and sinners, but said of the religious Pharisees, let them alone. Nowhere does the glory of God&#x27;s free and sovereign grace shine more conspicuously than in the unworthiness and unlikeliness of its objects.</p>
+      <p>Abraham, called out of idolatry to become a blessing to every family of the earth; publicans and sinners, gathered in while the self-sufficient were left alone — the same distinguishing grace that chose one wandering Chaldean is the grace that later filled a room of unlearned fishermen and, later still, gathered a multitude from every nation no man could number. And he presses the question of why the gospel offends the very people who most need it:</p>
+      <p>The grace of God is proclaimed in the Gospel, which is to the self-righteous Jew a stumbling block, and to the conceited and philosophizing Greek foolishness. And why so? Because there is nothing whatever in it that is adapted to the gratifying of the pride of man. It announces that unless we are saved by grace, we cannot be saved at all.</p>
+      <p>Finally, Pink locates the giving of grace within the life of God himself, three persons and one gift:</p>
+      <p>The third Person in the Godhead is the Communicator of grace, therefore is He denominated the Spirit of grace. God the Father is the Fountain of all grace, for He purposed in Himself the everlasting covenant of redemption. God the Son is the only Channel of grace. The Gospel is the Publisher of grace. The Spirit is the Bestower. He is the One who applies the Gospel in saving power to the soul: quickening the elect while spiritually dead, conquering their rebellious wills, melting their hard hearts, opening their blind eyes, cleansing them from the leprosy of sin.</p>
+      <p>Quickening the elect while spiritually dead — the same Spirit Ezekiel promised, causing the walking the statutes only describe. The whole chain closes on itself: the Father purposes grace, the Son purchases it, the Gospel publishes it, and the Spirit gives it, into a heart that could not have asked for it before receiving it.</p>
+      <p>Ordinary gospel preaching found a way to say the same thing in four lines a child could carry home. The verse is usually traced to the eighteenth-century evangelist John Berridge, and Charles Spurgeon was fond enough of it to quote it from his own pulpit more than once.</p>
+      <p>Run, John, and work, the law commands,
+Yet finds me neither feet nor hands,
+But sweeter news the gospel brings:
+It bids me fly and lends me wings.</p>
+      <p>The law can shout Run all day. It cannot give a man legs. The gospel does not shout Run any less loudly — Go ye into all the world is as much a command as anything in Leviticus — but it hands the runner wings before it ever asks him to move.</p>
+      <p>Which returns us to where we started: eleven weak men, and a command to reach the whole earth. That command did not begin with them, and its scope was not new to them either. It had already been given, in miniature, to one childless old man many centuries before.</p>
+      <p>From the book of Genesis:</p>
+      <p>Now the LORD had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father&#x27;s house, unto a land that I will shew thee: And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing: And I will bless them that bless thee, and curse him that curseth thee: and in thee shall all families of the earth be blessed.</p>
+      <p>In thee shall all families of the earth be blessed. One man, one family, and already the whole earth is in view — the same shape the Great Commission will take two thousand years later, because it is the same command, still growing.</p>
+      <p>From the Gospel of Matthew:</p>
+      <p>And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.</p>
+      <p>All power is given unto me — the authority comes first, spoken before the sending. Then the command. Then the promise that answers Augustine before Augustine ever needed to ask: lo, I am with you always, even unto the end of the world.</p>
+      <p>Whether the eleven proved equal to that command is not left to speculation. Luke tells us plainly what the religious leaders in Jerusalem made of them, not many weeks after this scene on the mountain.</p>
+      <p>From the Acts of the Apostles:</p>
+      <p>Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and they took knowledge of them, that they had been with Jesus.</p>
+      <p>Unlearned and ignorant men — and bold enough that the rulers of the nation could account for it by no means but one: they had been with Jesus. When threatened and released, these same men did not pray for safety. Luke records exactly what they prayed for instead.</p>
+      <p>From the Acts of the Apostles:</p>
+      <p>And now, Lord, behold their threatenings: and grant unto thy servants, that with all boldness they may speak thy word, by stretching forth thine hand to heal; and that signs and wonders may be done by the name of thy holy child Jesus. And when they had prayed, the place was shaken where they were assembled together; and they were all filled with the Holy Ghost, and they spake the word of God with boldness.</p>
+      <p>They asked for boldness, and the room shook, and they were filled, and they spoke. The command had not changed. The men had not, on their own, grown braver overnight. Something had been given that the command itself could never supply.</p>
+      <p>The book of Revelation shows what became, in the end, of a command first given to eleven frightened men in a small province of the Roman world.</p>
+      <p>From the Revelation:</p>
+      <p>After this I beheld, and, lo, a great multitude, which no man could number, of all nations, and kindreds, and people, and tongues, stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands; and cried with a loud voice, saying, Salvation to our God which sitteth upon the throne, and unto the Lamb.</p>
+      <p>A multitude no man could number, of every nation. Not almost every nation — every one the command named at the start: Jerusalem, Judea, Samaria, the uttermost part of the earth. The command was kept. It could only have been kept because it was never given alone.</p>
+      <p>So the survey ends where a great deal of moral effort quietly runs aground, and where the gospel just as quietly begins again. Every serious tradition that has thought hard about duty — the Stoics with their perfect liberty, Marcus Aurelius with his lonely discipline against self-love, the Puritans with their obedience of faith — arrives, sooner or later, at the same wall: the law can show a man the shape of the good, and it cannot put legs under him. Augustine did not solve that problem by trying harder. He solved it by praying differently — asking God to give what he commanded, and only then to command what he would. Ezekiel had already promised as much to a nation in exile: a new heart, a new spirit, and the Spirit himself causing the walking that the statutes only describe. The commandments, John says, are not grievous — not because God ever lowered them, but because he never intended a single one of his people to keep them on their own strength in the first place.</p>
+      <p>We close tonight with a poem by George Herbert, an English country parson, written not long before his early death, about the very transaction this evening has been tracing — what happens when the lowest duty is done for God&#x27;s sake rather than merely done.</p>
+      <p>The Elixir, by George Herbert.</p>
+      <p>Teach me, my God and King,
+In all things Thee to see,
+And what I do in anything,
+To do it as for Thee.</p>
+      <p>Not rudely, as a beast,
+To run into an action;
+But still to make Thee prepossessed,
+And give it his perfection.</p>
+      <p>A man that looks on glass,
+On it may stay his eye;
+Or if he pleaseth, through it pass,
+And then the heaven espy.</p>
+      <p>All may of Thee partake:
+Nothing can be so mean,
+Which with his tincture — for Thy sake —
+Will not grow bright and clean.</p>
+      <p>A servant with this clause
+Makes drudgery divine;
+Who sweeps a room as for Thy laws,
+Makes that and the action fine.</p>
+      <p>This is the famous stone
+That turneth all to gold;
+For that which God doth touch and own
+Cannot for less be told.</p>
+      <p>Good night.</p>
+      </div>
+    </details>
+    <div class="back ui"><a href="/">← Back to Vespers</a></div>
+  </article>
+</main>
+<footer class="site-footer ui">
+  <div class="foot-mark">Vespers</div>
+  <div>Welcome to Vespers, where we take up the last hour of your day.</div>
+</footer>
+</body>
+</html>

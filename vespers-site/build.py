@@ -734,6 +734,70 @@ EPISODES = [
         ],
     },
     {
+        "slug": "give-what-thou-commandest",
+        "idea": "Give What Thou Commandest",
+        "lane": "The Surprise",
+        "day": "Thursday",
+        "date_display": "August 13, 2026",
+        "sub": "The Surprise · Augustine's prayer — a command that arrives with the power to keep it",
+        "duration": "35 min",
+        "audio_url": "https://sermons-cdn.sermonsteward.com/vespers/episodes/give-what-thou-commandest.mp3",
+        "length": 50256371,
+        "lede": "Augustine's dangerous prayer — “Give what Thou commandest, and command what Thou "
+                "wilt.” The difference between a law that only demands and a King who supplies the "
+                "power before He asks you to rise and walk. Eleven frightened men sent to the whole "
+                "earth, Gideon in the winepress called “mighty man of valour,” Ezekiel's “I will… "
+                "cause you to walk,” and the gospel that “bids me fly and lends me wings.”",
+        "body": [
+            "From Acts 1: eleven frightened men given a command aimed at the whole earth — and the "
+            "hinge Matthew Henry saw, “those whom he employs in his service he will qualify for it.” "
+            "The command and the power arrive in the same sentence. It's the shape of every "
+            "commissioning: Moses (“certainly I will be with thee”), Gideon called “mighty man of "
+            "valour” while hiding in a winepress (“go in this thy might — have not I sent thee?”), "
+            "even the first command in Eden, given as blessing before it was earned. But once the "
+            "law was broken it went on demanding and stopped enabling — Paul's “O wretched man that "
+            "I am!” The pagan moralists felt the same gap and reached inward: Marcus Aurelius "
+            "disciplining self-love with more self-love, “because it has no one to ask.”",
+            "The answer comes from outside moral philosophy — Augustine on his knees: “Give what "
+            "Thou enjoinest, and enjoin what Thou wilt” — not lowering the command, but asking God "
+            "to supply as gift the very thing it requires. And the answer had been given centuries "
+            "before he prayed it: Ezekiel's “a new heart… and I will… cause you to walk in my "
+            "statutes”; Deuteronomy's circumcised heart; Christ's “without me ye can do nothing”; "
+            "Paul's “it is God which worketh in you both to will and to do”; John's “his "
+            "commandments are not grievous.” Pink on grace “unasked and undesired,” and Berridge's "
+            "rhyme — “Run, John, and work, the law commands, yet finds me neither feet nor hands… "
+            "it bids me fly and lends me wings.” The command was kept — the multitude no man could "
+            "number — because it was never given alone. Closing on Herbert's “The Elixir”: “who "
+            "sweeps a room as for Thy laws, makes that and the action fine.”",
+        ],
+        "walk": [
+            ("Acts 1 · Matthew Henry", "Scripture & public domain",
+             "Eleven men sent to the whole earth — “ye shall receive power”; “those whom he "
+             "employs in his service he will qualify for it.”"),
+            ("Judges 6 · Genesis 1", "Scripture · KJV",
+             "Gideon called “mighty man of valour” in the winepress — “go in this thy might, have "
+             "not I sent thee?”; and the first command, given as blessing."),
+            ("Romans 7", "Scripture · KJV",
+             "The gap the law leaves — “O wretched man that I am! who shall deliver me?” — a "
+             "command that only accuses."),
+            ("Marcus Aurelius · the moralists", "public domain",
+             "Duty pressed as far as unaided reason can — self-love disciplined by more self-love, "
+             "“because it has no one to ask.”"),
+            ("Augustine · Confessions", "public domain",
+             "“Give what Thou enjoinest, and enjoin what Thou wilt” — not the command lowered, but "
+             "the strength supplied as gift."),
+            ("Ezekiel 36 · Deuteronomy 30 · John 15", "Scripture · KJV",
+             "“I will… cause you to walk in my statutes”; the circumcised heart; “without me ye can "
+             "do nothing.”"),
+            ("Philippians 2 · 1 John 5 · A. W. Pink", "Scripture & public domain",
+             "“It is God which worketh in you both to will and to do”; “his commandments are not "
+             "grievous”; grace “unasked and undesired.”"),
+            ("Berridge's rhyme · Herbert's “The Elixir”", "public domain",
+             "“It bids me fly and lends me wings”; and “who sweeps a room as for Thy laws, makes "
+             "that and the action fine.”"),
+        ],
+    },
+    {
         "slug": "words-without-knowledge",
         "idea": "Words Without Knowledge",
         "lane": "Pastor Politics",
