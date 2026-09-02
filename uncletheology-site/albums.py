@@ -13,8 +13,9 @@ import shadys_bach
 import common_grace
 import that_nazarene
 import sovereign_driver
+import android_agent
 
-_MODULES = [roots_of_reason, john_and_them, barn_dance, proverbs, shadys_bach, common_grace, that_nazarene, sovereign_driver]
+_MODULES = [roots_of_reason, john_and_them, barn_dance, proverbs, shadys_bach, common_grace, that_nazarene, sovereign_driver, android_agent]
 
 ALBUMS = sorted(
     [{**m.ALBUM, "songs": m.SONGS} for m in _MODULES],
