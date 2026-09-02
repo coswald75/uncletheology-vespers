@@ -11,8 +11,8 @@ Running order alternates narration and song; 'Close' is an instrumental reprise.
 """
 
 ALBUM = {
-    "title": "Android Agent",
-    "slug": "android-agent",
+    "title": "The Inner Ring",
+    "slug": "the-inner-ring",
     "order": 9,
     "tagline": "Uncle Theology · Lyrics & Scripture",
     "blurb": (
@@ -25,8 +25,8 @@ ALBUM = {
         "machine learns is that people will hand over anything at all to "
         "somebody who tells them they were never small."
     ),
-    "cover": "/assets/android-agent/cover.jpg",
-    "audio_prefix": "android-agent",
+    "cover": "/assets/the-inner-ring/cover.jpg",
+    "audio_prefix": "the-inner-ring",
     # Cold, clinical, windowless white light (electric cyan) warming into the
     # candlelit amber of the Inner Ring feast - the album's cold->warm arc.
     "theme": {
